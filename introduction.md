@@ -1,3 +1,3 @@
 # Introduction for Teachers
 
-## stuff
+A website for the use of Circuit Python on the Microbit
