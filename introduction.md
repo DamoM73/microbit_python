@@ -1,3 +1,9 @@
 # Introduction for Teachers
 
-A website for the use of Circuit Python on the Microbit
+A website provides tutorials on using MicroPython to program the Micro:bit.
+
+## Hardware
+
+We will be using the following hardware in these tutorials:
+
+- BBC Micro:bit v2
