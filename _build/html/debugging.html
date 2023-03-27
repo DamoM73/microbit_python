@@ -206,7 +206,17 @@
 <p>Everyone makes mistakes—even seasoned professional developers!</p>
 <p>Python is good at catching mistakes like syntax errors and run-time errors. Unfortunately, there is a third type of error that you may have already experienced. <strong>Logic errors</strong> occur when a valid program doesn’t do what the programmer intended.</p>
 <p>For example, type the code below and save it has <code class="docutils literal notranslate"><span class="pre">buggy_code.py</span></code>.</p>
-<p>For this tutorial download <code class="xref download docutils literal notranslate"><span class="pre">buggy_code.py</span></code> file and save it to your lesson folder.</p>
+<p>For this tutorial download <a class="reference download internal" download="" href="_downloads/f3924eb4631f500ccb9650a05e39cfca/buggy_code.py"><code class="xref download docutils literal notranslate"><span class="pre">buggy_code.py</span></code></a> file and save it to your lesson folder.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">add_underscores</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+<span class="linenos">2</span>    <span class="n">new_word</span> <span class="o">=</span> <span class="s2">&quot;_&quot;</span>
+<span class="linenos">3</span>    <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)):</span>
+<span class="linenos">4</span>        <span class="n">new_word</span> <span class="o">=</span> <span class="n">word</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;_&quot;</span>
+<span class="linenos">5</span>    <span class="k">return</span> <span class="n">new_word</span>
+<span class="linenos">6</span>
+<span class="linenos">7</span><span class="n">phrase</span> <span class="o">=</span> <span class="s2">&quot;hello&quot;</span>
+<span class="linenos">8</span><span class="nb">print</span><span class="p">(</span><span class="n">add_underscores</span><span class="p">(</span><span class="n">phrase</span><span class="p">))</span>
+</pre></div>
+</div>
 <p>The expected output is <code class="docutils literal notranslate"><span class="pre">_h_e_l_l_o_</span></code>. Run it and you will see it actually outputs <code class="docutils literal notranslate"><span class="pre">o_</span></code>.</p>
 <p>Logic errors cause unexpected behaviours called <strong>bugs</strong>. Debugging is process of removing bugs. A <strong>debugger</strong> is a tool that helps the programmer hunt down bugs and understand what’s happening.</p>
 <p>Knowing how to find and fix bugs in your code is a skill that you will use for your entire coding career!</p>

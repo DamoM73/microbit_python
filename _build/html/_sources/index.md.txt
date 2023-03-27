@@ -7,6 +7,19 @@ This website provides a selection of code snippets to incorporate into your Pyth
 :caption: "Contents:"
 
 introduction
+getting_started
+display
+buttons
+sensors
+sound
+radio
+piicodev_intro
+piicodev_atmosphere
+piicodev_colour
+piicodev_distance
+piicodev_potentiometer
+piicodev_oled
+glowbit
 debugging
 licencing
 ```
