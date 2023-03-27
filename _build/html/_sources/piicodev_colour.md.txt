@@ -1,2 +1,2 @@
-## PiicoDev Colour Sensor
+# PiicoDev Colour Sensor
 

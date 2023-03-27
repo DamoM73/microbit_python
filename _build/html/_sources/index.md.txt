@@ -8,6 +8,7 @@ This website provides a selection of code snippets to incorporate into your Pyth
 
 introduction
 getting_started
+first_program
 display
 buttons
 sensors

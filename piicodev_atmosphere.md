@@ -1,2 +1,2 @@
-# PiicoDev Atmosphere Sensor
+# PiicoDev Atmospheric Sensor
 
