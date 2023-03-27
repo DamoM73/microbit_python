@@ -1,9 +1,0 @@
-- [ ] Lists
-    - [ ] getting random list element
-- [ ] Files
-    - [ ] Text Files
-      - [ ] Opening text files
-      - [ ] Reading text files
-    - [ ] CSV files
-      - [ ] Opening CVS files
-      - [ ] Reading CSV files

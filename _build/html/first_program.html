@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Micro:bit Display" href="display.html" /><link rel="prev" title="Getting Started" href="getting_started.html" />
 
     <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.1.3 and Furo 2023.03.23 -->
         <title>Your First Program - Python Code Snippets</title>
@@ -137,7 +137,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -161,9 +161,10 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction for Teachers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Your First Program</a></li>
 <li class="toctree-l1"><a class="reference internal" href="display.html">Micro:bit Display</a></li>
 <li class="toctree-l1"><a class="reference internal" href="buttons.html">Micro:bit Buttons</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sensors.html">Micro:bit Sensors</a></li>
@@ -206,7 +207,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -214,6 +215,103 @@
         <article role="main">
           <section id="your-first-program">
 <h1>Your First Program<a class="headerlink" href="#your-first-program" title="Permalink to this heading">#</a></h1>
+<p>Before we create our first program, we need to understand how MicroPython works.</p>
+<section id="main-py">
+<h2>main.py<a class="headerlink" href="#main-py" title="Permalink to this heading">#</a></h2>
+<p>When a MicroPython microcontroller (like our micro:bit) is turned on, it looks for a file called <code class="docutils literal notranslate"><span class="pre">main.py</span></code> and automatically executes this file. The project can have other files, but there has to be a <code class="docutils literal notranslate"><span class="pre">main.py</span></code></p>
+<p>This means that every project will have a <code class="docutils literal notranslate"><span class="pre">main.py</span></code> file, which can become confusing, not just for us, but for the computer as well. So we need to be better organised with our Python files.</p>
+<p>To achieve this, we will create a separate folder for each exercise.</p>
+</section>
+<section id="creating-folders">
+<h2>Creating Folders<a class="headerlink" href="#creating-folders" title="Permalink to this heading">#</a></h2>
+<p>Create a new folder on your laptop called <strong>microbit</strong> then navigate to it in the Thonny file panel.</p>
+<p><img alt="microbit folder" src="_images/first_program_folder.png" /></p>
+<p>Then right mouse click in the file panel and choose <strong>New directory…</strong></p>
+<p><img alt="new folder" src="_images/first_program_new_folder.png" /></p>
+<div class="admonition-directories-vs-folders admonition">
+<p class="admonition-title">Directories vs Folders</p>
+<p>In computing, directories and folders refer to the same thing, which is a container for files and other directories.</p>
+<p>Historically, the term “directory” was used in earlier operating systems such as MS-DOS and UNIX to refer to a hierarchical structure for organizing files. As graphical user interfaces became more common, the term “folder” was introduced to make the concept more intuitive for users.</p>
+</div>
+<p>Give the new directory the name <strong>first_program</strong>.</p>
+<p><img alt="name folder" src="_images/first_program_name_folder.png" /></p>
+<p>You will now see your <strong>first_program</strong> folder in the files panel. Double click on it to enter that folder.</p>
+<p><img alt="open folder" src="_images/first_program_open_folder.png" /></p>
+</section>
+<section id="create-the-new-file">
+<h2>Create the New File<a class="headerlink" href="#create-the-new-file" title="Permalink to this heading">#</a></h2>
+<p>Now we will create a new file, but before we do we need to check that we are in the correct folder (1). Then right mouse click and choose <strong>New file…</strong> (2).</p>
+<p><img alt="new file" src="_images/first_program_new_file.png" /></p>
+<p>Name the file <strong>main.py</strong> and click <strong>OK</strong></p>
+<p><img alt="name file" src="_images/first_program_name_file.png" /></p>
+</section>
+<section id="add-the-code">
+<h2>Add the Code<a class="headerlink" href="#add-the-code" title="Permalink to this heading">#</a></h2>
+<p>Now enter the code below into your newly created <strong>main.py</strong> file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># first program</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">6</span>    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">)</span>
+<span class="linenos">7</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HEART</span><span class="p">)</span>
+<span class="linenos">8</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We’re going to run our program for the first time, but before let’s introduce the PRIMM concept.</p>
+<div class="admonition-primm admonition">
+<p class="admonition-title">PRIMM</p>
+<p>Throughout this course we will use the <strong>PRIMM</strong> process to reinforce our learning. <strong>PRIMM</strong> stands for <strong>Predict</strong>, <strong>Run</strong>, <strong>Investigate</strong>, <strong>Modify</strong>, and <strong>Make</strong>. It reflects effective programming practices and encourages curiosity in programming.</p>
+<p><strong>Predict</strong>: Before you run the code you need to predict what you think will happen. Go ahead and have a guess at what you think will happen.</p>
+<p><strong>Run</strong>: Then run the program and see how accurate your prediction was. If your prediction was incorrect, how was the result different?</p>
+<p><strong>Investigate</strong>: Go through the code and work out what each line of code does.</p>
+<p><strong>Modify</strong>: Edit the code. Change it around and see that results your get</p>
+<p><strong>Make</strong>: Use your new understanding of the code to make a different program.</p>
+</div>
+<p>Lets run through the <strong>PRIMM</strong> process now</p>
+<p><strong>Predict</strong> in detail what you think the program will do, then <strong>run</strong> the program.</p>
+<p>Did you predict that the <code class="docutils literal notranslate"><span class="pre">&quot;Hello</span> <span class="pre">world!&quot;</span></code> would scroll across the dot matrix before displaying a heart for two seconds?</p>
+<p>Let’s <strong>investigate</strong> the code, by breaking it down line-by-line:</p>
+<ul class="simple">
+<li><p>line 1 → comment identifying the project. This is super important since all our program will be called <code class="docutils literal notranslate"><span class="pre">main.py</span></code></p></li>
+<li><p>line 3 → imports all the commands from the <code class="docutils literal notranslate"><span class="pre">micropython</span></code> library.</p></li>
+<li><p>line 5 → sets up the endless loop</p></li>
+<li><p>line 6 → scrolls the text across the display</p></li>
+<li><p>line 7 → shows the heart image</p></li>
+<li><p>line 8 → waits 2000 milliseconds before going back to the top of the loop.</p></li>
+</ul>
+<p>Time to <strong>modify</strong> the code and see what happens:</p>
+<ul class="simple">
+<li><p>can yo make it display a different message?</p></li>
+<li><p>are there other shapes you can display?</p></li>
+<li><p>what happens if you remove the <code class="docutils literal notranslate"><span class="pre">while</span></code> loop?</p></li>
+<li><p>what happens if you unplug the micro:bit and plug it back in again?</p></li>
+</ul>
+</section>
+<section id="upload-the-code">
+<h2>Upload the code<a class="headerlink" href="#upload-the-code" title="Permalink to this heading">#</a></h2>
+<p>So when you unplugged the micro:bit and then plugged it back in, the program didn’t restart. While this might not be a surprise, it defeats the purpose of microcontrollers. Microcontrollers are supposed to run by themselves without being connect to a computer.</p>
+<p>If you look at Thonny’s file panel you will see the problem is that your code is on your laptop not the micro:bit.</p>
+<p>To solve this we need to upload the code to the micro:bit. To achieve this:</p>
+<p>Right mouse click on <code class="docutils literal notranslate"><span class="pre">main.py</span></code> on your computer and choose <strong>Upload to micro:bit</strong>.</p>
+<p><img alt="upload file" src="_images/first_program_upload.png" /></p>
+<p>You should now have <code class="docutils literal notranslate"><span class="pre">main.py</span></code> on both your laptop and the micro:bit.</p>
+<p><img alt="uploaded file" src="_images/first_program_uploaded.png" /></p>
+<div class="warning admonition">
+<p class="admonition-title">Duplicate files</p>
+<p>You now have two copies of <code class="docutils literal notranslate"><span class="pre">main.py</span></code>. These files <strong>do not sync</strong>. If you make changes in one file this will not flow onto the other file.</p>
+<p>The best way to ensure files are updated is to develop a working habbit.</p>
+<p>I would suggest:</p>
+<ul class="simple">
+<li><p>always edit the laptop copy of the file → it is your master</p></li>
+<li><p>then upload the file to the micro:bit</p></li>
+</ul>
+</div>
+<p>Now try unplugging and plugging your micro:bit back in. The program works. But it is still connected to your computer! That’s because it needs your laptop’s power.</p>
+<p>Let’s truly liberate your micro:bit.</p>
+<p>Get the battery back out of your kit. Unplug the micro:bit and plug the battery pack in (make sure the battery pack is turned on).</p>
+<p><strong>The micro:bit is free!</strong></p>
+</section>
 </section>
 
         </article>
@@ -221,8 +319,26 @@
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="display.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Micro:bit Display</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="getting_started.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Getting Started</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -248,8 +364,31 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Your First Program</a><ul>
+<li><a class="reference internal" href="#main-py">main.py</a></li>
+<li><a class="reference internal" href="#creating-folders">Creating Folders</a></li>
+<li><a class="reference internal" href="#create-the-new-file">Create the New File</a></li>
+<li><a class="reference internal" href="#add-the-code">Add the Code</a></li>
+<li><a class="reference internal" href="#upload-the-code">Upload the code</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
