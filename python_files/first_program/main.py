@@ -1,4 +1,4 @@
-# testing setup
+# first program
 
 from microbit import *
 
