@@ -215,8 +215,33 @@
         <article role="main">
           <section id="micro-bit-display">
 <h1>Micro:bit Display<a class="headerlink" href="#micro-bit-display" title="Permalink to this heading">#</a></h1>
+<p>We have already used the micro:bit display in our first program. In this section we will learn more of it’s features</p>
 <section id="text">
 <h2>Text<a class="headerlink" href="#text" title="Permalink to this heading">#</a></h2>
+<section id="scroll">
+<h3>Scroll<a class="headerlink" href="#scroll" title="Permalink to this heading">#</a></h3>
+<p>Our first program used the <code class="docutils literal notranslate"><span class="pre">scroll()</span></code> function to make a string scroll across the display.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># first program</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">6</span>    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">)</span>
+<span class="linenos">7</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HEART</span><span class="p">)</span>
+<span class="linenos">8</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><img alt="first_program displayed" src="_images/first_program.gif" /></p>
+<p>Although our example uses strings, the <code class="docutils literal notranslate"><span class="pre">scroll()</span></code> function can also display <strong>floats</strong>, <strong>integers</strong> and <strong>Boolean</strong> values.</p>
+</section>
+<section id="show">
+<h3>Show<a class="headerlink" href="#show" title="Permalink to this heading">#</a></h3>
+<p>The other option to display characters is the <code class="docutils literal notranslate"><span class="pre">show()</span></code> function.</p>
+<p>Before we can run the code below, we need to:</p>
+<ul class="simple">
+<li><p>stop the micro:bit</p></li>
+</ul>
+</section>
 </section>
 <section id="images">
 <h2>Images<a class="headerlink" href="#images" title="Permalink to this heading">#</a></h2>
@@ -289,7 +314,11 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Micro:bit Display</a><ul>
-<li><a class="reference internal" href="#text">Text</a></li>
+<li><a class="reference internal" href="#text">Text</a><ul>
+<li><a class="reference internal" href="#scroll">Scroll</a></li>
+<li><a class="reference internal" href="#show">Show</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#images">Images</a></li>
 <li><a class="reference internal" href="#custom">Custom</a></li>
 </ul>

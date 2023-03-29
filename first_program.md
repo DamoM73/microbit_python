@@ -72,6 +72,8 @@ Lets run through the **PRIMM** process now
 
 **Predict** in detail what you think the program will do, then **run** the program.
 
+![first_program displayed](./assets/first_program.gif)
+
 Did you predict that the `"Hello world!"` would scroll across the dot matrix before displaying a heart for two seconds?
 
 Let's **investigate** the code, by breaking it down line-by-line:
