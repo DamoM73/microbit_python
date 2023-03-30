@@ -239,8 +239,23 @@
 <p>The other option to display characters is the <code class="docutils literal notranslate"><span class="pre">show()</span></code> function.</p>
 <p>Before we can run the code below, we need to:</p>
 <ul class="simple">
-<li><p>stop the micro:bit</p></li>
+<li><p>stop the micro:bit by clicking on Thonny’s <strong>stop</strong> button</p></li>
+<li><p>navigate back to the <strong>micro:bit</strong> directory and create a new directory called <strong>display_show</strong>.</p></li>
+<li><p>navigate to the <strong>display_show</strong> directory.</p></li>
 </ul>
+<p>Create a new file called <strong>main.py</strong> and add the code below.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># display show</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">6</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mf">3.14159</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<span class="linenos">7</span>    <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos">8</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Predict</strong> in detail what you think the program will do. Make sure you are specific in your prediction (“pause for 2 seconds” is better than just “pause”), then <strong>run</strong> the program.</p>
+<p><img alt="display show" src="_images/display_show.gif" /></p>
 </section>
 </section>
 <section id="images">
@@ -248,6 +263,9 @@
 </section>
 <section id="custom">
 <h2>Custom<a class="headerlink" href="#custom" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="other-functions">
+<h2>Other Functions<a class="headerlink" href="#other-functions" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -321,6 +339,7 @@
 </li>
 <li><a class="reference internal" href="#images">Images</a></li>
 <li><a class="reference internal" href="#custom">Custom</a></li>
+<li><a class="reference internal" href="#other-functions">Other Functions</a></li>
 </ul>
 </li>
 </ul>
