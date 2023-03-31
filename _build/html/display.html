@@ -215,7 +215,8 @@
         <article role="main">
           <section id="micro-bit-display">
 <h1>Micro:bit Display<a class="headerlink" href="#micro-bit-display" title="Permalink to this heading">#</a></h1>
-<p>We have already used the micro:bit display in our first program. In this section we will learn more of it’s features</p>
+<p>We have already used the micro:bit display in our first program. In this section we will learn more of it’s features.</p>
+<p>If you want to see all the display functions check out the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/display.html#module-microbit.display">display docs</a></strong>.</p>
 <section id="text">
 <h2>Text<a class="headerlink" href="#text" title="Permalink to this heading">#</a></h2>
 <section id="scroll">
@@ -256,10 +257,57 @@
 </div>
 <p><strong>Predict</strong> in detail what you think the program will do. Make sure you are specific in your prediction (“pause for 2 seconds” is better than just “pause”), then <strong>run</strong> the program.</p>
 <p><img alt="display show" src="_images/display_show.gif" /></p>
+<p>Let’s <strong>investigate</strong> that code by breaking it down.</p>
+<ul class="simple">
+<li><p>line 1 → comment identifying the project.</p></li>
+<li><p>line 3 → imports all the commands from the <code class="docutils literal notranslate"><span class="pre">micropython</span></code> library.</p></li>
+<li><p>line 5 → sets up the endless loop.</p></li>
+<li><p>line 6 → <code class="docutils literal notranslate"><span class="pre">display.show()</span></code> displays one character at a time.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">3.14159</span></code> → message to be displayed. This can be a string, integer, float or Boolean.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">delay=500</span></code> → puts a 500 millisecond pause after each character</p></li>
+</ul>
+</li>
+<li><p>line 7 → <code class="docutils literal notranslate"><span class="pre">display.clear()</span></code> changes the value of each pixel to <code class="docutils literal notranslate"><span class="pre">0</span></code> effectively clearing the screen.</p></li>
+<li><p>line 8 → waits 1000 milliseconds before going back to the top of the loop.</p></li>
+</ul>
+<p>For more details check the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.show">display.show docs</a></strong>.</p>
+<p>Time to <strong>modify</strong> the code and see what happens:</p>
+<ul class="simple">
+<li><p>can you make it display a different message?</p></li>
+<li><p>can you change the time between each character?</p></li>
+<li><p>using the details in the <strong>display.show docs</strong> can you make display the same message without the <code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">True</span></code> loop?</p></li>
+</ul>
 </section>
 </section>
 <section id="images">
 <h2>Images<a class="headerlink" href="#images" title="Permalink to this heading">#</a></h2>
+<p>In our first program we also displayed a heart image. Can we display other images?</p>
+<p>Again, since we are making a new program, we need to create a new folder called <strong>display_images</strong> in the <strong>micro:bit folder</strong>. Then create a new <strong>main.py</strong> file.</p>
+<p>Then add the following code to the file.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># display image</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">6</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HEART</span><span class="p">)</span>
+<span class="linenos">7</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+<span class="linenos">8</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HEART_SMALL</span><span class="p">)</span>
+<span class="linenos">9</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Predict</strong> in detail what you think the program will do, remember specific, then <strong>run</strong> the program.</p>
+<p><img alt="display show" src="_images/display_image.gif" /></p>
+<p>Let’s <strong>investigate</strong> by impacting the new code:</p>
+<ul class="simple">
+<li><p>line 6 → <code class="docutils literal notranslate"><span class="pre">display.show(Image.HEART)</span></code> shows a heart on the display</p></li>
+<li><p>line 8 &amp;rarrl <code class="docutils literal notranslate"><span class="pre">display.show(Image.HEART_SMALL)</span></code> shows a small heart on the display</p></li>
+</ul>
+<p>Time to <strong>modify</strong> the code:</p>
+<p>The micro:bit has a wide range of <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/image.html#attributes">pre-set images</a></strong> that you can use. Use these to modify the code.</p>
+<ul class="simple">
+<li><p>can you</p></li>
+</ul>
 </section>
 <section id="custom">
 <h2>Custom<a class="headerlink" href="#custom" title="Permalink to this heading">#</a></h2>

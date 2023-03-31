@@ -80,14 +80,16 @@ Let's **investigate** the code, by breaking it down line-by-line:
 
 - line 1 &rarr; comment identifying the project. This is super important since all our program will be called `main.py`
 - line 3 &rarr; imports all the commands from the `micropython` library.
-- line 5 &rarr; sets up the endless loop
-- line 6 &rarr; scrolls the text across the display
-- line 7 &rarr; shows the heart image
+- line 5 &rarr; sets up the endless loop.
+- line 6 &rarr; scrolls the text across the display.
+- line 7 &rarr; shows the heart image.
 - line 8 &rarr; waits 2000 milliseconds before going back to the top of the loop.
+
+For more details check the **[display.scroll docs](https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.scroll)**.
 
 Time to **modify** the code and see what happens:
 
-- can yo make it display a different message?
+- can you make it display a different message?
 - are there other shapes you can display?
 - what happens if you remove the `while` loop?
 - what happens if you unplug the micro:bit and plug it back in again?

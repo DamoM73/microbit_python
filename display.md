@@ -1,6 +1,8 @@
 # Micro:bit Display
 
-We have already used the micro:bit display in our first program. In this section we will learn more of it's features
+We have already used the micro:bit display in our first program. In this section we will learn more of it's features.
+
+If you want to see all the display functions check out the **[display docs](https://microbit-micropython.readthedocs.io/en/latest/display.html#module-microbit.display)**.
 
 ## Text
 
@@ -36,8 +38,51 @@ Create a new file called **main.py** and add the code below.
 
 ![display show](./assets/display_show.gif)
 
+Let's **investigate** that code by breaking it down.
+
+- line 1 &rarr; comment identifying the project.
+- line 3 &rarr; imports all the commands from the `micropython` library.
+- line 5 &rarr; sets up the endless loop.
+- line 6 &rarr; `display.show()` displays one character at a time. 
+  - `3.14159` &rarr; message to be displayed. This can be a string, integer, float or Boolean.
+  - `delay=500` &rarr; puts a 500 millisecond pause after each character
+- line 7 &rarr; `display.clear()` changes the value of each pixel to `0` effectively clearing the screen.
+- line 8 &rarr; waits 1000 milliseconds before going back to the top of the loop.
+
+For more details check the **[display.show docs](https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.show)**.
+
+Time to **modify** the code and see what happens:
+
+- can you make it display a different message?
+- can you change the time between each character?
+- using the details in the **display.show docs** can you make display the same message without the `while True` loop?
+
 ## Images
 
+In our first program we also displayed a heart image. Can we display other images?
+
+Again, since we are making a new program, we need to create a new folder called **display_images** in the **micro:bit folder**. Then create a new **main.py** file.
+
+Then add the following code to the file.
+
+```{literalinclude} ./python_files/display_images/main.py
+:linenos:
+```
+
+**Predict** in detail what you think the program will do, remember specific, then **run** the program.
+
+![display show](./assets/display_image.gif)
+
+Let's **investigate** by impacting the new code:
+
+- line 6 &rarr; `display.show(Image.HEART)` shows a heart on the display
+- line 8 &rarrl `display.show(Image.HEART_SMALL)` shows a small heart on the display
+
+Time to **modify** the code:
+
+The micro:bit has a wide range of **[pre-set images](https://microbit-micropython.readthedocs.io/en/latest/image.html#attributes)** that you can use. Use these to modify the code.
+
+- can you
 
 ## Custom
 
