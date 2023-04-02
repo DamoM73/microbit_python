@@ -10,3 +10,6 @@ Download {download}`lesson_6_ex_3.py<./python_files/lesson_6_ex_3.py>` file and 
 :linenos:
 :emphasize-lines: 24-36
 ```
+
+```{admonition} Corrections
+:class: important
