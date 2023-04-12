@@ -12,9 +12,9 @@ To achieve this, we will create a separate folder for each exercise.
 
 ## Creating Folders
 
-Create a new folder on your laptop called **microbit** then navigate to it in the Thonny file panel.
+Create a new folder on your laptop called **micro:bit** then navigate to it in the Thonny file panel.
 
-![microbit folder](./assets/first_program_folder.png)
+![micro:bit folder](./assets/first_program_folder.png)
 
 Then right mouse click in the file panel and choose **New directory...**
 
@@ -87,12 +87,21 @@ Let's **investigate** the code, by breaking it down line-by-line:
 
 For more details check the **[display.scroll docs](https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.scroll)**.
 
+### First Program Exercises
+
 Time to **modify** the code and see what happens:
 
-- can you make it display a different message?
-- are there other shapes you can display?
-- what happens if you remove the `while` loop?
-- what happens if you unplug the micro:bit and plug it back in again?
+1. Can you make it display a different message? For example:
+
+![first_program displayed](./assets/first_program_ex1.gif)
+
+2. Are there other shapes you can display? For example:
+
+![first_program displayed](./assets/first_program_ex2.gif)
+
+3. What happens if you remove the `while` statement? Why?
+
+4. What happens if you unplug the micro:bit and plug it back in again? Why?
 
 ## Upload the code
 

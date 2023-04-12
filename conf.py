@@ -8,7 +8,7 @@ import datetime
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Python meets Micro:bit'
+project = 'Python meets micro:bit'
 copyright = f'{datetime.datetime.now().year}, Damien Murtagh'
 author = 'Damien Murtagh'
 
@@ -39,7 +39,7 @@ exclude_patterns = ['_build',
 html_theme = 'furo'
 html_static_path = ['_static']
 html_logo = 'microbit_python_logo.jpg'
-html_title = "Python Code Snippets"
+html_title = "Python meets micro:bit"
 html_favicon = "microbit_python_logo.ico"
 
 html_theme_options = {
