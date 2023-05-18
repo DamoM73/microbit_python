@@ -5,8 +5,8 @@
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Micro:bit Buttons" href="buttons.html" /><link rel="prev" title="Your First Program" href="first_program.html" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.1.3 and Furo 2023.03.23 -->
-        <title>Micro:bit Display - Python Code Snippets</title>
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.03.27 -->
+        <title>Micro:bit Display - Python meets micro:bit</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
@@ -126,7 +126,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">Python Code Snippets</div></a>
+      <a href="index.html"><div class="brand">Python meets micro:bit</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -152,7 +152,7 @@
     <img class="sidebar-logo" src="_static/microbit_python_logo.jpg" alt="Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">Python Code Snippets</span>
+  <span class="sidebar-brand-text">Python meets micro:bit</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -178,6 +178,7 @@
 <li class="toctree-l1"><a class="reference internal" href="piicodev_oled.html">PiicoDev OLED Module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="glowbit.html">Glowbit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debugging.html">Debugging with Thonny</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise_solutions.html">Exercise Solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="licencing.html">Licencing</a></li>
 </ul>
 
@@ -216,11 +217,19 @@
           <section id="micro-bit-display">
 <h1>Micro:bit Display<a class="headerlink" href="#micro-bit-display" title="Permalink to this heading">#</a></h1>
 <p>We have already used the micro:bit display in our first program. In this section we will learn more of it’s features.</p>
-<p>If you want to see all the display functions check out the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/display.html#module-microbit.display">display docs</a></strong>.</p>
+<div class="important admonition">
+<p class="admonition-title">Documentation</p>
+<p>Througout this tutorial, links to the official documentation will be provided in this green callouts.</p>
+<p>All the display functions can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/display.html#module-microbit.display">BBC micro:bit MicroPython display documentation</a></strong>.</p>
+</div>
 <section id="text">
 <h2>Text<a class="headerlink" href="#text" title="Permalink to this heading">#</a></h2>
 <section id="scroll">
 <h3>Scroll<a class="headerlink" href="#scroll" title="Permalink to this heading">#</a></h3>
+<div class="important admonition">
+<p class="admonition-title">scroll function</p>
+<p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.scroll">BBC micro:bit MicroPython display.scroll documentation</a></strong>.</p>
+</div>
 <p>Our first program used the <code class="docutils literal notranslate"><span class="pre">scroll()</span></code> function to make a string scroll across the display.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># first program</span>
 <span class="linenos">2</span>
@@ -237,6 +246,10 @@
 </section>
 <section id="show">
 <h3>Show<a class="headerlink" href="#show" title="Permalink to this heading">#</a></h3>
+<div class="important admonition">
+<p class="admonition-title">show function</p>
+<p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.show">BBC micro:bit MicroPython display.show documentation</a></strong>.</p>
+</div>
 <p>The other option to display characters is the <code class="docutils literal notranslate"><span class="pre">show()</span></code> function.</p>
 <p>Before we can run the code below, we need to:</p>
 <ul class="simple">
@@ -271,18 +284,31 @@
 <li><p>line 7 → <code class="docutils literal notranslate"><span class="pre">display.clear()</span></code> changes the value of each pixel to <code class="docutils literal notranslate"><span class="pre">0</span></code> effectively clearing the screen.</p></li>
 <li><p>line 8 → waits 1000 milliseconds before going back to the top of the loop.</p></li>
 </ul>
-<p>For more details check the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.show">display.show docs</a></strong>.</p>
 <p>Time to <strong>modify</strong> the code and see what happens:</p>
-<ul class="simple">
-<li><p>can you make it display a different message?</p></li>
-<li><p>can you change the time between each character?</p></li>
-<li><p>using the details in the <strong>display.show docs</strong> can you make display the same message without the <code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">True</span></code> loop?</p></li>
-</ul>
 </section>
+</section>
+<section id="text-exercises">
+<h2>Text Exercises<a class="headerlink" href="#text-exercises" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Can you make it display a different message? For example:</p></li>
+</ol>
+<p><img alt="Display Text Exercise 1" src="_images/display_text_ex1.gif" /></p>
+<ol class="arabic simple" start="2">
+<li><p>Can you change the time between each character? For example:</p></li>
+</ol>
+<p><img alt="Display Text Exercise 2" src="_images/display_text_ex2.gif" /></p>
+<ol class="arabic simple" start="3">
+<li><p>using the details in the <strong>display.show docs</strong> can you make display the same message without the <code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">True</span></code> loop?</p></li>
+</ol>
+<p><img alt="Display Text Exercise 3" src="_images/display_text_ex3.gif" /></p>
 </section>
 <section id="images">
 <h2>Images<a class="headerlink" href="#images" title="Permalink to this heading">#</a></h2>
-<p>In our first program we also displayed a heart image. Can we display other images?</p>
+<div class="important admonition">
+<p class="admonition-title">micro:bit Images</p>
+<p>The micro:bit has a wide range of <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/image.html#attributes">pre-set images</a></strong> that can be used with the show method.</p>
+</div>
+<p>You can also use the <code class="docutils literal notranslate"><span class="pre">display.show</span></code> function to display present images.</p>
 <p>Again, since we are making a new program, we need to create a new folder called <strong>display_images</strong> in the <strong>micro:bit folder</strong>. Then create a new <strong>main.py</strong> file.</p>
 <p>Then add the following code to the file.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># display image</span>
@@ -297,23 +323,120 @@
 </pre></div>
 </div>
 <p><strong>Predict</strong> in detail what you think the program will do, remember specific, then <strong>run</strong> the program.</p>
-<p><img alt="display show" src="_images/display_image.gif" /></p>
+<p><img alt="display image" src="_images/display_image.gif" /></p>
 <p>Let’s <strong>investigate</strong> by impacting the new code:</p>
 <ul class="simple">
 <li><p>line 6 → <code class="docutils literal notranslate"><span class="pre">display.show(Image.HEART)</span></code> shows a heart on the display</p></li>
-<li><p>line 8 &amp;rarrl <code class="docutils literal notranslate"><span class="pre">display.show(Image.HEART_SMALL)</span></code> shows a small heart on the display</p></li>
+<li><p>line 8 → <code class="docutils literal notranslate"><span class="pre">display.show(Image.HEART_SMALL)</span></code> shows a small heart on the display</p></li>
 </ul>
 <p>Time to <strong>modify</strong> the code:</p>
-<p>The micro:bit has a wide range of <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/image.html#attributes">pre-set images</a></strong> that you can use. Use these to modify the code.</p>
-<ul class="simple">
-<li><p>can you</p></li>
-</ul>
+<section id="image-exercises">
+<h3>Image Exercises<a class="headerlink" href="#image-exercises" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Can you change the heartbeat animation to reflect an <strong><a class="reference external" href="https://www.youtube.com/watch?v=gJpT_wHZeF8">actual heartbeat</a></strong>? Like this?</p></li>
+</ol>
+<p><img alt="display image ex1" src="_images/display_image_ex1.gif" /></p>
+<ol class="arabic simple" start="2">
+<li><p>Can you make the display show a clock face progressing from 1 to 12? Like this:</p></li>
+</ol>
+<p><img alt="display image ex2" src="_images/display_image_ex2.gif" /></p>
+<ol class="arabic simple" start="3">
+<li><p>Can you make the display show a square spinning? Like this:</p></li>
+</ol>
+<p><img alt="display image ex3" src="_images/display_image_ex3.gif" /></p>
+</section>
 </section>
 <section id="custom">
 <h2>Custom<a class="headerlink" href="#custom" title="Permalink to this heading">#</a></h2>
+<div class="important admonition">
+<p class="admonition-title">set_pixel function</p>
+<p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.set_pixel">BBC micro:bit MicroPython display.show documentation</a></strong>.</p>
+</div>
+<p>You can also directly control the individual LEDs on the display. The image below shows the coordinate numbers for each of the LEDs:</p>
+<ul class="simple">
+<li><p>top left → <code class="docutils literal notranslate"><span class="pre">(0.0)</span></code></p></li>
+<li><p>bottom right → <code class="docutils literal notranslate"><span class="pre">(4,4)</span></code></p></li>
+</ul>
+<p><img alt="display coordinates" src="_images/display_coords.jpg" /></p>
+<p>Each pixel can be set to a value from <code class="docutils literal notranslate"><span class="pre">0</span></code> (off) to <code class="docutils literal notranslate"><span class="pre">9</span></code> (brightest)</p>
+<p>To explore this we will make a new program. Create a new folder called <strong>display_custom</strong> in the <strong>micro:bit folder</strong>. Then create a new <strong>main.py</strong> file.</p>
+<p>Add the code below, save t an then run in on the micro:bit.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># display_custom</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 8</span>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<span class="linenos"> 9</span>        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<span class="linenos">10</span>            <span class="k">for</span> <span class="n">level</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
+<span class="linenos">11</span>                <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">level</span><span class="p">)</span>
+<span class="linenos">12</span>                <span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="linenos">13</span>            <span class="k">for</span> <span class="n">level</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+<span class="linenos">14</span>                <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">level</span><span class="p">)</span>
+<span class="linenos">15</span>                <span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Predict</strong> in detail what you think the program will do, remember specific, then <strong>run</strong> the program.</p>
+<p><img alt="display custom" src="_images/display_custom.gif" /></p>
+<p>Ok, this code is a bit more complicated, so lets investigate.</p>
+<ul class="simple">
+<li><p>first the structure:</p>
+<ul>
+<li><p>two <code class="docutils literal notranslate"><span class="pre">for</span></code> loops nested inside a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop which is also nested inside a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop, which is nested inside the infinite <code class="docutils literal notranslate"><span class="pre">while</span></code> loop.</p></li>
+<li><p>the coordinate loops:</p>
+<ul>
+<li><p>line 8 <code class="docutils literal notranslate"><span class="pre">for</span></code> loop → increments the <code class="docutils literal notranslate"><span class="pre">x</span></code> value from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">4</span></code></p></li>
+<li><p>line 9 <code class="docutils literal notranslate"><span class="pre">for</span></code> loop → increments the <code class="docutils literal notranslate"><span class="pre">y</span></code> value from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">4</span></code> for each increment of the <code class="docutils literal notranslate"><span class="pre">x</span></code> value</p></li>
+<li><p>the coordinates produced by these two loops will proceed:</p>
+<ul>
+<li><p>for the <code class="docutils literal notranslate"><span class="pre">x</span></code> value of <code class="docutils literal notranslate"><span class="pre">0</span></code> → <code class="docutils literal notranslate"><span class="pre">y</span></code> values <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">4</span></code></p></li>
+<li><p>for the <code class="docutils literal notranslate"><span class="pre">x</span></code> value of <code class="docutils literal notranslate"><span class="pre">1</span></code> → <code class="docutils literal notranslate"><span class="pre">y</span></code> values <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">4</span></code></p></li>
+<li><p>for the <code class="docutils literal notranslate"><span class="pre">x</span></code> value of <code class="docutils literal notranslate"><span class="pre">2</span></code> → <code class="docutils literal notranslate"><span class="pre">y</span></code> values <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">4</span></code></p></li>
+<li><p>for the <code class="docutils literal notranslate"><span class="pre">x</span></code> value of <code class="docutils literal notranslate"><span class="pre">3</span></code> → <code class="docutils literal notranslate"><span class="pre">y</span></code> values <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">4</span></code></p></li>
+<li><p>for the <code class="docutils literal notranslate"><span class="pre">x</span></code> value of <code class="docutils literal notranslate"><span class="pre">4</span></code> → <code class="docutils literal notranslate"><span class="pre">y</span></code> values <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">4</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>the display loops:</p>
+<ul>
+<li><p>line 10 <code class="docutils literal notranslate"><span class="pre">for</span></code> loop → increase the LED value from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code> (off to brightest)</p></li>
+<li><p>line 13 <code class="docutils literal notranslate"><span class="pre">for</span></code> loop → decrease the LED value from <code class="docutils literal notranslate"><span class="pre">9</span></code> to <code class="docutils literal notranslate"><span class="pre">0</span></code> (brightest to off)</p>
+<ul>
+<li><p>the second <code class="docutils literal notranslate"><span class="pre">-1</span></code> in range(9,-1,-1) → reverse order</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Time to <strong>modify</strong> the code:</p>
+<section id="custom-exercises">
+<h3>Custom Exercises<a class="headerlink" href="#custom-exercises" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>What happens if you remove both of the <code class="docutils literal notranslate"><span class="pre">sleep(10)</span></code> statements? Why do you think this happens?</p></li>
+<li><p>Can you change the code so it moves across the rows rather than down the columns?</p></li>
+</ol>
+<p><img alt="display custom ex2" src="_images/display_custom_ex2.gif" /></p>
+<ol class="arabic simple" start="3">
+<li><p>Can you create this smiley face with glasses? The <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/image.html#microbit.Image">Image class</a></strong> might help</p></li>
+</ol>
+<p><img alt="display custom ex3" src="_images/display_custom_ex3.png" /></p>
+</section>
 </section>
 <section id="other-functions">
 <h2>Other Functions<a class="headerlink" href="#other-functions" title="Permalink to this heading">#</a></h2>
+<p>There are other display related functions such as:</p>
+<ul class="simple">
+<li><p><strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.get_pixel">get_pixel</a></strong> → returns the brightness of a given pixel</p></li>
+<li><p><strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.on">on</a></strong> → turns the display on</p></li>
+<li><p><strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.off">off</a></strong> → turns the display off</p></li>
+<li><p><strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.is_on">is_on</a></strong> → indicates if the display is on</p></li>
+<li><p><strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.read_light_level">read_light_level</a></strong> → gives a reading of the ambient light.</p></li>
+</ul>
 </section>
 </section>
 
@@ -385,8 +508,15 @@
 <li><a class="reference internal" href="#show">Show</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#images">Images</a></li>
-<li><a class="reference internal" href="#custom">Custom</a></li>
+<li><a class="reference internal" href="#text-exercises">Text Exercises</a></li>
+<li><a class="reference internal" href="#images">Images</a><ul>
+<li><a class="reference internal" href="#image-exercises">Image Exercises</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#custom">Custom</a><ul>
+<li><a class="reference internal" href="#custom-exercises">Custom Exercises</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#other-functions">Other Functions</a></li>
 </ul>
 </li>

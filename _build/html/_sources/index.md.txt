@@ -22,5 +22,6 @@ piicodev_potentiometer
 piicodev_oled
 glowbit
 debugging
+exercise_solutions
 licencing
 ```
