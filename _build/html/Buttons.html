@@ -2,13 +2,13 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Micro:bit Sensors" href="sensors.html" /><link rel="prev" title="Micro:bit Display" href="display.html" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.03.27 -->
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
         <title>Micro:bit Buttons - Python meets micro:bit</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -216,14 +216,67 @@
         <article role="main">
           <section id="micro-bit-buttons">
 <h1>Micro:bit Buttons<a class="headerlink" href="#micro-bit-buttons" title="Permalink to this heading">#</a></h1>
+<p>The Micro:bit has two input buttons <strong>A</strong> and <strong>B</strong> on the front. These buttons are an easy way to get user input. In Python these two buttons are called <code class="docutils literal notranslate"><span class="pre">button_a</span></code> and <code class="docutils literal notranslate"><span class="pre">button_b</span></code>.</p>
+<div class="important admonition">
+<p class="admonition-title">Documentation</p>
+<p>All the button functions can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/button.html">BBC micro:bit MicroPython display documentation</a></strong>.</p>
+</div>
+<p>There are three ways you can work with the buttons.</p>
 <section id="get-presses">
 <h2>Get presses<a class="headerlink" href="#get-presses" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="was-pressed">
-<h2>Was pressed<a class="headerlink" href="#was-pressed" title="Permalink to this heading">#</a></h2>
+<div class="important admonition">
+<p class="admonition-title">get_presses function</p>
+<p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.get_presses">BBC micro:bit MicroPython display.scroll documentation</a></strong>.</p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">get_presses</span></code> counts the number of times that a button has been pressed. Restarting the Micro:bit or calling this function will return the count to <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
+<p><strong>main.py</strong> file. Add the code below.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span>
+<span class="linenos">4</span><span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">button_a</span><span class="o">.</span><span class="n">get_presses</span><span class="p">()))</span>
+</pre></div>
+</div>
+<p><strong>Predict</strong> in detail what you think will happen, and then <strong>run</strong> the program.</p>
 </section>
 <section id="is-pressed">
 <h2>Is pressed<a class="headerlink" href="#is-pressed" title="Permalink to this heading">#</a></h2>
+<div class="important admonition">
+<p class="admonition-title">is_pressed function</p>
+<p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.is_pressed">BBC micro:bit MicroPython display.scroll documentation</a></strong>.</p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">is_pressed</span></code> returns the value of <code class="docutils literal notranslate"><span class="pre">True</span></code> if the button is currently pressed, otherwise it returns <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>Create a new file, call it <strong>main.py</strong> and then add the following code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 4</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+<span class="linenos"> 5</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">)</span>
+<span class="linenos"> 6</span>    <span class="k">elif</span> <span class="n">button_b</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+<span class="linenos"> 7</span>        <span class="k">break</span>
+<span class="linenos"> 8</span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos"> 9</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">SAD</span><span class="p">)</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Predict</strong> in detail what you think will happen, and then <strong>run</strong> the program.</p>
+<p>Let’s break that code down:</p>
+<ul class="simple">
+<li><p>line 3 → creates an infinite loop, since the condition (<code class="docutils literal notranslate"><span class="pre">True</span></code>) will never be <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
+<li><p>line 4 → tests if <code class="docutils literal notranslate"><span class="pre">button_a</span></code> is currently being pressed.</p></li>
+<li><p>line 5 → if line 4 is <code class="docutils literal notranslate"><span class="pre">True</span></code> then the display will show a smiley face</p></li>
+<li><p>line 6 → tests if <code class="docutils literal notranslate"><span class="pre">button_b</span></code> is currently being pressed.</p></li>
+<li><p>line 7 → if line 6 is <code class="docutils literal notranslate"><span class="pre">True</span></code> then <code class="docutils literal notranslate"><span class="pre">break</span></code> will be called, and exit the <code class="docutils literal notranslate"><span class="pre">while</span></code> loop</p></li>
+<li><p>line 8 → if neither <code class="docutils literal notranslate"><span class="pre">button_a</span></code> or <code class="docutils literal notranslate"><span class="pre">button_b</span></code> is being pressed</p></li>
+<li><p>line 9 → displays a sad face</p></li>
+</ul>
+</section>
+<section id="was-pressed">
+<h2>Was pressed<a class="headerlink" href="#was-pressed" title="Permalink to this heading">#</a></h2>
+<div class="important admonition">
+<p class="admonition-title">was_pressed function</p>
+<p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.is_pressed">BBC micro:bit MicroPython display.scroll documentation</a></strong>.</p>
+</div>
 </section>
 </section>
 
@@ -291,8 +344,8 @@
             <ul>
 <li><a class="reference internal" href="#">Micro:bit Buttons</a><ul>
 <li><a class="reference internal" href="#get-presses">Get presses</a></li>
-<li><a class="reference internal" href="#was-pressed">Was pressed</a></li>
 <li><a class="reference internal" href="#is-pressed">Is pressed</a></li>
+<li><a class="reference internal" href="#was-pressed">Was pressed</a></li>
 </ul>
 </li>
 </ul>
