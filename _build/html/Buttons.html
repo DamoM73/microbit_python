@@ -219,16 +219,16 @@
 <p>The Micro:bit has two input buttons <strong>A</strong> and <strong>B</strong> on the front. These buttons are an easy way to get user input. In Python these two buttons are called <code class="docutils literal notranslate"><span class="pre">button_a</span></code> and <code class="docutils literal notranslate"><span class="pre">button_b</span></code>.</p>
 <div class="important admonition">
 <p class="admonition-title">Documentation</p>
-<p>All the button functions can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/button.html">BBC micro:bit MicroPython display documentation</a></strong>.</p>
+<p>All the button functions can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/button.html">BBC micro:bit MicroPython button documentation</a></strong>.</p>
 </div>
 <p>There are three ways you can work with the buttons.</p>
 <section id="get-presses">
-<h2>Get presses<a class="headerlink" href="#get-presses" title="Permalink to this heading">#</a></h2>
+<h2>Get Presses<a class="headerlink" href="#get-presses" title="Permalink to this heading">#</a></h2>
 <div class="important admonition">
 <p class="admonition-title">get_presses function</p>
-<p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.get_presses">BBC micro:bit MicroPython display.scroll documentation</a></strong>.</p>
+<p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.get_presses">BBC micro:bit MicroPython button.get_presses documentation</a></strong>.</p>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">get_presses</span></code> counts the number of times that a button has been pressed. Restarting the Micro:bit or calling this function will return the count to <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">get_presses</span></code> counts the number of times that the button has been pressed. Restarting the Micro:bit or calling this function will return the count to <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
 <p><strong>main.py</strong> file. Add the code below.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="linenos">2</span>
@@ -237,12 +237,18 @@
 </pre></div>
 </div>
 <p><strong>Predict</strong> in detail what you think will happen, and then <strong>run</strong> the program.</p>
+<section id="get-presses-exercises">
+<h3>Get Presses Exercises<a class="headerlink" href="#get-presses-exercises" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Create a program that challenges the player to press a button a certain number of times within a time limit.</p></li>
+</ol>
+</section>
 </section>
 <section id="is-pressed">
-<h2>Is pressed<a class="headerlink" href="#is-pressed" title="Permalink to this heading">#</a></h2>
+<h2>Is Pressed<a class="headerlink" href="#is-pressed" title="Permalink to this heading">#</a></h2>
 <div class="important admonition">
 <p class="admonition-title">is_pressed function</p>
-<p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.is_pressed">BBC micro:bit MicroPython display.scroll documentation</a></strong>.</p>
+<p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.is_pressed">BBC micro:bit MicroPython button.is_pressed documentation</a></strong>.</p>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">is_pressed</span></code> returns the value of <code class="docutils literal notranslate"><span class="pre">True</span></code> if the button is currently pressed, otherwise it returns <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <p>Create a new file, call it <strong>main.py</strong> and then add the following code:</p>
@@ -263,20 +269,78 @@
 <p>Let’s break that code down:</p>
 <ul class="simple">
 <li><p>line 3 → creates an infinite loop, since the condition (<code class="docutils literal notranslate"><span class="pre">True</span></code>) will never be <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
-<li><p>line 4 → tests if <code class="docutils literal notranslate"><span class="pre">button_a</span></code> is currently being pressed.</p></li>
+<li><p>line 4 → tests if button <strong>A</strong> is currently being pressed.</p></li>
 <li><p>line 5 → if line 4 is <code class="docutils literal notranslate"><span class="pre">True</span></code> then the display will show a smiley face</p></li>
-<li><p>line 6 → tests if <code class="docutils literal notranslate"><span class="pre">button_b</span></code> is currently being pressed.</p></li>
+<li><p>line 6 → tests if button <strong>B</strong> is currently being pressed.</p></li>
 <li><p>line 7 → if line 6 is <code class="docutils literal notranslate"><span class="pre">True</span></code> then <code class="docutils literal notranslate"><span class="pre">break</span></code> will be called, and exit the <code class="docutils literal notranslate"><span class="pre">while</span></code> loop</p></li>
-<li><p>line 8 → if neither <code class="docutils literal notranslate"><span class="pre">button_a</span></code> or <code class="docutils literal notranslate"><span class="pre">button_b</span></code> is being pressed</p></li>
+<li><p>line 8 → if neither button <strong>A</strong> or button <strong>B</strong> is being pressed</p></li>
 <li><p>line 9 → displays a sad face</p></li>
 </ul>
+<section id="is-pressed-exercise">
+<h3>Is pressed exercise<a class="headerlink" href="#is-pressed-exercise" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Create a program that tests a user reaction time. It should:</p>
+<ul class="simple">
+<li><p>Randomly choose which button to press <strong>A</strong> or <strong>B</strong></p></li>
+<li><p>Do a 3-2-1 countdown then display the button to press</p></li>
+<li><p>Time how long it takes for the user to press the correct button (<strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/utime.html#utime.utime.ticks_ms">ticks_us()</a></strong> may be helpful)</p></li>
+<li><p>Show the reaction time on the display</p></li>
+</ul>
+</li>
+</ol>
+</section>
 </section>
 <section id="was-pressed">
-<h2>Was pressed<a class="headerlink" href="#was-pressed" title="Permalink to this heading">#</a></h2>
+<h2>Was Pressed<a class="headerlink" href="#was-pressed" title="Permalink to this heading">#</a></h2>
 <div class="important admonition">
 <p class="admonition-title">was_pressed function</p>
-<p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.is_pressed">BBC micro:bit MicroPython display.scroll documentation</a></strong>.</p>
+<p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.was_pressed">BBC micro:bit MicroPython button.was_pressed documentation</a></strong>.</p>
 </div>
+<p><code class="docutils literal notranslate"><span class="pre">was_pressed</span></code> will returns <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> to indicate if the button was pressed (went from up to down) since the device started, or the last time this method was called. Calling this method will clear the press state so that the button must be pressed again before this method will return <code class="docutils literal notranslate"><span class="pre">True</span></code> again.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">6</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos">7</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">)</span>
+<span class="linenos">8</span>    <span class="k">elif</span> <span class="n">button_b</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos">9</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">SAD</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Breaking that code down:</p>
+<ul class="simple">
+<li><p>line 3 → clears the display of any previous image</p></li>
+<li><p>line 5 → creates an infinite loop, since the condition (<code class="docutils literal notranslate"><span class="pre">True</span></code>) will never be <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
+<li><p>line 6 → does two things:</p>
+<ul>
+<li><p>tests if button <strong>A</strong> has been pressed (moved from the up position to the down position)</p></li>
+<li><p>if <code class="docutils literal notranslate"><span class="pre">button_a.was_pressed()</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code> resets it to <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
+</ul>
+</li>
+<li><p>line 7 → changes display to smiley face</p></li>
+<li><p>line 8 → does two things:</p>
+<ul>
+<li><p>tests if button <strong>B</strong> has been pressed (moved from the up position to the down position)</p></li>
+<li><p>if <code class="docutils literal notranslate"><span class="pre">button_b.was_pressed()</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code> resets it to <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
+</ul>
+</li>
+<li><p>line 7 → changes display to sad face</p></li>
+</ul>
+<section id="was-pressed-exercise">
+<h3>Was Pressed Exercise<a class="headerlink" href="#was-pressed-exercise" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Create program that counts the number of times button <strong>A</strong> is pressed. The count should start at 0, and for each press of button A, the count should increment by 1. Pressing button <strong>B</strong> should reset the count to 0.</p></li>
+<li><p>Create a memory game that:</p>
+<ul class="simple">
+<li><p>randomly generates a 6 letter A or B pattern</p></li>
+<li><p>displays the pattern to the user</p></li>
+<li><p>gets the user to repeat the pattern</p></li>
+<li><p>displays a smiley face if the repeated pattern is the same as the generated pattern or a sad face if they don’t match</p></li>
+</ul>
+</li>
+</ol>
+</section>
 </section>
 </section>
 
@@ -343,9 +407,18 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Micro:bit Buttons</a><ul>
-<li><a class="reference internal" href="#get-presses">Get presses</a></li>
-<li><a class="reference internal" href="#is-pressed">Is pressed</a></li>
-<li><a class="reference internal" href="#was-pressed">Was pressed</a></li>
+<li><a class="reference internal" href="#get-presses">Get Presses</a><ul>
+<li><a class="reference internal" href="#get-presses-exercises">Get Presses Exercises</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#is-pressed">Is Pressed</a><ul>
+<li><a class="reference internal" href="#is-pressed-exercise">Is pressed exercise</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#was-pressed">Was Pressed</a><ul>
+<li><a class="reference internal" href="#was-pressed-exercise">Was Pressed Exercise</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

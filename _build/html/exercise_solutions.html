@@ -217,8 +217,8 @@
           <section id="exercise-solutions">
 <h1>Exercise Solutions<a class="headerlink" href="#exercise-solutions" title="Permalink to this heading">#</a></h1>
 <p>Below you will find <strong>a</strong> solution to all the exercises from this course. Like all programming, there are countless ways to solve a problem, the solutions presented here are just one way. If you get the outcomes you required, then your code solves the problem.</p>
-<section id="first-program">
-<h2>First Program<a class="headerlink" href="#first-program" title="Permalink to this heading">#</a></h2>
+<section id="first-program-exercises">
+<h2>First Program Exercises<a class="headerlink" href="#first-program-exercises" title="Permalink to this heading">#</a></h2>
 <section id="first-program-exercise-1">
 <h3>First Program Exercise 1<a class="headerlink" href="#first-program-exercise-1" title="Permalink to this heading">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># first program ex1</span>
@@ -254,8 +254,8 @@
 <p>When the micro:bit is unplugged it turns off because it is using the power from the computer. When it is plugged back in, it does nothing, because the code hasn’t been sent from the computer.</p>
 </section>
 </section>
-<section id="display">
-<h2>Display<a class="headerlink" href="#display" title="Permalink to this heading">#</a></h2>
+<section id="display-exercises">
+<h2>Display Exercises<a class="headerlink" href="#display-exercises" title="Permalink to this heading">#</a></h2>
 <section id="text-exercise-1">
 <h3>Text Exercise 1<a class="headerlink" href="#text-exercise-1" title="Permalink to this heading">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># display text ex1</span>
@@ -292,9 +292,6 @@
 </pre></div>
 </div>
 </section>
-</section>
-<section id="image">
-<h2>Image<a class="headerlink" href="#image" title="Permalink to this heading">#</a></h2>
 <section id="image-exercise-1">
 <h3>Image Exercise 1<a class="headerlink" href="#image-exercise-1" title="Permalink to this heading">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># display image ex1</span>
@@ -378,6 +375,122 @@
 </div>
 </section>
 </section>
+<section id="buttons-exercises">
+<h2>Buttons Exercises<a class="headerlink" href="#buttons-exercises" title="Permalink to this heading">#</a></h2>
+<section id="get-presses-exercises-1">
+<h3>Get Presses Exercises 1<a class="headerlink" href="#get-presses-exercises-1" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 6</span>    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">counter</span><span class="p">))</span>
+<span class="linenos"> 7</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos"> 8</span>        <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="linenos"> 9</span>        <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos">10</span>    
+<span class="linenos">11</span>    <span class="k">if</span> <span class="n">button_b</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos">12</span>        <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="linenos">13</span>        <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos">14</span>    
+<span class="linenos">15</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="is-pressed-exercise-1">
+<h3>Is Pressed Exercise 1<a class="headerlink" href="#is-pressed-exercise-1" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 2</span><span class="kn">import</span> <span class="nn">time</span>
+<span class="linenos"> 3</span><span class="kn">import</span> <span class="nn">random</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="c1"># select button</span>
+<span class="linenos"> 6</span><span class="n">button</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="s2">&quot;B&quot;</span><span class="p">])</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="c1"># display the countdown</span>
+<span class="linenos"> 9</span><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;3&quot;</span><span class="p">,</span><span class="s2">&quot;2&quot;</span><span class="p">,</span><span class="s2">&quot;1&quot;</span><span class="p">]:</span>
+<span class="linenos">10</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+<span class="linenos">11</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+<span class="linenos">12</span>
+<span class="linenos">13</span><span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">button</span><span class="p">)</span>
+<span class="linenos">14</span>
+<span class="linenos">15</span><span class="c1"># start the timer</span>
+<span class="linenos">16</span><span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">ticks_ms</span><span class="p">()</span>
+<span class="linenos">17</span>
+<span class="linenos">18</span><span class="c1"># wait for correct button to be pressed</span>
+<span class="linenos">19</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">20</span>    <span class="k">if</span> <span class="n">button</span> <span class="o">==</span> <span class="s2">&quot;A&quot;</span> <span class="ow">and</span> <span class="n">button_a</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+<span class="linenos">21</span>        <span class="k">break</span>
+<span class="linenos">22</span>    <span class="k">if</span> <span class="n">button</span> <span class="o">==</span> <span class="s2">&quot;B&quot;</span> <span class="ow">and</span> <span class="n">button_b</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+<span class="linenos">23</span>        <span class="k">break</span>
+<span class="linenos">24</span>    
+<span class="linenos">25</span><span class="c1"># stop the timer</span>
+<span class="linenos">26</span><span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">ticks_ms</span><span class="p">()</span>
+<span class="linenos">27</span>
+<span class="linenos">28</span><span class="c1"># calculate the elapsed time in seconds</span>
+<span class="linenos">29</span><span class="n">elapsed_time</span> <span class="o">=</span> <span class="p">(</span><span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1000.0</span>
+<span class="linenos">30</span>
+<span class="linenos">31</span><span class="c1"># display the elapsed time</span>
+<span class="linenos">32</span><span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">elapsed_time</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; seconds&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="was-pressed-exercise-1">
+<h3>Was Pressed Exercise 1<a class="headerlink" href="#was-pressed-exercise-1" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 6</span>    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">counter</span><span class="p">))</span>
+<span class="linenos"> 7</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos"> 8</span>        <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="linenos"> 9</span>        <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos">10</span>    
+<span class="linenos">11</span>    <span class="k">if</span> <span class="n">button_b</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos">12</span>        <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="linenos">13</span>        <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos">14</span>    
+<span class="linenos">15</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="was-pressed-exercise-2">
+<h3>Was Pressed Exercise 2<a class="headerlink" href="#was-pressed-exercise-2" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 2</span><span class="kn">import</span> <span class="nn">random</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="c1"># create random sequence</span>
+<span class="linenos"> 5</span><span class="n">sequence</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="linenos"> 6</span><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+<span class="linenos"> 7</span>    <span class="n">sequence</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="s2">&quot;B&quot;</span><span class="p">]))</span>
+<span class="linenos"> 8</span>    
+<span class="linenos"> 9</span><span class="c1"># display sequence to user</span>
+<span class="linenos">10</span><span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">sequence</span><span class="p">:</span>
+<span class="linenos">11</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span>
+<span class="linenos">12</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+<span class="linenos">13</span>    <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos">14</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+<span class="linenos">15</span>
+<span class="linenos">16</span><span class="c1"># get user input</span>
+<span class="linenos">17</span><span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;?&quot;</span><span class="p">)</span>
+<span class="linenos">18</span>
+<span class="linenos">19</span><span class="n">user_input</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span><span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">user_input</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+<span class="linenos">22</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos">23</span>        <span class="n">user_input</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
+<span class="linenos">24</span>    <span class="k">if</span> <span class="n">button_b</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos">25</span>        <span class="n">user_input</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
+<span class="linenos">26</span>
+<span class="linenos">27</span><span class="c1"># check if user_input matches sequence</span>
+<span class="linenos">28</span><span class="k">if</span> <span class="n">user_input</span> <span class="o">==</span> <span class="n">sequence</span><span class="p">:</span>
+<span class="linenos">29</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">)</span>
+<span class="linenos">30</span><span class="k">else</span><span class="p">:</span>
+<span class="linenos">31</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">SAD</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
 </section>
 
         </article>
@@ -443,26 +556,30 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Exercise Solutions</a><ul>
-<li><a class="reference internal" href="#first-program">First Program</a><ul>
+<li><a class="reference internal" href="#first-program-exercises">First Program Exercises</a><ul>
 <li><a class="reference internal" href="#first-program-exercise-1">First Program Exercise 1</a></li>
 <li><a class="reference internal" href="#first-program-exercise-2">First Program Exercise 2</a></li>
 <li><a class="reference internal" href="#first-program-exercise-3">First Program Exercise 3</a></li>
 <li><a class="reference internal" href="#first-program-exercise-4">First Program Exercise 4</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#display">Display</a><ul>
+<li><a class="reference internal" href="#display-exercises">Display Exercises</a><ul>
 <li><a class="reference internal" href="#text-exercise-1">Text Exercise 1</a></li>
 <li><a class="reference internal" href="#text-exercise-2">Text Exercise 2</a></li>
 <li><a class="reference internal" href="#text-exercise-3">Text Exercise 3</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#image">Image</a><ul>
 <li><a class="reference internal" href="#image-exercise-1">Image Exercise 1</a></li>
 <li><a class="reference internal" href="#image-exercise-2">Image Exercise 2</a></li>
 <li><a class="reference internal" href="#image-exercise-3">Image Exercise 3</a></li>
 <li><a class="reference internal" href="#custom-exercise-1">Custom Exercise 1</a></li>
 <li><a class="reference internal" href="#custom-exercise-2">Custom Exercise 2</a></li>
 <li><a class="reference internal" href="#custom-exercise-3">Custom Exercise 3</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#buttons-exercises">Buttons Exercises</a><ul>
+<li><a class="reference internal" href="#get-presses-exercises-1">Get Presses Exercises 1</a></li>
+<li><a class="reference internal" href="#is-pressed-exercise-1">Is Pressed Exercise 1</a></li>
+<li><a class="reference internal" href="#was-pressed-exercise-1">Was Pressed Exercise 1</a></li>
+<li><a class="reference internal" href="#was-pressed-exercise-2">Was Pressed Exercise 2</a></li>
 </ul>
 </li>
 </ul>

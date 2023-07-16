@@ -126,7 +126,7 @@ Time to **modify** the code:
 
 ```{admonition} set_pixel function
 :class: important
-Full details can be found at the **[BBC micro:bit MicroPython display.show documentation](https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.set_pixel)**.
+Full details can be found at the **[BBC micro:bit MicroPython display.set_pixel documentation](https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.set_pixel)**.
 ```
 
 You can also directly control the individual LEDs on the display. The image below shows the coordinate numbers for each of the LEDs:
