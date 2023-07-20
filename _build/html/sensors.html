@@ -2,13 +2,13 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Micro:bit Sound" href="sound.html" /><link rel="prev" title="Micro:bit Buttons" href="buttons.html" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.03.27 -->
         <title>Micro:bit Sensors - Python meets micro:bit</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -216,8 +216,39 @@
         <article role="main">
           <section id="micro-bit-sensors">
 <h1>Micro:bit Sensors<a class="headerlink" href="#micro-bit-sensors" title="Permalink to this heading">#</a></h1>
-<section id="accelerometer">
-<h2>Accelerometer<a class="headerlink" href="#accelerometer" title="Permalink to this heading">#</a></h2>
+<p>For a little board the Micro:bit comes packed with a heap of sensors. This lesson will explore them.</p>
+<section id="movement">
+<h2>Movement<a class="headerlink" href="#movement" title="Permalink to this heading">#</a></h2>
+<div class="important admonition">
+<p class="admonition-title">Movement functions</p>
+<p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/tutorials/movement.html#movement">BBC micro:bit MicroPython movement documentation</a></strong>.</p>
+</div>
+<p>Your BBC micro:bit comes with an accelerometer. An accelerometer can detect and measure how fast something is moving or how it’s being tilted. It can sense motion in different directions like up, down, left, and right.</p>
+<p>The micro:bit accelerometer measures movement along three axes:</p>
+<ul class="simple">
+<li><p>X - tilting from left to right.</p></li>
+<li><p>Y - tilting forwards and backwards.</p></li>
+<li><p>Z - moving up and down.</p></li>
+</ul>
+<p>There is a method for each axis that returns a positive or negative number indicating a measurement in milli-g’s. When the reading is 0 you are “level” along that particular axis.</p>
+<p>Below is an example for the x-axis:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># movement</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">6</span>    <span class="n">x_reading</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span>
+<span class="linenos">7</span>    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">x_reading</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="movement-exercises">
+<h3>Movement exercises<a class="headerlink" href="#movement-exercises" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Change the example above to show the value for the y-axis</p></li>
+<li><p>Change the example above to show the value for the z-axis</p></li>
+<li><p>Make a leveling device that shows a <code class="docutils literal notranslate"><span class="pre">-</span></code> if the x-axis is level, <code class="docutils literal notranslate"><span class="pre">L</span></code> if the left side is too high or <code class="docutils literal notranslate"><span class="pre">R</span></code> if the right side is too high.</p></li>
+</ol>
+</section>
 </section>
 <section id="temperature">
 <h2>Temperature<a class="headerlink" href="#temperature" title="Permalink to this heading">#</a></h2>
@@ -296,7 +327,10 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Micro:bit Sensors</a><ul>
-<li><a class="reference internal" href="#accelerometer">Accelerometer</a></li>
+<li><a class="reference internal" href="#movement">Movement</a><ul>
+<li><a class="reference internal" href="#movement-exercises">Movement exercises</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#temperature">Temperature</a></li>
 <li><a class="reference internal" href="#light">Light</a></li>
 <li><a class="reference internal" href="#compass">Compass</a></li>

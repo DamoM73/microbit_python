@@ -105,3 +105,23 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 ```{literalinclude} ./python_files/button_was_pressed_ex2/main.py
 :linenos:
 ```
+
+## Movement Exercises
+
+### Movement Exercise 1
+
+```{literalinclude} ./python_files/movement_ex1/main.py
+:linenos:
+```
+
+### Movement Exercise 2
+
+```{literalinclude} ./python_files/movement_ex2/main.py
+:linenos:
+```
+
+### Movement Exercise 3
+
+```{literalinclude} ./python_files/movement_ex3/main.py
+:linenos:
+```
