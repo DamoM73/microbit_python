@@ -6,22 +6,26 @@ This website provides a selection of code snippets to incorporate into your Pyth
 :maxdepth: 1
 :caption: "Contents:"
 
-introduction
-getting_started
-first_program
-display
-buttons
-sensors
-sound
-radio
-piicodev_intro
-piicodev_atmosphere
-piicodev_colour
-piicodev_distance
-piicodev_potentiometer
-piicodev_oled
-glowbit
-debugging
-exercise_solutions
-licencing
+00_introduction
+01_getting_started
+02_first_program
+03_display
+04_buttons
+05_accelerometer
+06_temperature
+07_light
+08_compass
+09_touch
+10_sound
+11_radio
+12_piicodev_intro
+13_piicodev_atmosphere
+14_piicodev_colour
+15_piicodev_distance
+16_piicodev_potentiometer
+17_piicodev_oled
+18_glowbit
+97_debugging
+98_exercise_solutions
+99_licencing
 ```

@@ -2,9 +2,12 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="#" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Your First Program" href="02_first_program.html" /><link rel="prev" title="Introduction for Teachers" href="00_introduction.html" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 --><title>Search - Python meets micro:bit</title><link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
+        <title>Getting Started - Python meets micro:bit</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
@@ -134,7 +137,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -151,16 +154,16 @@
   
   <span class="sidebar-brand-text">Python meets micro:bit</span>
   
-</a><form class="sidebar-search-container" method="get" action="#" role="search">
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="00_introduction.html">Introduction for Teachers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02_first_program.html">Your First Program</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_display.html">Micro:bit Display</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_buttons.html">Micro:bit Buttons</a></li>
@@ -200,7 +203,8 @@
           <span>Back to top</span>
         </a>
         <div class="content-icon-container">
-          <div class="theme-toggle-container theme-toggle-content">
+          
+<div class="theme-toggle-container theme-toggle-content">
             <button class="theme-toggle">
               <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
               <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
@@ -208,31 +212,116 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          
-<noscript>
-<div class="admonition error">
-  <p class="admonition-title">Error</p>
-  <p>
-    Please activate JavaScript to enable the search functionality.
-  </p>
-</div>
-</noscript>
-
-<div id="search-results"></div>
+          <section id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading">#</a></h1>
+<p>During this course we will use <strong>Thonny</strong> to write <strong>MicroPython</strong> code to run on <strong>micro:bits</strong>. This section is about getting all three of these elements working together.</p>
+<section id="what-is-micropython">
+<h2>What is MicroPython<a class="headerlink" href="#what-is-micropython" title="Permalink to this heading">#</a></h2>
+<p>MicroPython is a programming language based on Python. It is designed to run on small <strong>microcontrollers</strong>, which are small computer chips that are used in many electronic devices such as robots, sensors, and even some household appliances. Writing programs for microcontrollers is called <strong>embedding programming</strong>.</p>
+</section>
+<section id="what-is-a-micro-bit">
+<h2>What is a micro:bit<a class="headerlink" href="#what-is-a-micro-bit" title="Permalink to this heading">#</a></h2>
+<p>We will be using a educational microcontroller called a micro:bit. Micro:bits are small, pocket-sized computers that are designed to help people learn about coding and electronics. They have a variety of features, including buttons, a display, and sensors, that can be programmed to perform different tasks.</p>
+<p><img alt="micro:bit" src="https://cdn.sanity.io/images/ajwvhvgo/production/dbc7a8e2d9e21015787f4dab1a84e731ae192ba9-800x326.png?q=95" /></p>
+</section>
+<section id="what-is-thonny">
+<h2>What is Thonny<a class="headerlink" href="#what-is-thonny" title="Permalink to this heading">#</a></h2>
+<p>For this course we will be using the Thonny IDE. Thonny is an educational IDE which has built in supporting for working with MicroPython and micro:bits. If you don’t already have Thonny, download it from <strong><a class="reference external" href="https://thonny.org/">Thonny.org</a></strong> and install it.</p>
+</section>
+<section id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this heading">#</a></h2>
+<section id="prepare-thonny">
+<h3>Prepare Thonny<a class="headerlink" href="#prepare-thonny" title="Permalink to this heading">#</a></h3>
+<p>The first step in our setup is preparing Thonny to use MicroPython on the micro:bit.</p>
+<section id="connect-micro-bit">
+<h4>Connect micro:bit<a class="headerlink" href="#connect-micro-bit" title="Permalink to this heading">#</a></h4>
+<p>Connect the micro:bit to your computer using the USB cable.</p>
+<p><img alt="Connecting micro:bit" src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/19022180532/original/pCnmTm3UJr0utOYEfBs6Uhzm6IfoMyoaVA.gif?1519806725" /></p>
+</section>
+<section id="change-the-python-interpreter">
+<h4>Change the Python Interpreter<a class="headerlink" href="#change-the-python-interpreter" title="Permalink to this heading">#</a></h4>
+<p>By default, Thonny uses its own copy of Python 3 to run your Python scripts. For this course we want it to use MicroPython.</p>
+<p>To change the interpreter:</p>
+<p>Choose <strong>Tools</strong> &amp;rarr <strong>Options</strong></p>
+<p><img alt="options" src="_images/setup_options.png" /></p>
+<p>Then click on <strong>Interpreter</strong>, then the <strong>dropdown</strong> → <strong>MicroPython (BBC micro:bit)</strong></p>
+<p><img alt="change interpreter 1" src="_images/setup_interpreter_1.png" /></p>
+<p>Then click <strong>OK</strong></p>
+<p><img alt="change interpreter 2" src="_images/setup_interpreter_2.png" /></p>
+</section>
+<section id="change-thonny-panels">
+<h4>Change Thonny panels<a class="headerlink" href="#change-thonny-panels" title="Permalink to this heading">#</a></h4>
+<p>To work with the micro:bits, we need to access the files panel in Thonny. To do this:</p>
+<p>Click <strong>View</strong> and make sure <strong>Files</strong> is selected.</p>
+<p><img alt="views" src="_images/setup_view.png" /></p>
+</section>
+<section id="installing-micropython-optional">
+<h4>Installing MicroPython (optional)<a class="headerlink" href="#installing-micropython-optional" title="Permalink to this heading">#</a></h4>
+<p>Finally, you may need to update or install MicroPython on the micro:bit. This will be necessary if the micro:bit has a different operating system installed or if its MicroPython is corrupted.</p>
+<p>To do this, again go to the interpreter page like above.</p>
+<p>Then click on <strong>Install or update MicroPython</strong></p>
+<p><img alt="install MicroPython" src="_images/setup_install_1.png" /></p>
+<p>Click the <strong>Target volume dropdown</strong> then select <strong>MICROBIT</strong> (your drive letter may be different).</p>
+<p><img alt="install MicroPython" src="_images/setup_install_2.png" /></p>
+<p>Then select the <strong>MicroPython Variant dropdown</strong> and select <strong>BBC . micro:bit v2 (original simplified API)</strong></p>
+<p><img alt="install MicroPython" src="_images/setup_install_3.png" /></p>
+<p>Then click <strong>Install</strong></p>
+<p><img alt="install MicroPython" src="_images/setup_install_4.png" /></p>
+<p>Wait until the progress says <strong>Done</strong> (1), then click <strong>Close</strong> (2)</p>
+<p><img alt="install MicroPython" src="_images/setup_install_5.png" /></p>
+</section>
+</section>
+</section>
+<section id="the-ide">
+<h2>The IDE<a class="headerlink" href="#the-ide" title="Permalink to this heading">#</a></h2>
+<p>Thonny is now setup. Your UI should look similar to the one below.</p>
+<p>Some interesting points to note:</p>
+<ol class="arabic simple">
+<li><p>This is your computer files panel. It shows the files on your computer.</p></li>
+<li><p>This is the micro:bit file panel. It shows the files that are on the micro:bit.</p></li>
+<li><p>The prompt in the Shell should indicate:</p>
+<ul class="simple">
+<li><p>your interpreter is MicroPython along with its version</p></li>
+<li><p>your processor is a micro:bit along with its version</p></li>
+</ul>
+</li>
+<li><p>This shows that you are connected to a micro:bit and the port it is connected to.</p></li>
+</ol>
+<p><img alt="install MicroPython" src="_images/setup_ide.png" /></p>
+</section>
+</section>
 
         </article>
       </div>
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="02_first_program.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Your First Program</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="00_introduction.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Introduction for Teachers</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -258,8 +347,40 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Getting Started</a><ul>
+<li><a class="reference internal" href="#what-is-micropython">What is MicroPython</a></li>
+<li><a class="reference internal" href="#what-is-a-micro-bit">What is a micro:bit</a></li>
+<li><a class="reference internal" href="#what-is-thonny">What is Thonny</a></li>
+<li><a class="reference internal" href="#setup">Setup</a><ul>
+<li><a class="reference internal" href="#prepare-thonny">Prepare Thonny</a><ul>
+<li><a class="reference internal" href="#connect-micro-bit">Connect micro:bit</a></li>
+<li><a class="reference internal" href="#change-the-python-interpreter">Change the Python Interpreter</a></li>
+<li><a class="reference internal" href="#change-thonny-panels">Change Thonny panels</a></li>
+<li><a class="reference internal" href="#installing-micropython-optional">Installing MicroPython (optional)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-ide">The IDE</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
@@ -270,8 +391,5 @@
     <script src="_static/scripts/furo.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    
-<script src="_static/searchtools.js"></script>
-<script src="_static/language_data.js"></script>
-<script src="searchindex.js"></script></body>
+    </body>
 </html>
