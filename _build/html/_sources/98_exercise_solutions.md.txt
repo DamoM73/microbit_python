@@ -131,3 +131,43 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 ```{literalinclude} ./python_files/gestures_ex1/main.py
 :linenos:
 ```
+
+### Gesture Exercise 2
+
+```{literalinclude} ./python_files/gestures_ex2/main.py
+:linenos:
+```
+
+### Gesture Exercise 3
+
+```{literalinclude} ./python_files/gestures_ex3/main.py
+:linenos:
+```
+
+## Temperature Exercises
+
+### Temperature Exercise 1
+
+```{literalinclude} ./python_files/temp_ex1/main.py
+:linenos:
+```
+
+### Temperature Exercise 2
+
+```{literalinclude} ./python_files/temp_ex2/main.py
+:linenos:
+```
+
+## Light Exercises
+
+### Light Exercise 1
+
+```{literalinclude} ./python_files/light_ex1/main.py
+:linenos:
+```
+
+### Light Exercise 2
+
+```{literalinclude} ./python_files/light_ex2/main.py
+:linenos:
+```

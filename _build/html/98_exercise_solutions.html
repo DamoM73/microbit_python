@@ -553,6 +553,134 @@
 </pre></div>
 </div>
 </section>
+<section id="gesture-exercise-2">
+<h3>Gesture Exercise 2<a class="headerlink" href="#gesture-exercise-2" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># gestures exercise 2</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="n">gestures</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">get_gestures</span><span class="p">()</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="n">num_of_shakes</span> <span class="o">=</span> <span class="n">gestures</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;shake&quot;</span><span class="p">)</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">num_of_shakes</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="gesture-exercise-3">
+<h3>Gesture Exercise 3<a class="headerlink" href="#gesture-exercise-3" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># gestures exercise 3</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">sensing</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="k">while</span> <span class="n">sensing</span><span class="p">:</span>
+<span class="linenos"> 8</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+<span class="linenos"> 9</span>        <span class="n">sensing</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="k">if</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">was_gesture</span><span class="p">(</span><span class="s2">&quot;3g&quot;</span><span class="p">):</span>
+<span class="linenos">12</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">YES</span><span class="p">)</span>
+<span class="linenos">13</span><span class="k">else</span><span class="p">:</span>
+<span class="linenos">14</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">NO</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="temperature-exercises">
+<h2>Temperature Exercises<a class="headerlink" href="#temperature-exercises" title="Permalink to this heading">#</a></h2>
+<section id="temperature-exercise-1">
+<h3>Temperature Exercise 1<a class="headerlink" href="#temperature-exercise-1" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># temperature exercise 1</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">currentTemp</span> <span class="o">=</span> <span class="n">temperature</span><span class="p">()</span>
+<span class="linenos"> 6</span><span class="nb">max</span> <span class="o">=</span> <span class="n">currentTemp</span>
+<span class="linenos"> 7</span><span class="nb">min</span> <span class="o">=</span> <span class="n">currentTemp</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">10</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+<span class="linenos">11</span>    <span class="n">currentTemp</span> <span class="o">=</span> <span class="n">temperature</span><span class="p">()</span>
+<span class="linenos">12</span>    <span class="k">if</span> <span class="n">currentTemp</span> <span class="o">&lt;</span> <span class="nb">min</span><span class="p">:</span>
+<span class="linenos">13</span>        <span class="nb">min</span> <span class="o">=</span> <span class="n">currentTemp</span>
+<span class="linenos">14</span>    <span class="k">elif</span> <span class="n">currentTemp</span> <span class="o">&gt;</span> <span class="nb">max</span><span class="p">:</span>
+<span class="linenos">15</span>        <span class="nb">max</span> <span class="o">=</span> <span class="n">currentTemp</span>
+<span class="linenos">16</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos">17</span>        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">min</span><span class="p">)</span>
+<span class="linenos">18</span>    <span class="k">if</span> <span class="n">button_b</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos">19</span>        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">max</span><span class="p">)</span>
+<span class="linenos">20</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+<span class="linenos">21</span>    <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos">22</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="temperature-exercise-2">
+<h3>Temperature Exercise 2<a class="headerlink" href="#temperature-exercise-2" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># temperature exercise 1</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 6</span>    <span class="n">current_temp</span> <span class="o">=</span> <span class="n">temperature</span><span class="p">()</span>
+<span class="linenos"> 7</span>    
+<span class="linenos"> 8</span>    <span class="k">if</span> <span class="n">current_temp</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">:</span>
+<span class="linenos"> 9</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ARROW_S</span><span class="p">)</span>
+<span class="linenos">10</span>    <span class="k">elif</span> <span class="n">current_temp</span> <span class="o">&gt;</span> <span class="mi">22</span><span class="p">:</span>
+<span class="linenos">11</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ARROW_N</span><span class="p">)</span>
+<span class="linenos">12</span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos">13</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">)</span>
+<span class="linenos">14</span>        
+<span class="linenos">15</span>        
+</pre></div>
+</div>
+</section>
+</section>
+<section id="light-exercises">
+<h2>Light Exercises<a class="headerlink" href="#light-exercises" title="Permalink to this heading">#</a></h2>
+<section id="light-exercise-1">
+<h3>Light Exercise 1<a class="headerlink" href="#light-exercise-1" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># light exercise 1</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">prev_level</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">()</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 8</span>    <span class="n">current_level</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">()</span>
+<span class="linenos"> 9</span>    
+<span class="linenos">10</span>    <span class="k">if</span> <span class="n">current_level</span> <span class="o">&gt;</span> <span class="n">prev_level</span><span class="p">:</span>
+<span class="linenos">11</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ARROW_N</span><span class="p">)</span>
+<span class="linenos">12</span>        <span class="n">prev_level</span> <span class="o">=</span> <span class="n">current_level</span>
+<span class="linenos">13</span>    <span class="k">elif</span> <span class="n">current_level</span> <span class="o">&lt;</span> <span class="n">prev_level</span><span class="p">:</span>
+<span class="linenos">14</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ARROW_S</span><span class="p">)</span>
+<span class="linenos">15</span>        <span class="n">prev_level</span> <span class="o">=</span> <span class="n">current_level</span>
+<span class="linenos">16</span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos">17</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)</span>
+<span class="linenos">18</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+<span class="linenos">19</span>    <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="light-exercise-2">
+<h3>Light Exercise 2<a class="headerlink" href="#light-exercise-2" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># light exercise 2</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 6</span>    <span class="n">light_level</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">()</span>
+<span class="linenos"> 7</span>    
+<span class="linenos"> 8</span>    <span class="k">if</span> <span class="n">light_level</span><span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+<span class="linenos"> 9</span>        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<span class="linenos">10</span>            <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<span class="linenos">11</span>                <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">column</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
 </section>
 </section>
 
@@ -650,6 +778,18 @@
 <li><a class="reference internal" href="#movement-exercise-2">Movement Exercise 2</a></li>
 <li><a class="reference internal" href="#movement-exercise-3">Movement Exercise 3</a></li>
 <li><a class="reference internal" href="#gesture-exercise-1">Gesture Exercise 1</a></li>
+<li><a class="reference internal" href="#gesture-exercise-2">Gesture Exercise 2</a></li>
+<li><a class="reference internal" href="#gesture-exercise-3">Gesture Exercise 3</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#temperature-exercises">Temperature Exercises</a><ul>
+<li><a class="reference internal" href="#temperature-exercise-1">Temperature Exercise 1</a></li>
+<li><a class="reference internal" href="#temperature-exercise-2">Temperature Exercise 2</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#light-exercises">Light Exercises</a><ul>
+<li><a class="reference internal" href="#light-exercise-1">Light Exercise 1</a></li>
+<li><a class="reference internal" href="#light-exercise-2">Light Exercise 2</a></li>
 </ul>
 </li>
 </ul>

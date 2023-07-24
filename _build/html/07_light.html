@@ -137,7 +137,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -212,7 +212,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -220,6 +220,39 @@
         <article role="main">
           <section id="micro-bit-light-sensor">
 <h1>Micro:bit Light Sensor<a class="headerlink" href="#micro-bit-light-sensor" title="Permalink to this heading">#</a></h1>
+<p>A light sensor is an input device that measures light levels. Your BBC micro:bit uses the LEDs to sense the levels of light and lets you program your micro:bit as a light sensor.</p>
+<div class="important admonition">
+<p class="admonition-title">Light functions</p>
+<p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/display.html?highlight=light#microbit.display.read_light_level">BBC micro:bit MicroPython light documentation</a></strong>.</p>
+</div>
+<section id="get-light-level">
+<h2>Get light level<a class="headerlink" href="#get-light-level" title="Permalink to this heading">#</a></h2>
+<p>The micro:bit uses the display’s LEDs in reverse-bias mode to sense the amount of light falling on the display.</p>
+<p>Returns an integer between <code class="docutils literal notranslate"><span class="pre">0</span></code> and <code class="docutils literal notranslate"><span class="pre">255</span></code> representing the light level, with larger meaning more light.</p>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># light example</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 6</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos"> 7</span>        <span class="n">light_level</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">()</span>
+<span class="linenos"> 8</span>        <span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="linenos"> 9</span>        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">light_level</span><span class="p">)</span>
+<span class="linenos">10</span>    <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos">11</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+<span class="linenos">12</span>    <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
+<span class="linenos">13</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="light-exercises">
+<h3>Light Exercises<a class="headerlink" href="#light-exercises" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Create a program that samples light levels using the micro:bit’s light sensor every two seconds. It should displays messages based on whether the light level has increased (↑) or decreased (↓).</p></li>
+<li><p>Create a program that measures the light level using the micro:bit’s light sensor and activates all the LEDs on the micro:bit when the light level falls below a threshold of 100.</p></li>
+</ol>
+</section>
+</section>
 </section>
 
         </article>
@@ -272,8 +305,30 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Micro:bit Light Sensor</a><ul>
+<li><a class="reference internal" href="#get-light-level">Get light level</a><ul>
+<li><a class="reference internal" href="#light-exercises">Light Exercises</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
