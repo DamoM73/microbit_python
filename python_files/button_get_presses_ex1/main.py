@@ -1,3 +1,5 @@
+# button.get_pressed exercise 1
+
 from microbit import *
 
 target_presses = 10

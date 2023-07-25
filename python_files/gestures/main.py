@@ -1,4 +1,4 @@
-# current gestures
+# current_gestures example
 
 from microbit import *
 

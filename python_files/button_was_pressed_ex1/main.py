@@ -1,3 +1,5 @@
+# button.was_pressed exercise 1
+
 from microbit import *
 
 counter = 0

@@ -1,4 +1,4 @@
-# display image
+# display.image example
 
 from microbit import *
 

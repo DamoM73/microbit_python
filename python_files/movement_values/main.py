@@ -1,4 +1,4 @@
-# movement values
+# movement values example
 
 from microbit import *
 

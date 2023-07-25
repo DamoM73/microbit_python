@@ -1,4 +1,4 @@
-# display_image_ex2
+# display.image exercise 2
 
 from microbit import *
 

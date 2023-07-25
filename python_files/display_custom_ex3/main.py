@@ -1,4 +1,4 @@
-# display_custom_ex3
+# display.custom exercise 3
 
 from microbit import *
 

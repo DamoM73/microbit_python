@@ -1,4 +1,4 @@
-# first program ex2
+# first program exercise 2
 
 from microbit import *
 

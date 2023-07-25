@@ -1,4 +1,4 @@
-# display_custom
+# display.custom exercise 2
 
 from microbit import *
 

@@ -62,7 +62,7 @@ Let's break that code down:
 1. Create a program that tests a user reaction time. It should:
    - Randomly choose which button to press **A** or **B**
    - Do a 3-2-1 countdown then display the button to press
-   - Time how long it takes for the user to press the correct button (**[ticks_us()](https://microbit-micropython.readthedocs.io/en/latest/utime.html#utime.utime.ticks_ms)** may be helpful)
+   - Time how long it takes for the user to press the correct button (**[ticks_ms()](https://microbit-micropython.readthedocs.io/en/latest/utime.html#utime.utime.ticks_ms)** may be helpful)
    - Show the reaction time on the display
 
 ## Was Pressed

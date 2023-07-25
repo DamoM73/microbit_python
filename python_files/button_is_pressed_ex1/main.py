@@ -1,3 +1,5 @@
+# button.is_presses exercise 1
+
 from microbit import *
 import time
 import random

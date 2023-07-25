@@ -1,4 +1,4 @@
-# display text ex3
+# display.text exercise 3
 
 from microbit import *
 

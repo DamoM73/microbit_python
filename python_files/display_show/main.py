@@ -1,4 +1,4 @@
-# display show
+# display.show example
 
 from microbit import *
 

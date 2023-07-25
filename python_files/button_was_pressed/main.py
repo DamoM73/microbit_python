@@ -1,3 +1,5 @@
+# button.was_pressed example
+
 from microbit import *
 
 display.clear()

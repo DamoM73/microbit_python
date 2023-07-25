@@ -1,4 +1,4 @@
-# display_custom
+# display.custom example
 
 from microbit import *
 

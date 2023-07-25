@@ -1,3 +1,5 @@
+# button.was_pressed exercise 2
+
 from microbit import *
 import random
 

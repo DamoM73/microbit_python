@@ -1,3 +1,5 @@
+# temperature example
+
 from microbit import *
 
 while True:

@@ -1,3 +1,5 @@
+# button.get_press example
+
 from microbit import *
 
 sleep(5000)

@@ -1,4 +1,4 @@
-# current gestures
+# get_gestures gestures
 
 from microbit import *
 

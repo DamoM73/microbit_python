@@ -1,4 +1,4 @@
-# gestures exercise 2
+# current_gestures exercise 2
 
 from microbit import *
 

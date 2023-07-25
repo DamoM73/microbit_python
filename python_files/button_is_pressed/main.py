@@ -1,3 +1,5 @@
+# button.is_pressed example
+
 from microbit import *
 
 while True:
