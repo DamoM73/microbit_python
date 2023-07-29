@@ -234,10 +234,12 @@
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">get_presses</span></code> counts the number of times that the button has been pressed. Restarting the Micro:bit or calling this function will return the count to <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
 <p><strong>main.py</strong> file. Add the code below.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># button.get_press example</span>
 <span class="linenos">2</span>
-<span class="linenos">3</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span>
-<span class="linenos">4</span><span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">button_a</span><span class="o">.</span><span class="n">get_presses</span><span class="p">()))</span>
+<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span>
+<span class="linenos">6</span><span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">button_a</span><span class="o">.</span><span class="n">get_presses</span><span class="p">()))</span>
 </pre></div>
 </div>
 <p><strong>Predict</strong> in detail what you think will happen, and then <strong>run</strong> the program.</p>
@@ -256,17 +258,19 @@
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">is_pressed</span></code> returns the value of <code class="docutils literal notranslate"><span class="pre">True</span></code> if the button is currently pressed, otherwise it returns <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <p>Create a new file, call it <strong>main.py</strong> and then add the following code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># button.is_pressed example</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<span class="linenos"> 4</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
-<span class="linenos"> 5</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">)</span>
-<span class="linenos"> 6</span>    <span class="k">elif</span> <span class="n">button_b</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
-<span class="linenos"> 7</span>        <span class="k">break</span>
-<span class="linenos"> 8</span>    <span class="k">else</span><span class="p">:</span>
-<span class="linenos"> 9</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">SAD</span><span class="p">)</span>
-<span class="linenos">10</span>
-<span class="linenos">11</span><span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 6</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+<span class="linenos"> 7</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">)</span>
+<span class="linenos"> 8</span>    <span class="k">elif</span> <span class="n">button_b</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+<span class="linenos"> 9</span>        <span class="k">break</span>
+<span class="linenos">10</span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos">11</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">SAD</span><span class="p">)</span>
+<span class="linenos">12</span>
+<span class="linenos">13</span><span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 </pre></div>
 </div>
 <p><strong>Predict</strong> in detail what you think will happen, and then <strong>run</strong> the program.</p>
@@ -287,7 +291,7 @@
 <ul class="simple">
 <li><p>Randomly choose which button to press <strong>A</strong> or <strong>B</strong></p></li>
 <li><p>Do a 3-2-1 countdown then display the button to press</p></li>
-<li><p>Time how long it takes for the user to press the correct button (<strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/utime.html#utime.utime.ticks_ms">ticks_us()</a></strong> may be helpful)</p></li>
+<li><p>Time how long it takes for the user to press the correct button (<strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/utime.html#utime.utime.ticks_ms">ticks_ms()</a></strong> may be helpful)</p></li>
 <li><p>Show the reaction time on the display</p></li>
 </ul>
 </li>
@@ -301,15 +305,17 @@
 <p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.was_pressed">BBC micro:bit MicroPython button.was_pressed documentation</a></strong>.</p>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">was_pressed</span></code> will returns <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> to indicate if the button was pressed (went from up to down) since the device started, or the last time this method was called. Calling this method will clear the press state so that the button must be pressed again before this method will return <code class="docutils literal notranslate"><span class="pre">True</span></code> again.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="linenos">2</span>
-<span class="linenos">3</span><span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
-<span class="linenos">4</span>
-<span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<span class="linenos">6</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
-<span class="linenos">7</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">)</span>
-<span class="linenos">8</span>    <span class="k">elif</span> <span class="n">button_b</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
-<span class="linenos">9</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">SAD</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># button.was_pressed example</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 8</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos"> 9</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">)</span>
+<span class="linenos">10</span>    <span class="k">elif</span> <span class="n">button_b</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos">11</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">SAD</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Breaking that code down:</p>

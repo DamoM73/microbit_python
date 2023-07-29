@@ -171,3 +171,29 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 ```{literalinclude} ./python_files/light_ex2/main.py
 :linenos:
 ```
+
+## Compass Exercises
+
+### Heading Exercise 1
+
+```{literalinclude} ./python_files/heading_ex1/main.py
+:linenos:
+```
+
+### Heading Exercise 2
+
+```{literalinclude} ./python_files/heading_ex2/main.py
+:linenos:
+```
+
+### Magnetic Strength Exercise 1
+
+```{literalinclude} ./python_files/mag_strength_ex1/main.py
+:linenos:
+```
+
+### Magnetic Strength Exercise 2
+
+```{literalinclude} ./python_files/mag_strength_ex2/main.py
+:linenos:
+```
