@@ -2,13 +2,13 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Licencing" href="99_licencing.html" /><link rel="prev" title="Debugging with Thonny" href="97_debugging.html" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.03.27 -->
         <title>Exercise Solutions - Python meets micro:bit</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -767,6 +767,58 @@
 </div>
 </section>
 </section>
+<section id="touch-exercises">
+<h2>Touch Exercises<a class="headerlink" href="#touch-exercises" title="Permalink to this heading">#</a></h2>
+<section id="touch-exercise-1">
+<h3>Touch Exercise 1<a class="headerlink" href="#touch-exercise-1" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># touch exercise 1</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="n">pin0</span><span class="o">.</span><span class="n">set_touch_mode</span><span class="p">(</span><span class="n">pin0</span><span class="o">.</span><span class="n">CAPACITIVE</span><span class="p">)</span>
+<span class="linenos"> 8</span><span class="n">pin2</span><span class="o">.</span><span class="n">set_touch_mode</span><span class="p">(</span><span class="n">pin2</span><span class="o">.</span><span class="n">CAPACITIVE</span><span class="p">)</span>
+<span class="linenos"> 9</span>
+<span class="linenos">10</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">11</span>    <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+<span class="linenos">12</span>    <span class="k">if</span> <span class="n">pin0</span><span class="o">.</span><span class="n">is_touched</span><span class="p">()</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos">13</span>        <span class="n">x</span> <span class="o">-=</span> <span class="mi">1</span>
+<span class="linenos">14</span>    <span class="k">elif</span> <span class="n">pin2</span><span class="o">.</span><span class="n">is_touched</span><span class="p">()</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+<span class="linenos">15</span>        <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="linenos">16</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="linenos">17</span>    <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="touch-exercise-2">
+<h3>Touch Exercise 2<a class="headerlink" href="#touch-exercise-2" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># touch exercise 2</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="n">pin0</span><span class="o">.</span><span class="n">set_touch_mode</span><span class="p">(</span><span class="n">pin0</span><span class="o">.</span><span class="n">CAPACITIVE</span><span class="p">)</span>
+<span class="linenos"> 8</span><span class="n">pin2</span><span class="o">.</span><span class="n">set_touch_mode</span><span class="p">(</span><span class="n">pin2</span><span class="o">.</span><span class="n">CAPACITIVE</span><span class="p">)</span>
+<span class="linenos"> 9</span>
+<span class="linenos">10</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">11</span>    <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+<span class="linenos">12</span>    <span class="k">if</span> <span class="n">pin0</span><span class="o">.</span><span class="n">is_touched</span><span class="p">():</span>
+<span class="linenos">13</span>        <span class="n">x</span> <span class="o">-=</span> <span class="mi">1</span>
+<span class="linenos">14</span>    <span class="k">elif</span> <span class="n">pin2</span><span class="o">.</span><span class="n">is_touched</span><span class="p">():</span>
+<span class="linenos">15</span>        <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="linenos">16</span>    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+<span class="linenos">17</span>        <span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="linenos">18</span>    <span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+<span class="linenos">19</span>        <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="linenos">20</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="linenos">21</span>    <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos">22</span>
+</pre></div>
+</div>
+</section>
+</section>
 </section>
 
         </article>
@@ -882,6 +934,11 @@
 <li><a class="reference internal" href="#heading-exercise-2">Heading Exercise 2</a></li>
 <li><a class="reference internal" href="#magnetic-strength-exercise-1">Magnetic Strength Exercise 1</a></li>
 <li><a class="reference internal" href="#magnetic-strength-exercise-2">Magnetic Strength Exercise 2</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#touch-exercises">Touch Exercises</a><ul>
+<li><a class="reference internal" href="#touch-exercise-1">Touch Exercise 1</a></li>
+<li><a class="reference internal" href="#touch-exercise-2">Touch Exercise 2</a></li>
 </ul>
 </li>
 </ul>

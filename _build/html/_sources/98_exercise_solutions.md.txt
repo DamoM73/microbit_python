@@ -197,3 +197,17 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 ```{literalinclude} ./python_files/mag_strength_ex2/main.py
 :linenos:
 ```
+
+## Touch Exercises
+
+### Touch Exercise 1
+
+```{literalinclude} ./python_files/touch_ex1/main.py
+:linenos:
+```
+
+### Touch Exercise 2
+
+```{literalinclude} ./python_files/touch_ex2/main.py
+:linenos:
+```
