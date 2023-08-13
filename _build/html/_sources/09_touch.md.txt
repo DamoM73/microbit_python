@@ -26,3 +26,8 @@ For example:
 ```{literalinclude} ./python_files/touch_pins/main.py
 :linenos:
 ```
+
+## Touch exercises
+
+1. Draw one pixel on the screen at position (2,2), then have the pixel move right if Pin2 is touched, or move left if Pin0 is touched.
+2. Improve the last program so the pixel wraps around the screen.
