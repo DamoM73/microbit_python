@@ -1,5 +1,7 @@
 # Micro:bit Compass Sensor
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/a3P6LWwPBqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 Your micro:bit has an input sensor for measuring magnetic fields (magnetometer), which you can use as a compass. 
 
 ```{admonition} Compass functions

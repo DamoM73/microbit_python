@@ -1,5 +1,9 @@
 # Micro:bit Touch Sensor
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/spFD3SxxxHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+We can use the gold logo as another input in your projects. It's like having an extra button. The touch logo uses capacitive touch, sensing tiny changes in electrical fields to know when your finger is pressing it - just like your phone or tablet screen.
+
 ```{admonition} Pins
 :class: important
 Full details can be found at the **[BBC micro:bit MicroPython pins documentation](https://microbit-micropython.readthedocs.io/en/v2-docs/microbit_micropython_api.html?highlight=touch#pins)**.

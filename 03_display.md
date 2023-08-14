@@ -1,5 +1,7 @@
 # Micro:bit Display
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eRhlaXqT-0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 We have already used the micro:bit display in our first program. In this section we will learn more of it's features.
 
 ```{admonition} Documentation

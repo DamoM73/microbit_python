@@ -220,6 +220,7 @@
         <article role="main">
           <section id="micro-bit-sound">
 <h1>Micro:bit Sound<a class="headerlink" href="#micro-bit-sound" title="Permalink to this heading">#</a></h1>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/r53PjFwyAhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>MicroPython on the BBC micro:bit comes with a powerful music and sound module, which can drive the micro:bit 2 speaker.</p>
 <div class="important admonition">
 <p class="admonition-title">Documentation</p>
@@ -227,15 +228,195 @@
 </div>
 <section id="music">
 <h2>Music<a class="headerlink" href="#music" title="Permalink to this heading">#</a></h2>
+<div class="important admonition">
+<p class="admonition-title">Music</p>
+<p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/music.html#module-music">BBC micro:bit MicroPython Music documentation</a></strong>.</p>
+</div>
+<p>MicroPython on the BBC micro:bit comes with a powerful music and sound module. It’s very easy to generate bleeps and bloops from the device using the speaker.</p>
+<section id="built-in-tunes">
+<h3>Built-in tunes<a class="headerlink" href="#built-in-tunes" title="Permalink to this heading">#</a></h3>
+<p>Notice that we import the music module. It contains methods used to make and control sound. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># built-in tunes example</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="kn">import</span> <span class="nn">music</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="n">music</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">music</span><span class="o">.</span><span class="n">NYAN</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>MicroPython has quite a lot of built-in melodies: <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/music.html#built-in-melodies">here is the complete list</a></strong>.</p>
+</section>
+<section id="custom-tunes">
+<h3>Custom Tunes<a class="headerlink" href="#custom-tunes" title="Permalink to this heading">#</a></h3>
+<p>Creating your own tunes is easy!</p>
+<p>Each <strong>note</strong> has a name (like C# or F), an <strong>octave</strong> (telling MicroPython how high or low the note should be played) and a <strong>duration</strong> (how long it lasts through time).</p>
+<p><strong>Octaves</strong> are indicated by a number ~ 0 is the lowest octave, 4 contains middle C and 8 is about as high as you’ll ever need unless you’re making music for dogs.</p>
+<p><strong>Durations</strong> are also expressed as numbers. The higher the value of the duration the longer it will last. Such values are related to each other - for instance, a duration of 4 will last twice as long as a duration 2 (and so on).</p>
+<p>If you use the note name <strong>R</strong> then MicroPython will play a rest (i.e. silence) for the specified duration.</p>
+<p>Each note is expressed as a string of characters like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">NOTE</span><span class="p">[</span><span class="n">octave</span><span class="p">][:</span><span class="n">duration</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>For example, <code class="docutils literal notranslate"><span class="pre">&quot;A1:4&quot;``</span> <span class="pre">refers</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">note</span> <span class="pre">named</span> </code>A<code class="docutils literal notranslate"><span class="pre">in</span> <span class="pre">octave</span> <span class="pre">number</span></code>1<code class="docutils literal notranslate"><span class="pre">to</span> <span class="pre">be</span> <span class="pre">played</span> <span class="pre">for</span> <span class="pre">a</span> <span class="pre">duration</span> <span class="pre">of</span></code>4`.</p>
+<p>Make a list of notes to create a melody (it’s equivalent to creating an animation with a list of images). For example, here’s how to make MicroPython play opening of “Frere Jaques”:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># custom music example</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="kn">import</span> <span class="nn">music</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="n">tune</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;C4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;D4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;E4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;C4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;C4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;D4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;E4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;C4:4&quot;</span><span class="p">,</span>
+<span class="linenos">6</span>        <span class="s2">&quot;E4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;F4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;G4:8&quot;</span><span class="p">,</span> <span class="s2">&quot;E4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;F4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;G4:8&quot;</span><span class="p">]</span>
+<span class="linenos">7</span><span class="n">music</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">tune</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="sound-effects">
+<h3>Sound Effects<a class="headerlink" href="#sound-effects" title="Permalink to this heading">#</a></h3>
+<p>MicroPython lets you make tones that are not musical notes. For example, here’s how to create a Police siren effect:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># sound effects example</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="kn">import</span> <span class="nn">music</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">6</span>    <span class="k">for</span> <span class="n">freq</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">880</span><span class="p">,</span> <span class="mi">1760</span><span class="p">,</span> <span class="mi">16</span><span class="p">):</span>
+<span class="linenos">7</span>        <span class="n">music</span><span class="o">.</span><span class="n">pitch</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="linenos">8</span>    <span class="k">for</span> <span class="n">freq</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1760</span><span class="p">,</span> <span class="mi">880</span><span class="p">,</span> <span class="o">-</span><span class="mi">16</span><span class="p">):</span>
+<span class="linenos">9</span>        <span class="n">music</span><span class="o">.</span><span class="n">pitch</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Notice how the <code class="docutils literal notranslate"><span class="pre">music.pitch</span></code> method is used in this instance. It expects a frequency. For example, the frequency of <code class="docutils literal notranslate"><span class="pre">440</span></code> is the same as a concert A used to tune a symphony orchestra.</p>
+</section>
 </section>
 <section id="speech">
 <h2>Speech<a class="headerlink" href="#speech" title="Permalink to this heading">#</a></h2>
+<p>Computers and robots that talk feel more “human”. Getting the micro:bit talk to you is one way to express information in a fun, efficient and useful way. To this end, the micro:bit has integrated a simple speech synthesiser based upon a reverse-engineered version of a synthesiser from the early 1980s. It sounds very cute, in an “all humans must die” sort of a way.</p>
+<div class="important admonition">
+<p class="admonition-title">Speech</p>
+<p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/speech.html">BBC micro:bit MicroPython Speech documentation</a></strong>.</p>
+</div>
+<section id="say">
+<h3>Say<a class="headerlink" href="#say" title="Permalink to this heading">#</a></h3>
+<p>The simplest way to get the device to speak is to import the speech module and use the say function like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># speech example</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="kn">import</span> <span class="nn">speech</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="n">speech</span><span class="o">.</span><span class="n">say</span><span class="p">(</span><span class="s2">&quot;Hello, World&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>While this is cute it’s certainly not DALEK enough for our taste, so we need to change some of the parameters that the speech synthesiser uses to produce the voice. Our speech synthesiser is quite powerful in this respect because we can change four parameters:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pitch</span></code> - how high or low the voice sounds (0 = high, 255 = Barry White)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">speed</span></code> - how quickly the device talks (0 = impossible, 255 = bedtime story)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mouth</span></code> - how tight-lipped or overtly enunciating the voice sounds (0 = ventriloquist’s dummy, 255 = Foghorn Leghorn)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">throat</span></code> - how relaxed or tense is the tone of voice (0 = falling apart, 255 = totally chilled)</p></li>
+</ul>
+<p>Collectively, these parameters control the quality of sound - a.k.a. the timbre. To be honest, the best way to get the tone of voice you want is to experiment, use your judgement and adjust.</p>
+<p>To adjust the settings you pass them in as arguments to the say function. <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/speech.html#timbre">More details can be found in the speech module’s API documentation</a></strong>.</p>
+<p>After some experimentation we’ve worked out this sounds quite DALEK-esque:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># speech detailed example</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="kn">import</span> <span class="nn">speech</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="n">speech</span><span class="o">.</span><span class="n">say</span><span class="p">(</span><span class="s2">&quot;I am a DALEK - EXTERMINATE&quot;</span><span class="p">,</span> <span class="n">speed</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">pitch</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">throat</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">mouth</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
-<section id="speaker">
-<h2>Speaker<a class="headerlink" href="#speaker" title="Permalink to this heading">#</a></h2>
+<section id="pronounce">
+<h3>Pronounce<a class="headerlink" href="#pronounce" title="Permalink to this heading">#</a></h3>
+<p>You’ll notice that sometimes, the say function doesn’t accurately translate from English words into the correct sound. To have fine grained control of the output, use phonemes: the building-block sounds of language.</p>
+<p>The advantage of using phonemes is that you don’t have to know how to spell! Rather, you only have to know how to say the word in order to spell it phonetically.</p>
+<p>A <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/speech.html#phonemes">full list of the phonemes</a></strong> the speech synthesiser understands can be found in the API documentation for speech. Alternatively, save yourself a lot of time by passing in English words to the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/speech.html#speech.translate">translate function</a></strong>. It’ll return a first approximation of the phonemes it would use to generate the audio. This result can be hand-edited to improve the accuracy, inflection and emphasis (so it sounds more natural).</p>
+<p>The pronounce function is used for phoneme output like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># pronounce example</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="kn">import</span> <span class="nn">speech</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="n">speech</span><span class="o">.</span><span class="n">pronounce</span><span class="p">(</span><span class="s2">&quot;/HEH5EH4EH3EH2EH2EH3EH4EH5EHLP.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>By changing the pitch setting and calling the sing function it’s possible to make the device sing (although it’s not going to win Eurovision any time soon).</p>
+<p>The mapping from pitch numbers to musical notes is shown below:</p>
+</section>
+<section id="sing">
+<h3>Sing<a class="headerlink" href="#sing" title="Permalink to this heading">#</a></h3>
+<p>By changing the pitch setting and calling the sing function it’s possible to make the device sing (although it’s not going to win Eurovision any time soon).</p>
+<p>The mapping from pitch numbers to musical notes is shown below:</p>
+<p><img alt="speech-pitch" src="_images/speech-pitch.jpg" /></p>
+<p>Annotations work by pre-pending a hash (#) sign and the pitch number in front of the phoneme. The pitch will remain the same until a new annotation is given. For example, make MicroPython sing a scale like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># sing example</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">import</span> <span class="nn">speech</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">solfa</span> <span class="o">=</span> <span class="p">[</span>
+<span class="linenos"> 6</span>    <span class="s2">&quot;#115DOWWWWWW&quot;</span><span class="p">,</span>   <span class="c1"># Doh</span>
+<span class="linenos"> 7</span>    <span class="s2">&quot;#103REYYYYYY&quot;</span><span class="p">,</span>   <span class="c1"># Re</span>
+<span class="linenos"> 8</span>    <span class="s2">&quot;#94MIYYYYYY&quot;</span><span class="p">,</span>    <span class="c1"># Mi</span>
+<span class="linenos"> 9</span>    <span class="s2">&quot;#88FAOAOAOAOR&quot;</span><span class="p">,</span>  <span class="c1"># Fa</span>
+<span class="linenos">10</span>    <span class="s2">&quot;#78SOHWWWWW&quot;</span><span class="p">,</span>    <span class="c1"># Soh</span>
+<span class="linenos">11</span>    <span class="s2">&quot;#70LAOAOAOAOR&quot;</span><span class="p">,</span>  <span class="c1"># La</span>
+<span class="linenos">12</span>    <span class="s2">&quot;#62TIYYYYYY&quot;</span><span class="p">,</span>    <span class="c1"># Ti</span>
+<span class="linenos">13</span>    <span class="s2">&quot;#58DOWWWWWW&quot;</span><span class="p">,</span>    <span class="c1"># Doh</span>
+<span class="linenos">14</span><span class="p">]</span>
+<span class="linenos">15</span><span class="n">song</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">solfa</span><span class="p">)</span>
+<span class="linenos">16</span><span class="n">speech</span><span class="o">.</span><span class="n">sing</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">speed</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In order to sing a note for a certain duration extend the note by repeating vowel or voiced consonant phonemes (as demonstrated in the example above). Beware diphthongs - to extend them you need to break them into their component parts. For example, “OY” can be extended with “OHOHIYIYIY”.</p>
+<p>Experimentation, listening carefully and adjusting is the only sure way to work out how many times to repeat a phoneme so the note lasts for the desired duration.</p>
+</section>
 </section>
 <section id="microphone">
 <h2>Microphone<a class="headerlink" href="#microphone" title="Permalink to this heading">#</a></h2>
+<p>The built-in microphone available on the micro:bit V2 can be used to respond to sound.</p>
+<div class="important admonition">
+<p class="admonition-title">Microphone</p>
+<p>All the Microphone functions can be found in the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/v2-docs/microphone.html">BBC micro:bit MicroPython Microphone documentation</a></strong>.</p>
+</div>
+<p>The microphone input is located on the front of the board alongside a microphone activity LED, which is lit when the microphone is in use.</p>
+<p><img alt="microphone location" src="_images/microphone.png" /></p>
+<section id="sound-events">
+<h3>Sound Events<a class="headerlink" href="#sound-events" title="Permalink to this heading">#</a></h3>
+<p>The microphone can respond to a pre-defined set of sound events that are based on the amplitude and wavelength of the sound.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">microbit.SoundEvent.QUIET</span></code> → transition of sound events from loud to quiet like speaking or background music.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">microbit.SoundEvent.LOUD</span></code> → transition of sound events, from quiet to loud like clapping or shouting.</p></li>
+</ul>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># microphone sound event example</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 6</span>    <span class="k">if</span> <span class="n">microphone</span><span class="o">.</span><span class="n">current_event</span><span class="p">()</span> <span class="o">==</span> <span class="n">SoundEvent</span><span class="o">.</span><span class="n">LOUD</span><span class="p">:</span>
+<span class="linenos"> 7</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HEART</span><span class="p">)</span>
+<span class="linenos"> 8</span>        <span class="n">sleep</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+<span class="linenos"> 9</span>    <span class="k">if</span> <span class="n">microphone</span><span class="o">.</span><span class="n">current_event</span><span class="p">()</span> <span class="o">==</span> <span class="n">SoundEvent</span><span class="o">.</span><span class="n">QUIET</span><span class="p">:</span>
+<span class="linenos">10</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HEART_SMALL</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="sound-level">
+<h3>Sound level<a class="headerlink" href="#sound-level" title="Permalink to this heading">#</a></h3>
+<p>The microphone can also provide a reading of the sound pressure in the range of <code class="docutils literal notranslate"><span class="pre">0</span></code> - <code class="docutils literal notranslate"><span class="pre">255</span></code>.</p>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># microphone example 2</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">6</span>    <span class="n">sound_level</span> <span class="o">=</span> <span class="n">microphone</span><span class="o">.</span><span class="n">sound_level</span><span class="p">()</span>
+<span class="linenos">7</span>    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">sound_level</span><span class="p">)</span>
+<span class="linenos">8</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="sound-exercises">
+<h2>Sound exercises<a class="headerlink" href="#sound-exercises" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Create a program that plays an original tune</p></li>
+<li><p>Create a program that sings the College Song</p></li>
+<li><p>Create a program that turns lights up the display according to loudness of the sound in the microphone</p></li>
+</ol>
 </section>
 </section>
 
@@ -302,10 +483,24 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Micro:bit Sound</a><ul>
-<li><a class="reference internal" href="#music">Music</a></li>
-<li><a class="reference internal" href="#speech">Speech</a></li>
-<li><a class="reference internal" href="#speaker">Speaker</a></li>
-<li><a class="reference internal" href="#microphone">Microphone</a></li>
+<li><a class="reference internal" href="#music">Music</a><ul>
+<li><a class="reference internal" href="#built-in-tunes">Built-in tunes</a></li>
+<li><a class="reference internal" href="#custom-tunes">Custom Tunes</a></li>
+<li><a class="reference internal" href="#sound-effects">Sound Effects</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#speech">Speech</a><ul>
+<li><a class="reference internal" href="#say">Say</a></li>
+<li><a class="reference internal" href="#pronounce">Pronounce</a></li>
+<li><a class="reference internal" href="#sing">Sing</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#microphone">Microphone</a><ul>
+<li><a class="reference internal" href="#sound-events">Sound Events</a></li>
+<li><a class="reference internal" href="#sound-level">Sound level</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sound-exercises">Sound exercises</a></li>
 </ul>
 </li>
 </ul>

@@ -1,11 +1,13 @@
 # Micro:bit Temperature Sensor
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mrHn8eZ9eqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+A temperature sensor is an input device that measures temperature. Your BBC micro:bit has a temperature sensor inside the processor which can give you an approximation of the air temperature.
+
 ```{admonition} Tempterature functions
 :class: important
 Full details can be found at the **[BBC micro:bit MicroPython temperature documentation](https://microbit-micropython.readthedocs.io/en/latest/microbit.html?highlight=Temperature%20#microbit.temperature)**.
 ```
-
-A temperature sensor is an input device that measures temperature. Your BBC micro:bit has a temperature sensor inside the processor which can give you an approximation of the air temperature.
 
 ## Temperature
 

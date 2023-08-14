@@ -1,5 +1,7 @@
 # Micro:bit Buttons
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hnT0qHM3_hQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 The Micro:bit has two input buttons **A** and **B** on the front. These buttons are an easy way to get user input. In Python these two buttons are called `button_a` and `button_b`.
 
 ```{admonition} Documentation

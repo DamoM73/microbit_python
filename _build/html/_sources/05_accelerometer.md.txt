@@ -1,11 +1,13 @@
 # Micro:bit Accelerometer
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UT35ODxvmS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+The BBC micro:bit comes with an **accelerometer**. An accelerometer can detect and measure how fast something is moving or how it's being tilted. It can sense motion in different directions like up, down, left, and right. 
+
 ```{admonition} Accelerometer functions
 :class: important
 Full details can be found at the **[BBC micro:bit MicroPython accelerometer documentation](https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#module-microbit.accelerometer)**.
 ```
-
-The BBC micro:bit comes with an **accelerometer**. An accelerometer can detect and measure how fast something is moving or how it's being tilted. It can sense motion in different directions like up, down, left, and right. 
 
 ## Movement
 
