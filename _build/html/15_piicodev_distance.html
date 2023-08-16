@@ -137,7 +137,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -212,7 +212,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -220,6 +220,77 @@
         <article role="main">
           <section id="piicodev-distance-sensor">
 <h1>PiicoDev Distance Sensor<a class="headerlink" href="#piicodev-distance-sensor" title="Permalink to this heading">#</a></h1>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CjbOWeBz35s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>The PiicoDev Distance Sensor is a long-distance laser-ranging sensor that uses Time-of-Flight (ToF) to accurately measure distances up to 4m.</p>
+<section id="getting-set-up">
+<h2>Getting set up<a class="headerlink" href="#getting-set-up" title="Permalink to this heading">#</a></h2>
+<section id="connect-the-piicodev-sensor-to-your-micro-bit">
+<h3>Connect the PiicoDev sensor to your Micro:bit<a class="headerlink" href="#connect-the-piicodev-sensor-to-your-micro-bit" title="Permalink to this heading">#</a></h3>
+<p>Plug your Micro:bit into the PiicoDev adapter (buttons LED matrix facing up), connect your sensor to the adapter via the PiicoDev cable and connect your Micro:bit to your computer with a USB lead.</p>
+</section>
+<section id="download-the-piicodev-modules-and-example-code">
+<h3>Download the PiicoDev Modules and Example Code<a class="headerlink" href="#download-the-piicodev-modules-and-example-code" title="Permalink to this heading">#</a></h3>
+<p>Create a new folder for this example. Then download the following files and save them to your new folder (Right Click &gt; “Save Link As”).</p>
+<ul class="simple">
+<li><p><strong><a class="reference external" href="https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py"><code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code></a></strong> - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules</p></li>
+<li><p><strong><a class="reference external" href="https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-VL53L1X-MicroPython-Module/main/min/PiicoDev_VL53L1X.py"><code class="docutils literal notranslate"><span class="pre">PiicoDev_VL53L1X.py</span></code></a></strong> - The device driver.</p></li>
+<li><p><strong><a class="reference external" href="https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-VL53L1X-MicroPython-Module/main/main.py"><code class="docutils literal notranslate"><span class="pre">main.py</span></code></a></strong> - an example script for this PiicoDev Sensor</p></li>
+</ul>
+</section>
+</section>
+<section id="example-code">
+<h2>Example code<a class="headerlink" href="#example-code" title="Permalink to this heading">#</a></h2>
+<p>Below is the example code provided my Core Electronics in the <code class="docutils literal notranslate"><span class="pre">main.py</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span> <span class="nn">PiicoDev_VL53L1X</span> <span class="kn">import</span> <span class="n">PiicoDev_VL53L1X</span>
+<span class="linenos">2</span><span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
+<span class="linenos">3</span>
+<span class="linenos">4</span><span class="n">distSensor</span> <span class="o">=</span> <span class="n">PiicoDev_VL53L1X</span><span class="p">()</span>
+<span class="linenos">5</span>
+<span class="linenos">6</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">7</span>    <span class="n">dist</span> <span class="o">=</span> <span class="n">distSensor</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="c1"># read the distance in millimetres</span>
+<span class="linenos">8</span>    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">dist</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; mm&quot;</span><span class="p">)</span> <span class="c1"># convert the number to a string and print</span>
+<span class="linenos">9</span>    <span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Lets look at the important parts of that code:</p>
+<ul class="simple">
+<li><p><strong>line 1</strong>: imports all the commands for the atmospheric sensor from the PiicoDev_BME280 library</p></li>
+<li><p><strong>line 4</strong>: labels the distance Sensor as <code class="docutils literal notranslate"><span class="pre">distSensor</span></code></p></li>
+<li><p><strong>line 7</strong>: takes a reading from the sensor</p></li>
+<li><p><strong>line 8</strong>: prints the reading value</p></li>
+</ul>
+</section>
+<section id="commands">
+<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this heading">#</a></h2>
+<section id="read">
+<h3><code class="docutils literal notranslate"><span class="pre">read()</span></code><a class="headerlink" href="#read" title="Permalink to this heading">#</a></h3>
+<p>Return the distance to object in front of sensor in mm up to 4000</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Unit</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>returned</p></td>
+<td><p>int</p></td>
+<td><p>mm</p></td>
+<td><p>Range</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="exercise">
+<h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Make a program that displays a distance reading on the micro:bit when button <strong>A</strong> is pressed</p></li>
+</ol>
+</section>
 </section>
 
         </article>
@@ -272,8 +343,37 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">PiicoDev Distance Sensor</a><ul>
+<li><a class="reference internal" href="#getting-set-up">Getting set up</a><ul>
+<li><a class="reference internal" href="#connect-the-piicodev-sensor-to-your-micro-bit">Connect the PiicoDev sensor to your Micro:bit</a></li>
+<li><a class="reference internal" href="#download-the-piicodev-modules-and-example-code">Download the PiicoDev Modules and Example Code</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#example-code">Example code</a></li>
+<li><a class="reference internal" href="#commands">Commands</a><ul>
+<li><a class="reference internal" href="#read"><code class="docutils literal notranslate"><span class="pre">read()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exercise">Exercise</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

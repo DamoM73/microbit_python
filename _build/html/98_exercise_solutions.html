@@ -1055,6 +1055,24 @@
 </div>
 </section>
 </section>
+<section id="piicodev-distance-sensor">
+<h2>PiicoDev Distance Sensor<a class="headerlink" href="#piicodev-distance-sensor" title="Permalink to this heading">#</a></h2>
+<section id="distance-sensor-exercise-1">
+<h3>Distance Sensor Exercise 1<a class="headerlink" href="#distance-sensor-exercise-1" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">PiicoDev_VL53L1X</span> <span class="kn">import</span> <span class="n">PiicoDev_VL53L1X</span>
+<span class="linenos"> 2</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="n">distSensor</span> <span class="o">=</span> <span class="n">PiicoDev_VL53L1X</span><span class="p">()</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 7</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos"> 8</span>        <span class="n">dist</span> <span class="o">=</span> <span class="n">distSensor</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> 
+<span class="linenos"> 9</span>        <span class="n">message</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">dist</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; mm&quot;</span>
+<span class="linenos">10</span>        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
 </section>
 
         </article>
@@ -1201,6 +1219,10 @@
 <li><a class="reference internal" href="#piicodev-colour-sensor-exercises">PiicoDev Colour Sensor Exercises</a><ul>
 <li><a class="reference internal" href="#colour-sensor-exercise-1">Colour Sensor Exercise 1</a></li>
 <li><a class="reference internal" href="#colour-sensor-exercise-2">Colour Sensor Exercise 2</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#piicodev-distance-sensor">PiicoDev Distance Sensor</a><ul>
+<li><a class="reference internal" href="#distance-sensor-exercise-1">Distance Sensor Exercise 1</a></li>
 </ul>
 </li>
 </ul>
