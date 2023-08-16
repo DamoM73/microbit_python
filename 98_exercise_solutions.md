@@ -273,3 +273,17 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 ```{literalinclude} ./python_files/piico_atmosphere_ex2/main.py
 :linenos:
 ```
+
+## PiicoDev Colour Sensor Exercises
+
+### Colour Sensor Exercise 1
+
+```{literalinclude} ./python_files/piico_colour_ex1/main.py
+:linenos:
+```
+
+### Colour Sensor Exercise 2
+
+```{literalinclude} ./python_files/piico_colour_ex1/main.py
+:linenos:
+```

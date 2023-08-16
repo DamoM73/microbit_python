@@ -1018,6 +1018,43 @@
 </div>
 </section>
 </section>
+<section id="piicodev-colour-sensor-exercises">
+<h2>PiicoDev Colour Sensor Exercises<a class="headerlink" href="#piicodev-colour-sensor-exercises" title="Permalink to this heading">#</a></h2>
+<section id="colour-sensor-exercise-1">
+<h3>Colour Sensor Exercise 1<a class="headerlink" href="#colour-sensor-exercise-1" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># piicodev colour sensor exercise 1</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_VEML6040</span> <span class="kn">import</span> <span class="n">PiicoDev_VEML6040</span>
+<span class="linenos"> 4</span><span class="kn">from</span> <span class="nn">PiicoDev_Unified</span> <span class="kn">import</span> <span class="n">sleep_ms</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="n">colourSensor</span> <span class="o">=</span> <span class="n">PiicoDev_VEML6040</span><span class="p">()</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 9</span>    <span class="n">data</span> <span class="o">=</span> <span class="n">colourSensor</span><span class="o">.</span><span class="n">readRGB</span><span class="p">()</span>
+<span class="linenos">10</span>    <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span>    <span class="n">sleep_ms</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="colour-sensor-exercise-2">
+<h3>Colour Sensor Exercise 2<a class="headerlink" href="#colour-sensor-exercise-2" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># piicodev colour sensor exercise 1</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_VEML6040</span> <span class="kn">import</span> <span class="n">PiicoDev_VEML6040</span>
+<span class="linenos"> 4</span><span class="kn">from</span> <span class="nn">PiicoDev_Unified</span> <span class="kn">import</span> <span class="n">sleep_ms</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="n">colourSensor</span> <span class="o">=</span> <span class="n">PiicoDev_VEML6040</span><span class="p">()</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 9</span>    <span class="n">data</span> <span class="o">=</span> <span class="n">colourSensor</span><span class="o">.</span><span class="n">readRGB</span><span class="p">()</span>
+<span class="linenos">10</span>    <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span>    <span class="n">sleep_ms</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
 </section>
 
         </article>
@@ -1159,6 +1196,11 @@
 <li><a class="reference internal" href="#piicodev-atmospheric-sensor-exercises">PiicoDev Atmospheric Sensor Exercises</a><ul>
 <li><a class="reference internal" href="#atmospheric-sensor-exercise-1">Atmospheric Sensor Exercise 1</a></li>
 <li><a class="reference internal" href="#atmospheric-sensor-exercise-2">Atmospheric Sensor Exercise 2</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#piicodev-colour-sensor-exercises">PiicoDev Colour Sensor Exercises</a><ul>
+<li><a class="reference internal" href="#colour-sensor-exercise-1">Colour Sensor Exercise 1</a></li>
+<li><a class="reference internal" href="#colour-sensor-exercise-2">Colour Sensor Exercise 2</a></li>
 </ul>
 </li>
 </ul>
