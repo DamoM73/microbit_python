@@ -211,3 +211,51 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 ```{literalinclude} ./python_files/touch_ex2/main.py
 :linenos:
 ```
+
+## Sound Exercises
+
+### Sound Exercise 1
+
+```{literalinclude} ./python_files/sound_exercise_1/main.py
+:linenos:
+```
+
+### Sound Exercise 2
+
+```{literalinclude} ./python_files/sound_exercise_2/main.py
+:linenos:
+```
+
+### Sound Exercise 3
+
+```{literalinclude} ./python_files/sound_exercise_3/main.py
+:linenos:
+```
+
+## Radio Exercises
+
+### Radio Exercise 1
+
+```{literalinclude} ./python_files/radio_ex1/main.py
+:linenos:
+```
+
+### Radio Exercise 2
+
+```{literalinclude} ./python_files/radio_ex2/main.py
+:linenos:
+```
+
+### Radio Exercise 3
+
+#### Outdoor
+
+```{literalinclude} ./python_files/radio_ex3/outside/main.py
+:linenos:
+```
+
+#### Indoor
+
+```{literalinclude} ./python_files/radio_ex3/inside/main.py
+:linenos:
+```

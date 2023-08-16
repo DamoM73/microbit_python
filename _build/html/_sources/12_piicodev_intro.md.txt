@@ -1,5 +1,7 @@
 # PiicoDev Intro
 
+PiicoDev hardware has been designed from the ground-up with rapid prototyping and maker education in mind. This product range is produced by an Australian business [Core Electronics](https://core-electronics.com.au/). In addition to selling electronic products, Core Electronics also provide tutorials across a wide range of tutorials.
+
 Below you will find the micro:bit guides for the PiicoDev modules
 
 ## Input

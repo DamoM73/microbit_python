@@ -6,7 +6,7 @@ MicroPython on the BBC micro:bit comes with a powerful music and sound module, w
 
 ```{admonition} Documentation
 :class: important
-All the sound functions can be found in either the **[BBC micro:bit MicroPython button documentation](https://microbit-micropython.readthedocs.io/en/latest/button.html)**.
+All the sound functions can be found across the **[BBC micro:bit MicroPython music documentation](https://microbit-micropython.readthedocs.io/en/v2-docs/music.html)**, **[BBC micro:bit MicroPython speech documentation](https://microbit-micropython.readthedocs.io/en/v2-docs/speech.html)**, and **[BBC micro:bit MicroPython speech documentation](https://microbit-micropython.readthedocs.io/en/v2-docs/microphone.html)**.
 ```
 
 ## Music

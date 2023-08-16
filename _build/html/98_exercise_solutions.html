@@ -2,13 +2,13 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Licencing" href="99_licencing.html" /><link rel="prev" title="Debugging with Thonny" href="97_debugging.html" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.03.27 -->
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
         <title>Exercise Solutions - Python meets micro:bit</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -819,6 +819,159 @@
 </div>
 </section>
 </section>
+<section id="sound-exercises">
+<h2>Sound Exercises<a class="headerlink" href="#sound-exercises" title="Permalink to this heading">#</a></h2>
+<section id="sound-exercise-1">
+<h3>Sound Exercise 1<a class="headerlink" href="#sound-exercise-1" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">2</span><span class="kn">import</span> <span class="nn">music</span>
+<span class="linenos">3</span>
+<span class="linenos">4</span><span class="n">tune</span> <span class="o">=</span> <span class="p">[</span>
+<span class="linenos">5</span>    <span class="s2">&quot;G4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;E4:2&quot;</span><span class="p">,</span> <span class="s2">&quot;B4:2&quot;</span><span class="p">,</span> <span class="s2">&quot;G4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;C4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;A4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;B4:2&quot;</span><span class="p">,</span> <span class="s2">&quot;G3:2&quot;</span><span class="p">,</span> <span class="s2">&quot;A4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;A4:4&quot;</span>
+<span class="linenos">6</span>    <span class="p">]</span>
+<span class="linenos">7</span>
+<span class="linenos">8</span><span class="n">music</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">tune</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="sound-exercise-2">
+<h3>Sound Exercise 2<a class="headerlink" href="#sound-exercise-2" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># sound exercise 2</span>
+<span class="linenos">2</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">3</span><span class="kn">import</span> <span class="nn">speech</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="n">lyrics</span> <span class="o">=</span> <span class="s2">&quot;WIY AAR THIY IY5GUL AHV MAOREHTUN BEY5 BOYZ, WIY SOW4R TAAGEH5DHER TUX RIY5CH NUW /HEY4TS&quot;</span>
+<span class="linenos">6</span>
+<span class="linenos">7</span><span class="n">phonemes</span> <span class="o">=</span> <span class="n">speech</span><span class="o">.</span><span class="n">pronounce</span><span class="p">(</span><span class="n">lyrics</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="sound-exercise-3">
+<h3>Sound Exercise 3<a class="headerlink" href="#sound-exercise-3" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># sound exercise 3</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 6</span>    <span class="n">sound_level</span> <span class="o">=</span> <span class="n">microphone</span><span class="o">.</span><span class="n">sound_level</span><span class="p">()</span>
+<span class="linenos"> 7</span>    <span class="nb">print</span><span class="p">(</span><span class="n">sound_level</span><span class="p">)</span>
+<span class="linenos"> 8</span>    <span class="k">if</span> <span class="n">sound_level</span> <span class="o">&gt;</span> <span class="mi">200</span><span class="p">:</span>
+<span class="linenos"> 9</span>        <span class="n">brightness</span> <span class="o">=</span> <span class="n">sound_level</span> <span class="o">-</span> <span class="mi">200</span> <span class="o">//</span> <span class="mi">5</span>
+<span class="linenos">10</span>        <span class="k">if</span> <span class="n">brightness</span> <span class="o">&gt;</span> <span class="mi">9</span><span class="p">:</span>
+<span class="linenos">11</span>            <span class="n">brightness</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="linenos">12</span>        <span class="n">matrix</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="n">brightness</span><span class="p">]</span>
+<span class="linenos">13</span>    <span class="k">elif</span> <span class="n">sound_level</span> <span class="o">&gt;</span> <span class="mi">150</span><span class="p">:</span>
+<span class="linenos">14</span>        <span class="n">brightness</span> <span class="o">=</span> <span class="n">sound_level</span> <span class="o">-</span> <span class="mi">200</span> <span class="o">//</span> <span class="mi">5</span>
+<span class="linenos">15</span>        <span class="k">if</span> <span class="n">brightness</span> <span class="o">&gt;</span> <span class="mi">9</span><span class="p">:</span>
+<span class="linenos">16</span>            <span class="n">brightness</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="linenos">17</span>        <span class="n">matrix</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="n">brightness</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="linenos">18</span>    <span class="k">elif</span> <span class="n">sound_level</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+<span class="linenos">19</span>        <span class="n">brightness</span> <span class="o">=</span> <span class="n">sound_level</span> <span class="o">-</span> <span class="mi">200</span> <span class="o">//</span> <span class="mi">5</span>
+<span class="linenos">20</span>        <span class="k">if</span> <span class="n">brightness</span> <span class="o">&gt;</span> <span class="mi">9</span><span class="p">:</span>
+<span class="linenos">21</span>            <span class="n">brightness</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="linenos">22</span>        <span class="n">matrix</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="n">brightness</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="linenos">23</span>    <span class="k">elif</span> <span class="n">sound_level</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">:</span>
+<span class="linenos">24</span>        <span class="n">brightness</span> <span class="o">=</span> <span class="n">sound_level</span> <span class="o">-</span> <span class="mi">200</span> <span class="o">//</span> <span class="mi">5</span>
+<span class="linenos">25</span>        <span class="k">if</span> <span class="n">brightness</span> <span class="o">&gt;</span> <span class="mi">9</span><span class="p">:</span>
+<span class="linenos">26</span>            <span class="n">brightness</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="linenos">27</span>        <span class="n">matrix</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="n">brightness</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="linenos">28</span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos">29</span>        <span class="n">brightness</span> <span class="o">=</span> <span class="n">sound_level</span> <span class="o">//</span> <span class="mi">5</span>
+<span class="linenos">30</span>        <span class="k">if</span> <span class="n">brightness</span> <span class="o">&gt;</span> <span class="mi">9</span><span class="p">:</span>
+<span class="linenos">31</span>            <span class="n">brightness</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="linenos">32</span>        <span class="n">matrix</span> <span class="o">=</span> <span class="p">[</span><span class="n">brightness</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+<span class="linenos">33</span>    
+<span class="linenos">34</span>    <span class="k">for</span> <span class="n">x_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<span class="linenos">35</span>        <span class="k">for</span> <span class="n">y_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<span class="linenos">36</span>            <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x_index</span><span class="p">,</span> <span class="n">y_index</span><span class="p">,</span> <span class="n">matrix</span><span class="p">[</span><span class="n">x_index</span><span class="p">])</span>
+<span class="linenos">37</span>            
+<span class="linenos">38</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="linenos">39</span>    
+<span class="linenos">40</span>    
+</pre></div>
+</div>
+</section>
+</section>
+<section id="radio-exercises">
+<h2>Radio Exercises<a class="headerlink" href="#radio-exercises" title="Permalink to this heading">#</a></h2>
+<section id="radio-exercise-1">
+<h3>Radio Exercise 1<a class="headerlink" href="#radio-exercise-1" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># radio exercise 1</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span><span class="kn">import</span> <span class="nn">radio</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 7</span>    <span class="n">message</span> <span class="o">=</span> <span class="n">radio</span><span class="o">.</span><span class="n">receive</span><span class="p">()</span>
+<span class="linenos"> 8</span>    <span class="k">if</span> <span class="n">message</span><span class="p">:</span>
+<span class="linenos"> 9</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">DUCK</span><span class="p">)</span>
+<span class="linenos">10</span>    <span class="k">if</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">was_gesture</span><span class="p">(</span><span class="s1">&#39;shake&#39;</span><span class="p">):</span>
+<span class="linenos">11</span>        <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos">12</span>        <span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;duck&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="radio-exercise-2">
+<h3>Radio Exercise 2<a class="headerlink" href="#radio-exercise-2" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># radio exercise 2</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span><span class="kn">import</span> <span class="nn">radio</span>
+<span class="linenos"> 5</span><span class="n">radio</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">group</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+<span class="linenos"> 6</span><span class="n">radio</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 9</span>    <span class="n">message</span> <span class="o">=</span> <span class="n">radio</span><span class="o">.</span><span class="n">receive</span><span class="p">()</span>
+<span class="linenos">10</span>    <span class="k">if</span> <span class="n">message</span><span class="p">:</span>
+<span class="linenos">11</span>        <span class="k">if</span> <span class="n">message</span> <span class="o">==</span> <span class="s1">&#39;yes&#39;</span><span class="p">:</span>
+<span class="linenos">12</span>            <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">YES</span><span class="p">)</span>
+<span class="linenos">13</span>            <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+<span class="linenos">14</span>            <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos">15</span>        <span class="k">elif</span> <span class="n">message</span> <span class="o">==</span> <span class="s1">&#39;no&#39;</span><span class="p">:</span>
+<span class="linenos">16</span>            <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">NO</span><span class="p">)</span>
+<span class="linenos">17</span>            <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+<span class="linenos">18</span>            <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos">19</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos">20</span>        <span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;yes&#39;</span><span class="p">)</span>
+<span class="linenos">21</span>    <span class="k">if</span> <span class="n">button_b</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos">22</span>        <span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;no&#39;</span><span class="p">)</span>
+<span class="linenos">23</span>
+</pre></div>
+</div>
+</section>
+<section id="radio-exercise-3">
+<h3>Radio Exercise 3<a class="headerlink" href="#radio-exercise-3" title="Permalink to this heading">#</a></h3>
+<section id="outdoor">
+<h4>Outdoor<a class="headerlink" href="#outdoor" title="Permalink to this heading">#</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">2</span><span class="kn">import</span> <span class="nn">radio</span>
+<span class="linenos">3</span>
+<span class="linenos">4</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">5</span>    <span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">temperature</span><span class="p">()))</span>
+<span class="linenos">6</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="indoor">
+<h4>Indoor<a class="headerlink" href="#indoor" title="Permalink to this heading">#</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 2</span><span class="kn">import</span> <span class="nn">radio</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="n">outdoorTemp</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 7</span>    <span class="n">message</span> <span class="o">=</span> <span class="n">radio</span><span class="o">.</span><span class="n">receive</span><span class="p">()</span>
+<span class="linenos"> 8</span>    <span class="k">if</span> <span class="n">message</span><span class="p">:</span>
+<span class="linenos"> 9</span>        <span class="n">outdoor_temp</span> <span class="o">=</span> <span class="n">message</span>
+<span class="linenos">10</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos">11</span>        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">temperature</span><span class="p">()))</span>
+<span class="linenos">12</span>    <span class="k">if</span> <span class="n">button_b</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos">13</span>        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">outdoor_temp</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
 </section>
 
         </article>
@@ -939,6 +1092,22 @@
 <li><a class="reference internal" href="#touch-exercises">Touch Exercises</a><ul>
 <li><a class="reference internal" href="#touch-exercise-1">Touch Exercise 1</a></li>
 <li><a class="reference internal" href="#touch-exercise-2">Touch Exercise 2</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sound-exercises">Sound Exercises</a><ul>
+<li><a class="reference internal" href="#sound-exercise-1">Sound Exercise 1</a></li>
+<li><a class="reference internal" href="#sound-exercise-2">Sound Exercise 2</a></li>
+<li><a class="reference internal" href="#sound-exercise-3">Sound Exercise 3</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#radio-exercises">Radio Exercises</a><ul>
+<li><a class="reference internal" href="#radio-exercise-1">Radio Exercise 1</a></li>
+<li><a class="reference internal" href="#radio-exercise-2">Radio Exercise 2</a></li>
+<li><a class="reference internal" href="#radio-exercise-3">Radio Exercise 3</a><ul>
+<li><a class="reference internal" href="#outdoor">Outdoor</a></li>
+<li><a class="reference internal" href="#indoor">Indoor</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
