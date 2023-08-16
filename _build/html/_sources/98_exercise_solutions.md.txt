@@ -259,3 +259,17 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 ```{literalinclude} ./python_files/radio_ex3/inside/main.py
 :linenos:
 ```
+
+## PiicoDev Atmospheric Sensor Exercises
+
+### Atmospheric Sensor Exercise 1
+
+```{literalinclude} ./python_files/piico_atmosphere_ex1/main.py
+:linenos:
+```
+
+### Atmospheric Sensor Exercise 2
+
+```{literalinclude} ./python_files/piico_atmosphere_ex2/main.py
+:linenos:
+```

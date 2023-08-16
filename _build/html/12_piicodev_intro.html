@@ -221,9 +221,26 @@
           <section id="piicodev-intro">
 <h1>PiicoDev Intro<a class="headerlink" href="#piicodev-intro" title="Permalink to this heading">#</a></h1>
 <p>PiicoDev hardware has been designed from the ground-up with rapid prototyping and maker education in mind. This product range is produced by an Australian business <a class="reference external" href="https://core-electronics.com.au/">Core Electronics</a>. In addition to selling electronic products, Core Electronics also provide tutorials across a wide range of tutorials.</p>
-<p>Below you will find the micro:bit guides for the PiicoDev modules</p>
-<section id="input">
-<h2>Input<a class="headerlink" href="#input" title="Permalink to this heading">#</a></h2>
+<section id="using-the-piicodev-modules">
+<h2>Using the PiicoDev modules<a class="headerlink" href="#using-the-piicodev-modules" title="Permalink to this heading">#</a></h2>
+<p>Unlike the micro:bit modules, the code that runs the PiicoDev modules is not installed on the micro:bit. This means that you will need to download files and save them to the folder containing your <code class="docutils literal notranslate"><span class="pre">main.py</span></code> file. These files are:</p>
+<ul class="simple">
+<li><p><strong>PiicoDev Unified Libraries</strong>: → <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code></p>
+<ul>
+<li><p>provides the commands for all the PiicoDev modules</p></li>
+<li><p>you will only need one of these in the each folder</p></li>
+</ul>
+</li>
+<li><p><strong>The device drive</strong></p>
+<ul>
+<li><p>this is different for each PiicoDev module</p></li>
+<li><p>you will need a device driver for each different PiicoDev module you are using. For example, if you are using the Distance Sensor and the OLED Module, you will need a device driver for both of these.</p></li>
+</ul>
+</li>
+</ul>
+<p>These files can be found on the micro:bit guides for the PiicoDev modules:</p>
+<section id="input-devices">
+<h3>Input Devices<a class="headerlink" href="#input-devices" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://core-electronics.com.au/guides/piicodev-atmospheric-sensor-bme280-quickstart-guide-for-microbit/">PiicoDev Atmospheric Sensor</a></p></li>
 <li><p><a class="reference external" href="https://core-electronics.com.au/guides/piicodev-distance-sensor-vl53l1x-micro-bit-guide/">PiicoDev Distance Sensor</a></p></li>
@@ -232,11 +249,16 @@
 <li><p><a class="reference external" href="https://core-electronics.com.au/guides/piicodev/piicodev-potentiometer-getting-started-guide/#ONVMI66">PiicoDev Slide Potentiometer</a></p></li>
 </ul>
 </section>
-<section id="output">
-<h2>Output<a class="headerlink" href="#output" title="Permalink to this heading">#</a></h2>
+<section id="output-devices">
+<h3>Output Devices<a class="headerlink" href="#output-devices" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://core-electronics.com.au/guides/micro-bit/piicodev-oled-ssd1306-microbit-guide/">PiicoDev OLED Module</a></p></li>
 </ul>
+</section>
+</section>
+<section id="uploading-to-the-micro-bit">
+<h2>Uploading to the micro:bit<a class="headerlink" href="#uploading-to-the-micro-bit" title="Permalink to this heading">#</a></h2>
+<p>If you want to use the micro:bit untethered (not connected to the computer), then you need to upload the <strong>PiicoDev Unified Libraries</strong> and the <strong>device drivers</strong> to the micro:bit along with <code class="docutils literal notranslate"><span class="pre">main.py</span></code>.</p>
 </section>
 </section>
 
@@ -303,8 +325,12 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">PiicoDev Intro</a><ul>
-<li><a class="reference internal" href="#input">Input</a></li>
-<li><a class="reference internal" href="#output">Output</a></li>
+<li><a class="reference internal" href="#using-the-piicodev-modules">Using the PiicoDev modules</a><ul>
+<li><a class="reference internal" href="#input-devices">Input Devices</a></li>
+<li><a class="reference internal" href="#output-devices">Output Devices</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#uploading-to-the-micro-bit">Uploading to the micro:bit</a></li>
 </ul>
 </li>
 </ul>

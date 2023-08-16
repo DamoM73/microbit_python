@@ -972,6 +972,52 @@
 </section>
 </section>
 </section>
+<section id="piicodev-atmospheric-sensor-exercises">
+<h2>PiicoDev Atmospheric Sensor Exercises<a class="headerlink" href="#piicodev-atmospheric-sensor-exercises" title="Permalink to this heading">#</a></h2>
+<section id="atmospheric-sensor-exercise-1">
+<h3>Atmospheric Sensor Exercise 1<a class="headerlink" href="#atmospheric-sensor-exercise-1" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># piicodev atmospheric sensor exercise 1</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_BME280</span> <span class="kn">import</span> <span class="n">PiicoDev_BME280</span>
+<span class="linenos"> 4</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="n">sensor</span> <span class="o">=</span> <span class="n">PiicoDev_BME280</span><span class="p">()</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 9</span>    <span class="c1"># gather reading</span>
+<span class="linenos">10</span>    <span class="n">temp</span><span class="p">,</span> <span class="n">pressure</span><span class="p">,</span> <span class="n">humidity</span> <span class="o">=</span> <span class="n">sensor</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+<span class="linenos">11</span>    <span class="n">temp</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<span class="linenos">12</span>    <span class="n">humidity</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">humidity</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<span class="linenos">13</span>    
+<span class="linenos">14</span>    <span class="c1"># display reading</span>
+<span class="linenos">15</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos">16</span>        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">temp</span><span class="p">))</span>
+<span class="linenos">17</span>    <span class="k">if</span> <span class="n">button_b</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos">18</span>        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">humidity</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+<section id="atmospheric-sensor-exercise-2">
+<h3>Atmospheric Sensor Exercise 2<a class="headerlink" href="#atmospheric-sensor-exercise-2" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># piicodev atmospheric sensor exercise 2</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_BME280</span> <span class="kn">import</span> <span class="n">PiicoDev_BME280</span>
+<span class="linenos"> 4</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="n">sensor</span> <span class="o">=</span> <span class="n">PiicoDev_BME280</span><span class="p">()</span>
+<span class="linenos"> 7</span><span class="n">zero_altitude</span> <span class="o">=</span> <span class="n">sensor</span><span class="o">.</span><span class="n">altitude</span><span class="p">()</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">10</span>    <span class="c1"># get reading</span>
+<span class="linenos">11</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+<span class="linenos">12</span>        <span class="n">current_altitude</span> <span class="o">=</span> <span class="n">sensor</span><span class="o">.</span><span class="n">altitude</span><span class="p">()</span>
+<span class="linenos">13</span>        <span class="nb">print</span><span class="p">(</span><span class="n">current_altitude</span><span class="p">,</span> <span class="n">zero_altitude</span><span class="p">)</span>
+<span class="linenos">14</span>        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">current_altitude</span> <span class="o">-</span> <span class="n">zero_altitude</span><span class="p">))</span>
+<span class="linenos">15</span>        <span class="n">zero_altitude</span> <span class="o">=</span> <span class="n">current_altitude</span>
+</pre></div>
+</div>
+</section>
+</section>
 </section>
 
         </article>
@@ -1108,6 +1154,11 @@
 <li><a class="reference internal" href="#indoor">Indoor</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a class="reference internal" href="#piicodev-atmospheric-sensor-exercises">PiicoDev Atmospheric Sensor Exercises</a><ul>
+<li><a class="reference internal" href="#atmospheric-sensor-exercise-1">Atmospheric Sensor Exercise 1</a></li>
+<li><a class="reference internal" href="#atmospheric-sensor-exercise-2">Atmospheric Sensor Exercise 2</a></li>
 </ul>
 </li>
 </ul>
