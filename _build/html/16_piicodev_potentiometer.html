@@ -220,11 +220,84 @@
         <article role="main">
           <section id="piicodev-potentiometers">
 <h1>PiicoDev Potentiometers<a class="headerlink" href="#piicodev-potentiometers" title="Permalink to this heading">#</a></h1>
-<section id="rotary-potentiometers">
-<h2>Rotary Potentiometers<a class="headerlink" href="#rotary-potentiometers" title="Permalink to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eD8h_VAoV90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p><strong>Potentiometers</strong> (pots) provide an intuitive, analogue way to control to your project. Turn the knob or slide the slider to return different values.</p>
+<section id="getting-set-up">
+<h2>Getting set up<a class="headerlink" href="#getting-set-up" title="Permalink to this heading">#</a></h2>
+<section id="connect-the-piicodev-sensor-to-your-micro-bit">
+<h3>Connect the PiicoDev sensor to your Micro:bit<a class="headerlink" href="#connect-the-piicodev-sensor-to-your-micro-bit" title="Permalink to this heading">#</a></h3>
+<p>Plug your Micro:bit into the PiicoDev adapter (buttons LED matrix facing up), connect your sensor to the adapter via the PiicoDev cable and connect your Micro:bit to your computer with a USB lead.</p>
 </section>
-<section id="slide-potentiometers">
-<h2>Slide Potentiometers<a class="headerlink" href="#slide-potentiometers" title="Permalink to this heading">#</a></h2>
+<section id="download-the-piicodev-modules">
+<h3>Download the PiicoDev Modules<a class="headerlink" href="#download-the-piicodev-modules" title="Permalink to this heading">#</a></h3>
+<p>The <strong>Rotary</strong> and <strong>Slide Potentiometers</strong> use the same code.</p>
+<p>Create a new folder for this example. Then download the following files and save them to your new folder (Right Click &gt; “Save Link As”).</p>
+<ul class="simple">
+<li><p><strong><a class="reference external" href="https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py"><code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code></a></strong> - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules</p></li>
+<li><p><strong><a class="reference external" href="https://github.com/CoreElectronics/CE-PiicoDev-Potentiometer-MicroPython-Module/raw/main/min/PiicoDev_Potentiometer.py"><code class="docutils literal notranslate"><span class="pre">PiicoDev_Potentiometer.py</span></code></a></strong> - The device driver.</p></li>
+</ul>
+</section>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">#</a></h2>
+<section id="getting-values">
+<h3>Getting Values<a class="headerlink" href="#getting-values" title="Permalink to this heading">#</a></h3>
+<p>First lets see how to get a value from the pot.</p>
+<p>Create a new file called <code class="docutils literal notranslate"><span class="pre">main.py</span></code> and add the code below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># Read the PiicoDev Potentiometer value</span>
+<span class="linenos">2</span><span class="kn">from</span> <span class="nn">PiicoDev_Potentiometer</span> <span class="kn">import</span> <span class="n">PiicoDev_Potentiometer</span>
+<span class="linenos">3</span><span class="kn">from</span> <span class="nn">PiicoDev_Unified</span> <span class="kn">import</span> <span class="n">sleep_ms</span>
+<span class="linenos">4</span> 
+<span class="linenos">5</span><span class="n">pot</span> <span class="o">=</span> <span class="n">PiicoDev_Potentiometer</span><span class="p">()</span> <span class="c1"># Initialise the potentiometer</span>
+<span class="linenos">6</span>
+<span class="linenos">7</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">8</span>    <span class="nb">print</span><span class="p">(</span><span class="n">pot</span><span class="o">.</span><span class="n">value</span><span class="p">)</span> <span class="c1"># read the pot and print the result</span>
+<span class="linenos">9</span>    <span class="n">sleep_ms</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="changing-scale">
+<h3>Changing Scale<a class="headerlink" href="#changing-scale" title="Permalink to this heading">#</a></h3>
+<p>The default scale is <code class="docutils literal notranslate"><span class="pre">0</span></code> - <code class="docutils literal notranslate"><span class="pre">100</span></code>. What if you want it to be something else? For example, <code class="docutils literal notranslate"><span class="pre">16</span></code> - <code class="docutils literal notranslate"><span class="pre">42</span></code>.</p>
+<p>Change your <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># Read the PiicoDev Potentiometer value</span>
+<span class="linenos"> 2</span><span class="kn">from</span> <span class="nn">PiicoDev_Potentiometer</span> <span class="kn">import</span> <span class="n">PiicoDev_Potentiometer</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_Unified</span> <span class="kn">import</span> <span class="n">sleep_ms</span>
+<span class="linenos"> 4</span> 
+<span class="linenos"> 5</span><span class="n">pot</span> <span class="o">=</span> <span class="n">PiicoDev_Potentiometer</span><span class="p">()</span> <span class="c1"># Initialise the potentiometer</span>
+<span class="linenos"> 6</span><span class="n">pot</span><span class="o">.</span><span class="n">maximum</span> <span class="o">=</span> <span class="mi">42</span> <span class="c1"># set the range of output values</span>
+<span class="linenos"> 7</span><span class="n">pot</span><span class="o">.</span><span class="n">minimum</span> <span class="o">=</span> <span class="mi">16</span>   <span class="c1"># if minimum or maximum are ommitted, they will default to 0 and 100 respectively</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">10</span>    <span class="nb">print</span><span class="p">(</span><span class="n">pot</span><span class="o">.</span><span class="n">value</span><span class="p">)</span> <span class="c1"># read the pot and print the result</span>
+<span class="linenos">11</span>    <span class="n">sleep_ms</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="using-multiple-pots">
+<h3>Using Multiple Pots<a class="headerlink" href="#using-multiple-pots" title="Permalink to this heading">#</a></h3>
+<p>Each pot module has a four bit id switch on its back. This allows up to 16 different pots to be daisy-chained together. Each pot must be given a unique addressing using the id switches (see, example below)</p>
+<p><img alt="pot selector switches" src="_images/pot_selector.jpg" /></p>
+<section id="setup">
+<h4>Setup<a class="headerlink" href="#setup" title="Permalink to this heading">#</a></h4>
+<p>Before running this code, we need to change the hardware. Daisy-chain a rotary pot and a slide pot together. Keep the rotary pot’s address as 0,0,0,0 and change the slide pot’s address to 1,0,0,0 (just like the image above).</p>
+<p>Then change your <code class="docutils literal notranslate"><span class="pre">main.py</span></code> code to the code below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">PiicoDev_Potentiometer</span> <span class="kn">import</span> <span class="n">PiicoDev_Potentiometer</span>
+<span class="linenos"> 2</span><span class="kn">from</span> <span class="nn">PiicoDev_Unified</span> <span class="kn">import</span> <span class="n">sleep_ms</span>
+<span class="linenos"> 3</span><span class="kn">import</span> <span class="nn">music</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">duration_pot</span> <span class="o">=</span> <span class="n">PiicoDev_Potentiometer</span><span class="p">(</span><span class="n">minimum</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">maximum</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+<span class="linenos"> 6</span><span class="n">frequency_pot</span> <span class="o">=</span> <span class="n">PiicoDev_Potentiometer</span><span class="p">(</span><span class="n">minimum</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">maximum</span><span class="o">=</span><span class="mi">15000</span> <span class="p">,</span><span class="nb">id</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos"> 9</span>    <span class="n">duration</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">duration_pot</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+<span class="linenos">10</span>    <span class="n">frequency</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">frequency_pot</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+<span class="linenos">11</span>    
+<span class="linenos">12</span>    <span class="n">music</span><span class="o">.</span><span class="n">pitch</span><span class="p">(</span><span class="n">frequency</span><span class="p">,</span><span class="n">duration</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
 </section>
 </section>
 
@@ -291,8 +364,20 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">PiicoDev Potentiometers</a><ul>
-<li><a class="reference internal" href="#rotary-potentiometers">Rotary Potentiometers</a></li>
-<li><a class="reference internal" href="#slide-potentiometers">Slide Potentiometers</a></li>
+<li><a class="reference internal" href="#getting-set-up">Getting set up</a><ul>
+<li><a class="reference internal" href="#connect-the-piicodev-sensor-to-your-micro-bit">Connect the PiicoDev sensor to your Micro:bit</a></li>
+<li><a class="reference internal" href="#download-the-piicodev-modules">Download the PiicoDev Modules</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#getting-values">Getting Values</a></li>
+<li><a class="reference internal" href="#changing-scale">Changing Scale</a></li>
+<li><a class="reference internal" href="#using-multiple-pots">Using Multiple Pots</a><ul>
+<li><a class="reference internal" href="#setup">Setup</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
