@@ -56,4 +56,3 @@ Then change your `main.py` code to the code below:
 ```{literalinclude} ./python_files/piico_pot_example_3/main.py
 :linenos:
 ```
-
