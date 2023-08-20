@@ -6,7 +6,7 @@ The PiicoDev Distance Sensor is a long-distance laser-ranging sensor that uses T
 
 ## Getting set up
 
-### Connect the PiicoDev sensor to your Micro:bit
+### Connect the PiicoDev module to your Micro:bit
 
 Plug your Micro:bit into the PiicoDev adapter (buttons LED matrix facing up), connect your sensor to the adapter via the PiicoDev cable and connect your Micro:bit to your computer with a USB lead.
 

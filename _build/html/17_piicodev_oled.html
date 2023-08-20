@@ -137,7 +137,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -212,7 +212,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -220,6 +220,198 @@
         <article role="main">
           <section id="piicodev-oled-module">
 <h1>PiicoDev OLED Module<a class="headerlink" href="#piicodev-oled-module" title="Permalink to this heading">#</a></h1>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xEcLUxhMMDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>The PiicoDev OLED Display Module is perfect for adding a graphical display to your project. The monochrome white-on-black display provides a sharp image and fits a surprising amount of detail. Use this module to display text, draw shapes, animations, and even create plots.</p>
+<section id="getting-set-up">
+<h2>Getting set up<a class="headerlink" href="#getting-set-up" title="Permalink to this heading">#</a></h2>
+<section id="connect-the-piicodev-module-to-your-micro-bit">
+<h3>Connect the PiicoDev module to your Micro:bit<a class="headerlink" href="#connect-the-piicodev-module-to-your-micro-bit" title="Permalink to this heading">#</a></h3>
+<p>Plug your Micro:bit into the PiicoDev adapter (buttons LED matrix facing up), connect your module to the adapter via the PiicoDev cable and connect your Micro:bit to your computer with a USB lead.</p>
+<p>Make sure that the ASW switch is in the off position (see below)</p>
+<p><img alt="OLED AWS Switch" src="_images/oled_asw_switch.jpg" /></p>
+</section>
+<section id="download-the-piicodev-modules">
+<h3>Download the PiicoDev Modules<a class="headerlink" href="#download-the-piicodev-modules" title="Permalink to this heading">#</a></h3>
+<p>Create a new folder for this example. Then download the following files and save them to your new folder (Right Click &gt; “Save Link As”).</p>
+<ul class="simple">
+<li><p><strong><a class="reference external" href="https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py"><code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code></a></strong> - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules</p></li>
+<li><p><strong><a class="reference external" href="https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-SSD1306-MicroPython-Module/main/min/PiicoDev_SSD1306.py"><code class="docutils literal notranslate"><span class="pre">PiicoDev_SSD1306.py</span></code></a></strong> - The device driver.</p></li>
+<li><p><strong><a class="reference external" href="https://github.com/CoreElectronics/CE-PiicoDev-SSD1306-MicroPython-Module/raw/main/font-pet-me-128.dat">font-pet-me-128.dat</a></strong> - The font file</p></li>
+<li><p><strong><a class="reference external" href="https://github.com/CoreElectronics/CE-PiicoDev-SSD1306-MicroPython-Module/raw/main/bitmap/piicodev-logo.pbm">piicodev-logo.pbm</a></strong> - PiicoDev Test Image</p></li>
+</ul>
+</section>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">#</a></h2>
+<p>The PiicoDev OLED Module screen has 128 pixels x 64 pixels, with the <code class="docutils literal notranslate"><span class="pre">(0,0)</span></code> coordinate in the top lefthand corner.</p>
+<section id="line">
+<h3>Line<a class="headerlink" href="#line" title="Permalink to this heading">#</a></h3>
+<p>There are several options for drawing simple lines.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">line(x1,</span> <span class="pre">y1,</span> <span class="pre">x2,</span> <span class="pre">y2,</span> <span class="pre">c)</span></code> will draw a two-point line from <code class="docutils literal notranslate"><span class="pre">(x1,y1)</span></code> to <code class="docutils literal notranslate"><span class="pre">(x2,y2)</span></code> of colour <code class="docutils literal notranslate"><span class="pre">c</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hline(x,</span> <span class="pre">y,</span> <span class="pre">l,</span> <span class="pre">c)</span></code> will draw a horizontal line from <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> of length <code class="docutils literal notranslate"><span class="pre">l</span></code>, colour <code class="docutils literal notranslate"><span class="pre">c</span></code>. Always draws left-to-right.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vline(x,</span> <span class="pre">y,</span> <span class="pre">l,</span> <span class="pre">c)</span></code> will draw a verticle line from <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> of length <code class="docutils literal notranslate"><span class="pre">l</span></code>, colour <code class="docutils literal notranslate"><span class="pre">c</span></code>. Always draws left-to-right.</p></li>
+</ul>
+<p>The following example draws horizontal and vertical lines from the same point and joins their ends with a two-point line. There is a small delay between the drawing of each line.</p>
+<p><strong>Create</strong> a <code class="docutils literal notranslate"><span class="pre">main.py</span></code> file in the folder and add the code below. Upload it to the micro:bit and run it.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># line example</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span><span class="kn">from</span> <span class="nn">PiicoDev_Unified</span> <span class="kn">import</span> <span class="n">sleep_ms</span> <span class="c1"># cross-platform compatible sleep function</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="n">display</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="n">display</span><span class="o">.</span><span class="n">hline</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># horizontal line 80px long from (10,10)</span>
+<span class="linenos"> 9</span><span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="linenos">10</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span><span class="n">display</span><span class="o">.</span><span class="n">vline</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># vertical line 35px long from (10,10)</span>
+<span class="linenos">13</span><span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="linenos">14</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+<span class="linenos">15</span>
+<span class="linenos">16</span><span class="n">display</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">45</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># two-point line from (10,45) to (90,10)</span>
+<span class="linenos">17</span><span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="linenos">18</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="rectangle">
+<h3>Rectangle<a class="headerlink" href="#rectangle" title="Permalink to this heading">#</a></h3>
+<p>Draw an unfilled rectangle with <code class="docutils literal notranslate"><span class="pre">rect(x,y,width,height,colour)</span></code></p>
+<p>The top-left corner is specified by <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>. <code class="docutils literal notranslate"><span class="pre">width</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span></code> set the width and height in pixels. <code class="docutils literal notranslate"><span class="pre">colour</span></code> sets the line colour as <code class="docutils literal notranslate"><span class="pre">1</span></code> (white) or <code class="docutils literal notranslate"><span class="pre">0</span></code> (black)</p>
+<p>The following example draws an unfilled rectangle to the left of the display, and a filled white rectangle to the right. A filled black rectangle is then drawn over the top.</p>
+<p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below. Upload it to the micro:bit and run it.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># rectangle example</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">display</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="n">display</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># unfilled rectangle</span>
+<span class="linenos"> 8</span><span class="n">display</span><span class="o">.</span><span class="n">fill_rect</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># filled rectangle (white)</span>
+<span class="linenos"> 9</span><span class="n">display</span><span class="o">.</span><span class="n">fill_rect</span><span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># filled rectangle (black)</span>
+<span class="linenos">10</span><span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="text">
+<h3>Text<a class="headerlink" href="#text" title="Permalink to this heading">#</a></h3>
+<p>Display alphanumeric text with <code class="docutils literal notranslate"><span class="pre">text(string,</span> <span class="pre">x,</span> <span class="pre">y,</span> <span class="pre">colour)</span></code>, where;</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">string</span></code> is a python string</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code> are the top-left co-ordinates</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">colour</span></code> is <code class="docutils literal notranslate"><span class="pre">1</span></code> (white) or <code class="docutils literal notranslate"><span class="pre">0</span></code> (black)</p></li>
+</ul>
+<p>The following example prints four lines. The first is a literal string, where the text to be printed is inserted into the function call. The second prints a string variable myString. The third and fourth print the value stored in a variable.</p>
+<p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below. Upload it to the micro:bit and run it.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># text example</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span><span class="n">display</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="n">myString</span> <span class="o">=</span> <span class="s2">&quot;this is me&quot;</span>
+<span class="linenos"> 7</span><span class="n">myNumber</span> <span class="o">=</span> <span class="mf">123.4567</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="n">display</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># literal string</span>
+<span class="linenos">10</span><span class="n">display</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">myString</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># string variable</span>
+<span class="linenos">11</span><span class="n">display</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">myNumber</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># print a variable</span>
+<span class="linenos">12</span><span class="n">display</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">myNumber</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span><span class="mi">45</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># use formatted-print</span>
+<span class="linenos">13</span><span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="graph">
+<h3>Graph<a class="headerlink" href="#graph" title="Permalink to this heading">#</a></h3>
+<p>Graphs are created with the <code class="docutils literal notranslate"><span class="pre">graph2D()</span></code> function allows plotting a single variable as it changes over time. The plot starts at the right-hand side of the display and shifts to the left every time it is updated.</p>
+<p><code class="docutils literal notranslate"><span class="pre">updateGraph2D(graph,</span> <span class="pre">value)</span></code> pushes the latest value onto a graph object. Multiple graphs can be shown at the same time and must be updated by making separate calls to updateGraph2D().</p>
+<p>The following example graphs two functions independently.</p>
+<p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below. Upload it to the micro:bit and run it.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># graph example</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">pi</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="n">display</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
+<span class="linenos"> 7</span><span class="n">graph1</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">graph2D</span><span class="p">(</span><span class="n">minValue</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">maxValue</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># create two graph2D objects</span>
+<span class="linenos"> 8</span><span class="n">graph2</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">graph2D</span><span class="p">(</span><span class="n">minValue</span><span class="o">=-</span><span class="mi">4</span><span class="p">,</span> <span class="n">maxValue</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="linenos"> 9</span>
+<span class="linenos">10</span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">WIDTH</span><span class="p">):</span>
+<span class="linenos">11</span>    <span class="n">y</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">x</span><span class="o">/</span><span class="n">WIDTH</span><span class="p">)</span> <span class="c1"># sine wave with amplitude 1, and wavelength equal to the screen width</span>
+<span class="linenos">12</span>    <span class="n">z</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="mi">6</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">x</span><span class="o">/</span><span class="n">WIDTH</span><span class="p">)</span> <span class="c1"># cosine wave with amplitude 2, and wavelength one-third the screen width</span>
+<span class="linenos">13</span>    
+<span class="linenos">14</span>    <span class="n">display</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="linenos">15</span>    <span class="n">display</span><span class="o">.</span><span class="n">updateGraph2D</span><span class="p">(</span><span class="n">graph1</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="linenos">16</span>    <span class="n">display</span><span class="o">.</span><span class="n">updateGraph2D</span><span class="p">(</span><span class="n">graph2</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+<span class="linenos">17</span>    <span class="n">display</span><span class="o">.</span><span class="n">hline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">HEIGHT</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span><span class="mi">128</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># draw a zero-axis</span>
+<span class="linenos">18</span>    
+<span class="linenos">19</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="animation">
+<h3>Animation<a class="headerlink" href="#animation" title="Permalink to this heading">#</a></h3>
+<p>In general, the steps to create an animation are:</p>
+<ul class="simple">
+<li><p>Clear the display (we generally don’t want to draw over old frames)</p></li>
+<li><p>Draw a frame - this is usually generated by some variable that changes with time.</p></li>
+<li><p>Update the display</p></li>
+</ul>
+<p>The following example animates a rectangle bouncing around the screen.</p>
+<p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below. Upload it to the micro:bit and run it.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># animation example</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span><span class="kn">from</span> <span class="nn">PiicoDev_Unified</span> <span class="kn">import</span> <span class="n">sleep_ms</span> <span class="c1"># cross-platform compatible sleep function</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="n">display</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="linenos"> 9</span><span class="n">y</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="n">x_speed</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="linenos">12</span><span class="n">y_speed</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">15</span>    <span class="c1">### Clear the display ###</span>
+<span class="linenos">16</span>    <span class="n">display</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># &lt;- what happens if you comment this out?</span>
+<span class="linenos">17</span>    
+<span class="linenos">18</span>    <span class="c1"># Upsdate coordinate values</span>
+<span class="linenos">19</span>    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">127</span><span class="p">:</span>
+<span class="linenos">20</span>        <span class="n">x_speed</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="linenos">21</span>    <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">63</span><span class="p">:</span>
+<span class="linenos">22</span>        <span class="n">y_speed</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="linenos">23</span>    
+<span class="linenos">24</span>    <span class="n">x</span> <span class="o">+=</span> <span class="n">x_speed</span>
+<span class="linenos">25</span>    <span class="n">y</span> <span class="o">+=</span> <span class="n">y_speed</span>
+<span class="linenos">26</span>    
+<span class="linenos">27</span>    <span class="c1">### Draw a square    </span>
+<span class="linenos">28</span>    <span class="n">display</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="linenos">29</span>    
+<span class="linenos">30</span>    <span class="c1">### Update display ###</span>
+<span class="linenos">31</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="linenos">32</span>    
+</pre></div>
+</div>
+</section>
+<section id="bitmap-images">
+<h3>Bitmap Images<a class="headerlink" href="#bitmap-images" title="Permalink to this heading">#</a></h3>
+<p>It is possible to display Portable Bitmap Images (.pbm) files on our OLED module. The source image needs to be uploaded to our micro:bit just like any other source file.</p>
+<div class="error admonition">
+<p class="admonition-title">Memory limitations</p>
+<p>Beware: the memory on a micro:bit is very limited and bitmap images will take a while to display.</p>
+</div>
+<p>The following example displays the PiicoDev logo on the screen.</p>
+<p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below. Upload it to the micro:bit and run it.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># bitmap example</span>
+<span class="linenos">2</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">3</span><span class="n">display</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="n">display</span><span class="o">.</span><span class="n">load_pbm</span><span class="p">(</span><span class="s1">&#39;piicodev-logo.pbm&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="linenos">6</span><span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</section>
 </section>
 
         </article>
@@ -272,8 +464,40 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">PiicoDev OLED Module</a><ul>
+<li><a class="reference internal" href="#getting-set-up">Getting set up</a><ul>
+<li><a class="reference internal" href="#connect-the-piicodev-module-to-your-micro-bit">Connect the PiicoDev module to your Micro:bit</a></li>
+<li><a class="reference internal" href="#download-the-piicodev-modules">Download the PiicoDev Modules</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#line">Line</a></li>
+<li><a class="reference internal" href="#rectangle">Rectangle</a></li>
+<li><a class="reference internal" href="#text">Text</a></li>
+<li><a class="reference internal" href="#graph">Graph</a></li>
+<li><a class="reference internal" href="#animation">Animation</a></li>
+<li><a class="reference internal" href="#bitmap-images">Bitmap Images</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
