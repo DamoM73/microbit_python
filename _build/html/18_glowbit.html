@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Debugging with Thonny" href="97_debugging.html" /><link rel="prev" title="PiicoDev OLED Module" href="17_piicodev_oled.html" />
 
     <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
-        <title>Glowbit - Python meets micro:bit</title>
+        <title>Glowbit Rainbow - Python meets micro:bit</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
@@ -137,7 +137,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -180,7 +180,7 @@
 <li class="toctree-l1"><a class="reference internal" href="15_piicodev_distance.html">PiicoDev Distance Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="16_piicodev_potentiometer.html">PiicoDev Potentiometers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="17_piicodev_oled.html">PiicoDev OLED Module</a></li>
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Glowbit</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Glowbit Rainbow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="97_debugging.html">Debugging with Thonny</a></li>
 <li class="toctree-l1"><a class="reference internal" href="98_exercise_solutions.html">Exercise Solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="99_licencing.html">Licencing</a></li>
@@ -212,18 +212,50 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          <section id="glowbit">
-<h1>Glowbit<a class="headerlink" href="#glowbit" title="Permalink to this heading">#</a></h1>
-<p>Below are the quick start guides for the Glowbit modules</p>
+          <section id="glowbit-rainbow">
+<h1>Glowbit Rainbow<a class="headerlink" href="#glowbit-rainbow" title="Permalink to this heading">#</a></h1>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VFJ50tXNEbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>The GlowBi rainbow is a beautiful LED display featuring 13 individually addressable LEDs and easy alligator / banana-plug connections.</p>
+<section id="wire-a-rainbow-to-a-micro-bit">
+<h2>Wire a rainbow to a micro:bit<a class="headerlink" href="#wire-a-rainbow-to-a-micro-bit" title="Permalink to this heading">#</a></h2>
+<p>It’s best to unpower your micro:bit when wiring - make sure the USB lead or any batteries are disconnected for this bit.</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://core-electronics.com.au/guides/glowbit/glowbit-rainbow-quickstart-guide-for-micro-bit/">Glowbit Rainbow</a></p></li>
+<li><p>Use the Black alligator clips to connect GND on the micro:bit to GND on the rainbow</p></li>
+<li><p>Use the Red alligator clips to connect 3V on the micro:bit to 3V on the rainbow</p></li>
+<li><p>Use the Yellow alligator clips to connect 0 on the micro:bit to Data on the rainbow</p></li>
 </ul>
+<p><img alt="wiring diagram" src="_images/glowbit-rainbow-microbit-wiring-diagram.png" /></p>
+</section>
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h2>
+<p><strong>Create</strong> a new folder a for this example, and then <strong>create</strong> a new file called <code class="docutils literal notranslate"><span class="pre">main.py</span></code> in it. Then add the code below to it. Save it, upload it to the mirco:bit and the run it.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># glowbit example</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span><span class="kn">import</span> <span class="nn">neopixel</span>
+<span class="linenos"> 5</span><span class="kn">import</span> <span class="nn">random</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="c1"># Setup the Rainbow as a Neopixel strip on pin0 with a length of 13</span>
+<span class="linenos"> 8</span><span class="n">rainbow</span> <span class="o">=</span> <span class="n">neopixel</span><span class="o">.</span><span class="n">NeoPixel</span><span class="p">(</span><span class="n">pin0</span><span class="p">,</span> <span class="mi">13</span><span class="p">)</span>
+<span class="linenos"> 9</span>
+<span class="linenos">10</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">11</span>    <span class="n">rainbow</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos">12</span>    <span class="n">pixel</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">12</span><span class="p">)</span>
+<span class="linenos">13</span>    <span class="n">colour</span> <span class="o">=</span> <span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">),</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">),</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">))</span>
+<span class="linenos">14</span>    
+<span class="linenos">15</span>    <span class="n">rainbow</span><span class="p">[</span><span class="n">pixel</span><span class="p">]</span> <span class="o">=</span> <span class="n">colour</span>
+<span class="linenos">16</span>    
+<span class="linenos">17</span>    <span class="n">rainbow</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="linenos">18</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
 </section>
 
         </article>
@@ -276,8 +308,28 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Glowbit Rainbow</a><ul>
+<li><a class="reference internal" href="#wire-a-rainbow-to-a-micro-bit">Wire a rainbow to a micro:bit</a></li>
+<li><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
