@@ -59,7 +59,7 @@ Exploring the important parts of that code:
 - **line 20**: extracts the **blue** value from the returned dictionary
 - **line 24**: prints the **red**, **green** and **blue** values
 
-## Example 2
+### Example 2
 
 Change the code in `main.py` to the same as the code below (make sure that the indentation of lines 27-30 is correct). This code will get a reading and classify what the sensor is looking at by using the values in the `fruitList`.
 

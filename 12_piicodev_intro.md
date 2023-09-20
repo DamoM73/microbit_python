@@ -29,4 +29,26 @@ These files can be found on the micro:bit guides for the PiicoDev modules:
 
 ## Uploading to the micro:bit
 
-If you want to use the micro:bit untethered (not connected to the computer), then you need to upload the **PiicoDev Unified Libraries** and the **device drivers** to the micro:bit along with `main.py`.
+To use the PiicoDev components, you **must** upload the **PiicoDev Unified Libraries** and the relevant **device drivers** to the micro:bit along with `main.py`.
+
+The images below show how to upload the atmospheric sensor files onto the micro:bit:
+
+### Before
+
+![piicodev upload before](assets/piccodev_upload_1.png)
+
+### Uploading
+
+1. Click in the first file
+2. Hold the SHIFT key and click on the bottom file
+
+![piicodev upload before](assets/piccodev_upload_2.png)
+
+3. Then right mouse click on the selected files
+4. Select **Upload to micro:bit** from the pop-up menu
+
+![piicodev upload before](assets/piccodev_upload_3.png)
+
+5. If there are already files on the micro:bit you may be asked if you wish to overwrite them. Click **OK**
+
+![piicodev upload before](assets/piccodev_upload_4.png)
