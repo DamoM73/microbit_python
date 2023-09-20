@@ -236,8 +236,8 @@
 <ul class="simple">
 <li><p><strong><a class="reference external" href="https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py"><code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code></a></strong> - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules</p></li>
 <li><p><strong><a class="reference external" href="https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-SSD1306-MicroPython-Module/main/min/PiicoDev_SSD1306.py"><code class="docutils literal notranslate"><span class="pre">PiicoDev_SSD1306.py</span></code></a></strong> - The device driver.</p></li>
-<li><p><strong><a class="reference external" href="https://github.com/CoreElectronics/CE-PiicoDev-SSD1306-MicroPython-Module/raw/main/font-pet-me-128.dat">font-pet-me-128.dat</a></strong> - The font file</p></li>
-<li><p><strong><a class="reference external" href="https://github.com/CoreElectronics/CE-PiicoDev-SSD1306-MicroPython-Module/raw/main/bitmap/piicodev-logo.pbm">piicodev-logo.pbm</a></strong> - PiicoDev Test Image</p></li>
+<li><p><strong><a class="reference external" href="https://github.com/CoreElectronics/CE-PiicoDev-SSD1306-MicroPython-Module/raw/main/font-pet-me-128.dat"><code class="docutils literal notranslate"><span class="pre">font-pet-me-128.dat</span></code></a></strong> - The font file</p></li>
+<li><p><strong><a class="reference external" href="https://github.com/CoreElectronics/CE-PiicoDev-SSD1306-MicroPython-Module/raw/main/bitmap/piicodev-logo.pbm"><code class="docutils literal notranslate"><span class="pre">piicodev-logo.pbm</span></code></a></strong> - PiicoDev Test Image</p></li>
 </ul>
 </section>
 </section>
@@ -253,7 +253,8 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">vline(x,</span> <span class="pre">y,</span> <span class="pre">l,</span> <span class="pre">c)</span></code> will draw a verticle line from <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> of length <code class="docutils literal notranslate"><span class="pre">l</span></code>, colour <code class="docutils literal notranslate"><span class="pre">c</span></code>. Always draws left-to-right.</p></li>
 </ul>
 <p>The following example draws horizontal and vertical lines from the same point and joins their ends with a two-point line. There is a small delay between the drawing of each line.</p>
-<p><strong>Create</strong> a <code class="docutils literal notranslate"><span class="pre">main.py</span></code> file in the folder and add the code below. Upload it to the micro:bit and run it.</p>
+<p><strong>Create</strong> a <code class="docutils literal notranslate"><span class="pre">main.py</span></code> file in the folder and add the code below.</p>
+<p><strong><a class="reference internal" href="12_piicodev_intro.html#uploading"><span class="std std-ref">Upload</span></a></strong> <code class="docutils literal notranslate"><span class="pre">main.py</span></code> along with <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code>, <code class="docutils literal notranslate"><span class="pre">PiicoDev_SSD1306.py</span></code>, <code class="docutils literal notranslate"><span class="pre">font-pet-me-128.dat</span></code> and <code class="docutils literal notranslate"><span class="pre">piicodev-logo.pbm</span></code> to the micro:bit and then <strong>run</strong> it.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># line example</span>
 <span class="linenos"> 2</span>
 <span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
@@ -280,7 +281,8 @@
 <p>Draw an unfilled rectangle with <code class="docutils literal notranslate"><span class="pre">rect(x,y,width,height,colour)</span></code></p>
 <p>The top-left corner is specified by <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>. <code class="docutils literal notranslate"><span class="pre">width</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span></code> set the width and height in pixels. <code class="docutils literal notranslate"><span class="pre">colour</span></code> sets the line colour as <code class="docutils literal notranslate"><span class="pre">1</span></code> (white) or <code class="docutils literal notranslate"><span class="pre">0</span></code> (black)</p>
 <p>The following example draws an unfilled rectangle to the left of the display, and a filled white rectangle to the right. A filled black rectangle is then drawn over the top.</p>
-<p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below. Upload it to the micro:bit and run it.</p>
+<p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below.</p>
+<p><strong><a class="reference internal" href="12_piicodev_intro.html#uploading"><span class="std std-ref">Upload</span></a></strong> <code class="docutils literal notranslate"><span class="pre">main.py</span></code> along with <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code>, <code class="docutils literal notranslate"><span class="pre">PiicoDev_SSD1306.py</span></code>, <code class="docutils literal notranslate"><span class="pre">font-pet-me-128.dat</span></code> and <code class="docutils literal notranslate"><span class="pre">piicodev-logo.pbm</span></code> to the micro:bit and then <strong>run</strong> it.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># rectangle example</span>
 <span class="linenos"> 2</span>
 <span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
@@ -303,7 +305,8 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">colour</span></code> is <code class="docutils literal notranslate"><span class="pre">1</span></code> (white) or <code class="docutils literal notranslate"><span class="pre">0</span></code> (black)</p></li>
 </ul>
 <p>The following example prints four lines. The first is a literal string, where the text to be printed is inserted into the function call. The second prints a string variable myString. The third and fourth print the value stored in a variable.</p>
-<p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below. Upload it to the micro:bit and run it.</p>
+<p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below.</p>
+<p><strong><a class="reference internal" href="12_piicodev_intro.html#uploading"><span class="std std-ref">Upload</span></a></strong> <code class="docutils literal notranslate"><span class="pre">main.py</span></code> along with <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code>, <code class="docutils literal notranslate"><span class="pre">PiicoDev_SSD1306.py</span></code>, <code class="docutils literal notranslate"><span class="pre">font-pet-me-128.dat</span></code> and <code class="docutils literal notranslate"><span class="pre">piicodev-logo.pbm</span></code> to the micro:bit and then <strong>run</strong> it.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># text example</span>
 <span class="linenos"> 2</span>
 <span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
@@ -325,7 +328,8 @@
 <p>Graphs are created with the <code class="docutils literal notranslate"><span class="pre">graph2D()</span></code> function allows plotting a single variable as it changes over time. The plot starts at the right-hand side of the display and shifts to the left every time it is updated.</p>
 <p><code class="docutils literal notranslate"><span class="pre">updateGraph2D(graph,</span> <span class="pre">value)</span></code> pushes the latest value onto a graph object. Multiple graphs can be shown at the same time and must be updated by making separate calls to updateGraph2D().</p>
 <p>The following example graphs two functions independently.</p>
-<p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below. Upload it to the micro:bit and run it.</p>
+<p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below.</p>
+<p><strong><a class="reference internal" href="12_piicodev_intro.html#uploading"><span class="std std-ref">Upload</span></a></strong> <code class="docutils literal notranslate"><span class="pre">main.py</span></code> along with <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code>, <code class="docutils literal notranslate"><span class="pre">PiicoDev_SSD1306.py</span></code>, <code class="docutils literal notranslate"><span class="pre">font-pet-me-128.dat</span></code> and <code class="docutils literal notranslate"><span class="pre">piicodev-logo.pbm</span></code> to the micro:bit and then <strong>run</strong> it.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># graph example</span>
 <span class="linenos"> 2</span>
 <span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
@@ -357,7 +361,8 @@
 <li><p>Update the display</p></li>
 </ul>
 <p>The following example animates a rectangle bouncing around the screen.</p>
-<p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below. Upload it to the micro:bit and run it.</p>
+<p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below.</p>
+<p><strong><a class="reference internal" href="12_piicodev_intro.html#uploading"><span class="std std-ref">Upload</span></a></strong> <code class="docutils literal notranslate"><span class="pre">main.py</span></code> along with <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code>, <code class="docutils literal notranslate"><span class="pre">PiicoDev_SSD1306.py</span></code>, <code class="docutils literal notranslate"><span class="pre">font-pet-me-128.dat</span></code> and <code class="docutils literal notranslate"><span class="pre">piicodev-logo.pbm</span></code> to the micro:bit and then <strong>run</strong> it.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># animation example</span>
 <span class="linenos"> 2</span>
 <span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
@@ -401,7 +406,8 @@
 <p>Beware: the memory on a micro:bit is very limited and bitmap images will take a while to display.</p>
 </div>
 <p>The following example displays the PiicoDev logo on the screen.</p>
-<p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below. Upload it to the micro:bit and run it.</p>
+<p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below.</p>
+<p><strong><a class="reference internal" href="12_piicodev_intro.html#uploading"><span class="std std-ref">Upload</span></a></strong> <code class="docutils literal notranslate"><span class="pre">main.py</span></code> along with <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code>, <code class="docutils literal notranslate"><span class="pre">PiicoDev_SSD1306.py</span></code>, <code class="docutils literal notranslate"><span class="pre">font-pet-me-128.dat</span></code> and <code class="docutils literal notranslate"><span class="pre">piicodev-logo.pbm</span></code> to the micro:bit and then <strong>run</strong> it.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># bitmap example</span>
 <span class="linenos">2</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="linenos">3</span><span class="n">display</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>

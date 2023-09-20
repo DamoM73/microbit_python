@@ -20,7 +20,9 @@ Create a new folder for this example. Then download the following files and save
 
 ## Example code
 
-Below is the example code provided my Core Electronics in the `main.py`:
+Below is the example code provided my Core Electronics in the `main.py`.
+
+**[Upload](12_piicodev_intro.md#uploading)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_BME280.py` to the micro:bit and then **run** it.
 
 ```{literalinclude} ./python_files/piico_atmosphere_example/main.py
 :linenos:
