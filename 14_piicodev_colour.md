@@ -40,6 +40,8 @@ Create a new folder for this example. Then download the following files and save
 
 The PiicoDev Team has included two examples in the `main.py`.
 
+**[Upload](12_piicodev_intro.md#uploading)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VEML6040.py` to the micro:bit and then **run** it.
+
 ### Example 1
 
 If you the `main.py` without making any changes you will get a printout reading of the RGB values being picked up by the sensor.
@@ -62,6 +64,8 @@ Exploring the important parts of that code:
 ### Example 2
 
 Change the code in `main.py` to the same as the code below (make sure that the indentation of lines 27-30 is correct). This code will get a reading and classify what the sensor is looking at by using the values in the `fruitList`.
+
+**[Upload](12_piicodev_intro.md#uploading)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VEML6040.py` to the micro:bit and then **run** it.
 
 ```{literalinclude} ./python_files/piico_colour_example_2/main.py
 :linenos:

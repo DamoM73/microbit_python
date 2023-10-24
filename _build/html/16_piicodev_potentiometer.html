@@ -2,13 +2,13 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="PiicoDev OLED Module" href="17_piicodev_oled.html" /><link rel="prev" title="PiicoDev Distance Sensor" href="15_piicodev_distance.html" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.03.27 -->
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
         <title>PiicoDev Potentiometers - Python meets micro:bit</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -243,7 +243,8 @@
 <section id="getting-values">
 <h3>Getting Values<a class="headerlink" href="#getting-values" title="Permalink to this heading">#</a></h3>
 <p>First lets see how to get a value from the pot.</p>
-<p>Create a new file called <code class="docutils literal notranslate"><span class="pre">main.py</span></code> and add the code below:</p>
+<p>Create a new file called <code class="docutils literal notranslate"><span class="pre">main.py</span></code> and add the code below.</p>
+<p><strong><a class="reference internal" href="12_piicodev_intro.html#uploading"><span class="std std-ref">Upload</span></a></strong> <code class="docutils literal notranslate"><span class="pre">main.py</span></code> along with <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code> and <code class="docutils literal notranslate"><span class="pre">PiicoDev_Potentiometer.py</span></code> to the micro:bit and then <strong>run</strong> it.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># Read the PiicoDev Potentiometer value</span>
 <span class="linenos">2</span><span class="kn">from</span> <span class="nn">PiicoDev_Potentiometer</span> <span class="kn">import</span> <span class="n">PiicoDev_Potentiometer</span>
 <span class="linenos">3</span><span class="kn">from</span> <span class="nn">PiicoDev_Unified</span> <span class="kn">import</span> <span class="n">sleep_ms</span>
@@ -259,7 +260,8 @@
 <section id="changing-scale">
 <h3>Changing Scale<a class="headerlink" href="#changing-scale" title="Permalink to this heading">#</a></h3>
 <p>The default scale is <code class="docutils literal notranslate"><span class="pre">0</span></code> - <code class="docutils literal notranslate"><span class="pre">100</span></code>. What if you want it to be something else? For example, <code class="docutils literal notranslate"><span class="pre">16</span></code> - <code class="docutils literal notranslate"><span class="pre">42</span></code>.</p>
-<p>Change your <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below:</p>
+<p>Change your <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below.</p>
+<p><strong><a class="reference internal" href="12_piicodev_intro.html#uploading"><span class="std std-ref">Upload</span></a></strong> <code class="docutils literal notranslate"><span class="pre">main.py</span></code> along with <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code> and <code class="docutils literal notranslate"><span class="pre">PiicoDev_Potentiometer.py</span></code> to the micro:bit and then <strong>run</strong> it.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># Read the PiicoDev Potentiometer value</span>
 <span class="linenos"> 2</span><span class="kn">from</span> <span class="nn">PiicoDev_Potentiometer</span> <span class="kn">import</span> <span class="n">PiicoDev_Potentiometer</span>
 <span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_Unified</span> <span class="kn">import</span> <span class="n">sleep_ms</span>
