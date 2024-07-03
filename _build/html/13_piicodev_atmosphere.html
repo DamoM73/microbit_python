@@ -2,13 +2,13 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="PiicoDev Colour Sensor" href="14_piicodev_colour.html" /><link rel="prev" title="PiicoDev Intro" href="12_piicodev_intro.html" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.03.27 -->
         <title>PiicoDev Atmospheric Sensor - Python meets micro:bit</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -183,7 +183,7 @@
 <li class="toctree-l1"><a class="reference internal" href="18_glowbit.html">Glowbit Rainbow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="97_debugging.html">Debugging with Thonny</a></li>
 <li class="toctree-l1"><a class="reference internal" href="98_exercise_solutions.html">Exercise Solutions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="99_licencing.html">Licencing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="99_licencing.html">Licensing</a></li>
 </ul>
 
 </div>
@@ -241,7 +241,7 @@
 <section id="example-code">
 <h2>Example code<a class="headerlink" href="#example-code" title="Permalink to this heading">#</a></h2>
 <p>Below is the example code provided my Core Electronics in the <code class="docutils literal notranslate"><span class="pre">main.py</span></code>.</p>
-<p><strong><a class="reference internal" href="12_piicodev_intro.html#uploading"><span class="std std-ref">Upload</span></a></strong> <code class="docutils literal notranslate"><span class="pre">main.py</span></code> along with <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code> and <code class="docutils literal notranslate"><span class="pre">PiicoDev_BME280.py</span></code> to the micro:bit and then <strong>run</strong> it.</p>
+<p><strong>[Upload](12_piicodev_intro.md#Uploading to the micro:bit)</strong> <code class="docutils literal notranslate"><span class="pre">main.py</span></code> along with <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code> and <code class="docutils literal notranslate"><span class="pre">PiicoDev_BME280.py</span></code> to the micro:bit and then <strong>run</strong> it.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># PiicoDev Atmospheric Sensor BME280 minimal example code</span>
 <span class="linenos"> 2</span><span class="c1"># This program reads Temperature, Pressure and Relative Humididty</span>
 <span class="linenos"> 3</span><span class="c1"># from the PiicoDev Atmospheric Sensor. An altitude reading is also</span>
@@ -250,18 +250,18 @@
 <span class="linenos"> 6</span><span class="kn">from</span> <span class="nn">PiicoDev_BME280</span> <span class="kn">import</span> <span class="n">PiicoDev_BME280</span>
 <span class="linenos"> 7</span><span class="kn">from</span> <span class="nn">PiicoDev_Unified</span> <span class="kn">import</span> <span class="n">sleep_ms</span> <span class="c1"># cross-platform compatible sleep function</span>
 <span class="linenos"> 8</span>
-<span class="linenos"> 9</span><span class="n">sensor</span> <span class="o">=</span> <span class="n">PiicoDev_BME280</span><span class="p">()</span> <span class="c1"># initialise the sensor</span>
-<span class="linenos">10</span><span class="n">zeroAlt</span> <span class="o">=</span> <span class="n">sensor</span><span class="o">.</span><span class="n">altitude</span><span class="p">()</span> <span class="c1"># take an initial altitude reading</span>
-<span class="linenos">11</span>
-<span class="linenos">12</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<span class="linenos">13</span>    <span class="c1"># Print data</span>
-<span class="linenos">14</span>    <span class="n">tempC</span><span class="p">,</span> <span class="n">presPa</span><span class="p">,</span> <span class="n">humRH</span> <span class="o">=</span> <span class="n">sensor</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="c1"># read all data from the sensor</span>
-<span class="linenos">15</span>    <span class="n">pres_hPa</span> <span class="o">=</span> <span class="n">presPa</span> <span class="o">/</span> <span class="mi">100</span> <span class="c1"># convert air pressurr Pascals -&gt; hPa (or mbar, if you prefer)</span>
-<span class="linenos">16</span>    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">tempC</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; °C  &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pres_hPa</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; hPa  &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">humRH</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; %RH&quot;</span><span class="p">)</span>
-<span class="linenos">17</span>    
-<span class="linenos">18</span>    <span class="c1"># Altitude demo</span>
-<span class="linenos">19</span><span class="c1">#     print(sensor.altitude() - zeroAlt) # Print the pressure CHANGE since the script began</span>
-<span class="linenos">20</span>    <span class="n">sleep_ms</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="linenos"> 9</span><span class="k">def</span> <span class="nf">wbt</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span><span class="n">hum</span><span class="p">):</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span>    <span class="k">return</span> <span class="p">(</span><span class="n">temp</span> <span class="o">-</span> <span class="p">((</span><span class="mi">1</span><span class="o">-</span><span class="n">hum</span><span class="p">)</span><span class="o">/</span><span class="mi">5</span><span class="p">))</span>
+<span class="linenos">12</span>
+<span class="linenos">13</span><span class="n">sensor</span> <span class="o">=</span> <span class="n">PiicoDev_BME280</span><span class="p">()</span> <span class="c1"># initialise the sensor</span>
+<span class="linenos">14</span>
+<span class="linenos">15</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">16</span>    <span class="c1"># Print data</span>
+<span class="linenos">17</span>    <span class="n">tempC</span><span class="p">,</span> <span class="n">press</span><span class="p">,</span> <span class="n">humRH</span> <span class="o">=</span> <span class="n">sensor</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="c1"># read all data from the sensor</span>
+<span class="linenos">18</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here&quot;</span><span class="p">)</span>
+<span class="linenos">19</span>    <span class="c1">#print(wbt(tempC, humRH))</span>
+<span class="linenos">20</span>    <span class="n">sleep_ms</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Lets look at the important parts of that code:</p>
@@ -401,7 +401,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2023, Damien Murtagh
+                Copyright &#169; 2024, Damien Murtagh
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             

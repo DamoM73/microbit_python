@@ -2,13 +2,13 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Micro:bit Accelerometer" href="05_accelerometer.html" /><link rel="prev" title="Micro:bit Display" href="03_display.html" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.03.27 -->
         <title>Micro:bit Buttons - Python meets micro:bit</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -183,7 +183,7 @@
 <li class="toctree-l1"><a class="reference internal" href="18_glowbit.html">Glowbit Rainbow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="97_debugging.html">Debugging with Thonny</a></li>
 <li class="toctree-l1"><a class="reference internal" href="98_exercise_solutions.html">Exercise Solutions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="99_licencing.html">Licencing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="99_licencing.html">Licensing</a></li>
 </ul>
 
 </div>
@@ -244,6 +244,13 @@
 </pre></div>
 </div>
 <p><strong>Predict</strong> in detail what you think will happen, and then <strong>run</strong> the program.</p>
+<div class="notice admonition">
+<p class="admonition-title">Code explaination</p>
+<ul class="simple">
+<li><p><strong>line 3</strong> → waits 5 seconds</p></li>
+<li><p><strong>line 4</strong> → counts the number of times button A has been pressed then displays it.</p></li>
+</ul>
+</div>
 <section id="get-presses-exercises">
 <h3>Get Presses Exercises<a class="headerlink" href="#get-presses-exercises" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
@@ -275,16 +282,18 @@
 </pre></div>
 </div>
 <p><strong>Predict</strong> in detail what you think will happen, and then <strong>run</strong> the program.</p>
-<p>Let’s break that code down:</p>
+<div class="notice admonition">
+<p class="admonition-title">Code explaination</p>
 <ul class="simple">
-<li><p>line 3 → creates an infinite loop, since the condition (<code class="docutils literal notranslate"><span class="pre">True</span></code>) will never be <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
-<li><p>line 4 → tests if button <strong>A</strong> is currently being pressed.</p></li>
-<li><p>line 5 → if line 4 is <code class="docutils literal notranslate"><span class="pre">True</span></code> then the display will show a smiley face</p></li>
-<li><p>line 6 → tests if button <strong>B</strong> is currently being pressed.</p></li>
-<li><p>line 7 → if line 6 is <code class="docutils literal notranslate"><span class="pre">True</span></code> then <code class="docutils literal notranslate"><span class="pre">break</span></code> will be called, and exit the <code class="docutils literal notranslate"><span class="pre">while</span></code> loop</p></li>
-<li><p>line 8 → if neither button <strong>A</strong> or button <strong>B</strong> is being pressed</p></li>
-<li><p>line 9 → displays a sad face</p></li>
+<li><p><strong>line 3</strong> → creates an infinite loop, since the condition (<code class="docutils literal notranslate"><span class="pre">True</span></code>) will never be <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
+<li><p><strong>line 4</strong> → tests if button <strong>A</strong> is currently being pressed.</p></li>
+<li><p><strong>line 5</strong> → if line 4 is <code class="docutils literal notranslate"><span class="pre">True</span></code> then the display will show a smiley face</p></li>
+<li><p><strong>line 6</strong> → tests if button <strong>B</strong> is currently being pressed.</p></li>
+<li><p><strong>line 7</strong> → if line 6 is <code class="docutils literal notranslate"><span class="pre">True</span></code> then <code class="docutils literal notranslate"><span class="pre">break</span></code> will be called, and exit the <code class="docutils literal notranslate"><span class="pre">while</span></code> loop</p></li>
+<li><p><strong>line 8</strong> → if neither button <strong>A</strong> or button <strong>B</strong> is being pressed</p></li>
+<li><p><strong>line 9</strong> → displays a sad face</p></li>
 </ul>
+</div>
 <section id="is-pressed-exercise">
 <h3>Is pressed exercise<a class="headerlink" href="#is-pressed-exercise" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
@@ -319,25 +328,27 @@
 <span class="linenos">11</span>        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">SAD</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Breaking that code down:</p>
+<div class="notice admonition">
+<p class="admonition-title">Code explaination</p>
 <ul class="simple">
-<li><p>line 3 → clears the display of any previous image</p></li>
-<li><p>line 5 → creates an infinite loop, since the condition (<code class="docutils literal notranslate"><span class="pre">True</span></code>) will never be <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
-<li><p>line 6 → does two things:</p>
+<li><p><strong>line 3</strong> → clears the display of any previous image</p></li>
+<li><p><strong>line 7</strong> → creates an infinite loop, since the condition (<code class="docutils literal notranslate"><span class="pre">True</span></code>) will never be <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
+<li><p><strong>line 8</strong> → does two things:</p>
 <ul>
 <li><p>tests if button <strong>A</strong> has been pressed (moved from the up position to the down position)</p></li>
 <li><p>if <code class="docutils literal notranslate"><span class="pre">button_a.was_pressed()</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code> resets it to <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </li>
-<li><p>line 7 → changes display to smiley face</p></li>
-<li><p>line 8 → does two things:</p>
+<li><p><strong>line 9</strong> → changes display to smiley face</p></li>
+<li><p><strong>line 10</strong> → does two things:</p>
 <ul>
 <li><p>tests if button <strong>B</strong> has been pressed (moved from the up position to the down position)</p></li>
 <li><p>if <code class="docutils literal notranslate"><span class="pre">button_b.was_pressed()</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code> resets it to <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </li>
-<li><p>line 7 → changes display to sad face</p></li>
+<li><p><strong>line 11</strong> → changes display to sad face</p></li>
 </ul>
+</div>
 <section id="was-pressed-exercise">
 <h3>Was Pressed Exercise<a class="headerlink" href="#was-pressed-exercise" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
@@ -384,7 +395,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2023, Damien Murtagh
+                Copyright &#169; 2024, Damien Murtagh
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             

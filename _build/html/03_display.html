@@ -2,13 +2,13 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Micro:bit Buttons" href="04_buttons.html" /><link rel="prev" title="Your First Program" href="02_first_program.html" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.03.27 -->
         <title>Micro:bit Display - Python meets micro:bit</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -183,7 +183,7 @@
 <li class="toctree-l1"><a class="reference internal" href="18_glowbit.html">Glowbit Rainbow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="97_debugging.html">Debugging with Thonny</a></li>
 <li class="toctree-l1"><a class="reference internal" href="98_exercise_solutions.html">Exercise Solutions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="99_licencing.html">Licencing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="99_licencing.html">Licensing</a></li>
 </ul>
 
 </div>
@@ -275,20 +275,22 @@
 </div>
 <p><strong>Predict</strong> in detail what you think the program will do. Make sure you are specific in your prediction (“pause for 2 seconds” is better than just “pause”), then <strong>run</strong> the program.</p>
 <p><img alt="display show" src="_images/display_show.gif" /></p>
-<p>Let’s <strong>investigate</strong> that code by breaking it down.</p>
+<div class="notice admonition">
+<p class="admonition-title">Code explaination</p>
 <ul class="simple">
-<li><p>line 1 → comment identifying the project.</p></li>
-<li><p>line 3 → imports all the commands from the <code class="docutils literal notranslate"><span class="pre">micropython</span></code> library.</p></li>
-<li><p>line 5 → sets up the endless loop.</p></li>
-<li><p>line 6 → <code class="docutils literal notranslate"><span class="pre">display.show()</span></code> displays one character at a time.</p>
+<li><p><strong>line 1</strong> → comment identifying the project.</p></li>
+<li><p><strong>line 3</strong> → imports all the commands from the <code class="docutils literal notranslate"><span class="pre">micropython</span></code> library.</p></li>
+<li><p><strong>line 5</strong> → sets up the endless loop.</p></li>
+<li><p><strong>line 6</strong> → <code class="docutils literal notranslate"><span class="pre">display.show()</span></code> displays one character at a time.</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">3.14159</span></code> → message to be displayed. This can be a string, integer, float or Boolean.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">delay=500</span></code> → puts a 500 millisecond pause after each character</p></li>
 </ul>
 </li>
-<li><p>line 7 → <code class="docutils literal notranslate"><span class="pre">display.clear()</span></code> changes the value of each pixel to <code class="docutils literal notranslate"><span class="pre">0</span></code> effectively clearing the screen.</p></li>
-<li><p>line 8 → waits 1000 milliseconds before going back to the top of the loop.</p></li>
+<li><p><strong>line 7</strong> → <code class="docutils literal notranslate"><span class="pre">display.clear()</span></code> changes the value of each pixel to <code class="docutils literal notranslate"><span class="pre">0</span></code> effectively clearing the screen.</p></li>
+<li><p><strong>line 8</strong> → waits 1000 milliseconds before going back to the top of the loop.</p></li>
 </ul>
+</div>
 <p>Time to <strong>modify</strong> the code and see what happens:</p>
 </section>
 <section id="text-exercises">
@@ -329,11 +331,13 @@
 </div>
 <p><strong>Predict</strong> in detail what you think the program will do, remember specific, then <strong>run</strong> the program.</p>
 <p><img alt="display image" src="_images/display_image.gif" /></p>
-<p>Let’s <strong>investigate</strong> by impacting the new code:</p>
+<div class="notice admonition">
+<p class="admonition-title">Code explaination</p>
 <ul class="simple">
-<li><p>line 6 → <code class="docutils literal notranslate"><span class="pre">display.show(Image.HEART)</span></code> shows a heart on the display</p></li>
-<li><p>line 8 → <code class="docutils literal notranslate"><span class="pre">display.show(Image.HEART_SMALL)</span></code> shows a small heart on the display</p></li>
+<li><p><strong>line 6</strong> → <code class="docutils literal notranslate"><span class="pre">display.show(Image.HEART)</span></code> shows a heart on the display</p></li>
+<li><p><strong>line 8</strong> → <code class="docutils literal notranslate"><span class="pre">display.show(Image.HEART_SMALL)</span></code> shows a small heart on the display</p></li>
 </ul>
+</div>
 <p>Time to <strong>modify</strong> the code:</p>
 <section id="image-exercises">
 <h3>Image Exercises<a class="headerlink" href="#image-exercises" title="Permalink to this heading">#</a></h3>
@@ -385,15 +389,17 @@
 </div>
 <p><strong>Predict</strong> in detail what you think the program will do, remember specific, then <strong>run</strong> the program.</p>
 <p><img alt="display custom" src="_images/display_custom.gif" /></p>
-<p>Ok, this code is a bit more complicated, so lets investigate.</p>
+<div class="notice admonition">
+<p class="admonition-title">Code explaination</p>
+<p>This code is a bit more complicated.</p>
 <ul class="simple">
 <li><p>first the structure:</p>
 <ul>
 <li><p>two <code class="docutils literal notranslate"><span class="pre">for</span></code> loops nested inside a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop which is also nested inside a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop, which is nested inside the infinite <code class="docutils literal notranslate"><span class="pre">while</span></code> loop.</p></li>
 <li><p>the coordinate loops:</p>
 <ul>
-<li><p>line 8 <code class="docutils literal notranslate"><span class="pre">for</span></code> loop → increments the <code class="docutils literal notranslate"><span class="pre">x</span></code> value from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">4</span></code></p></li>
-<li><p>line 9 <code class="docutils literal notranslate"><span class="pre">for</span></code> loop → increments the <code class="docutils literal notranslate"><span class="pre">y</span></code> value from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">4</span></code> for each increment of the <code class="docutils literal notranslate"><span class="pre">x</span></code> value</p></li>
+<li><p><strong>line 8</strong> <code class="docutils literal notranslate"><span class="pre">for</span></code> loop → increments the <code class="docutils literal notranslate"><span class="pre">x</span></code> value from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">4</span></code></p></li>
+<li><p><strong>line 9</strong> <code class="docutils literal notranslate"><span class="pre">for</span></code> loop → increments the <code class="docutils literal notranslate"><span class="pre">y</span></code> value from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">4</span></code> for each increment of the <code class="docutils literal notranslate"><span class="pre">x</span></code> value</p></li>
 <li><p>the coordinates produced by these two loops will proceed:</p>
 <ul>
 <li><p>for the <code class="docutils literal notranslate"><span class="pre">x</span></code> value of <code class="docutils literal notranslate"><span class="pre">0</span></code> → <code class="docutils literal notranslate"><span class="pre">y</span></code> values <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">4</span></code></p></li>
@@ -407,8 +413,8 @@
 </li>
 <li><p>the display loops:</p>
 <ul>
-<li><p>line 10 <code class="docutils literal notranslate"><span class="pre">for</span></code> loop → increase the LED value from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code> (off to brightest)</p></li>
-<li><p>line 13 <code class="docutils literal notranslate"><span class="pre">for</span></code> loop → decrease the LED value from <code class="docutils literal notranslate"><span class="pre">9</span></code> to <code class="docutils literal notranslate"><span class="pre">0</span></code> (brightest to off)</p>
+<li><p><strong>line 10</strong> <code class="docutils literal notranslate"><span class="pre">for</span></code> loop → increase the LED value from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code> (off to brightest)</p></li>
+<li><p><strong>line 13</strong> <code class="docutils literal notranslate"><span class="pre">for</span></code> loop → decrease the LED value from <code class="docutils literal notranslate"><span class="pre">9</span></code> to <code class="docutils literal notranslate"><span class="pre">0</span></code> (brightest to off)</p>
 <ul>
 <li><p>the second <code class="docutils literal notranslate"><span class="pre">-1</span></code> in range(9,-1,-1) → reverse order</p></li>
 </ul>
@@ -418,6 +424,7 @@
 </ul>
 </li>
 </ul>
+</div>
 <p>Time to <strong>modify</strong> the code:</p>
 <section id="custom-exercises">
 <h3>Custom Exercises<a class="headerlink" href="#custom-exercises" title="Permalink to this heading">#</a></h3>
@@ -474,7 +481,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2023, Damien Murtagh
+                Copyright &#169; 2024, Damien Murtagh
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             

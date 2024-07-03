@@ -27,6 +27,13 @@ Below is an example for the x-axis:
 :linenos:
 ```
 
+```{admonition} Code explaination
+:class: notice
+- **line 5** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`.
+- **line 6** &rarr; gets the x-axis reading from the accelerometer and store it in the x_reading variable.
+- **line 7** &rarr; displays the x_reading on matrix
+```
+
 ### Get values
 
 You can also get a tuple containing the x, y and z values the micro:bit is experiencing:
@@ -37,6 +44,18 @@ Below is an example:
 :linenos:
 ```
 
+```{admonition} Code explaination
+:class: notice
+- **line 5** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`.
+- **line 6** &rarr; gets the tuple of the accelerometer reading and stores it in the values variable.
+- **line 7** &rarr; displays accelerometer readings to the matrix
+- **line 8** &rarr; waits 1 second
+```
+
+```{admonition} Tuples
+:class: note
+Tuples in Python are like lists, but you can't change their values once they're created. They are useful for storing a collection of items that should not be modified. You create a tuple by placing the items inside parentheses, separated by commas, like this: my_tuple = (1, 2, 3).
+```
 
 ### Movement exercises
 
@@ -60,6 +79,14 @@ Below is an example for displaying the current gesture:
 :linenos:
 ```
 
+```{admonition} Code explaination
+:class: notice
+- **line 5** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`.
+- **line 6** &rarr; stores the current gesture in the variable called gesture
+- **line 7** &rarr; scrolls the gesture across the display
+- **line 8** &rarr; waits 1 second
+```
+
 ### Get gestures
 
 The micro:bit can also provide you with a list of historical gestures. It returns a tuple with the latest gesture first.
@@ -68,6 +95,14 @@ Below is an example of `get_gestures`:
 
 ```{literalinclude} ./python_files/gestures_get_gestures/main.py
 :linenos:
+```
+
+```{admonition} Code explaination
+:class: notice
+- **line 5** &rarr; waits 5 seconds
+- **line 7** &rarr; gets a list of all the guestures that have occured since the micro:bit was turned on and stores it in the variable called gestures
+- **line 9** &rarr; iterates over the list of gestures
+- **line 10** &rarr; scroll the current guesture across the display
 ```
 
 ### Was gesture

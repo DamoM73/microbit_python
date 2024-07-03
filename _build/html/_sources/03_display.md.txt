@@ -55,16 +55,17 @@ Create a new file called **main.py** and add the code below.
 
 ![display show](./assets/display_show.gif)
 
-Let's **investigate** that code by breaking it down.
-
-- line 1 &rarr; comment identifying the project.
-- line 3 &rarr; imports all the commands from the `micropython` library.
-- line 5 &rarr; sets up the endless loop.
-- line 6 &rarr; `display.show()` displays one character at a time. 
+```{admonition} Code explaination
+:class: notice
+- **line 1** &rarr; comment identifying the project.
+- **line 3** &rarr; imports all the commands from the `micropython` library.
+- **line 5** &rarr; sets up the endless loop.
+- **line 6** &rarr; `display.show()` displays one character at a time. 
   - `3.14159` &rarr; message to be displayed. This can be a string, integer, float or Boolean.
   - `delay=500` &rarr; puts a 500 millisecond pause after each character
-- line 7 &rarr; `display.clear()` changes the value of each pixel to `0` effectively clearing the screen.
-- line 8 &rarr; waits 1000 milliseconds before going back to the top of the loop.
+- **line 7** &rarr; `display.clear()` changes the value of each pixel to `0` effectively clearing the screen.
+- **line 8** &rarr; waits 1000 milliseconds before going back to the top of the loop.
+```
 
 Time to **modify** the code and see what happens:
 
@@ -103,10 +104,11 @@ Then add the following code to the file.
 
 ![display image](./assets/display_image.gif)
 
-Let's **investigate** by impacting the new code:
-
-- line 6 &rarr; `display.show(Image.HEART)` shows a heart on the display
-- line 8 &rarr; `display.show(Image.HEART_SMALL)` shows a small heart on the display
+```{admonition} Code explaination
+:class: notice
+- **line 6** &rarr; `display.show(Image.HEART)` shows a heart on the display
+- **line 8** &rarr; `display.show(Image.HEART_SMALL)` shows a small heart on the display
+```
 
 Time to **modify** the code:
 
@@ -152,13 +154,15 @@ Add the code below, save t an then run in on the micro:bit.
 
 ![display custom](./assets/display_custom.gif)
 
-Ok, this code is a bit more complicated, so lets investigate.
+```{admonition} Code explaination
+:class: notice 
+This code is a bit more complicated.
 
 - first the structure:
   - two `for` loops nested inside a `for` loop which is also nested inside a `for` loop, which is nested inside the infinite `while` loop.
   - the coordinate loops:
-    - line 8 `for` loop &rarr; increments the `x` value from `0` to `4`
-    - line 9 `for` loop &rarr; increments the `y` value from `0` to `4` for each increment of the `x` value
+    - **line 8** `for` loop &rarr; increments the `x` value from `0` to `4`
+    - **line 9** `for` loop &rarr; increments the `y` value from `0` to `4` for each increment of the `x` value
     - the coordinates produced by these two loops will proceed:
       - for the `x` value of `0` &rarr; `y` values `0` to `4`
       - for the `x` value of `1` &rarr; `y` values `0` to `4`
@@ -166,9 +170,10 @@ Ok, this code is a bit more complicated, so lets investigate.
       - for the `x` value of `3` &rarr; `y` values `0` to `4`
       - for the `x` value of `4` &rarr; `y` values `0` to `4`
   - the display loops:
-    - line 10 `for` loop &rarr; increase the LED value from `0` to `9` (off to brightest)
-    - line 13 `for` loop &rarr; decrease the LED value from `9` to `0` (brightest to off)
+    - **line 10** `for` loop &rarr; increase the LED value from `0` to `9` (off to brightest)
+    - **line 13** `for` loop &rarr; decrease the LED value from `9` to `0` (brightest to off)
       - the second `-1` in range(9,-1,-1) &rarr; reverse order
+```
 
 Time to **modify** the code:
 

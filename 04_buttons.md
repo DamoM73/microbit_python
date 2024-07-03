@@ -28,6 +28,12 @@ Full details can be found at the **[BBC micro:bit MicroPython button.get_presses
 
 **Predict** in detail what you think will happen, and then **run** the program.
 
+```{admonition} Code explaination
+:class: notice
+- **line 3** &rarr; waits 5 seconds
+- **line 4** &rarr; counts the number of times button A has been pressed then displays it.
+```
+
 ### Get Presses Exercises
 
 1. Create a program that challenges the player to press a button a certain number of times within a time limit.
@@ -49,15 +55,16 @@ Create a new file, call it **main.py** and then add the following code:
 
 **Predict** in detail what you think will happen, and then **run** the program.
 
-Let's break that code down:
-
-- line 3 &rarr; creates an infinite loop, since the condition (`True`) will never be `False`
-- line 4 &rarr; tests if button **A** is currently being pressed.
-- line 5 &rarr; if line 4 is `True` then the display will show a smiley face
-- line 6 &rarr; tests if button **B** is currently being pressed.
-- line 7 &rarr; if line 6 is `True` then `break` will be called, and exit the `while` loop
-- line 8 &rarr; if neither button **A** or button **B** is being pressed
-- line 9 &rarr; displays a sad face
+```{admonition} Code explaination
+:class: notice
+- **line 3** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`
+- **line 4** &rarr; tests if button **A** is currently being pressed.
+- **line 5** &rarr; if line 4 is `True` then the display will show a smiley face
+- **line 6** &rarr; tests if button **B** is currently being pressed.
+- **line 7** &rarr; if line 6 is `True` then `break` will be called, and exit the `while` loop
+- **line 8** &rarr; if neither button **A** or button **B** is being pressed
+- **line 9** &rarr; displays a sad face
+```
 
 ### Is pressed exercise
 
@@ -80,18 +87,19 @@ Full details can be found at the **[BBC micro:bit MicroPython button.was_pressed
 :linenos:
 ```
 
-Breaking that code down:
-
-- line 3 &rarr; clears the display of any previous image
-- line 5 &rarr; creates an infinite loop, since the condition (`True`) will never be `False`
-- line 6 &rarr; does two things:
+```{admonition} Code explaination
+:class: notice
+- **line 3** &rarr; clears the display of any previous image
+- **line 7** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`
+- **line 8** &rarr; does two things:
   - tests if button **A** has been pressed (moved from the up position to the down position)
   - if `button_a.was_pressed()` is `True` resets it to `False`
-- line 7 &rarr; changes display to smiley face
-- line 8 &rarr; does two things:
+- **line 9** &rarr; changes display to smiley face
+- **line 10** &rarr; does two things:
   - tests if button **B** has been pressed (moved from the up position to the down position)
   - if `button_b.was_pressed()` is `True` resets it to `False`
-- line 7 &rarr; changes display to sad face
+- **line 11** &rarr; changes display to sad face
+```
 
 ### Was Pressed Exercise
 

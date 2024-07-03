@@ -2,13 +2,13 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Micro:bit Temperature Sensor" href="06_temperature.html" /><link rel="prev" title="Micro:bit Buttons" href="04_buttons.html" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.03.27 -->
         <title>Micro:bit Accelerometer - Python meets micro:bit</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -183,7 +183,7 @@
 <li class="toctree-l1"><a class="reference internal" href="18_glowbit.html">Glowbit Rainbow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="97_debugging.html">Debugging with Thonny</a></li>
 <li class="toctree-l1"><a class="reference internal" href="98_exercise_solutions.html">Exercise Solutions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="99_licencing.html">Licencing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="99_licencing.html">Licensing</a></li>
 </ul>
 
 </div>
@@ -247,6 +247,14 @@
 <span class="linenos">7</span>    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">x_reading</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="notice admonition">
+<p class="admonition-title">Code explaination</p>
+<ul class="simple">
+<li><p><strong>line 5</strong> → creates an infinite loop, since the condition (<code class="docutils literal notranslate"><span class="pre">True</span></code>) will never be <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p><strong>line 6</strong> → gets the x-axis reading from the accelerometer and store it in the x_reading variable.</p></li>
+<li><p><strong>line 7</strong> → displays the x_reading on matrix</p></li>
+</ul>
+</div>
 </section>
 <section id="get-values">
 <h3>Get values<a class="headerlink" href="#get-values" title="Permalink to this heading">#</a></h3>
@@ -261,6 +269,19 @@
 <span class="linenos">7</span>    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s2">&quot;x: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot; y: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot; z: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
 <span class="linenos">8</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 </pre></div>
+</div>
+<div class="notice admonition">
+<p class="admonition-title">Code explaination</p>
+<ul class="simple">
+<li><p><strong>line 5</strong> → creates an infinite loop, since the condition (<code class="docutils literal notranslate"><span class="pre">True</span></code>) will never be <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p><strong>line 6</strong> → gets the tuple of the accelerometer reading and stores it in the values variable.</p></li>
+<li><p><strong>line 7</strong> → displays accelerometer readings to the matrix</p></li>
+<li><p><strong>line 8</strong> → waits 1 second</p></li>
+</ul>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Tuples</p>
+<p>Tuples in Python are like lists, but you can’t change their values once they’re created. They are useful for storing a collection of items that should not be modified. You create a tuple by placing the items inside parentheses, separated by commas, like this: my_tuple = (1, 2, 3).</p>
 </div>
 </section>
 <section id="movement-exercises">
@@ -290,6 +311,15 @@
 <span class="linenos">8</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="notice admonition">
+<p class="admonition-title">Code explaination</p>
+<ul class="simple">
+<li><p><strong>line 5</strong> → creates an infinite loop, since the condition (<code class="docutils literal notranslate"><span class="pre">True</span></code>) will never be <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p><strong>line 6</strong> → stores the current gesture in the variable called gesture</p></li>
+<li><p><strong>line 7</strong> → scrolls the gesture across the display</p></li>
+<li><p><strong>line 8</strong> → waits 1 second</p></li>
+</ul>
+</div>
 </section>
 <section id="get-gestures">
 <h3>Get gestures<a class="headerlink" href="#get-gestures" title="Permalink to this heading">#</a></h3>
@@ -306,6 +336,15 @@
 <span class="linenos"> 9</span><span class="k">for</span> <span class="n">gesture</span> <span class="ow">in</span> <span class="n">gestures</span><span class="p">:</span>
 <span class="linenos">10</span>    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">gesture</span><span class="p">)</span>
 </pre></div>
+</div>
+<div class="notice admonition">
+<p class="admonition-title">Code explaination</p>
+<ul class="simple">
+<li><p><strong>line 5</strong> → waits 5 seconds</p></li>
+<li><p><strong>line 7</strong> → gets a list of all the guestures that have occured since the micro:bit was turned on and stores it in the variable called gestures</p></li>
+<li><p><strong>line 9</strong> → iterates over the list of gestures</p></li>
+<li><p><strong>line 10</strong> → scroll the current guesture across the display</p></li>
+</ul>
 </div>
 </section>
 <section id="was-gesture">
@@ -365,7 +404,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2023, Damien Murtagh
+                Copyright &#169; 2024, Damien Murtagh
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             

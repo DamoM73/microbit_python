@@ -21,6 +21,7 @@ Then right mouse click in the file panel and choose **New directory...**
 ![new folder](./assets/first_program_new_folder.png)
 
 ```{admonition} Directories vs Folders
+:class: note
 In computing, directories and folders refer to the same thing, which is a container for files and other directories.
 
 Historically, the term "directory" was used in earlier operating systems such as MS-DOS and UNIX to refer to a hierarchical structure for organizing files. As graphical user interfaces became more common, the term "folder" was introduced to make the concept more intuitive for users.
@@ -55,6 +56,7 @@ Now enter the code below into your newly created **main.py** file:
 We're going to run our program for the first time, but before let's introduce the PRIMM concept.
 
 ```{admonition} PRIMM
+:class: note
 Throughout this course we will use the **PRIMM** process to reinforce our learning. **PRIMM** stands for **Predict**, **Run**, **Investigate**, **Modify**, and **Make**. It reflects effective programming practices and encourages curiosity in programming.
 
 **Predict**: Before you run the code you need to predict what you think will happen. Go ahead and have a guess at what you think will happen.
@@ -76,14 +78,15 @@ Lets run through the **PRIMM** process now
 
 Did you predict that the `"Hello world!"` would scroll across the dot matrix before displaying a heart for two seconds?
 
-Let's **investigate** the code, by breaking it down line-by-line:
-
-- line 1 &rarr; comment identifying the project. This is super important since all our program will be called `main.py`
-- line 3 &rarr; imports all the commands from the `micropython` library.
-- line 5 &rarr; sets up the endless loop.
-- line 6 &rarr; scrolls the text across the display.
-- line 7 &rarr; shows the heart image.
-- line 8 &rarr; waits 2000 milliseconds before going back to the top of the loop.
+```{admonition} Code explaination
+:class: notice
+- **line 1** &rarr; comment identifying the project. This is super important since all our program will be called `main.py`
+- **line 3** &rarr; imports all the commands from the `micropython` library.
+- **line 5** &rarr; sets up the endless loop.
+- **line 6** &rarr; scrolls the text across the display.
+- **line 7** &rarr; shows the heart image.
+- **line 8** &rarr; waits 2000 milliseconds before going back to the top of the loop.
+```
 
 For more details check the **[display.scroll docs](https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.scroll)**.
 
