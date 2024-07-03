@@ -1,14 +1,14 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Micro:bit Display" href="03_display.html" /><link rel="prev" title="Getting Started" href="01_getting_started.html" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.03.27 -->
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 4.5.0 and Furo 2022.12.07 -->
         <title>Your First Program - Python meets micro:bit</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=91d0f0d1c444bdcb17a68e833c7a53903343c195" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -146,7 +146,7 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="index.html">
   
   <div class="sidebar-logo-container">
     <img class="sidebar-logo" src="_static/microbit_python_logo.jpg" alt="Logo"/>
@@ -218,17 +218,17 @@
           </label>
         </div>
         <article role="main">
-          <section id="your-first-program">
-<h1>Your First Program<a class="headerlink" href="#your-first-program" title="Permalink to this heading">#</a></h1>
+          <section class="tex2jax_ignore mathjax_ignore" id="your-first-program">
+<h1>Your First Program<a class="headerlink" href="#your-first-program" title="Permalink to this headline">#</a></h1>
 <p>Before we create our first program, we need to understand how MicroPython works.</p>
 <section id="main-py">
-<h2>main.py<a class="headerlink" href="#main-py" title="Permalink to this heading">#</a></h2>
+<h2>main.py<a class="headerlink" href="#main-py" title="Permalink to this headline">#</a></h2>
 <p>When a MicroPython microcontroller (like our micro:bit) is turned on, it looks for a file called <code class="docutils literal notranslate"><span class="pre">main.py</span></code> and automatically executes this file. The project can have other files, but there has to be a <code class="docutils literal notranslate"><span class="pre">main.py</span></code></p>
 <p>This means that every project will have a <code class="docutils literal notranslate"><span class="pre">main.py</span></code> file, which can become confusing, not just for us, but for the computer as well. So we need to be better organised with our Python files.</p>
 <p>To achieve this, we will create a separate folder for each exercise.</p>
 </section>
 <section id="creating-folders">
-<h2>Creating Folders<a class="headerlink" href="#creating-folders" title="Permalink to this heading">#</a></h2>
+<h2>Creating Folders<a class="headerlink" href="#creating-folders" title="Permalink to this headline">#</a></h2>
 <p>Create a new folder on your laptop called <strong>micro:bit</strong> then navigate to it in the Thonny file panel.</p>
 <p><img alt="micro:bit folder" src="_images/first_program_folder.png" /></p>
 <p>Then right mouse click in the file panel and choose <strong>New directory…</strong></p>
@@ -244,14 +244,14 @@
 <p><img alt="open folder" src="_images/first_program_open_folder.png" /></p>
 </section>
 <section id="create-the-new-file">
-<h2>Create the New File<a class="headerlink" href="#create-the-new-file" title="Permalink to this heading">#</a></h2>
+<h2>Create the New File<a class="headerlink" href="#create-the-new-file" title="Permalink to this headline">#</a></h2>
 <p>Now we will create a new file, but before we do we need to check that we are in the correct folder (1). Then right mouse click and choose <strong>New file…</strong> (2).</p>
 <p><img alt="new file" src="_images/first_program_new_file.png" /></p>
 <p>Name the file <strong>main.py</strong> and click <strong>OK</strong></p>
 <p><img alt="name file" src="_images/first_program_name_file.png" /></p>
 </section>
 <section id="add-the-code">
-<h2>Add the Code<a class="headerlink" href="#add-the-code" title="Permalink to this heading">#</a></h2>
+<h2>Add the Code<a class="headerlink" href="#add-the-code" title="Permalink to this headline">#</a></h2>
 <p>Now enter the code below into your newly created <strong>main.py</strong> file:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># first program</span>
 <span class="linenos">2</span>
@@ -290,24 +290,24 @@
 </div>
 <p>For more details check the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.scroll">display.scroll docs</a></strong>.</p>
 <section id="first-program-exercises">
-<h3>First Program Exercises<a class="headerlink" href="#first-program-exercises" title="Permalink to this heading">#</a></h3>
+<h3>First Program Exercises<a class="headerlink" href="#first-program-exercises" title="Permalink to this headline">#</a></h3>
 <p>Time to <strong>modify</strong> the code and see what happens:</p>
-<ol class="arabic simple">
+<ol class="simple">
 <li><p>Can you make it display a different message? For example:</p></li>
 </ol>
 <p><img alt="first_program displayed" src="_images/first_program_ex1.gif" /></p>
-<ol class="arabic simple" start="2">
+<ol class="simple">
 <li><p>Are there other shapes you can display? For example:</p></li>
 </ol>
 <p><img alt="first_program displayed" src="_images/first_program_ex2.gif" /></p>
-<ol class="arabic simple" start="3">
+<ol class="simple">
 <li><p>What happens if you remove the <code class="docutils literal notranslate"><span class="pre">while</span></code> statement? Why?</p></li>
 <li><p>What happens if you unplug the micro:bit and plug it back in again? Why?</p></li>
 </ol>
 </section>
 </section>
 <section id="upload-the-code">
-<h2>Upload the code<a class="headerlink" href="#upload-the-code" title="Permalink to this heading">#</a></h2>
+<h2>Upload the code<a class="headerlink" href="#upload-the-code" title="Permalink to this headline">#</a></h2>
 <p>So when you unplugged the micro:bit and then plugged it back in, the program didn’t restart. While this might not be a surprise, it defeats the purpose of microcontrollers. Microcontrollers are supposed to run by themselves without being connect to a computer.</p>
 <p>If you look at Thonny’s file panel you will see the problem is that your code is on your laptop not the micro:bit.</p>
 <p>To solve this we need to upload the code to the micro:bit. To achieve this:</p>
@@ -415,8 +415,9 @@
     </aside>
   </div>
 </div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/scripts/furo.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>

@@ -1,14 +1,14 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Glowbit Rainbow" href="18_glowbit.html" /><link rel="prev" title="PiicoDev Potentiometers" href="16_piicodev_potentiometer.html" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.03.27 -->
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 4.5.0 and Furo 2022.12.07 -->
         <title>PiicoDev OLED Module - Python meets micro:bit</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=91d0f0d1c444bdcb17a68e833c7a53903343c195" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -146,7 +146,7 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="index.html">
   
   <div class="sidebar-logo-container">
     <img class="sidebar-logo" src="_static/microbit_python_logo.jpg" alt="Logo"/>
@@ -218,20 +218,20 @@
           </label>
         </div>
         <article role="main">
-          <section id="piicodev-oled-module">
-<h1>PiicoDev OLED Module<a class="headerlink" href="#piicodev-oled-module" title="Permalink to this heading">#</a></h1>
+          <section class="tex2jax_ignore mathjax_ignore" id="piicodev-oled-module">
+<h1>PiicoDev OLED Module<a class="headerlink" href="#piicodev-oled-module" title="Permalink to this headline">#</a></h1>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xEcLUxhMMDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>The PiicoDev OLED Display Module is perfect for adding a graphical display to your project. The monochrome white-on-black display provides a sharp image and fits a surprising amount of detail. Use this module to display text, draw shapes, animations, and even create plots.</p>
 <section id="getting-set-up">
-<h2>Getting set up<a class="headerlink" href="#getting-set-up" title="Permalink to this heading">#</a></h2>
+<h2>Getting set up<a class="headerlink" href="#getting-set-up" title="Permalink to this headline">#</a></h2>
 <section id="connect-the-piicodev-module-to-your-micro-bit">
-<h3>Connect the PiicoDev module to your Micro:bit<a class="headerlink" href="#connect-the-piicodev-module-to-your-micro-bit" title="Permalink to this heading">#</a></h3>
+<h3>Connect the PiicoDev module to your Micro:bit<a class="headerlink" href="#connect-the-piicodev-module-to-your-micro-bit" title="Permalink to this headline">#</a></h3>
 <p>Plug your Micro:bit into the PiicoDev adapter (buttons LED matrix facing up), connect your module to the adapter via the PiicoDev cable and connect your Micro:bit to your computer with a USB lead.</p>
 <p>Make sure that the ASW switch is in the off position (see below)</p>
 <p><img alt="OLED AWS Switch" src="_images/oled_asw_switch.jpg" /></p>
 </section>
 <section id="download-the-piicodev-modules">
-<h3>Download the PiicoDev Modules<a class="headerlink" href="#download-the-piicodev-modules" title="Permalink to this heading">#</a></h3>
+<h3>Download the PiicoDev Modules<a class="headerlink" href="#download-the-piicodev-modules" title="Permalink to this headline">#</a></h3>
 <p>Create a new folder for this example. Then download the following files and save them to your new folder (Right Click &gt; “Save Link As”).</p>
 <ul class="simple">
 <li><p><strong><a class="reference external" href="https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py"><code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code></a></strong> - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules</p></li>
@@ -242,10 +242,10 @@
 </section>
 </section>
 <section id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">#</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">#</a></h2>
 <p>The PiicoDev OLED Module screen has 128 pixels x 64 pixels, with the <code class="docutils literal notranslate"><span class="pre">(0,0)</span></code> coordinate in the top lefthand corner.</p>
 <section id="line">
-<h3>Line<a class="headerlink" href="#line" title="Permalink to this heading">#</a></h3>
+<h3>Line<a class="headerlink" href="#line" title="Permalink to this headline">#</a></h3>
 <p>There are several options for drawing simple lines.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">line(x1,</span> <span class="pre">y1,</span> <span class="pre">x2,</span> <span class="pre">y2,</span> <span class="pre">c)</span></code> will draw a two-point line from <code class="docutils literal notranslate"><span class="pre">(x1,y1)</span></code> to <code class="docutils literal notranslate"><span class="pre">(x2,y2)</span></code> of colour <code class="docutils literal notranslate"><span class="pre">c</span></code>.</p></li>
@@ -277,7 +277,7 @@
 </div>
 </section>
 <section id="rectangle">
-<h3>Rectangle<a class="headerlink" href="#rectangle" title="Permalink to this heading">#</a></h3>
+<h3>Rectangle<a class="headerlink" href="#rectangle" title="Permalink to this headline">#</a></h3>
 <p>Draw an unfilled rectangle with <code class="docutils literal notranslate"><span class="pre">rect(x,y,width,height,colour)</span></code></p>
 <p>The top-left corner is specified by <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>. <code class="docutils literal notranslate"><span class="pre">width</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span></code> set the width and height in pixels. <code class="docutils literal notranslate"><span class="pre">colour</span></code> sets the line colour as <code class="docutils literal notranslate"><span class="pre">1</span></code> (white) or <code class="docutils literal notranslate"><span class="pre">0</span></code> (black)</p>
 <p>The following example draws an unfilled rectangle to the left of the display, and a filled white rectangle to the right. A filled black rectangle is then drawn over the top.</p>
@@ -297,7 +297,7 @@
 </div>
 </section>
 <section id="text">
-<h3>Text<a class="headerlink" href="#text" title="Permalink to this heading">#</a></h3>
+<h3>Text<a class="headerlink" href="#text" title="Permalink to this headline">#</a></h3>
 <p>Display alphanumeric text with <code class="docutils literal notranslate"><span class="pre">text(string,</span> <span class="pre">x,</span> <span class="pre">y,</span> <span class="pre">colour)</span></code>, where;</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">string</span></code> is a python string</p></li>
@@ -324,7 +324,7 @@
 </div>
 </section>
 <section id="graph">
-<h3>Graph<a class="headerlink" href="#graph" title="Permalink to this heading">#</a></h3>
+<h3>Graph<a class="headerlink" href="#graph" title="Permalink to this headline">#</a></h3>
 <p>Graphs are created with the <code class="docutils literal notranslate"><span class="pre">graph2D()</span></code> function allows plotting a single variable as it changes over time. The plot starts at the right-hand side of the display and shifts to the left every time it is updated.</p>
 <p><code class="docutils literal notranslate"><span class="pre">updateGraph2D(graph,</span> <span class="pre">value)</span></code> pushes the latest value onto a graph object. Multiple graphs can be shown at the same time and must be updated by making separate calls to updateGraph2D().</p>
 <p>The following example graphs two functions independently.</p>
@@ -353,7 +353,7 @@
 </div>
 </section>
 <section id="animation">
-<h3>Animation<a class="headerlink" href="#animation" title="Permalink to this heading">#</a></h3>
+<h3>Animation<a class="headerlink" href="#animation" title="Permalink to this headline">#</a></h3>
 <p>In general, the steps to create an animation are:</p>
 <ul class="simple">
 <li><p>Clear the display (we generally don’t want to draw over old frames)</p></li>
@@ -399,7 +399,7 @@
 </div>
 </section>
 <section id="bitmap-images">
-<h3>Bitmap Images<a class="headerlink" href="#bitmap-images" title="Permalink to this heading">#</a></h3>
+<h3>Bitmap Images<a class="headerlink" href="#bitmap-images" title="Permalink to this headline">#</a></h3>
 <p>It is possible to display Portable Bitmap Images (.pbm) files on our OLED module. The source image needs to be uploaded to our micro:bit just like any other source file.</p>
 <div class="error admonition">
 <p class="admonition-title">Memory limitations</p>
@@ -509,8 +509,9 @@
     </aside>
   </div>
 </div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/scripts/furo.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>

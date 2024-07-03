@@ -1,14 +1,14 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Micro:bit Temperature Sensor" href="06_temperature.html" /><link rel="prev" title="Micro:bit Buttons" href="04_buttons.html" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.03.27 -->
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 4.5.0 and Furo 2022.12.07 -->
         <title>Micro:bit Accelerometer - Python meets micro:bit</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=91d0f0d1c444bdcb17a68e833c7a53903343c195" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -146,7 +146,7 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="index.html">
   
   <div class="sidebar-logo-container">
     <img class="sidebar-logo" src="_static/microbit_python_logo.jpg" alt="Logo"/>
@@ -218,8 +218,8 @@
           </label>
         </div>
         <article role="main">
-          <section id="micro-bit-accelerometer">
-<h1>Micro:bit Accelerometer<a class="headerlink" href="#micro-bit-accelerometer" title="Permalink to this heading">#</a></h1>
+          <section class="tex2jax_ignore mathjax_ignore" id="micro-bit-accelerometer">
+<h1>Micro:bit Accelerometer<a class="headerlink" href="#micro-bit-accelerometer" title="Permalink to this headline">#</a></h1>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UT35ODxvmS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>The BBC micro:bit comes with an <strong>accelerometer</strong>. An accelerometer can detect and measure how fast something is moving or how it’s being tilted. It can sense motion in different directions like up, down, left, and right.</p>
 <div class="important admonition">
@@ -227,7 +227,7 @@
 <p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#module-microbit.accelerometer">BBC micro:bit MicroPython accelerometer documentation</a></strong>.</p>
 </div>
 <section id="movement">
-<h2>Movement<a class="headerlink" href="#movement" title="Permalink to this heading">#</a></h2>
+<h2>Movement<a class="headerlink" href="#movement" title="Permalink to this headline">#</a></h2>
 <p>The micro:bit accelerometer measures movement along three axes:</p>
 <ul class="simple">
 <li><p>X - tilting from left to right.</p></li>
@@ -235,7 +235,7 @@
 <li><p>Z - moving up and down.</p></li>
 </ul>
 <section id="get-x">
-<h3>Get x<a class="headerlink" href="#get-x" title="Permalink to this heading">#</a></h3>
+<h3>Get x<a class="headerlink" href="#get-x" title="Permalink to this headline">#</a></h3>
 <p>There is a method for each axis that returns a positive or negative number indicating a measurement in milli-g’s. When the reading is 0 you are “level” along that particular axis.</p>
 <p>Below is an example for the x-axis:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># movement example</span>
@@ -257,7 +257,7 @@
 </div>
 </section>
 <section id="get-values">
-<h3>Get values<a class="headerlink" href="#get-values" title="Permalink to this heading">#</a></h3>
+<h3>Get values<a class="headerlink" href="#get-values" title="Permalink to this headline">#</a></h3>
 <p>You can also get a tuple containing the x, y and z values the micro:bit is experiencing:</p>
 <p>Below is an example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># movement values example</span>
@@ -285,8 +285,8 @@
 </div>
 </section>
 <section id="movement-exercises">
-<h3>Movement exercises<a class="headerlink" href="#movement-exercises" title="Permalink to this heading">#</a></h3>
-<ol class="arabic simple">
+<h3>Movement exercises<a class="headerlink" href="#movement-exercises" title="Permalink to this headline">#</a></h3>
+<ol class="simple">
 <li><p>Change the x-axis example above to show the value for the y-axis</p></li>
 <li><p>Change the x-axis example above to show the value for the z-axis</p></li>
 <li><p>Make a levelling device that shows a <code class="docutils literal notranslate"><span class="pre">-</span></code> if the x-axis is level, <code class="docutils literal notranslate"><span class="pre">L</span></code> if the left side is too high or <code class="docutils literal notranslate"><span class="pre">R</span></code> if the right side is too high.</p></li>
@@ -294,11 +294,11 @@
 </section>
 </section>
 <section id="gestures">
-<h2>Gestures<a class="headerlink" href="#gestures" title="Permalink to this heading">#</a></h2>
+<h2>Gestures<a class="headerlink" href="#gestures" title="Permalink to this headline">#</a></h2>
 <p>The really interesting side-effect of having an accelerometer is gesture detection. If you move your BBC micro:bit in a certain way (as a gesture) then MicroPython is able to detect this.</p>
 <p>MicroPython is able to recognise the following gestures: <code class="docutils literal notranslate"><span class="pre">up</span></code>, <code class="docutils literal notranslate"><span class="pre">down</span></code>, <code class="docutils literal notranslate"><span class="pre">left</span></code>, <code class="docutils literal notranslate"><span class="pre">right</span></code>, <code class="docutils literal notranslate"><span class="pre">face</span> <span class="pre">up</span></code>, <code class="docutils literal notranslate"><span class="pre">face</span> <span class="pre">down</span></code>, <code class="docutils literal notranslate"><span class="pre">freefall</span></code>, <code class="docutils literal notranslate"><span class="pre">3g</span></code>, <code class="docutils literal notranslate"><span class="pre">6g</span></code>, <code class="docutils literal notranslate"><span class="pre">8g</span></code>, <code class="docutils literal notranslate"><span class="pre">shake</span></code>. Gestures are always represented as strings. While most of the names should be obvious, the <code class="docutils literal notranslate"><span class="pre">3g</span></code>, <code class="docutils literal notranslate"><span class="pre">6g</span></code> and <code class="docutils literal notranslate"><span class="pre">8g</span></code> gestures apply when the device encounters these levels of g-force (like when an astronaut is launched into space).</p>
 <section id="current-gestures">
-<h3>Current gestures<a class="headerlink" href="#current-gestures" title="Permalink to this heading">#</a></h3>
+<h3>Current gestures<a class="headerlink" href="#current-gestures" title="Permalink to this headline">#</a></h3>
 <p>You can get the current gesture by using the <code class="docutils literal notranslate"><span class="pre">current_gesture</span></code> method which return a string.</p>
 <p>Below is an example for displaying the current gesture:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># current_gestures example</span>
@@ -322,7 +322,7 @@
 </div>
 </section>
 <section id="get-gestures">
-<h3>Get gestures<a class="headerlink" href="#get-gestures" title="Permalink to this heading">#</a></h3>
+<h3>Get gestures<a class="headerlink" href="#get-gestures" title="Permalink to this headline">#</a></h3>
 <p>The micro:bit can also provide you with a list of historical gestures. It returns a tuple with the latest gesture first.</p>
 <p>Below is an example of <code class="docutils literal notranslate"><span class="pre">get_gestures</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># get_gestures example</span>
@@ -348,7 +348,7 @@
 </div>
 </section>
 <section id="was-gesture-todo">
-<h3>Was gesture TODO<a class="headerlink" href="#was-gesture-todo" title="Permalink to this heading">#</a></h3>
+<h3>Was gesture TODO<a class="headerlink" href="#was-gesture-todo" title="Permalink to this headline">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">was_gesture</span></code> method check to see if the micro:bit recorded a gesture since the last call.</p>
 <p>Below is an example to see if the micro:bit was shaken during the 5 second sleep.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># get_gestures example</span>
@@ -365,8 +365,8 @@
 </div>
 </section>
 <section id="gesture-exercises">
-<h3>Gesture exercises<a class="headerlink" href="#gesture-exercises" title="Permalink to this heading">#</a></h3>
-<ol class="arabic simple">
+<h3>Gesture exercises<a class="headerlink" href="#gesture-exercises" title="Permalink to this headline">#</a></h3>
+<ol class="simple">
 <li><p>Make the micro:bit display a happy face if it is face up, or display an angry face if it is not.</p></li>
 <li><p>Make a program that counts the number of times it has been shaken over a five second period</p></li>
 <li><p>Make a program that waits button <strong>A</strong> is pressed, and then reports if it has experienced 3gs</p></li>
@@ -463,8 +463,9 @@
     </aside>
   </div>
 </div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/scripts/furo.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>

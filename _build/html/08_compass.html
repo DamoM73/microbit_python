@@ -1,14 +1,14 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Micro:bit Touch Sensor" href="09_touch.html" /><link rel="prev" title="Micro:bit Light Sensor" href="07_light.html" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.03.27 -->
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 4.5.0 and Furo 2022.12.07 -->
         <title>Micro:bit Compass Sensor - Python meets micro:bit</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=91d0f0d1c444bdcb17a68e833c7a53903343c195" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -146,7 +146,7 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="index.html">
   
   <div class="sidebar-logo-container">
     <img class="sidebar-logo" src="_static/microbit_python_logo.jpg" alt="Logo"/>
@@ -218,8 +218,8 @@
           </label>
         </div>
         <article role="main">
-          <section id="micro-bit-compass-sensor">
-<h1>Micro:bit Compass Sensor<a class="headerlink" href="#micro-bit-compass-sensor" title="Permalink to this heading">#</a></h1>
+          <section class="tex2jax_ignore mathjax_ignore" id="micro-bit-compass-sensor">
+<h1>Micro:bit Compass Sensor<a class="headerlink" href="#micro-bit-compass-sensor" title="Permalink to this headline">#</a></h1>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/a3P6LWwPBqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>Your micro:bit has an input sensor for measuring magnetic fields (magnetometer), which you can use as a compass.</p>
 <div class="important admonition">
@@ -227,12 +227,12 @@
 <p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/compass.html#module-microbit.compass">BBC micro:bit MicroPython compass documentation</a></strong>.</p>
 </div>
 <section id="calibrate">
-<h2><code class="docutils literal notranslate"><span class="pre">Calibrate</span></code><a class="headerlink" href="#calibrate" title="Permalink to this heading">#</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">Calibrate</span></code><a class="headerlink" href="#calibrate" title="Permalink to this headline">#</a></h2>
 <p>Before the compass can be used it needs to be calibrated. This process helps the magnetometer sensor accurately determine the orientation and direction of the Earth’s magnetic field relative to the micro:bit’s axes. The calibration process involves tilting the micro:bit in different directions until all the LEDs are lit up.</p>
 <p>The calibration process will automatically run if the compass is called and not calibration data is stored. You can manually initiate the calibration process by calling <code class="docutils literal notranslate"><span class="pre">compass.calibrate()</span></code>.</p>
 </section>
 <section id="heading">
-<h2>Heading<a class="headerlink" href="#heading" title="Permalink to this heading">#</a></h2>
+<h2>Heading<a class="headerlink" href="#heading" title="Permalink to this headline">#</a></h2>
 <p>The micro:bit uses <code class="docutils literal notranslate"><span class="pre">heading()</span></code> to return its current bearing ranging from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">359</span></code>. The image below shows how these align to the cardinal and intercardinal directions (North, South, East, West, North-East, South-East, North-West and South-West) and the reading is taken from the top of he micro:bit (where the USB socket is). For example, if the top of the micro:bit is pointed towards the South-East (SE) the micro:bit will give a reading of 135°</p>
 <p><img alt="compass headings" src="_images/compass_headings.png" /></p>
 <p>The code below shows <code class="docutils literal notranslate"><span class="pre">heading()</span></code> in action:</p>
@@ -246,15 +246,15 @@
 </pre></div>
 </div>
 <section id="heading-exercises">
-<h3>Heading Exercises<a class="headerlink" href="#heading-exercises" title="Permalink to this heading">#</a></h3>
-<ol class="arabic simple">
+<h3>Heading Exercises<a class="headerlink" href="#heading-exercises" title="Permalink to this headline">#</a></h3>
+<ol class="simple">
 <li><p>Make a program that displays <code class="docutils literal notranslate"><span class="pre">N</span></code> when the micro:bit is pointing North.</p></li>
 <li><p>Improve the last program so it shows the 8 cardinal, and intercardinal directions (the ones on the image above) when button <strong>A</strong> is pressed</p></li>
 </ol>
 </section>
 </section>
 <section id="magnetic-strength">
-<h2>Magnetic strength<a class="headerlink" href="#magnetic-strength" title="Permalink to this heading">#</a></h2>
+<h2>Magnetic strength<a class="headerlink" href="#magnetic-strength" title="Permalink to this headline">#</a></h2>
 <p>The magnetometer actually measures magnetic fields. When it is used to measure the Earth’s magnetic field turns it into a compass, but we can also use it to measure local magnetic fields.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">get_field</span></code> method returns the strength of the magnetic field around the micro:bit in nano teslas.</p>
 <p>Run the program below and use the magnet in your kit to change the value.</p>
@@ -269,8 +269,8 @@
 </pre></div>
 </div>
 <section id="magnetic-strength-exercises">
-<h3>Magnetic strength exercises<a class="headerlink" href="#magnetic-strength-exercises" title="Permalink to this heading">#</a></h3>
-<ol class="arabic simple">
+<h3>Magnetic strength exercises<a class="headerlink" href="#magnetic-strength-exercises" title="Permalink to this headline">#</a></h3>
+<ol class="simple">
 <li><p>Change the magnetic strength example above so it displays microteslas with no decimals</p></li>
 <li><p>Make a program that shows a smiley face if the magnet is touching the right side of the micro:bit, otherwise is shows and angry face.</p></li>
 </ol>
@@ -362,8 +362,9 @@
     </aside>
   </div>
 </div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/scripts/furo.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>

@@ -1,14 +1,14 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Micro:bit Radio" href="11_radio.html" /><link rel="prev" title="Micro:bit Touch Sensor" href="09_touch.html" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.03.27 -->
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 4.5.0 and Furo 2022.12.07 -->
         <title>Micro:bit Sound - Python meets micro:bit</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=91d0f0d1c444bdcb17a68e833c7a53903343c195" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -146,7 +146,7 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="index.html">
   
   <div class="sidebar-logo-container">
     <img class="sidebar-logo" src="_static/microbit_python_logo.jpg" alt="Logo"/>
@@ -218,8 +218,8 @@
           </label>
         </div>
         <article role="main">
-          <section id="micro-bit-sound">
-<h1>Micro:bit Sound<a class="headerlink" href="#micro-bit-sound" title="Permalink to this heading">#</a></h1>
+          <section class="tex2jax_ignore mathjax_ignore" id="micro-bit-sound">
+<h1>Micro:bit Sound<a class="headerlink" href="#micro-bit-sound" title="Permalink to this headline">#</a></h1>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/r53PjFwyAhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>MicroPython on the BBC micro:bit comes with a powerful music and sound module, which can drive the micro:bit 2 speaker.</p>
 <div class="important admonition">
@@ -227,14 +227,14 @@
 <p>All the sound functions can be found across the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/v2-docs/music.html">BBC micro:bit MicroPython music documentation</a></strong>, <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/v2-docs/speech.html">BBC micro:bit MicroPython speech documentation</a></strong>, and <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/v2-docs/microphone.html">BBC micro:bit MicroPython speech documentation</a></strong>.</p>
 </div>
 <section id="music">
-<h2>Music<a class="headerlink" href="#music" title="Permalink to this heading">#</a></h2>
+<h2>Music<a class="headerlink" href="#music" title="Permalink to this headline">#</a></h2>
 <div class="important admonition">
 <p class="admonition-title">Music</p>
 <p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/music.html#module-music">BBC micro:bit MicroPython Music documentation</a></strong>.</p>
 </div>
 <p>MicroPython on the BBC micro:bit comes with a powerful music and sound module. It’s very easy to generate bleeps and bloops from the device using the speaker.</p>
 <section id="built-in-tunes">
-<h3>Built-in tunes<a class="headerlink" href="#built-in-tunes" title="Permalink to this heading">#</a></h3>
+<h3>Built-in tunes<a class="headerlink" href="#built-in-tunes" title="Permalink to this headline">#</a></h3>
 <p>Notice that we import the music module. It contains methods used to make and control sound. For example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># built-in tunes example</span>
 <span class="linenos">2</span>
@@ -246,7 +246,7 @@
 <p>MicroPython has quite a lot of built-in melodies: <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/music.html#built-in-melodies">here is the complete list</a></strong>.</p>
 </section>
 <section id="custom-tunes">
-<h3>Custom Tunes<a class="headerlink" href="#custom-tunes" title="Permalink to this heading">#</a></h3>
+<h3>Custom Tunes<a class="headerlink" href="#custom-tunes" title="Permalink to this headline">#</a></h3>
 <p>Creating your own tunes is easy!</p>
 <p>Each <strong>note</strong> has a name (like C# or F), an <strong>octave</strong> (telling MicroPython how high or low the note should be played) and a <strong>duration</strong> (how long it lasts through time).</p>
 <p><strong>Octaves</strong> are indicated by a number ~ 0 is the lowest octave, 4 contains middle C and 8 is about as high as you’ll ever need unless you’re making music for dogs.</p>
@@ -269,7 +269,7 @@
 </div>
 </section>
 <section id="sound-effects">
-<h3>Sound Effects<a class="headerlink" href="#sound-effects" title="Permalink to this heading">#</a></h3>
+<h3>Sound Effects<a class="headerlink" href="#sound-effects" title="Permalink to this headline">#</a></h3>
 <p>MicroPython lets you make tones that are not musical notes. For example, here’s how to create a Police siren effect:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># sound effects example</span>
 <span class="linenos">2</span>
@@ -286,14 +286,14 @@
 </section>
 </section>
 <section id="speech">
-<h2>Speech<a class="headerlink" href="#speech" title="Permalink to this heading">#</a></h2>
+<h2>Speech<a class="headerlink" href="#speech" title="Permalink to this headline">#</a></h2>
 <p>Computers and robots that talk feel more “human”. Getting the micro:bit talk to you is one way to express information in a fun, efficient and useful way. To this end, the micro:bit has integrated a simple speech synthesiser based upon a reverse-engineered version of a synthesiser from the early 1980s. It sounds very cute, in an “all humans must die” sort of a way.</p>
 <div class="important admonition">
 <p class="admonition-title">Speech</p>
 <p>Full details can be found at the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/speech.html">BBC micro:bit MicroPython Speech documentation</a></strong>.</p>
 </div>
 <section id="say">
-<h3>Say<a class="headerlink" href="#say" title="Permalink to this heading">#</a></h3>
+<h3>Say<a class="headerlink" href="#say" title="Permalink to this headline">#</a></h3>
 <p>The simplest way to get the device to speak is to import the speech module and use the say function like this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># speech example</span>
 <span class="linenos">2</span>
@@ -321,7 +321,7 @@
 </div>
 </section>
 <section id="pronounce">
-<h3>Pronounce<a class="headerlink" href="#pronounce" title="Permalink to this heading">#</a></h3>
+<h3>Pronounce<a class="headerlink" href="#pronounce" title="Permalink to this headline">#</a></h3>
 <p>You’ll notice that sometimes, the say function doesn’t accurately translate from English words into the correct sound. To have fine grained control of the output, use phonemes: the building-block sounds of language.</p>
 <p>The advantage of using phonemes is that you don’t have to know how to spell! Rather, you only have to know how to say the word in order to spell it phonetically.</p>
 <p>A <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/speech.html#phonemes">full list of the phonemes</a></strong> the speech synthesiser understands can be found in the API documentation for speech. Alternatively, save yourself a lot of time by passing in English words to the <strong><a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/speech.html#speech.translate">translate function</a></strong>. It’ll return a first approximation of the phonemes it would use to generate the audio. This result can be hand-edited to improve the accuracy, inflection and emphasis (so it sounds more natural).</p>
@@ -337,7 +337,7 @@
 <p>The mapping from pitch numbers to musical notes is shown below:</p>
 </section>
 <section id="sing">
-<h3>Sing<a class="headerlink" href="#sing" title="Permalink to this heading">#</a></h3>
+<h3>Sing<a class="headerlink" href="#sing" title="Permalink to this headline">#</a></h3>
 <p>By changing the pitch setting and calling the sing function it’s possible to make the device sing (although it’s not going to win Eurovision any time soon).</p>
 <p>The mapping from pitch numbers to musical notes is shown below:</p>
 <p><img alt="speech-pitch" src="_images/speech-pitch.jpg" /></p>
@@ -365,7 +365,7 @@
 </section>
 </section>
 <section id="microphone">
-<h2>Microphone<a class="headerlink" href="#microphone" title="Permalink to this heading">#</a></h2>
+<h2>Microphone<a class="headerlink" href="#microphone" title="Permalink to this headline">#</a></h2>
 <p>The built-in microphone available on the micro:bit V2 can be used to respond to sound.</p>
 <div class="important admonition">
 <p class="admonition-title">Microphone</p>
@@ -374,7 +374,7 @@
 <p>The microphone input is located on the front of the board alongside a microphone activity LED, which is lit when the microphone is in use.</p>
 <p><img alt="microphone location" src="_images/microphone.png" /></p>
 <section id="sound-events">
-<h3>Sound Events<a class="headerlink" href="#sound-events" title="Permalink to this heading">#</a></h3>
+<h3>Sound Events<a class="headerlink" href="#sound-events" title="Permalink to this headline">#</a></h3>
 <p>The microphone can respond to a pre-defined set of sound events that are based on the amplitude and wavelength of the sound.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">microbit.SoundEvent.QUIET</span></code> → transition of sound events from loud to quiet like speaking or background music.</p></li>
@@ -395,7 +395,7 @@
 </div>
 </section>
 <section id="sound-level">
-<h3>Sound level<a class="headerlink" href="#sound-level" title="Permalink to this heading">#</a></h3>
+<h3>Sound level<a class="headerlink" href="#sound-level" title="Permalink to this headline">#</a></h3>
 <p>The microphone can also provide a reading of the sound pressure in the range of <code class="docutils literal notranslate"><span class="pre">0</span></code> - <code class="docutils literal notranslate"><span class="pre">255</span></code>.</p>
 <p>For example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># microphone example 2</span>
@@ -411,8 +411,8 @@
 </section>
 </section>
 <section id="sound-exercises">
-<h2>Sound exercises<a class="headerlink" href="#sound-exercises" title="Permalink to this heading">#</a></h2>
-<ol class="arabic simple">
+<h2>Sound exercises<a class="headerlink" href="#sound-exercises" title="Permalink to this headline">#</a></h2>
+<ol class="simple">
 <li><p>Create a program that plays an original tune</p></li>
 <li><p>Create a program that sings the College Song</p></li>
 <li><p>Create a program that turns lights up the display according to loudness of the sound in the microphone</p></li>
@@ -513,8 +513,9 @@
     </aside>
   </div>
 </div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/scripts/furo.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
