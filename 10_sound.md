@@ -26,6 +26,12 @@ Notice that we import the music module. It contains methods used to make and con
 :linenos:
 ```
 
+```{admonition} Code explaination
+:class: notice
+- **line 3** &rarr; import the music module
+- **line 5** &rarr; play the built in melody NYAN
+```
+
 MicroPython has quite a lot of built-in melodies: **[here is the complete list](https://microbit-micropython.readthedocs.io/en/latest/music.html#built-in-melodies)**.
 
 ### Custom Tunes
@@ -52,6 +58,13 @@ Make a list of notes to create a melody (it’s equivalent to creating an animat
 
 ```{literalinclude} ./python_files/sound_music_example_2/main.py
 :linenos:
+```
+
+```{admonition} Code explaination
+:class: notice
+- **line 3** &rarr; import the music module
+- **line 5** &rarr; store the notes of "Frere Jaques" in a list called tunes
+- **line 7** &rarr; play the notes stored in tunes
 ```
 
 ### Sound Effects

@@ -21,6 +21,15 @@ For example:
 :linenos:
 ```
 
+```{admonition} Code explaination
+:class: notice
+- **line 5** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`.
+- **line 6** &rarr; make the display blank
+- **line 7** &rarr; checks if the pin logo is being touched
+- **line 8** &rarr; shows a smiley face on display
+- **line 9** &rarr; waits for 10 milliseconds
+```
+
 ## Other Pins
 
 Pins 0, 1 and 2 can also do capacitive touch, but they need to be configured first.
@@ -29,6 +38,16 @@ For example:
 
 ```{literalinclude} ./python_files/touch_pins/main.py
 :linenos:
+```
+
+```{admonition} Code explaination
+:class: notice
+- **line 5** &rarr; configure the pin0 to sense capacitve touch
+- **line 7** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`
+- **line 8** &rarr; make the display blank
+- **line 9** &rarr; checks if the pin logo is being touched
+- **line 10** &rarr; shows a smiley face on display
+- **line 11** &rarr; waits for 10 milliseconds 
 ```
 
 ## Touch exercises

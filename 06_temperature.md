@@ -19,6 +19,13 @@ For example:
 :linenos:
 ```
 
+```{admonition} Code explaination
+:class: notice
+- **line 5** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`.
+- **line 6** &rarr; checks if button A has been pressed
+- **line 7** &rarr; scrolls the current temperature across the display
+```
+
 ### Temperature Exercises
 
 1. Create a program that samples the air temperature every two seconds and keeps a record of the minimum and maximum temperatures. When button **A** is pressed the minimum temperature is displayed, and when button **B** is pressed the maximum temperature is displayed.

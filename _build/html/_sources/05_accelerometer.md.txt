@@ -53,7 +53,7 @@ Below is an example:
 ```
 
 ```{admonition} Tuples
-:class: notice
+:class: note
 Tuples in Python are like lists, but you can't change their values once they're created. They are useful for storing a collection of items that should not be modified. You create a tuple by placing the items inside parentheses, separated by commas, like this: my_tuple = (1, 2, 3).
 ```
 

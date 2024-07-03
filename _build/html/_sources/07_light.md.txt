@@ -21,6 +21,19 @@ For example:
 :linenos:
 ```
 
+```{admonition} Code explaination
+:class: notice
+- **line 5** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`.
+- **line 6** &rarr; checks whether button A has been pressed
+- **line 7** &rarr; takes the current light reading and stores it in the light_level variable
+- **line 8** &rarr; waits for 100 milliseconds
+- **line 9** &rarr; scrolls the light level across the display
+- **line 10** &rarr; makes the display blank
+- **line 11** &rarr; waits half a second
+- **line 12** &rarr; turns on the centre pixel in the display
+- **line 13** &rarr; waits half a second
+```
+
 ### Light Exercises
 
 1. Create a program that samples light levels using the micro:bit's light sensor every two seconds. It should displays messages based on whether the light level has increased (&uarr;) or decreased (&darr;).

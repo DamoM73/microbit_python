@@ -27,6 +27,13 @@ The code below shows `heading()` in action:
 :linenos:
 ```
 
+```{admonition} Code explaination
+:class: notice
+- **line 5** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`.
+- **line 6** &rarr; checks to see if button A has been pressed
+- **line 7** &rarr; scrolls the current compass heading across the display 
+```
+
 ### Heading Exercises
 
 1. Make a program that displays `N` when the micro:bit is pointing North.
@@ -42,6 +49,14 @@ Run the program below and use the magnet in your kit to change the value.
 
 ```{literalinclude} ./python_files/mag_strength/main.py
 :linenos:
+```
+
+```{admonition} Code explaination
+:class: notice
+- **line 5** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`.
+- **line 6** &rarr; checks to see if button A has been pressed
+- **line 7** &rarr; stores the current magnetic field strength in a variable called field
+- **line 8** &rarr; scrolls the value of field across the display
 ```
 
 ### Magnetic strength exercises
