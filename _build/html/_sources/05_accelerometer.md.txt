@@ -105,7 +105,7 @@ Below is an example of `get_gestures`:
 - **line 10** &rarr; scroll the current guesture across the display
 ```
 
-### Was gesture
+### Was gesture TODO
 
 The `was_gesture` method check to see if the micro:bit recorded a gesture since the last call.
 

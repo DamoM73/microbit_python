@@ -40,7 +40,7 @@ Create a new folder for this example. Then download the following files and save
 
 The PiicoDev Team has included two examples in the `main.py`.
 
-**[Upload](12_piicodev_intro.md#uploading)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VEML6040.py` to the micro:bit and then **run** it.
+**[Upload](12_piicodev_intro.md#Uploading to the micro:bit)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VEML6040.py` to the micro:bit and then **run** it.
 
 ### Example 1
 
@@ -65,7 +65,7 @@ Exploring the important parts of that code:
 
 Change the code in `main.py` to the same as the code below (make sure that the indentation of lines 27-30 is correct). This code will get a reading and classify what the sensor is looking at by using the values in the `fruitList`.
 
-**[Upload](12_piicodev_intro.md#uploading)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VEML6040.py` to the micro:bit and then **run** it.
+**[Upload](12_piicodev_intro.md#Uploading to the micro:bit)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VEML6040.py` to the micro:bit and then **run** it.
 
 ```{literalinclude} ./python_files/piico_colour_example_2/main.py
 :linenos:

@@ -115,11 +115,6 @@ Below is an example to see if the micro:bit was shaken during the 5 second sleep
 :linenos:
 ```
 
-```{admonition} Code explaination
-:class: notice
-- ****
-```
-
 ### Gesture exercises
 
 1. Make the micro:bit display a happy face if it is face up, or display an angry face if it is not.
