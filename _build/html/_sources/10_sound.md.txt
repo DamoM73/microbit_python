@@ -77,6 +77,16 @@ MicroPython lets you make tones that are not musical notes. For example, here’
 
 Notice how the `music.pitch` method is used in this instance. It expects a frequency. For example, the frequency of `440` is the same as a concert A used to tune a symphony orchestra.
 
+```{admonition} Code explaination
+:class: notice
+- **line 3** &rarr; import the music module
+- **line 5** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`
+- **line 6** &rarr; creates a loop where the value of `freq` runs from `880` to `1760` in steps of `16`
+- **line 7** &rarr; makes a sound at the pitch of current value of `freq` for `6` milliseconds
+- **line 8** &rarr; creates a loop where the value of `freq` runs from `1760` to `880` in steps of `-16`
+- **line 9** &rarr; makes a sound at the pitch of current value of `freq` for `6` milliseconds
+```
+
 ## Speech
 
 Computers and robots that talk feel more “human”. Getting the micro:bit talk to you is one way to express information in a fun, efficient and useful way. To this end, the micro:bit has integrated a simple speech synthesiser based upon a reverse-engineered version of a synthesiser from the early 1980s. It sounds very cute, in an “all humans must die” sort of a way.

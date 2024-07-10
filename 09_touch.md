@@ -23,7 +23,7 @@ For example:
 
 ```{admonition} Code explaination
 :class: notice
-- **line 5** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`.
+- **line 5** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`
 - **line 6** &rarr; make the display blank
 - **line 7** &rarr; checks if the pin logo is being touched
 - **line 8** &rarr; shows a smiley face on display

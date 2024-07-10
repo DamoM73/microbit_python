@@ -15,6 +15,8 @@ There are three ways you can work with the buttons.
 
 ```{admonition} get_presses function
 :class: important
+**`get_presses()`**
+
 Full details can be found at the **[BBC micro:bit MicroPython button.get_presses documentation](https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.get_presses)**.
 ```
 
@@ -42,6 +44,8 @@ Full details can be found at the **[BBC micro:bit MicroPython button.get_presses
 
 ```{admonition} is_pressed function
 :class: important
+**`is_pressed()`**
+
 Full details can be found at the **[BBC micro:bit MicroPython button.is_pressed documentation](https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.is_pressed)**.
 ```
 
@@ -78,6 +82,8 @@ Create a new file, call it **main.py** and then add the following code:
 
 ```{admonition} was_pressed function
 :class: important
+**`was_pressed()`**
+
 Full details can be found at the **[BBC micro:bit MicroPython button.was_pressed documentation](https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.was_pressed)**.
 ```
 

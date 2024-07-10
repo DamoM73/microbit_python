@@ -361,6 +361,17 @@
 </pre></div>
 </div>
 <p>Notice how the <code class="docutils literal notranslate"><span class="pre">music.pitch</span></code> method is used in this instance. It expects a frequency. For example, the frequency of <code class="docutils literal notranslate"><span class="pre">440</span></code> is the same as a concert A used to tune a symphony orchestra.</p>
+<div class="notice admonition">
+<p class="admonition-title">Code explaination</p>
+<ul class="simple">
+<li><p><strong>line 3</strong> → import the music module</p></li>
+<li><p><strong>line 5</strong> → creates an infinite loop, since the condition (<code class="docutils literal notranslate"><span class="pre">True</span></code>) will never be <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
+<li><p><strong>line 6</strong> → creates a loop where the value of <code class="docutils literal notranslate"><span class="pre">freq</span></code> runs from <code class="docutils literal notranslate"><span class="pre">880</span></code> to <code class="docutils literal notranslate"><span class="pre">1760</span></code> in steps of <code class="docutils literal notranslate"><span class="pre">16</span></code></p></li>
+<li><p><strong>line 7</strong> → makes a sound at the pitch of current value of <code class="docutils literal notranslate"><span class="pre">freq</span></code> for <code class="docutils literal notranslate"><span class="pre">6</span></code> milliseconds</p></li>
+<li><p><strong>line 8</strong> → creates a loop where the value of <code class="docutils literal notranslate"><span class="pre">freq</span></code> runs from <code class="docutils literal notranslate"><span class="pre">1760</span></code> to <code class="docutils literal notranslate"><span class="pre">880</span></code> in steps of <code class="docutils literal notranslate"><span class="pre">-16</span></code></p></li>
+<li><p><strong>line 9</strong> → makes a sound at the pitch of current value of <code class="docutils literal notranslate"><span class="pre">freq</span></code> for <code class="docutils literal notranslate"><span class="pre">6</span></code> milliseconds</p></li>
+</ul>
+</div>
 </section>
 </section>
 <section id="speech">

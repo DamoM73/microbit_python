@@ -17,6 +17,8 @@ All the display functions can be found at the **[BBC micro:bit MicroPython displ
 
 ```{admonition} scroll function
 :class: important
+**`microbit.display.scroll(text, delay=150, \*, wait=True, loop=False, monospace=False)`**
+
 Full details can be found at the **[BBC micro:bit MicroPython display.scroll documentation](https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.scroll)**.
 ```
 
@@ -34,6 +36,8 @@ Although our example uses strings, the `scroll()` function can also display **fl
 
 ```{admonition} show function
 :class: important
+**`microbit.display.show(image)`**
+
 Full details can be found at the **[BBC micro:bit MicroPython display.show documentation](https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.show)**.
 ```
 
@@ -130,6 +134,9 @@ Time to **modify** the code:
 
 ```{admonition} set_pixel function
 :class: important
+
+**`microbit.display.set_pixel(x, y, value)`**
+
 Full details can be found at the **[BBC micro:bit MicroPython display.set_pixel documentation](https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.set_pixel)**.
 ```
 
