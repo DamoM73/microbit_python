@@ -30,7 +30,7 @@ Below is an example for the x-axis:
 ```{admonition} Code explaination
 :class: notice
 - **line 5** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`.
-- **line 6** &rarr; gets the x-axis reading from the accelerometer and store it in the x_reading variable.
+- **line 6** &rarr; gets the x-axis reading from the accelerometer and stores it in the x_reading variable.
 - **line 7** &rarr; displays the x_reading on matrix
 ```
 
