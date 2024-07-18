@@ -111,7 +111,7 @@ The `was_gesture` method check to see if the micro:bit recorded a gesture since 
 
 Below is an example to see if the micro:bit was shaken during the 5 second sleep.
 
-```{literalinclude} ./python_files/gestures_was_gestures/main.py
+```{literalinclude} ./python_files/gestures_was_gesture/main.py
 :linenos:
 ```
 
