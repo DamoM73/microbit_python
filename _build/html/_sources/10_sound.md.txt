@@ -104,6 +104,12 @@ The simplest way to get the device to speak is to import the speech module and u
 :linenos:
 ```
 
+```{admonition} Code explaination
+:class: notice
+- **line 3** &rarr; import the speech module
+- **line 5** &rarr; makes the micro:bit say **Hello world**
+```
+
 While this is cute it’s certainly not DALEK enough for our taste, so we need to change some of the parameters that the speech synthesiser uses to produce the voice. Our speech synthesiser is quite powerful in this respect because we can change four parameters:
 
 - `pitch` - how high or low the voice sounds (0 = high, 255 = Barry White)
@@ -121,6 +127,16 @@ After some experimentation we’ve worked out this sounds quite DALEK-esque:
 :linenos:
 ```
 
+```{admonition} Code explaination
+:class: notice
+- **line 3** &rarr; import the speech module
+- **line 5** &rarr; makes the micro:bit say **I am a DALEK - EXTERMINATE**
+  - **speed** &rarr; `120` around the middle
+  - **pitch** &rarr; `100` lower middle
+  - **throat** &rarr; `100` lower middle
+  - **mouth** &rarr; `200` in the upper quater
+```
+
 ### Pronounce
 
 You’ll notice that sometimes, the say function doesn’t accurately translate from English words into the correct sound. To have fine grained control of the output, use phonemes: the building-block sounds of language.
@@ -133,6 +149,12 @@ The pronounce function is used for phoneme output like this:
 
 ```{literalinclude} ./python_files/speech_example_3/main.py
 :linenos:
+```
+
+```{admonition} Code explaination
+:class: notice
+- **line 3** &rarr; import the speech module
+- **line 5** &rarr; pronounce the phonetics sounds of "MAOREHTUN BEY5 BOYZ KAALIY4J"
 ```
 
 By changing the pitch setting and calling the sing function it’s possible to make the device sing (although it’s not going to win Eurovision any time soon).
@@ -151,6 +173,15 @@ Annotations work by pre-pending a hash (#) sign and the pitch number in front of
 
 ```{literalinclude} ./python_files/sing_example_1/main.py
 :linenos:
+```
+
+```{admonition} Code explaination
+:class: notice
+- **lines 5 - 14** &rarr; creates a lists of sung words, for example:
+  - `#115` &rarr; the note
+  - `DOWWWWWW` &rarr; the word
+- **line 15** &rarr; joins all the strings in the `solfa` list into one string called `song`
+- **line 16** &rarr; sings the `song` list
 ```
 
 In order to sing a note for a certain duration extend the note by repeating vowel or voiced consonant phonemes (as demonstrated in the example above). Beware diphthongs - to extend them you need to break them into their component parts. For example, “OY” can be extended with “OHOHIYIYIY”.

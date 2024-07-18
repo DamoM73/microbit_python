@@ -410,21 +410,30 @@
 </ul>
 </div>
 </section>
-<section id="was-gesture-todo">
-<h3>Was gesture TODO<a class="headerlink" href="#was-gesture-todo" title="Link to this heading">¶</a></h3>
+<section id="was-gesture">
+<h3>Was gesture<a class="headerlink" href="#was-gesture" title="Link to this heading">¶</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">was_gesture</span></code> method check to see if the micro:bit recorded a gesture since the last call.</p>
 <p>Below is an example to see if the micro:bit was shaken during the 5 second sleep.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># get_gestures example</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># was_gestures gestures</span>
 <span class="linenos"> 2</span>
 <span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span>
 <span class="linenos"> 6</span>
-<span class="linenos"> 7</span><span class="n">gestures</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">get_gestures</span><span class="p">()</span>
-<span class="linenos"> 8</span>
-<span class="linenos"> 9</span><span class="k">for</span> <span class="n">gesture</span> <span class="ow">in</span> <span class="n">gestures</span><span class="p">:</span>
-<span class="linenos">10</span>    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">gesture</span><span class="p">)</span>
+<span class="linenos"> 7</span><span class="k">if</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">was_gesture</span><span class="p">(</span><span class="s2">&quot;shake&quot;</span><span class="p">):</span>
+<span class="linenos"> 8</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">YES</span><span class="p">)</span>
+<span class="linenos"> 9</span><span class="k">else</span><span class="p">:</span>
+<span class="linenos">10</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">NO</span><span class="p">)</span>
 </pre></div>
+</div>
+<div class="notice admonition">
+<p class="admonition-title">Code explaination</p>
+<ul class="simple">
+<li><p><strong>line 5</strong> → waits 5 seconds</p></li>
+<li><p><strong>line 7</strong> → checks if micro:bit was shaken since it started</p></li>
+<li><p><strong>line 8</strong> → displays the <strong>YES</strong> image (a tick)</p></li>
+<li><p><strong>line 10</strong> → displays the <strong>NO</strong> image (a cross)</p></li>
+</ul>
 </div>
 </section>
 <section id="gesture-exercises">
@@ -510,7 +519,7 @@
 <li><a class="reference internal" href="#gestures">Gestures</a><ul>
 <li><a class="reference internal" href="#current-gestures">Current gestures</a></li>
 <li><a class="reference internal" href="#get-gestures">Get gestures</a></li>
-<li><a class="reference internal" href="#was-gesture-todo">Was gesture TODO</a></li>
+<li><a class="reference internal" href="#was-gesture">Was gesture</a></li>
 <li><a class="reference internal" href="#gesture-exercises">Gesture exercises</a></li>
 </ul>
 </li>

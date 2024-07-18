@@ -391,6 +391,13 @@
 <span class="linenos">5</span><span class="n">speech</span><span class="o">.</span><span class="n">say</span><span class="p">(</span><span class="s2">&quot;Hello, World&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="notice admonition">
+<p class="admonition-title">Code explaination</p>
+<ul class="simple">
+<li><p><strong>line 3</strong> → import the speech module</p></li>
+<li><p><strong>line 5</strong> → makes the micro:bit say <strong>Hello world</strong></p></li>
+</ul>
+</div>
 <p>While this is cute it’s certainly not DALEK enough for our taste, so we need to change some of the parameters that the speech synthesiser uses to produce the voice. Our speech synthesiser is quite powerful in this respect because we can change four parameters:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">pitch</span></code> - how high or low the voice sounds (0 = high, 255 = Barry White)</p></li>
@@ -408,6 +415,20 @@
 <span class="linenos">5</span><span class="n">speech</span><span class="o">.</span><span class="n">say</span><span class="p">(</span><span class="s2">&quot;I am a DALEK - EXTERMINATE&quot;</span><span class="p">,</span> <span class="n">speed</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">pitch</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">throat</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">mouth</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="notice admonition">
+<p class="admonition-title">Code explaination</p>
+<ul class="simple">
+<li><p><strong>line 3</strong> → import the speech module</p></li>
+<li><p><strong>line 5</strong> → makes the micro:bit say <strong>I am a DALEK - EXTERMINATE</strong></p>
+<ul>
+<li><p><strong>speed</strong> → <code class="docutils literal notranslate"><span class="pre">120</span></code> around the middle</p></li>
+<li><p><strong>pitch</strong> → <code class="docutils literal notranslate"><span class="pre">100</span></code> lower middle</p></li>
+<li><p><strong>throat</strong> → <code class="docutils literal notranslate"><span class="pre">100</span></code> lower middle</p></li>
+<li><p><strong>mouth</strong> → <code class="docutils literal notranslate"><span class="pre">200</span></code> in the upper quater</p></li>
+</ul>
+</li>
+</ul>
+</div>
 </section>
 <section id="pronounce">
 <h3>Pronounce<a class="headerlink" href="#pronounce" title="Link to this heading">¶</a></h3>
@@ -419,8 +440,15 @@
 <span class="linenos">2</span>
 <span class="linenos">3</span><span class="kn">import</span> <span class="nn">speech</span>
 <span class="linenos">4</span>
-<span class="linenos">5</span><span class="n">speech</span><span class="o">.</span><span class="n">pronounce</span><span class="p">(</span><span class="s2">&quot;/HEH5EH4EH3EH2EH2EH3EH4EH5EHLP.&quot;</span><span class="p">)</span>
+<span class="linenos">5</span><span class="n">speech</span><span class="o">.</span><span class="n">pronounce</span><span class="p">(</span><span class="s2">&quot;MAOREHTUN BEY5 BOYZ KAALIY4J&quot;</span><span class="p">)</span>
 </pre></div>
+</div>
+<div class="notice admonition">
+<p class="admonition-title">Code explaination</p>
+<ul class="simple">
+<li><p><strong>line 3</strong> → import the speech module</p></li>
+<li><p><strong>line 5</strong> → pronounce the phonetics sounds of “MAOREHTUN BEY5 BOYZ KAALIY4J”</p></li>
+</ul>
 </div>
 <p>By changing the pitch setting and calling the sing function it’s possible to make the device sing (although it’s not going to win Eurovision any time soon).</p>
 <p>The mapping from pitch numbers to musical notes is shown below:</p>
@@ -448,6 +476,19 @@
 <span class="linenos">15</span><span class="n">song</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">solfa</span><span class="p">)</span>
 <span class="linenos">16</span><span class="n">speech</span><span class="o">.</span><span class="n">sing</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">speed</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
+</div>
+<div class="notice admonition">
+<p class="admonition-title">Code explaination</p>
+<ul class="simple">
+<li><p><strong>lines 5 - 14</strong> → creates a lists of sung words, for example:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">#115</span></code> → the note</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DOWWWWWW</span></code> → the word</p></li>
+</ul>
+</li>
+<li><p><strong>line 15</strong> → joins all the strings in the <code class="docutils literal notranslate"><span class="pre">solfa</span></code> list into one string called <code class="docutils literal notranslate"><span class="pre">song</span></code></p></li>
+<li><p><strong>line 16</strong> → sings the <code class="docutils literal notranslate"><span class="pre">song</span></code> list</p></li>
+</ul>
 </div>
 <p>In order to sing a note for a certain duration extend the note by repeating vowel or voiced consonant phonemes (as demonstrated in the example above). Beware diphthongs - to extend them you need to break them into their component parts. For example, “OY” can be extended with “OHOHIYIYIY”.</p>
 <p>Experimentation, listening carefully and adjusting is the only sure way to work out how many times to repeat a phoneme so the note lasts for the desired duration.</p>
