@@ -105,13 +105,13 @@ Below is an example of `get_gestures`:
 - **line 10** &rarr; scroll the current guesture across the display
 ```
 
-### Was gesture TODO
+### Was gesture
 
 The `was_gesture` method check to see if the micro:bit recorded a gesture since the last call.
 
 Below is an example to see if the micro:bit was shaken during the 5 second sleep.
 
-```{literalinclude} ./python_files/gestures_get_gestures/main.py
+```{literalinclude} ./python_files/gestures_was_gestures/main.py
 :linenos:
 ```
 
