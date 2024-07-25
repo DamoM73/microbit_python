@@ -3,7 +3,7 @@
 This website provides a selection of code snippets to incorporate into your Python code.
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 2
 :caption: "Contents:"
 
 00_introduction
@@ -24,6 +24,7 @@ This website provides a selection of code snippets to incorporate into your Pyth
 15_piicodev_distance
 16_piicodev_potentiometer
 17_piicodev_oled
+17a_piicodev_servo
 18_glowbit
 97_debugging
 98_exercise_solutions

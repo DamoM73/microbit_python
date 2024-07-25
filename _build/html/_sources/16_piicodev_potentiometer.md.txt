@@ -27,7 +27,7 @@ First lets see how to get a value from the pot.
 
 Create a new file called `main.py` and add the code below.
 
-**[Upload](12_piicodev_intro.md#Uploading to the micro:bit)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_Potentiometer.py` to the micro:bit and then **run** it.
+**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_Potentiometer.py` to the micro:bit and then **run** it.
 
 ```{literalinclude} ./python_files/piico_pot_example_1/main.py
 :linenos:
@@ -39,7 +39,7 @@ The default scale is `0` - `100`. What if you want it to be something else? For 
 
 Change your `main.py` to the code below.
 
-**[Upload](12_piicodev_intro.md#Uploading to the micro:bit)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_Potentiometer.py` to the micro:bit and then **run** it.
+**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_Potentiometer.py` to the micro:bit and then **run** it.
 
 ```{literalinclude} ./python_files/piico_pot_example_2/main.py
 :linenos:

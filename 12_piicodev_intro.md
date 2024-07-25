@@ -27,7 +27,8 @@ These files can be found on the micro:bit guides for the PiicoDev modules:
 
 - [PiicoDev OLED Module](https://core-electronics.com.au/guides/micro-bit/piicodev-oled-ssd1306-microbit-guide/)
 
-## Uploading to the micro:bit
+(upload)=
+## Uploading to the micro:bit 
 
 To use the PiicoDev components, you **must** upload the **PiicoDev Unified Libraries** and the relevant **device drivers** to the micro:bit along with `main.py`.
 
@@ -37,7 +38,7 @@ The images below show how to upload the atmospheric sensor files onto the micro:
 
 ![piicodev upload before](assets/piccodev_upload_1.png)
 
-### Uploading
+### Uploading {#uploading-to-the-microbit}
 
 1. Click in the first file
 2. Hold the SHIFT key and click on the bottom file

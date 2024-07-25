@@ -237,6 +237,7 @@
 <li class="toctree-l1"><a class="reference internal" href="15_piicodev_distance.html">PiicoDev Distance Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="16_piicodev_potentiometer.html">PiicoDev Potentiometers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="17_piicodev_oled.html">PiicoDev OLED Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17a_piicodev_servo.html">PiicoDev Servo Driver</a></li>
 <li class="toctree-l1"><a class="reference internal" href="18_glowbit.html">Glowbit Rainbow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="97_debugging.html">Debugging with Thonny</a></li>
 <li class="toctree-l1"><a class="reference internal" href="98_exercise_solutions.html">Exercise Solutions</a></li>
@@ -287,28 +288,152 @@
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="00_introduction.html">Introduction for Teachers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_getting_started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_first_program.html">Your First Program</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_display.html">Micro:bit Display</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_buttons.html">Micro:bit Buttons</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_accelerometer.html">Micro:bit Accelerometer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_temperature.html">Micro:bit Temperature Sensor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_light.html">Micro:bit Light Sensor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="08_compass.html">Micro:bit Compass Sensor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="09_touch.html">Micro:bit Touch Sensor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="10_sound.html">Micro:bit Sound</a></li>
-<li class="toctree-l1"><a class="reference internal" href="11_radio.html">Micro:bit Radio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="12_piicodev_intro.html">PiicoDev Intro</a></li>
-<li class="toctree-l1"><a class="reference internal" href="13_piicodev_atmosphere.html">PiicoDev Atmospheric Sensor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="14_piicodev_colour.html">PiicoDev Colour Sensor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="15_piicodev_distance.html">PiicoDev Distance Sensor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="16_piicodev_potentiometer.html">PiicoDev Potentiometers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="17_piicodev_oled.html">PiicoDev OLED Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="18_glowbit.html">Glowbit Rainbow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="97_debugging.html">Debugging with Thonny</a></li>
-<li class="toctree-l1"><a class="reference internal" href="98_exercise_solutions.html">Exercise Solutions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="99_licencing.html">Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_introduction.html">Introduction for Teachers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_introduction.html#hardware">Hardware</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="01_getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_getting_started.html#what-is-micropython">What is MicroPython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_getting_started.html#what-is-a-micro-bit">What is a micro:bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_getting_started.html#what-is-thonny">What is Thonny</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_getting_started.html#setup">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_getting_started.html#the-ide">The IDE</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_first_program.html">Your First Program</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_first_program.html#main-py">main.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_first_program.html#creating-folders">Creating Folders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_first_program.html#create-the-new-file">Create the New File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_first_program.html#add-the-code">Add the Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_first_program.html#upload-the-code">Upload the code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="03_display.html">Micro:bit Display</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_display.html#text">Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_display.html#images">Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_display.html#custom">Custom</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_display.html#other-functions">Other Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04_buttons.html">Micro:bit Buttons</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="04_buttons.html#get-presses">Get Presses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_buttons.html#is-pressed">Is Pressed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_buttons.html#was-pressed">Was Pressed</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="05_accelerometer.html">Micro:bit Accelerometer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="05_accelerometer.html#movement">Movement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_accelerometer.html#gestures">Gestures</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="06_temperature.html">Micro:bit Temperature Sensor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="06_temperature.html#temperature">Temperature</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="07_light.html">Micro:bit Light Sensor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="07_light.html#get-light-level">Get light level</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="08_compass.html">Micro:bit Compass Sensor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="08_compass.html#calibrate"><code class="docutils literal notranslate"><span class="pre">Calibrate</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_compass.html#heading">Heading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_compass.html#magnetic-strength">Magnetic strength</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="09_touch.html">Micro:bit Touch Sensor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="09_touch.html#pin-logo">Pin logo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_touch.html#other-pins">Other Pins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_touch.html#touch-exercises">Touch exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="10_sound.html">Micro:bit Sound</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="10_sound.html#music">Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_sound.html#speech">Speech</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_sound.html#microphone">Microphone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_sound.html#sound-exercises">Sound exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="11_radio.html">Micro:bit Radio</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="11_radio.html#how-does-the-radio-work">How does the radio work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_radio.html#sending-a-message">Sending a message</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_radio.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_radio.html#radio-exercises">Radio Exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="12_piicodev_intro.html">PiicoDev Intro</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="12_piicodev_intro.html#using-the-piicodev-modules">Using the PiicoDev modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_piicodev_intro.html#uploading-to-the-micro-bit">Uploading to the micro:bit</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="13_piicodev_atmosphere.html">PiicoDev Atmospheric Sensor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="13_piicodev_atmosphere.html#getting-set-up">Getting set up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_piicodev_atmosphere.html#example-code">Example code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_piicodev_atmosphere.html#commands">Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_piicodev_atmosphere.html#exercises">Exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="14_piicodev_colour.html">PiicoDev Colour Sensor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="14_piicodev_colour.html#colour-theory">Colour Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_piicodev_colour.html#getting-set-up">Getting set up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_piicodev_colour.html#example-code">Example code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_piicodev_colour.html#commands">Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_piicodev_colour.html#exercises">Exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="15_piicodev_distance.html">PiicoDev Distance Sensor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="15_piicodev_distance.html#getting-set-up">Getting set up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_piicodev_distance.html#example-code">Example code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_piicodev_distance.html#commands">Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_piicodev_distance.html#exercise">Exercise</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="16_piicodev_potentiometer.html">PiicoDev Potentiometers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="16_piicodev_potentiometer.html#getting-set-up">Getting set up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="16_piicodev_potentiometer.html#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="17_piicodev_oled.html">PiicoDev OLED Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="17_piicodev_oled.html#getting-set-up">Getting set up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17_piicodev_oled.html#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="17a_piicodev_servo.html">PiicoDev Servo Driver</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="17a_piicodev_servo.html#getting-set-up">Getting set up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17a_piicodev_servo.html#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="18_glowbit.html">Glowbit Rainbow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="18_glowbit.html#wire-a-rainbow-to-a-micro-bit">Wire a rainbow to a micro:bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_glowbit.html#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="97_debugging.html">Debugging with Thonny</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="97_debugging.html#programming-mistakes">Programming mistakes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="97_debugging.html#using-thonny-s-debugger">Using Thonny’s Debugger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="97_debugging.html#debugging-a-logic-error">Debugging a Logic Error</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="98_exercise_solutions.html">Exercise Solutions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="98_exercise_solutions.html#first-program-exercises">First Program Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="98_exercise_solutions.html#display-exercises">Display Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="98_exercise_solutions.html#buttons-exercises">Buttons Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="98_exercise_solutions.html#accelerometer-exercises">Accelerometer Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="98_exercise_solutions.html#temperature-exercises">Temperature Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="98_exercise_solutions.html#light-exercises">Light Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="98_exercise_solutions.html#compass-exercises">Compass Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="98_exercise_solutions.html#touch-exercises">Touch Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="98_exercise_solutions.html#sound-exercises">Sound Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="98_exercise_solutions.html#radio-exercises">Radio Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="98_exercise_solutions.html#piicodev-atmospheric-sensor-exercises">PiicoDev Atmospheric Sensor Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="98_exercise_solutions.html#piicodev-colour-sensor-exercises">PiicoDev Colour Sensor Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="98_exercise_solutions.html#piicodev-distance-sensor">PiicoDev Distance Sensor</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="99_licencing.html">Licensing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="99_licencing.html#repository">Repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="99_licencing.html#content">Content</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </section>

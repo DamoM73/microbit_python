@@ -39,7 +39,7 @@ The following example draws horizontal and vertical lines from the same point an
 
 **Create** a `main.py` file in the folder and add the code below.
 
-**[Upload](12_piicodev_intro.md#Uploading to the micro:bit)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
+**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
 
 ```{literalinclude} ./python_files/oled_example_1/main.py
 :linenos:
@@ -55,7 +55,7 @@ The following example draws an unfilled rectangle to the left of the display, an
 
 Change the code in `main.py` to the code below. 
 
-**[Upload](12_piicodev_intro.md#Uploading to the micro:bit)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
+**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
 
 ```{literalinclude} ./python_files/oled_example_2/main.py
 :linenos:
@@ -73,7 +73,7 @@ The following example prints four lines. The first is a literal string, where th
 
 Change the code in `main.py` to the code below. 
 
-**[Upload](12_piicodev_intro.md#Uploading to the micro:bit)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
+**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
 
 ```{literalinclude} ./python_files/oled_example_3/main.py
 :linenos:
@@ -89,7 +89,7 @@ The following example graphs two functions independently.
 
 Change the code in `main.py` to the code below. 
 
-**[Upload](12_piicodev_intro.md#Uploading to the micro:bit)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
+**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
 
 ```{literalinclude} ./python_files/oled_example_4/main.py
 :linenos:
@@ -107,7 +107,7 @@ The following example animates a rectangle bouncing around the screen.
 
 Change the code in `main.py` to the code below. 
 
-**[Upload](12_piicodev_intro.md#Uploading to the micro:bit)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
+**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
 
 ```{literalinclude} ./python_files/oled_example_5/main.py
 :linenos:
@@ -126,7 +126,7 @@ The following example displays the PiicoDev logo on the screen.
 
 Change the code in `main.py` to the code below. 
 
-**[Upload](12_piicodev_intro.md#Uploading to the micro:bit)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
+**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
 
 ```{literalinclude} ./python_files/oled_example_6/main.py
 :linenos:
