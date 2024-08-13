@@ -16,8 +16,8 @@ The **Rotary** and **Slide Potentiometers** use the same code.
 
 Create a new folder for this example. Then download the following files and save them to your new folder (Right Click > "Save Link As").
 
-- **[`PiicoDev_Unified.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py)** - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules
 - **[`PiicoDev_Potentiometer.py`](https://github.com/CoreElectronics/CE-PiicoDev-Potentiometer-MicroPython-Module/raw/main/min/PiicoDev_Potentiometer.py)** - The device driver.
+- **[`PiicoDev_Unified.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py)** - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules
 
 ## Examples
 

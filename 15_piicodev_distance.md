@@ -14,8 +14,8 @@ Plug your Micro:bit into the PiicoDev adapter (buttons LED matrix facing up), co
 
 Create a new folder for this example. Then download the following files and save them to your new folder (Right Click > "Save Link As").
 
-- **[`PiicoDev_Unified.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py)** - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules
 - **[`PiicoDev_VL53L1X.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-VL53L1X-MicroPython-Module/main/min/PiicoDev_VL53L1X.py)** - The device driver.
+- **[`PiicoDev_Unified.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py)** - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules
 - **[`main.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-VL53L1X-MicroPython-Module/main/main.py)** - an example script for this PiicoDev Sensor
 
 ## Example code
