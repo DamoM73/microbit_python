@@ -18,8 +18,8 @@ Make sure that the ASW switch is in the off position (see below)
 
 Create a new folder for this example. Then download the following files and save them to your new folder (Right Click > "Save Link As").
 
-- **[`PiicoDev_Unified.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py)** - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules
 - **[`PiicoDev_SSD1306.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-SSD1306-MicroPython-Module/main/min/PiicoDev_SSD1306.py)** - The device driver.
+- **[`PiicoDev_Unified.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py)** - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules
 - **[`font-pet-me-128.dat`](https://github.com/CoreElectronics/CE-PiicoDev-SSD1306-MicroPython-Module/raw/main/font-pet-me-128.dat)** - The font file
 - **[`piicodev-logo.pbm`](https://github.com/CoreElectronics/CE-PiicoDev-SSD1306-MicroPython-Module/raw/main/bitmap/piicodev-logo.pbm)** - PiicoDev Test Image
 
