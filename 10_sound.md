@@ -46,6 +46,9 @@ Each **note** has a name (like C# or F), an **octave** (telling MicroPython how 
 
 If you use the note name **R** then MicroPython will play a rest (i.e. silence) for the specified duration.
 
+- Use **#** to designate a sharp note
+- Use **b** to designate a flat note
+
 Each note is expressed as a string of characters like this:
 
 ```
