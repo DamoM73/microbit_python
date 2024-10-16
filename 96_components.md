@@ -10,7 +10,7 @@ Below is a listing of all the components that are available in our Micro:bit kit
 
 [PiicoDev OLED Module](./17_piicodev_oled.md)
 
-[PiicoDev Servo Driver](./17a_piicodev_servo.md)
+[PiicoDev Servo Driver and Servo motors](./17a_piicodev_servo.md)
 
 [Glowbit Rainbow](./18_glowbit.md)
 
