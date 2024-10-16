@@ -26,6 +26,7 @@ This website provides a selection of code snippets to incorporate into your Pyth
 17_piicodev_oled
 17a_piicodev_servo
 18_glowbit
+96_components
 97_debugging
 98_exercise_solutions
 99_licencing

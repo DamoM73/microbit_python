@@ -237,7 +237,9 @@
 <li class="toctree-l1"><a class="reference internal" href="15_piicodev_distance.html">PiicoDev Distance Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="16_piicodev_potentiometer.html">PiicoDev Potentiometers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="17_piicodev_oled.html">PiicoDev OLED Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17a_piicodev_servo.html">PiicoDev Servo Driver</a></li>
 <li class="toctree-l1"><a class="reference internal" href="18_glowbit.html">Glowbit Rainbow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="96_components.html">Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="97_debugging.html">Debugging with Thonny</a></li>
 <li class="toctree-l1"><a class="reference internal" href="98_exercise_solutions.html">Exercise Solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="99_licencing.html">Licensing</a></li>
@@ -322,6 +324,10 @@
 <p><strong>Octaves</strong> are indicated by a number ~ 0 is the lowest octave, 4 contains middle C and 8 is about as high as you’ll ever need unless you’re making music for dogs.</p>
 <p><strong>Durations</strong> are also expressed as numbers. The higher the value of the duration the longer it will last. Such values are related to each other - for instance, a duration of 4 will last twice as long as a duration 2 (and so on).</p>
 <p>If you use the note name <strong>R</strong> then MicroPython will play a rest (i.e. silence) for the specified duration.</p>
+<ul class="simple">
+<li><p>Use <strong>#</strong> to designate a sharp note</p></li>
+<li><p>Use <strong>b</strong> to designate a flat note</p></li>
+</ul>
 <p>Each note is expressed as a string of characters like this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">NOTE</span><span class="p">[</span><span class="n">octave</span><span class="p">][:</span><span class="n">duration</span><span class="p">]</span>
 </pre></div>

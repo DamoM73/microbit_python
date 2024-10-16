@@ -239,6 +239,7 @@
 <li class="toctree-l1"><a class="reference internal" href="17_piicodev_oled.html">PiicoDev OLED Module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="17a_piicodev_servo.html">PiicoDev Servo Driver</a></li>
 <li class="toctree-l1"><a class="reference internal" href="18_glowbit.html">Glowbit Rainbow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="96_components.html">Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="97_debugging.html">Debugging with Thonny</a></li>
 <li class="toctree-l1"><a class="reference internal" href="98_exercise_solutions.html">Exercise Solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="99_licencing.html">Licensing</a></li>
@@ -314,18 +315,13 @@
 <span class="linenos"> 6</span><span class="kn">from</span> <span class="nn">PiicoDev_BME280</span> <span class="kn">import</span> <span class="n">PiicoDev_BME280</span>
 <span class="linenos"> 7</span><span class="kn">from</span> <span class="nn">PiicoDev_Unified</span> <span class="kn">import</span> <span class="n">sleep_ms</span> <span class="c1"># cross-platform compatible sleep function</span>
 <span class="linenos"> 8</span>
-<span class="linenos"> 9</span><span class="k">def</span> <span class="nf">wbt</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span><span class="n">hum</span><span class="p">):</span>
+<span class="linenos"> 9</span><span class="n">sensor</span> <span class="o">=</span> <span class="n">PiicoDev_BME280</span><span class="p">()</span> <span class="c1"># initialise the sensor</span>
 <span class="linenos">10</span>
-<span class="linenos">11</span>    <span class="k">return</span> <span class="p">(</span><span class="n">temp</span> <span class="o">-</span> <span class="p">((</span><span class="mi">1</span><span class="o">-</span><span class="n">hum</span><span class="p">)</span><span class="o">/</span><span class="mi">5</span><span class="p">))</span>
-<span class="linenos">12</span>
-<span class="linenos">13</span><span class="n">sensor</span> <span class="o">=</span> <span class="n">PiicoDev_BME280</span><span class="p">()</span> <span class="c1"># initialise the sensor</span>
-<span class="linenos">14</span>
-<span class="linenos">15</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<span class="linenos">16</span>    <span class="c1"># Print data</span>
-<span class="linenos">17</span>    <span class="n">tempC</span><span class="p">,</span> <span class="n">press</span><span class="p">,</span> <span class="n">humRH</span> <span class="o">=</span> <span class="n">sensor</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="c1"># read all data from the sensor</span>
-<span class="linenos">18</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here&quot;</span><span class="p">)</span>
-<span class="linenos">19</span>    <span class="c1">#print(wbt(tempC, humRH))</span>
-<span class="linenos">20</span>    <span class="n">sleep_ms</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+<span class="linenos">11</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">12</span>    <span class="c1"># Print data</span>
+<span class="linenos">13</span>    <span class="n">tempC</span><span class="p">,</span> <span class="n">press</span><span class="p">,</span> <span class="n">humRH</span> <span class="o">=</span> <span class="n">sensor</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="c1"># read all data from the sensor</span>
+<span class="linenos">14</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Temp: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">tempC</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">Humidity: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">humRH</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">Air presure: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">press</span><span class="p">))</span>
+<span class="linenos">15</span>    <span class="n">sleep_ms</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Lets look at the important parts of that code:</p>
