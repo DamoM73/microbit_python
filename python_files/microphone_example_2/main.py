@@ -1,8 +1,17 @@
-# microphone example 2
-
 from microbit import *
 
+# --- SETUP
+# start sensors
+
+# store variables
+
+# --- RUNNING
 while True:
-    sound_level = microphone.sound_level()
-    display.scroll(sound_level)
+    # read sensor data
+    sound = microphone.sound_level()
+    
+    # process data
+    
+    # output data
+    display.scroll(sound)
     sleep(500)

@@ -1,10 +1,26 @@
-# get_gestures example
-
 from microbit import *
 
-sleep(5000)
+# --- SETUP
+# start sensors
 
-gestures = accelerometer.get_gestures()
+# store variables
 
-for gesture in gestures:
-    display.scroll(gesture)
+# --- RUNNING
+while True:
+    display.show(3)
+    sleep(1000)
+    display.show(2)
+    sleep(1000)
+    display.show(1)
+    sleep(1000)
+    display.show(0)
+    # read sensor data
+    gestures = accelerometer.get_gestures()
+
+    # process data
+    
+    # output data
+    for gesture in gestures:
+        print(gesture)
+    display.show(Image.NO)
+    sleep(5000)

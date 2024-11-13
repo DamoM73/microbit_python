@@ -1,15 +1,21 @@
-# display.custom example
-
 from microbit import *
 
-display.clear()
+# --- SETUP
+# start sensors
 
+# store variables
+num_rows = 5
+num_columns = 5
+# --- RUNNING
+display.clear()
 while True:
-    for x in range(5):
-        for y in range(5):
-            for level in range(0,10):
-                display.set_pixel(x,y,level)
-                sleep(10)
-            for level in range(9,-1,-1):
-                display.set_pixel(x,y,level)
-                sleep(10)
+    # read sensor data
+    
+    # process data
+    
+    # output data
+    for col in range(num_columns):
+        for row in range(num_rows):
+            display.set_pixel(col, row, 9)
+            sleep(50)
+            display.clear()

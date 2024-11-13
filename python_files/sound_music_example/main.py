@@ -1,5 +1,18 @@
-# built-in tunes example
-
+from microbit import *
 import music
 
-music.play(music.NYAN)
+# --- SETUP
+# start sensors
+
+# store variables
+
+# --- RUNNING
+while True:
+    # read sensor data
+    
+    # process data
+    
+    # output data
+    music.play(music.NYAN)
+    
+    sleep(500)

@@ -2,7 +2,6 @@ from microbit import *
 from PiicoDev_VL53L1X import PiicoDev_VL53L1X
 
 # --- SETUP
-
 # start sensors
 distSensor = PiicoDev_VL53L1X()
 
@@ -18,3 +17,4 @@ while True:
     
     # output data
     print(distance)
+    sleep(100)

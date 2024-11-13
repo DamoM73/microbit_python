@@ -3,7 +3,6 @@ import music
 from PiicoDev_Potentiometer import PiicoDev_Potentiometer
 
 # --- SETUP
-
 # start sensors
 duration_pot = PiicoDev_Potentiometer(minimum=0, maximum=1000, id=[1,0,0,0])
 frequency_pot = PiicoDev_Potentiometer(minimum=100, maximum=15000 ,id=[0,0,0,0])

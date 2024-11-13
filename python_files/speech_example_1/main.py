@@ -1,5 +1,19 @@
-# speech example
-
+from microbit import *
 import speech
 
-speech.say("Hello, World")
+# --- SETUP
+# start sensors
+
+# store variables
+message = "Hello, World"
+
+# --- RUNNING
+while True:
+    # read sensor data
+    
+    # process data
+    
+    # output data
+    speech.say(message)
+    
+    sleep(1000)

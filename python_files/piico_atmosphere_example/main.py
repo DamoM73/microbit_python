@@ -2,7 +2,6 @@ from microbit import *
 from PiicoDev_BME280 import PiicoDev_BME280
 
 # --- SETUP
-
 # start sensors
 sensor = PiicoDev_BME280()
 

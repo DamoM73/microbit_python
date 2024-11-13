@@ -1,11 +1,22 @@
-# button.is_pressed example
-
 from microbit import *
 
+# --- SETUP
+# start sensors
+
+# store vairables
+
+# --- RUNNING
 while True:
-    if button_a.is_pressed():
+    # read sensor data
+    a_pressed = button_a.is_pressed()
+    b_pressed = button_b.is_pressed()
+    
+    # process data
+    
+    # output data
+    if a_pressed:
         display.show(Image.HAPPY)
-    elif button_b.is_pressed():
+    elif b_pressed:
         break
     else:
         display.show(Image.SAD)

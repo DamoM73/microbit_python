@@ -2,7 +2,6 @@ from microbit import *
 from PiicoDev_Potentiometer import PiicoDev_Potentiometer
 
 # --- SETUP
-
 # start sensors 
 pot = PiicoDev_Potentiometer()
 
@@ -19,5 +18,4 @@ while True:
     
     # output data
     print(reading)
-    
     sleep(100)
