@@ -1,19 +1,28 @@
-# graph example
-
+from microbit import *
 from PiicoDev_SSD1306 import *
-from math import sin, cos, pi
 
-display = create_PiicoDev_SSD1306()
-graph1 = display.graph2D(minValue=-1, maxValue=1) # create two graph2D objects
-graph2 = display.graph2D(minValue=-4, maxValue=4)
+# --- SETUP
+# start sensors
+oled = create_PiicoDev_SSD1306()
+graph = oled.graph2D(minValue=0,maxValue=63)
 
-for x in range(WIDTH):
-    y = sin(2*pi*x/WIDTH) # sine wave with amplitude 1, and wavelength equal to the screen width
-    z = 2*cos(6*pi*x/WIDTH) # cosine wave with amplitude 2, and wavelength one-third the screen width
+# store variables
+number = 0
+change = 1
+
+# --- RUNNING
+while True:
+    # read sensor data
     
-    display.fill(0)
-    display.updateGraph2D(graph1, y)
-    display.updateGraph2D(graph2, z)
-    display.hline(0,int(HEIGHT/2),128,1) # draw a zero-axis
+    # process data
     
-    display.show()
+    # output data
+    oled.fill(0)
+    oled.updateGraph2D(graph, number)
+    
+    number = number + change
+    
+    if number == 0 or number == 63:
+        change = change * -1
+    
+    oled.show()
