@@ -1,8 +1,18 @@
-# magnetic strength example
-
 from microbit import *
 
+# --- SETUP
+# start sensors
+
+# store variables
+
+# --- RUNNING
 while True:
-    if button_a.was_pressed():
-        field = compass.get_field_strength()
-        display.scroll(str(field))
+    # read sensor data
+    field = compass.get_field_strength()
+    
+    # process data
+    
+    # output data
+    display.scroll(field)
+    
+    sleep(500)

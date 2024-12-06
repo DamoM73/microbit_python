@@ -1,10 +1,24 @@
-# was_gestures gestures
-
 from microbit import *
 
-sleep(5000)
+# --- SETUP
+# start sensors
 
-if accelerometer.was_gesture("shake"):
+# store variables
+
+# --- RUNNING
+while True:
     display.show(Image.YES)
-else:
-    display.show(Image.NO)
+    sleep(3000)
+    
+    # read sensor data
+    did_shake = accelerometer.was_gesture("shake")
+
+    # process data
+    
+    # output data
+    if did_shake:
+        display.show(Image.HAPPY)
+    else:
+        display.show(Image.SAD)
+        
+    sleep(500)

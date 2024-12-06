@@ -1,13 +1,38 @@
-# text example
-
+from microbit import *
 from PiicoDev_SSD1306 import *
-display = create_PiicoDev_SSD1306()
 
+# --- SETUP
+# start sensors
+oled = create_PiicoDev_SSD1306()
+
+# store variables
 myString = "this is me"
 myNumber = 123.4567
 
-display.text("Hello, World!", 0,0, 1) # literal string
-display.text(myString, 0,15, 1) # string variable
-display.text(str(myNumber), 0,30, 1) # print a variable
-display.text("{:.2f}".format(myNumber), 0,45, 1) # use formatted-print
-display.show()
+# --- RUNNING
+while True:
+    # read sensor data
+    
+    # process data
+    
+    # output data
+    # display literal string
+    oled.text("Hello, World!", 0,0, 1)
+    
+    # display string variable
+    oled.text(myString, 0,15, 1)
+    
+    # display litereal number
+    oled.text(str(100), 0, 30)
+    
+    # display number variable
+    oled.text(str(myNumber), 0, 45)
+    
+    oled.show()
+    sleep(3000)
+    
+    # clear screen
+    oled.fill(0)
+    oled.show()
+    
+

@@ -1,7 +1,17 @@
-# temperature example
-
 from microbit import *
 
+# --- SETUP
+# start sensors
+
+# store variables
+
+# --- RUNNING
 while True:
-    if button_a.was_pressed():
-        display.scroll(temperature())
+    # read sensor data
+    temp = temperature()
+    
+    # process data
+    temp = str(temp) + "C"
+    
+    # output data
+    display.scroll(temp)

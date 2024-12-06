@@ -1,10 +1,20 @@
-# microphone sound event example
-
 from microbit import *
 
+# --- SETUP
+# start sensors
+
+# store variables
+
+# --- RUNNING
 while True:
-    if microphone.current_event() == SoundEvent.LOUD:
+    # read sensor data
+    sound = microphone.current_event()
+    
+    # process data
+    
+    # output data
+    if sound == SoundEvent.LOUD:
         display.show(Image.HEART)
         sleep(200)
-    if microphone.current_event() == SoundEvent.QUIET:
+    else:
         display.show(Image.HEART_SMALL)

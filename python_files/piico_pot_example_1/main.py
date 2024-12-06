@@ -1,9 +1,21 @@
-# Read the PiicoDev Potentiometer value
+from microbit import *
 from PiicoDev_Potentiometer import PiicoDev_Potentiometer
-from PiicoDev_Unified import sleep_ms
- 
-pot = PiicoDev_Potentiometer() # Initialise the potentiometer
 
+# --- SETUP
+# start sensors 
+pot = PiicoDev_Potentiometer()
+
+# store variables
+
+
+# --- RUNNING
 while True:
-    print(pot.value) # read the pot and print the result
-    sleep_ms(100)
+    # read sensor data
+    reading = pot.value
+    
+    # process data
+    reading = str(reading)
+    
+    # output data
+    print(reading)
+    sleep(100)

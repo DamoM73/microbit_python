@@ -1,9 +1,20 @@
+from microbit import *
 from PiicoDev_VL53L1X import PiicoDev_VL53L1X
-from time import sleep
 
+# --- SETUP
+# start sensors
 distSensor = PiicoDev_VL53L1X()
 
+# store variables
+
+# --- RUNNING
 while True:
-    dist = distSensor.read() # read the distance in millimetres
-    print(str(dist) + " mm") # convert the number to a string and print
-    sleep(0.1)
+    # read sensor data
+    distance = distSensor.read()
+    
+    # process data
+    distance = str(distance) + " mm"
+    
+    # output data
+    print(distance)
+    sleep(100)

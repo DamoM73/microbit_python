@@ -1,7 +1,18 @@
-# heading example
-
 from microbit import *
 
+# --- SETUP
+# start sensors
+
+# store variables
+
+# --- RUNNING
 while True:
-    if button_a.was_pressed():
-        display.scroll(str(compass.heading()))
+    # read sensor data
+    heading = compass.heading()
+    
+    # process data
+    
+    # output data
+    display.scroll(heading)
+    
+    sleep(500)

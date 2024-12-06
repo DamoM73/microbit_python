@@ -1,5 +1,19 @@
-# speech detailed example
-
+from microbit import *
 import speech
 
-speech.say("I am a DALEK - EXTERMINATE", speed=120, pitch=100, throat=100, mouth=200)
+# --- SETUP
+# start sensors
+
+# store variables
+message = "MAOTUN BEY BOYS KAALLEYJ"
+
+# --- RUNNING
+while True:
+    # read sensor data
+    
+    # process data
+    
+    # output data
+    speech.say(message)
+    
+    sleep(1000)
