@@ -1,7 +1,7 @@
 from microbit import *
 
 # --- SETUP
-# start sensors
+# start components
 
 # store variables
 num_rows = 5
