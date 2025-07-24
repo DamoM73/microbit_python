@@ -7,15 +7,14 @@ from microbit import *
 
 # --- RUNNING
 while True:
-    display.show(Image.YES)
-    sleep(3000)
     # read sensor data
     presses = button_a.get_presses()
-    
+
     # process data
     
     # output data
-    display.show(presses, delay=1000)
-    display.clear()
+    display.show(str(presses), delay=1000)
     sleep(1000)
+    display.clear()
+    
     
