@@ -4,35 +4,36 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Licensing" href="99_licencing.html" /><link rel="prev" title="Debugging with Thonny" href="97_debugging.html" />
+        <link rel="prefetch" href="_static/microbit_python_logo.jpg" as="image" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 7.3.7 and Furo 2024.05.06 -->
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
         <title>Exercise Solutions - Python meets micro:bit</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=387cc868" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
 
 
 <style>
   body {
-    --color-code-background: #f8f8f8;
-  --color-code-foreground: black;
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
   --font-stack: gill sans, sans-serif;
   --font-stack--monospace: monaco, monospace;
   
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+        --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
       }
     }
@@ -91,19 +92,6 @@
       <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
     </svg>
   </symbol>
-  <symbol id="svg-sun-half" viewBox="0 0 24 24">
-    <title>Auto light/dark mode</title>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-      <circle cx="12" cy="12" r="9" />
-      <path d="M13 12h5" />
-      <path d="M13 15h4" />
-      <path d="M13 18h1" />
-      <path d="M13 9h4" />
-      <path d="M13 6h1" />
-    </svg>
-  </symbol>
   <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
     <title>Auto light/dark, in light mode</title>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -144,7 +132,7 @@
       <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
       <path d="M13.5 6.5l4 4" />
       <path d="M20 21l2 -2l-2 -2" />
-      <path d="M17 17l-2 2l2 2" /
+      <path d="M17 17l-2 2l2 2" />
     </svg>
   </symbol>
   <symbol id="svg-eye" viewBox="0 0 24 24">
@@ -204,7 +192,6 @@
     <div class="sidebar-container">
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
-  
   <div class="sidebar-logo-container">
     <img class="sidebar-logo" src="_static/microbit_python_logo.jpg" alt="Logo"/>
   </div>
@@ -237,8 +224,9 @@
 <li class="toctree-l1"><a class="reference internal" href="15_piicodev_distance.html">PiicoDev Distance Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="16_piicodev_potentiometer.html">PiicoDev Potentiometers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="17_piicodev_oled.html">PiicoDev OLED Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="17a_piicodev_servo.html">PiicoDev Servo Driver</a></li>
-<li class="toctree-l1"><a class="reference internal" href="18_glowbit.html">Glowbit Rainbow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="18_piicodev_servo.html">PiicoDev Servo Driver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="19_piicodev_button.html">PiicoDev Button</a></li>
+<li class="toctree-l1"><a class="reference internal" href="50_glowbit.html">Glowbit Rainbow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="96_components.html">Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="97_debugging.html">Debugging with Thonny</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Exercise Solutions</a></li>
@@ -292,7 +280,7 @@
 <h3>First Program Exercise 1<a class="headerlink" href="#first-program-exercise-1" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># first program exercise 1</span>
 <span class="linenos">2</span>
-<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos">4</span>
 <span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos">6</span>    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s2">&quot;Help, I&#39;m trapped in a micro:bit&quot;</span><span class="p">)</span>
@@ -305,7 +293,7 @@
 <h3>First Program Exercise 2<a class="headerlink" href="#first-program-exercise-2" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># first program exercise 2</span>
 <span class="linenos">2</span>
-<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos">4</span>
 <span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos">6</span>    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">)</span>
@@ -329,7 +317,7 @@
 <h3>Text Exercise 1<a class="headerlink" href="#text-exercise-1" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># display.text exercise 1</span>
 <span class="linenos">2</span>
-<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos">4</span>
 <span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos">6</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;AEIOU&quot;</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
@@ -342,7 +330,7 @@
 <h3>Text Exercise 2<a class="headerlink" href="#text-exercise-2" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># display.text exercise 2</span>
 <span class="linenos">2</span>
-<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos">4</span>
 <span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos">6</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mf">3.14159</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mi">250</span><span class="p">)</span>
@@ -355,7 +343,7 @@
 <h3>Text Exercise 3<a class="headerlink" href="#text-exercise-3" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># display.text exercise 3</span>
 <span class="linenos">2</span>
-<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos">4</span>
 <span class="linenos">5</span><span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mf">3.14159</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
@@ -365,7 +353,7 @@
 <h3>Image Exercise 1<a class="headerlink" href="#image-exercise-1" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># display.image exercise 1</span>
 <span class="linenos">2</span>
-<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos">4</span>
 <span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos">6</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HEART</span><span class="p">)</span>
@@ -379,7 +367,7 @@
 <h3>Image Exercise 2<a class="headerlink" href="#image-exercise-2" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># display.image exercise 2</span>
 <span class="linenos">2</span>
-<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos">4</span>
 <span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos">6</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ALL_CLOCKS</span><span class="p">)</span>
@@ -390,7 +378,7 @@
 <h3>Image Exercise 3<a class="headerlink" href="#image-exercise-3" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># display.image exercise 3</span>
 <span class="linenos">2</span>
-<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos">4</span>
 <span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos">6</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">SQUARE_SMALL</span><span class="p">)</span>
@@ -409,7 +397,7 @@
 <h3>Custom Exercise 2<a class="headerlink" href="#custom-exercise-2" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># display.custom exercise 2</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 <span class="linenos"> 6</span>
@@ -429,7 +417,7 @@
 <h3>Custom Exercise 3<a class="headerlink" href="#custom-exercise-3" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># display.custom exercise 3</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 <span class="linenos"> 6</span>
@@ -450,7 +438,7 @@
 <h3>Get Presses Exercises 1<a class="headerlink" href="#get-presses-exercises-1" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># button.was_pressed exercise 1</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="linenos"> 6</span>
@@ -472,9 +460,9 @@
 <h3>Is Pressed Exercise 1<a class="headerlink" href="#is-pressed-exercise-1" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># button.is_presses exercise 1</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="linenos"> 4</span><span class="kn">import</span> <span class="nn">time</span>
-<span class="linenos"> 5</span><span class="kn">import</span> <span class="nn">random</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="linenos"> 5</span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 <span class="linenos"> 6</span>
 <span class="linenos"> 7</span><span class="c1"># select button</span>
 <span class="linenos"> 8</span><span class="n">button</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="s2">&quot;B&quot;</span><span class="p">])</span>
@@ -511,7 +499,7 @@
 <h3>Was Pressed Exercise 1<a class="headerlink" href="#was-pressed-exercise-1" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># button.was_pressed exercise 1</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="linenos"> 6</span>
@@ -533,8 +521,8 @@
 <h3>Was Pressed Exercise 2<a class="headerlink" href="#was-pressed-exercise-2" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># button.was_pressed exercise 2</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="linenos"> 4</span><span class="kn">import</span> <span class="nn">random</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 <span class="linenos"> 5</span>
 <span class="linenos"> 6</span><span class="c1"># create random sequence</span>
 <span class="linenos"> 7</span><span class="n">sequence</span> <span class="o">=</span> <span class="p">[]</span>
@@ -574,7 +562,7 @@
 <h3>Movement Exercise 1<a class="headerlink" href="#movement-exercise-1" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># movement exrecise 1</span>
 <span class="linenos">2</span>
-<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos">4</span>
 <span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos">6</span>    <span class="n">y_reading</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">get_y</span><span class="p">()</span>
@@ -586,7 +574,7 @@
 <h3>Movement Exercise 2<a class="headerlink" href="#movement-exercise-2" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># movement exrecise 2</span>
 <span class="linenos">2</span>
-<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos">4</span>
 <span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos">6</span>    <span class="n">z_reading</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">get_z</span><span class="p">()</span>
@@ -598,7 +586,7 @@
 <h3>Movement Exercise 3<a class="headerlink" href="#movement-exercise-3" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># movement exercise 3</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos"> 6</span>    <span class="n">reading</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span>
@@ -615,7 +603,7 @@
 <h3>Gesture Exercise 1<a class="headerlink" href="#gesture-exercise-1" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># current_gestures exercise 1</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos"> 6</span>    <span class="n">gesture</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">current_gesture</span><span class="p">()</span>
@@ -630,7 +618,7 @@
 <h3>Gesture Exercise 2<a class="headerlink" href="#gesture-exercise-2" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># current_gestures exercise 2</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span>
 <span class="linenos"> 6</span>
@@ -646,7 +634,7 @@
 <h3>Gesture Exercise 3<a class="headerlink" href="#gesture-exercise-3" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># current_gestures exercise 3</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="n">sensing</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="linenos"> 6</span>
@@ -668,7 +656,7 @@
 <h3>Temperature Exercise 1<a class="headerlink" href="#temperature-exercise-1" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># temperature exercise 1</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="n">currentTemp</span> <span class="o">=</span> <span class="n">temperature</span><span class="p">()</span>
 <span class="linenos"> 6</span><span class="nb">max</span> <span class="o">=</span> <span class="n">currentTemp</span>
@@ -695,7 +683,7 @@
 <h3>Temperature Exercise 2<a class="headerlink" href="#temperature-exercise-2" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># temperature exercise 1</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos"> 6</span>    <span class="n">current_temp</span> <span class="o">=</span> <span class="n">temperature</span><span class="p">()</span>
@@ -718,7 +706,7 @@
 <h3>Light Exercise 1<a class="headerlink" href="#light-exercise-1" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># light exercise 1</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="n">prev_level</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">()</span>
 <span class="linenos"> 6</span>
@@ -742,7 +730,7 @@
 <h3>Light Exercise 2<a class="headerlink" href="#light-exercise-2" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># light exercise 2</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos"> 6</span>    <span class="n">light_level</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">()</span>
@@ -761,7 +749,7 @@
 <h3>Heading Exercise 1<a class="headerlink" href="#heading-exercise-1" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># heading exercise 1</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span><span class="n">compass</span><span class="o">.</span><span class="n">calibrate</span><span class="p">()</span>
 <span class="linenos"> 5</span>
 <span class="linenos"> 6</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
@@ -777,7 +765,7 @@
 <h3>Heading Exercise 2<a class="headerlink" href="#heading-exercise-2" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># heading exercise 2</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span><span class="n">compass</span><span class="o">.</span><span class="n">calibrate</span><span class="p">()</span>
 <span class="linenos"> 5</span>
 <span class="linenos"> 6</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
@@ -806,7 +794,7 @@
 <h3>Magnetic Strength Exercise 1<a class="headerlink" href="#magnetic-strength-exercise-1" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># magnetic strength exercise 1</span>
 <span class="linenos">2</span>
-<span class="linenos">3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos">4</span>
 <span class="linenos">5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos">6</span>    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
@@ -819,7 +807,7 @@
 <h3>Magnetic Strength Exercise 2<a class="headerlink" href="#magnetic-strength-exercise-2" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># magnetic strength exercise 2</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos"> 6</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here&quot;</span><span class="p">)</span>
@@ -838,7 +826,7 @@
 <h3>Touch Exercise 1<a class="headerlink" href="#touch-exercise-1" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># touch exercise 1</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="linenos"> 6</span>
@@ -860,7 +848,7 @@
 <h3>Touch Exercise 2<a class="headerlink" href="#touch-exercise-2" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># touch exercise 2</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="linenos"> 6</span>
@@ -888,8 +876,8 @@
 <h2>Sound Exercises<a class="headerlink" href="#sound-exercises" title="Link to this heading">¶</a></h2>
 <section id="sound-exercise-1">
 <h3>Sound Exercise 1<a class="headerlink" href="#sound-exercise-1" title="Link to this heading">¶</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="linenos">2</span><span class="kn">import</span> <span class="nn">music</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">2</span><span class="kn">import</span><span class="w"> </span><span class="nn">music</span>
 <span class="linenos">3</span>
 <span class="linenos">4</span><span class="n">tune</span> <span class="o">=</span> <span class="p">[</span>
 <span class="linenos">5</span>    <span class="s2">&quot;G4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;E4:2&quot;</span><span class="p">,</span> <span class="s2">&quot;B4:2&quot;</span><span class="p">,</span> <span class="s2">&quot;G4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;C4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;A4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;B4:2&quot;</span><span class="p">,</span> <span class="s2">&quot;G3:2&quot;</span><span class="p">,</span> <span class="s2">&quot;A4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;A4:4&quot;</span>
@@ -902,8 +890,8 @@
 <section id="sound-exercise-2">
 <h3>Sound Exercise 2<a class="headerlink" href="#sound-exercise-2" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># sound exercise 2</span>
-<span class="linenos">2</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="linenos">3</span><span class="kn">import</span> <span class="nn">speech</span>
+<span class="linenos">2</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">3</span><span class="kn">import</span><span class="w"> </span><span class="nn">speech</span>
 <span class="linenos">4</span>
 <span class="linenos">5</span><span class="n">lyrics</span> <span class="o">=</span> <span class="s2">&quot;WIY AAR THIY IY5GUL AHV MAOREHTUN BEY5 BOYZ, WIY SOW4R TAAGEH5DHER TUX RIY5CH NUW /HEY4TS&quot;</span>
 <span class="linenos">6</span>
@@ -915,7 +903,7 @@
 <h3>Sound Exercise 3<a class="headerlink" href="#sound-exercise-3" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># sound exercise 3</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos"> 6</span>    <span class="n">sound_level</span> <span class="o">=</span> <span class="n">microphone</span><span class="o">.</span><span class="n">sound_level</span><span class="p">()</span>
@@ -963,8 +951,8 @@
 <h3>Radio Exercise 1<a class="headerlink" href="#radio-exercise-1" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># radio exercise 1</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="linenos"> 4</span><span class="kn">import</span> <span class="nn">radio</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span><span class="kn">import</span><span class="w"> </span><span class="nn">radio</span>
 <span class="linenos"> 5</span>
 <span class="linenos"> 6</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos"> 7</span>    <span class="n">message</span> <span class="o">=</span> <span class="n">radio</span><span class="o">.</span><span class="n">receive</span><span class="p">()</span>
@@ -980,8 +968,8 @@
 <h3>Radio Exercise 2<a class="headerlink" href="#radio-exercise-2" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># radio exercise 2</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="linenos"> 4</span><span class="kn">import</span> <span class="nn">radio</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span><span class="kn">import</span><span class="w"> </span><span class="nn">radio</span>
 <span class="linenos"> 5</span><span class="n">radio</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">group</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
 <span class="linenos"> 6</span><span class="n">radio</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
 <span class="linenos"> 7</span>
@@ -1008,8 +996,8 @@
 <h3>Radio Exercise 3<a class="headerlink" href="#radio-exercise-3" title="Link to this heading">¶</a></h3>
 <section id="outdoor">
 <h4>Outdoor<a class="headerlink" href="#outdoor" title="Link to this heading">¶</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="linenos">2</span><span class="kn">import</span> <span class="nn">radio</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos">2</span><span class="kn">import</span><span class="w"> </span><span class="nn">radio</span>
 <span class="linenos">3</span>
 <span class="linenos">4</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="linenos">5</span>    <span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">temperature</span><span class="p">()))</span>
@@ -1019,8 +1007,8 @@
 </section>
 <section id="indoor">
 <h4>Indoor<a class="headerlink" href="#indoor" title="Link to this heading">¶</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="linenos"> 2</span><span class="kn">import</span> <span class="nn">radio</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 2</span><span class="kn">import</span><span class="w"> </span><span class="nn">radio</span>
 <span class="linenos"> 3</span>
 <span class="linenos"> 4</span><span class="n">outdoorTemp</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span>
 <span class="linenos"> 5</span>
@@ -1043,8 +1031,8 @@
 <h3>Atmospheric Sensor Exercise 1<a class="headerlink" href="#atmospheric-sensor-exercise-1" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># piicodev atmospheric sensor exercise 1</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_BME280</span> <span class="kn">import</span> <span class="n">PiicoDev_BME280</span>
-<span class="linenos"> 4</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">PiicoDev_BME280</span><span class="w"> </span><span class="kn">import</span> <span class="n">PiicoDev_BME280</span>
+<span class="linenos"> 4</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 5</span>
 <span class="linenos"> 6</span><span class="n">sensor</span> <span class="o">=</span> <span class="n">PiicoDev_BME280</span><span class="p">()</span>
 <span class="linenos"> 7</span>
@@ -1066,8 +1054,8 @@
 <h3>Atmospheric Sensor Exercise 2<a class="headerlink" href="#atmospheric-sensor-exercise-2" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># piicodev atmospheric sensor exercise 2</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_BME280</span> <span class="kn">import</span> <span class="n">PiicoDev_BME280</span>
-<span class="linenos"> 4</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">PiicoDev_BME280</span><span class="w"> </span><span class="kn">import</span> <span class="n">PiicoDev_BME280</span>
+<span class="linenos"> 4</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 5</span>
 <span class="linenos"> 6</span><span class="n">sensor</span> <span class="o">=</span> <span class="n">PiicoDev_BME280</span><span class="p">()</span>
 <span class="linenos"> 7</span><span class="n">zero_altitude</span> <span class="o">=</span> <span class="n">sensor</span><span class="o">.</span><span class="n">altitude</span><span class="p">()</span>
@@ -1089,8 +1077,8 @@
 <h3>Colour Sensor Exercise 1<a class="headerlink" href="#colour-sensor-exercise-1" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># piicodev colour sensor exercise 1</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_VEML6040</span> <span class="kn">import</span> <span class="n">PiicoDev_VEML6040</span>
-<span class="linenos"> 4</span><span class="kn">from</span> <span class="nn">PiicoDev_Unified</span> <span class="kn">import</span> <span class="n">sleep_ms</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">PiicoDev_VEML6040</span><span class="w"> </span><span class="kn">import</span> <span class="n">PiicoDev_VEML6040</span>
+<span class="linenos"> 4</span><span class="kn">from</span><span class="w"> </span><span class="nn">PiicoDev_Unified</span><span class="w"> </span><span class="kn">import</span> <span class="n">sleep_ms</span>
 <span class="linenos"> 5</span>
 <span class="linenos"> 6</span><span class="n">colourSensor</span> <span class="o">=</span> <span class="n">PiicoDev_VEML6040</span><span class="p">()</span>
 <span class="linenos"> 7</span>
@@ -1106,8 +1094,8 @@
 <h3>Colour Sensor Exercise 2<a class="headerlink" href="#colour-sensor-exercise-2" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># piicodev colour sensor exercise 1</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_VEML6040</span> <span class="kn">import</span> <span class="n">PiicoDev_VEML6040</span>
-<span class="linenos"> 4</span><span class="kn">from</span> <span class="nn">PiicoDev_Unified</span> <span class="kn">import</span> <span class="n">sleep_ms</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">PiicoDev_VEML6040</span><span class="w"> </span><span class="kn">import</span> <span class="n">PiicoDev_VEML6040</span>
+<span class="linenos"> 4</span><span class="kn">from</span><span class="w"> </span><span class="nn">PiicoDev_Unified</span><span class="w"> </span><span class="kn">import</span> <span class="n">sleep_ms</span>
 <span class="linenos"> 5</span>
 <span class="linenos"> 6</span><span class="n">colourSensor</span> <span class="o">=</span> <span class="n">PiicoDev_VEML6040</span><span class="p">()</span>
 <span class="linenos"> 7</span>
@@ -1124,8 +1112,8 @@
 <h2>PiicoDev Distance Sensor<a class="headerlink" href="#piicodev-distance-sensor" title="Link to this heading">¶</a></h2>
 <section id="distance-sensor-exercise-1">
 <h3>Distance Sensor Exercise 1<a class="headerlink" href="#distance-sensor-exercise-1" title="Link to this heading">¶</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">PiicoDev_VL53L1X</span> <span class="kn">import</span> <span class="n">PiicoDev_VL53L1X</span>
-<span class="linenos"> 2</span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span><span class="w"> </span><span class="nn">PiicoDev_VL53L1X</span><span class="w"> </span><span class="kn">import</span> <span class="n">PiicoDev_VL53L1X</span>
+<span class="linenos"> 2</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="linenos"> 3</span>
 <span class="linenos"> 4</span><span class="n">distSensor</span> <span class="o">=</span> <span class="n">PiicoDev_VL53L1X</span><span class="p">()</span>
 <span class="linenos"> 5</span>
@@ -1169,7 +1157,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2024, Damien Murtagh
+                Copyright &#169; 2025, Damien Murtagh
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -1302,9 +1290,9 @@
     </aside>
   </div>
 </div><script src="_static/documentation_options.js?v=5929fcd5"></script>
-    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/scripts/furo.js?v=4e2eecee"></script>
+    <script src="_static/scripts/furo.js?v=46bd48cc"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
     </body>

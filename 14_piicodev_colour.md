@@ -34,13 +34,12 @@ Create a new folder for this example. Then download the following files and save
 
 - **[`PiicoDev_VEML6040.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-VEML6040-MicroPython-Module/main/min/PiicoDev_VEML6040.py)** - The device driver.
 - **[`PiicoDev_Unified.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py)** - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules
-- **[`main.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-VEML6040-MicroPython-Module/main/main.py)** - an example script for this PiicoDev Sensor
 
 ## Example code
 
 The PiicoDev Team has included two examples in the `main.py`.
 
-**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VEML6040.py` to the micro:bit and then **run** it.
+**[Upload](./12_piicodev_intro.md#uploading-to-the-microbit)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VEML6040.py` to the micro:bit and then **run** it.
 
 ### Example 1
 
@@ -52,20 +51,21 @@ If you the `main.py` without making any changes you will get a printout reading 
 
 Exploring the important parts of that code:
 
-- **line 6**: imports all the commands for the atmospheric sensor from the PiicoDev_VEML6040 library
-- **line 7**: import the `sleep_ms` command from the PiicoDev_Unified library and is used the same as `sleep`
-- **line 15**: labels the Colour Sensor as `sensor`
-- **line 19**: gets a reading from the sensor which returns a dictionary
-- **line 20**: extracts the **red** value from the returned dictionary
-- **line 21**: extracts the **green** value from the returned dictionary
-- **line 20**: extracts the **blue** value from the returned dictionary
-- **line 24**: prints the **red**, **green** and **blue** values
+- **line 1**: imports all the command fopr the microbit
+- **line 2**: imports all the commands for the atmospheric sensor from the PiicoDev_VEML6040 library
+- **line 6**: labels the Colour Sensor as `colourSensor`
+- **line 14**: gets a reading from the sensor which returns a dictionary
+- **line 17**: extracts the **red** value from the returned dictionary
+- **line 18**: extracts the **green** value from the returned dictionary
+- **line 19**: extracts the **blue** value from the returned dictionary
+- **line 22**: prints the **red**, **green** and **blue** values
+- **line 23**: waits half a second
 
 ### Example 2
 
 Change the code in `main.py` to the same as the code below (make sure that the indentation of lines 27-30 is correct). This code will get a reading and classify what the sensor is looking at by using the values in the `fruitList`.
 
-**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VEML6040.py` to the micro:bit and then **run** it.
+**[Upload](./12_piicodev_intro.md#uploading-to-the-microbit)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VEML6040.py` to the micro:bit and then **run** it.
 
 ```{literalinclude} ./python_files/piico_colour_example_2/main.py
 :linenos:
@@ -73,14 +73,15 @@ Change the code in `main.py` to the same as the code below (make sure that the i
 
 Exploring the important parts of that code:
 
-- **line 6**: imports all the commands for the atmospheric sensor from the PiicoDev_VEML6040 library
-- **line 7**: import the `sleep_ms` command from the PiicoDev_Unified library and is used the same as `sleep`
-- **line 15**: labels the Colour Sensor as `sensor`
-- **line 27**: gets a HSV reading which returns a dictionary
-- **line 28**: extract the hue value from the dictionary
-- **line 29**: gets a hue reading and then returns the closest key from the provided dictionary
-  - if no dictionary is provided it will use a default dictionary of red, yellow, green, cyan, blue and magenta.
-- **line 30**: prints the results from the two readings
+- **line 1**: imports all the command fopr the microbit
+- **line 2**: imports all the commands for the atmospheric sensor from the PiicoDev_VEML6040 library
+- **line 6**: labels the Colour Sensor as `colourSensor`
+- **lines 9 - 16**: creates a dictionary of colours and their hue values.
+- **line 21**: gets a HSV reading which returns a dictionary
+- **line 24**: extract the hue value from the dictionary and stores in in `hue`
+- **line 25**: uses the `COLOURS` dictionary to identify the closest colour to the `hue` value
+- **line 28**: prints both the `colour` and the `hue`
+- **line 29**: waits for half a second
 
 ## Commands
 

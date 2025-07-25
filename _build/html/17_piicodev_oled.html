@@ -3,36 +3,37 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="PiicoDev Servo Driver" href="17a_piicodev_servo.html" /><link rel="prev" title="PiicoDev Potentiometers" href="16_piicodev_potentiometer.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="PiicoDev Servo Driver" href="18_piicodev_servo.html" /><link rel="prev" title="PiicoDev Potentiometers" href="16_piicodev_potentiometer.html" />
+        <link rel="prefetch" href="_static/microbit_python_logo.jpg" as="image" />
 
-    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 7.3.7 and Furo 2024.05.06 -->
+    <link rel="shortcut icon" href="_static/microbit_python_logo.ico"/><!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
         <title>PiicoDev OLED Module - Python meets micro:bit</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=387cc868" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
 
 
 <style>
   body {
-    --color-code-background: #f8f8f8;
-  --color-code-foreground: black;
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
   --font-stack: gill sans, sans-serif;
   --font-stack--monospace: monaco, monospace;
   
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+        --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
       }
     }
@@ -91,19 +92,6 @@
       <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
     </svg>
   </symbol>
-  <symbol id="svg-sun-half" viewBox="0 0 24 24">
-    <title>Auto light/dark mode</title>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-      <circle cx="12" cy="12" r="9" />
-      <path d="M13 12h5" />
-      <path d="M13 15h4" />
-      <path d="M13 18h1" />
-      <path d="M13 9h4" />
-      <path d="M13 6h1" />
-    </svg>
-  </symbol>
   <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
     <title>Auto light/dark, in light mode</title>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -144,7 +132,7 @@
       <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
       <path d="M13.5 6.5l4 4" />
       <path d="M20 21l2 -2l-2 -2" />
-      <path d="M17 17l-2 2l2 2" /
+      <path d="M17 17l-2 2l2 2" />
     </svg>
   </symbol>
   <symbol id="svg-eye" viewBox="0 0 24 24">
@@ -204,7 +192,6 @@
     <div class="sidebar-container">
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
-  
   <div class="sidebar-logo-container">
     <img class="sidebar-logo" src="_static/microbit_python_logo.jpg" alt="Logo"/>
   </div>
@@ -237,8 +224,9 @@
 <li class="toctree-l1"><a class="reference internal" href="15_piicodev_distance.html">PiicoDev Distance Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="16_piicodev_potentiometer.html">PiicoDev Potentiometers</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">PiicoDev OLED Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="17a_piicodev_servo.html">PiicoDev Servo Driver</a></li>
-<li class="toctree-l1"><a class="reference internal" href="18_glowbit.html">Glowbit Rainbow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="18_piicodev_servo.html">PiicoDev Servo Driver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="19_piicodev_button.html">PiicoDev Button</a></li>
+<li class="toctree-l1"><a class="reference internal" href="50_glowbit.html">Glowbit Rainbow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="96_components.html">Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="97_debugging.html">Debugging with Thonny</a></li>
 <li class="toctree-l1"><a class="reference internal" href="98_exercise_solutions.html">Exercise Solutions</a></li>
@@ -322,8 +310,8 @@
 <p><strong><a class="reference internal" href="12_piicodev_intro.html#upload"><span class="std std-ref">Upload</span></a></strong> <code class="docutils literal notranslate"><span class="pre">main.py</span></code> along with <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code>, <code class="docutils literal notranslate"><span class="pre">PiicoDev_SSD1306.py</span></code>, <code class="docutils literal notranslate"><span class="pre">font-pet-me-128.dat</span></code> and <code class="docutils literal notranslate"><span class="pre">piicodev-logo.pbm</span></code> to the micro:bit and then <strong>run</strong> it.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># line example</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="linenos"> 4</span><span class="kn">from</span> <span class="nn">PiicoDev_Unified</span> <span class="kn">import</span> <span class="n">sleep_ms</span> <span class="c1"># cross-platform compatible sleep function</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">PiicoDev_SSD1306</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 4</span><span class="kn">from</span><span class="w"> </span><span class="nn">PiicoDev_Unified</span><span class="w"> </span><span class="kn">import</span> <span class="n">sleep_ms</span> <span class="c1"># cross-platform compatible sleep function</span>
 <span class="linenos"> 5</span>
 <span class="linenos"> 6</span><span class="n">display</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
 <span class="linenos"> 7</span>
@@ -348,16 +336,56 @@
 <p>The following example draws an unfilled rectangle to the left of the display, and a filled white rectangle to the right. A filled black rectangle is then drawn over the top.</p>
 <p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below.</p>
 <p><strong><a class="reference internal" href="12_piicodev_intro.html#upload"><span class="std std-ref">Upload</span></a></strong> <code class="docutils literal notranslate"><span class="pre">main.py</span></code> along with <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code>, <code class="docutils literal notranslate"><span class="pre">PiicoDev_SSD1306.py</span></code>, <code class="docutils literal notranslate"><span class="pre">font-pet-me-128.dat</span></code> and <code class="docutils literal notranslate"><span class="pre">piicodev-logo.pbm</span></code> to the micro:bit and then <strong>run</strong> it.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># rectangle example</span>
-<span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="linenos"> 4</span>
-<span class="linenos"> 5</span><span class="n">display</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
-<span class="linenos"> 6</span>
-<span class="linenos"> 7</span><span class="n">display</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># unfilled rectangle</span>
-<span class="linenos"> 8</span><span class="n">display</span><span class="o">.</span><span class="n">fill_rect</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># filled rectangle (white)</span>
-<span class="linenos"> 9</span><span class="n">display</span><span class="o">.</span><span class="n">fill_rect</span><span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># filled rectangle (black)</span>
-<span class="linenos">10</span><span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 2</span><span class="kn">from</span><span class="w"> </span><span class="nn">PiicoDev_SSD1306</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="c1"># --- SETUP</span>
+<span class="linenos"> 5</span><span class="c1"># start sensors</span>
+<span class="linenos"> 6</span><span class="n">oled</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="c1"># store variables</span>
+<span class="linenos"> 9</span><span class="n">unfilled_x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="linenos">10</span><span class="n">unfilled_y</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="linenos">11</span><span class="n">unfilled_width</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="linenos">12</span><span class="n">unfilled_height</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="linenos">13</span><span class="n">unfilled_colour</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="linenos">14</span>
+<span class="linenos">15</span><span class="n">white_filled_x</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="linenos">16</span><span class="n">white_filled_y</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="linenos">17</span><span class="n">white_filled_width</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="linenos">18</span><span class="n">white_filled_height</span> <span class="o">=</span> <span class="mi">40</span>
+<span class="linenos">19</span><span class="n">white_filled_colour</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span><span class="n">black_filled_x</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="linenos">22</span><span class="n">black_filled_y</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="linenos">23</span><span class="n">black_filled_width</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="linenos">24</span><span class="n">black_filled_height</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="linenos">25</span><span class="n">black_filled_colour</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="linenos">26</span>
+<span class="linenos">27</span><span class="c1"># --- RUNNING</span>
+<span class="linenos">28</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">29</span>    <span class="c1"># read sensor data</span>
+<span class="linenos">30</span>    
+<span class="linenos">31</span>    <span class="c1"># process data</span>
+<span class="linenos">32</span>    
+<span class="linenos">33</span>    <span class="c1"># output data</span>
+<span class="linenos">34</span>    <span class="c1"># unfilled rectangle</span>
+<span class="linenos">35</span>    <span class="n">oled</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">unfilled_x</span><span class="p">,</span> <span class="n">unfilled_y</span><span class="p">,</span> <span class="n">unfilled_width</span><span class="p">,</span> <span class="n">unfilled_height</span><span class="p">,</span> <span class="n">unfilled_colour</span><span class="p">)</span>
+<span class="linenos">36</span>    
+<span class="linenos">37</span>    <span class="c1"># filled rectangle (white)</span>
+<span class="linenos">38</span>    <span class="n">oled</span><span class="o">.</span><span class="n">fill_rect</span><span class="p">(</span><span class="n">white_filled_x</span><span class="p">,</span> <span class="n">white_filled_y</span><span class="p">,</span> <span class="n">white_filled_width</span><span class="p">,</span> <span class="n">white_filled_height</span><span class="p">,</span> <span class="n">white_filled_colour</span><span class="p">)</span>
+<span class="linenos">39</span>    
+<span class="linenos">40</span>    <span class="c1"># filled rectangle (black)</span>
+<span class="linenos">41</span>    <span class="n">oled</span><span class="o">.</span><span class="n">fill_rect</span><span class="p">(</span><span class="n">black_filled_x</span><span class="p">,</span> <span class="n">black_filled_y</span><span class="p">,</span> <span class="n">black_filled_width</span><span class="p">,</span> <span class="n">black_filled_height</span><span class="p">,</span> <span class="n">black_filled_colour</span><span class="p">)</span> 
+<span class="linenos">42</span>    
+<span class="linenos">43</span>    <span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="linenos">44</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">3000</span><span class="p">)</span>
+<span class="linenos">45</span>    
+<span class="linenos">46</span>    <span class="c1"># clear screen</span>
+<span class="linenos">47</span>    <span class="n">oled</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="linenos">48</span>    <span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="linenos">49</span>    
+<span class="linenos">50</span>
 </pre></div>
 </div>
 </section>
@@ -372,19 +400,44 @@
 <p>The following example prints four lines. The first is a literal string, where the text to be printed is inserted into the function call. The second prints a string variable myString. The third and fourth print the value stored in a variable.</p>
 <p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below.</p>
 <p><strong><a class="reference internal" href="12_piicodev_intro.html#upload"><span class="std std-ref">Upload</span></a></strong> <code class="docutils literal notranslate"><span class="pre">main.py</span></code> along with <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code>, <code class="docutils literal notranslate"><span class="pre">PiicoDev_SSD1306.py</span></code>, <code class="docutils literal notranslate"><span class="pre">font-pet-me-128.dat</span></code> and <code class="docutils literal notranslate"><span class="pre">piicodev-logo.pbm</span></code> to the micro:bit and then <strong>run</strong> it.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># text example</span>
-<span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="linenos"> 4</span><span class="n">display</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
-<span class="linenos"> 5</span>
-<span class="linenos"> 6</span><span class="n">myString</span> <span class="o">=</span> <span class="s2">&quot;this is me&quot;</span>
-<span class="linenos"> 7</span><span class="n">myNumber</span> <span class="o">=</span> <span class="mf">123.4567</span>
-<span class="linenos"> 8</span>
-<span class="linenos"> 9</span><span class="n">display</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># literal string</span>
-<span class="linenos">10</span><span class="n">display</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">myString</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># string variable</span>
-<span class="linenos">11</span><span class="n">display</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">myNumber</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># print a variable</span>
-<span class="linenos">12</span><span class="n">display</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">myNumber</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span><span class="mi">45</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># use formatted-print</span>
-<span class="linenos">13</span><span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 2</span><span class="kn">from</span><span class="w"> </span><span class="nn">PiicoDev_SSD1306</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="c1"># --- SETUP</span>
+<span class="linenos"> 5</span><span class="c1"># start sensors</span>
+<span class="linenos"> 6</span><span class="n">oled</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="c1"># store variables</span>
+<span class="linenos"> 9</span><span class="n">myString</span> <span class="o">=</span> <span class="s2">&quot;this is me&quot;</span>
+<span class="linenos">10</span><span class="n">myNumber</span> <span class="o">=</span> <span class="mf">123.4567</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span><span class="c1"># --- RUNNING</span>
+<span class="linenos">13</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">14</span>    <span class="c1"># read sensor data</span>
+<span class="linenos">15</span>    
+<span class="linenos">16</span>    <span class="c1"># process data</span>
+<span class="linenos">17</span>    
+<span class="linenos">18</span>    <span class="c1"># output data</span>
+<span class="linenos">19</span>    <span class="c1"># display literal string</span>
+<span class="linenos">20</span>    <span class="n">oled</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="linenos">21</span>    
+<span class="linenos">22</span>    <span class="c1"># display string variable</span>
+<span class="linenos">23</span>    <span class="n">oled</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">myString</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="linenos">24</span>    
+<span class="linenos">25</span>    <span class="c1"># display litereal number</span>
+<span class="linenos">26</span>    <span class="n">oled</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<span class="linenos">27</span>    
+<span class="linenos">28</span>    <span class="c1"># display number variable</span>
+<span class="linenos">29</span>    <span class="n">oled</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">myNumber</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">45</span><span class="p">)</span>
+<span class="linenos">30</span>    
+<span class="linenos">31</span>    <span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="linenos">32</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">3000</span><span class="p">)</span>
+<span class="linenos">33</span>    
+<span class="linenos">34</span>    <span class="c1"># clear screen</span>
+<span class="linenos">35</span>    <span class="n">oled</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="linenos">36</span>    <span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="linenos">37</span>    
+<span class="linenos">38</span>
 </pre></div>
 </div>
 </section>
@@ -395,25 +448,34 @@
 <p>The following example graphs two functions independently.</p>
 <p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below.</p>
 <p><strong><a class="reference internal" href="12_piicodev_intro.html#upload"><span class="std std-ref">Upload</span></a></strong> <code class="docutils literal notranslate"><span class="pre">main.py</span></code> along with <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code>, <code class="docutils literal notranslate"><span class="pre">PiicoDev_SSD1306.py</span></code>, <code class="docutils literal notranslate"><span class="pre">font-pet-me-128.dat</span></code> and <code class="docutils literal notranslate"><span class="pre">piicodev-logo.pbm</span></code> to the micro:bit and then <strong>run</strong> it.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># graph example</span>
-<span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="linenos"> 4</span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">pi</span>
-<span class="linenos"> 5</span>
-<span class="linenos"> 6</span><span class="n">display</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
-<span class="linenos"> 7</span><span class="n">graph1</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">graph2D</span><span class="p">(</span><span class="n">minValue</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">maxValue</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># create two graph2D objects</span>
-<span class="linenos"> 8</span><span class="n">graph2</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">graph2D</span><span class="p">(</span><span class="n">minValue</span><span class="o">=-</span><span class="mi">4</span><span class="p">,</span> <span class="n">maxValue</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-<span class="linenos"> 9</span>
-<span class="linenos">10</span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">WIDTH</span><span class="p">):</span>
-<span class="linenos">11</span>    <span class="n">y</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">x</span><span class="o">/</span><span class="n">WIDTH</span><span class="p">)</span> <span class="c1"># sine wave with amplitude 1, and wavelength equal to the screen width</span>
-<span class="linenos">12</span>    <span class="n">z</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="mi">6</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">x</span><span class="o">/</span><span class="n">WIDTH</span><span class="p">)</span> <span class="c1"># cosine wave with amplitude 2, and wavelength one-third the screen width</span>
-<span class="linenos">13</span>    
-<span class="linenos">14</span>    <span class="n">display</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="linenos">15</span>    <span class="n">display</span><span class="o">.</span><span class="n">updateGraph2D</span><span class="p">(</span><span class="n">graph1</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-<span class="linenos">16</span>    <span class="n">display</span><span class="o">.</span><span class="n">updateGraph2D</span><span class="p">(</span><span class="n">graph2</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
-<span class="linenos">17</span>    <span class="n">display</span><span class="o">.</span><span class="n">hline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">HEIGHT</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span><span class="mi">128</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># draw a zero-axis</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 2</span><span class="kn">from</span><span class="w"> </span><span class="nn">PiicoDev_SSD1306</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="c1"># --- SETUP</span>
+<span class="linenos"> 5</span><span class="c1"># start sensors</span>
+<span class="linenos"> 6</span><span class="n">oled</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
+<span class="linenos"> 7</span><span class="n">graph</span> <span class="o">=</span> <span class="n">oled</span><span class="o">.</span><span class="n">graph2D</span><span class="p">(</span><span class="n">minValue</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">maxValue</span><span class="o">=</span><span class="mi">63</span><span class="p">)</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="c1"># store variables</span>
+<span class="linenos">10</span><span class="n">number</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="linenos">11</span><span class="n">change</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="linenos">12</span>
+<span class="linenos">13</span><span class="c1"># --- RUNNING</span>
+<span class="linenos">14</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">15</span>    <span class="c1"># read sensor data</span>
+<span class="linenos">16</span>    
+<span class="linenos">17</span>    <span class="c1"># process data</span>
 <span class="linenos">18</span>    
-<span class="linenos">19</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="linenos">19</span>    <span class="c1"># output data</span>
+<span class="linenos">20</span>    <span class="n">oled</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="linenos">21</span>    <span class="n">oled</span><span class="o">.</span><span class="n">updateGraph2D</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">number</span><span class="p">)</span>
+<span class="linenos">22</span>    
+<span class="linenos">23</span>    <span class="n">number</span> <span class="o">=</span> <span class="n">number</span> <span class="o">+</span> <span class="n">change</span>
+<span class="linenos">24</span>    
+<span class="linenos">25</span>    <span class="k">if</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">63</span><span class="p">:</span>
+<span class="linenos">26</span>        <span class="n">change</span> <span class="o">=</span> <span class="n">change</span> <span class="o">*</span> <span class="o">-</span><span class="mi">1</span>
+<span class="linenos">27</span>    
+<span class="linenos">28</span>    <span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </section>
@@ -428,38 +490,47 @@
 <p>The following example animates a rectangle bouncing around the screen.</p>
 <p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below.</p>
 <p><strong><a class="reference internal" href="12_piicodev_intro.html#upload"><span class="std std-ref">Upload</span></a></strong> <code class="docutils literal notranslate"><span class="pre">main.py</span></code> along with <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code>, <code class="docutils literal notranslate"><span class="pre">PiicoDev_SSD1306.py</span></code>, <code class="docutils literal notranslate"><span class="pre">font-pet-me-128.dat</span></code> and <code class="docutils literal notranslate"><span class="pre">piicodev-logo.pbm</span></code> to the micro:bit and then <strong>run</strong> it.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># animation example</span>
-<span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="linenos"> 4</span><span class="kn">from</span> <span class="nn">PiicoDev_Unified</span> <span class="kn">import</span> <span class="n">sleep_ms</span> <span class="c1"># cross-platform compatible sleep function</span>
-<span class="linenos"> 5</span>
-<span class="linenos"> 6</span><span class="n">display</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 2</span><span class="kn">from</span><span class="w"> </span><span class="nn">PiicoDev_SSD1306</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="c1"># --- SETUP</span>
+<span class="linenos"> 5</span><span class="c1"># start sensors</span>
+<span class="linenos"> 6</span><span class="n">oled</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
 <span class="linenos"> 7</span>
-<span class="linenos"> 8</span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="linenos"> 9</span><span class="n">y</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="linenos">10</span>
-<span class="linenos">11</span><span class="n">x_speed</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="linenos">12</span><span class="n">y_speed</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="linenos">13</span>
-<span class="linenos">14</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<span class="linenos">15</span>    <span class="c1">### Clear the display ###</span>
-<span class="linenos">16</span>    <span class="n">display</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># &lt;- what happens if you comment this out?</span>
-<span class="linenos">17</span>    
-<span class="linenos">18</span>    <span class="c1"># Upsdate coordinate values</span>
-<span class="linenos">19</span>    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">127</span><span class="p">:</span>
-<span class="linenos">20</span>        <span class="n">x_speed</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
-<span class="linenos">21</span>    <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">63</span><span class="p">:</span>
-<span class="linenos">22</span>        <span class="n">y_speed</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
-<span class="linenos">23</span>    
-<span class="linenos">24</span>    <span class="n">x</span> <span class="o">+=</span> <span class="n">x_speed</span>
-<span class="linenos">25</span>    <span class="n">y</span> <span class="o">+=</span> <span class="n">y_speed</span>
-<span class="linenos">26</span>    
-<span class="linenos">27</span>    <span class="c1">### Draw a square    </span>
-<span class="linenos">28</span>    <span class="n">display</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="linenos">29</span>    
-<span class="linenos">30</span>    <span class="c1">### Update display ###</span>
-<span class="linenos">31</span>    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-<span class="linenos">32</span>    
+<span class="linenos"> 8</span><span class="c1"># store variables</span>
+<span class="linenos"> 9</span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="linenos">10</span><span class="n">y</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span><span class="n">x_speed</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="linenos">13</span><span class="n">y_speed</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="linenos">14</span>
+<span class="linenos">15</span><span class="n">rect_width</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="linenos">16</span><span class="n">rect_height</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="linenos">17</span><span class="n">rect_colour</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="linenos">18</span>
+<span class="linenos">19</span><span class="c1"># --- RUNNING</span>
+<span class="linenos">20</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">21</span>    <span class="c1"># read sensor data</span>
+<span class="linenos">22</span>    
+<span class="linenos">23</span>    <span class="c1"># process data</span>
+<span class="linenos">24</span>    
+<span class="linenos">25</span>    <span class="c1"># output data</span>
+<span class="linenos">26</span>    <span class="n">oled</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="linenos">27</span>    
+<span class="linenos">28</span>    <span class="c1"># Upsdate coordinate values</span>
+<span class="linenos">29</span>    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">127</span><span class="p">:</span>
+<span class="linenos">30</span>        <span class="n">x_speed</span> <span class="o">=</span> <span class="n">x_speed</span> <span class="o">*</span> <span class="o">-</span><span class="mi">1</span>
+<span class="linenos">31</span>    <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">63</span><span class="p">:</span>
+<span class="linenos">32</span>        <span class="n">y_speed</span> <span class="o">=</span> <span class="n">y_speed</span> <span class="o">*</span> <span class="o">-</span><span class="mi">1</span>
+<span class="linenos">33</span>    
+<span class="linenos">34</span>    <span class="n">x</span> <span class="o">+=</span> <span class="n">x_speed</span>
+<span class="linenos">35</span>    <span class="n">y</span> <span class="o">+=</span> <span class="n">y_speed</span>
+<span class="linenos">36</span>    
+<span class="linenos">37</span>    <span class="c1">### Draw a square    </span>
+<span class="linenos">38</span>    <span class="n">oled</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">rect_width</span><span class="p">,</span><span class="n">rect_height</span><span class="p">,</span><span class="n">rect_colour</span><span class="p">)</span>
+<span class="linenos">39</span>    
+<span class="linenos">40</span>    <span class="c1">### Update display ###</span>
+<span class="linenos">41</span>    <span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </section>
@@ -473,12 +544,32 @@
 <p>The following example displays the PiicoDev logo on the screen.</p>
 <p>Change the code in <code class="docutils literal notranslate"><span class="pre">main.py</span></code> to the code below.</p>
 <p><strong><a class="reference internal" href="12_piicodev_intro.html#upload"><span class="std std-ref">Upload</span></a></strong> <code class="docutils literal notranslate"><span class="pre">main.py</span></code> along with <code class="docutils literal notranslate"><span class="pre">PiicoDev_Unified.py</span></code>, <code class="docutils literal notranslate"><span class="pre">PiicoDev_SSD1306.py</span></code>, <code class="docutils literal notranslate"><span class="pre">font-pet-me-128.dat</span></code> and <code class="docutils literal notranslate"><span class="pre">piicodev-logo.pbm</span></code> to the micro:bit and then <strong>run</strong> it.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># bitmap example</span>
-<span class="linenos">2</span><span class="kn">from</span> <span class="nn">PiicoDev_SSD1306</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="linenos">3</span><span class="n">display</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
-<span class="linenos">4</span>
-<span class="linenos">5</span><span class="n">display</span><span class="o">.</span><span class="n">load_pbm</span><span class="p">(</span><span class="s1">&#39;piicodev-logo.pbm&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="linenos">6</span><span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span><span class="w"> </span><span class="nn">microbit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 2</span><span class="kn">from</span><span class="w"> </span><span class="nn">PiicoDev_SSD1306</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="c1"># --- SETUP</span>
+<span class="linenos"> 5</span><span class="c1"># start sensors</span>
+<span class="linenos"> 6</span><span class="n">oled</span> <span class="o">=</span> <span class="n">create_PiicoDev_SSD1306</span><span class="p">()</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="c1"># store variables</span>
+<span class="linenos"> 9</span><span class="n">image</span> <span class="o">=</span> <span class="s2">&quot;piicodev-logo.pbm&quot;</span>
+<span class="linenos">10</span><span class="n">image_colour</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span><span class="c1"># --- RUNNING</span>
+<span class="linenos">13</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">14</span>    <span class="c1"># read sensor data</span>
+<span class="linenos">15</span>    
+<span class="linenos">16</span>    <span class="c1"># process data</span>
+<span class="linenos">17</span>    
+<span class="linenos">18</span>    <span class="c1"># output data</span>
+<span class="linenos">19</span>    <span class="n">oled</span><span class="o">.</span><span class="n">load_pbm</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">image_colour</span><span class="p">)</span>
+<span class="linenos">20</span>    <span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="linenos">21</span>    <span class="n">sleep</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+<span class="linenos">22</span>    
+<span class="linenos">23</span>    <span class="n">oled</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="linenos">24</span>    <span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="linenos">25</span>    
+<span class="linenos">26</span>    
 </pre></div>
 </div>
 </section>
@@ -490,7 +581,7 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="17a_piicodev_servo.html">
+          <a class="next-page" href="18_piicodev_servo.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
@@ -514,7 +605,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2024, Damien Murtagh
+                Copyright &#169; 2025, Damien Murtagh
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -574,9 +665,9 @@
     </aside>
   </div>
 </div><script src="_static/documentation_options.js?v=5929fcd5"></script>
-    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/scripts/furo.js?v=4e2eecee"></script>
+    <script src="_static/scripts/furo.js?v=46bd48cc"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
     </body>

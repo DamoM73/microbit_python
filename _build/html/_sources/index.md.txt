@@ -24,8 +24,9 @@ This website provides a selection of code snippets to incorporate into your Pyth
 15_piicodev_distance
 16_piicodev_potentiometer
 17_piicodev_oled
-17a_piicodev_servo
-18_glowbit
+18_piicodev_servo
+19_piicodev_button
+50_glowbit
 96_components
 97_debugging
 98_exercise_solutions
