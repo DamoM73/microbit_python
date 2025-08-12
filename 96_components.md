@@ -2,7 +2,7 @@
 
 Below is a listing of all the components that are available in our Micro:bit kits. They are categorised into input and output components and link back to their tutorial pages.
 
-## The micro:bit
+## The micro:bit components
 
 | Component | What it Does | Possible Uses |
 | --- | --- | --- |
@@ -17,7 +17,23 @@ Below is a listing of all the components that are available in our Micro:bit kit
 | [Micro:bit Microphone](./10_sound.md/#microphone) | Detects sound levels from the surrounding environment. | Sound-activated lights, noise level monitoring, clapping controls. |
 | [Micro:bit Radio](./11_radio.md) | Sends and receives short wireless messages between micro\:bits. | Multiplayer games, wireless sensors, message broadcasting. |
 
-### Micro:bit compared to Smartphones
+## Additional Components
+
+| Component | What It Does | Possible Uses |
+| --- | --- | --- |
+| [PiicoDev Atmospheric Sensor](./13_piicodev_atmosphere.md) | Measures temperature, barometric pressure, and relative humidity. | Build weather stations, monitor indoor climate, track altitude changes, or use in environmental sensing projects. |
+| [PiicoDev Colour Sensor](./14_piicodev_colour.md) | Detects RGBW (red, green, blue, white) light levels with 16-bit precision per channel; includes light compensation and human-eye matching filtering. | Use for colour detection (like comparing fruit), ambient light adjustment, or colour-based triggering systems. |
+| [PiicoDev Distance Sensor](./15_piicodev_distance.md) | Offers precise distance measurements using laser time-of-flight sensing. | Great for object detection, gesture control, robotics, and proximity-based interactions. |
+| [PiicoDev Slide Potentiometers](./16_piicodev_potentiometer.md) | A linear (slider) potentiometer providing a variable resistance/output as you slide. | Control brightness, volume, or any analog input in a smooth, linear way—such as for faders or parameter tuning. |
+| [PiicoDev Potentiometers](./16_piicodev_potentiometer.md) | A knob-style variable resistor for adjusting values. | Perfect for dials, menu scrolls, continuous value inputs like tuning or volume control. |
+| [PiicoDev Rotary OLED Module](./17_piicodev_oled.md) | A compact monochrome (typically white on black) OLED display module with 128×64 pixel resolution. | Display text, simple graphics, sensor data, menus, or visual feedback in compact projects. |
+| [PiicoDev Servo Driver and Servo motors](./17a_piicodev_servo.md) | Controls up to four servo motors, handling PWM signals typically over I²C or similar interface. | Drive robotics, animatronics, remote-controlled models, or any motorised components smoothly. |
+| [PiicoDev Button](./19_piicodev_button.md) | A simple wired digital push-button, typically with PiicoDev connector for easy use. | Trigger events, serve as user input, implement menu selection, or emergency stops. |
+| [Glowbit Rainbow](./18_glowbit.md) | A colourful LED module that emits RGB hues or patterns. | Add visual flair, status lighting, decorative effects, or colour-coded feedback to your projects. |
+
+## Micro:bit vs Smartphones
+
+### Comparison
 
 | Feature / Capability | micro\:bit | Smartphone |
 | --- | --- | --- |
@@ -33,22 +49,9 @@ Below is a listing of all the components that are available in our Micro:bit kit
 | Sensors | Basic: accelerometer, light sensor, magnetometer, temperature | Multiple advanced sensors: GPS, gyroscope, barometer, proximity, biometric sensors |
 | Internet access | None | Full internet browsing, cloud services, online apps |
 
+### Strengths and Weaknesses
 
 | Device | Strengths | Weaknesses |
 | --- | --- | --- |
 | **micro\:bit** | - Simple and easy to program for beginners<br>- Low cost and durable<br>- Great for learning coding and electronics<br>- Built-in sensors for hands-on projects<br>- Can connect to other electronics easily via pins | - Very limited processing power and memory<br>- Tiny LED display with no colour<br>- No internet access<br>- Limited input methods<br>- Short battery life on small cells |
 | **Smartphone** | - Powerful processor and large memory<br>- High-resolution, colour touchscreen<br>- Full internet access and app ecosystem<br>- Multiple advanced sensors (GPS, camera, microphone, etc.)<br>- Long battery life with power management | - Expensive to buy and replace<br>- Complex to program for beginners<br>- Not designed for easy electronics prototyping<br>- Heavier and more fragile<br>- Risk of distraction from non-learning apps |
-
-## Additional Components
-
-| Component | What It Does | Possible Uses |
-| --- | --- | --- |
-| [PiicoDev Atmospheric Sensor](./13_piicodev_atmosphere.md) | Measures temperature, barometric pressure, and relative humidity. | Build weather stations, monitor indoor climate, track altitude changes, or use in environmental sensing projects. |
-| [PiicoDev Colour Sensor](./14_piicodev_colour.md) | Detects RGBW (red, green, blue, white) light levels with 16-bit precision per channel; includes light compensation and human-eye matching filtering. | Use for colour detection (like comparing fruit), ambient light adjustment, or colour-based triggering systems. |
-| [PiicoDev Distance Sensor](./15_piicodev_distance.md) | Offers precise distance measurements using laser time-of-flight sensing. | Great for object detection, gesture control, robotics, and proximity-based interactions. |
-| [PiicoDev Slide Potentiometers](./16_piicodev_potentiometer.md) | A linear (slider) potentiometer providing a variable resistance/output as you slide. | Control brightness, volume, or any analog input in a smooth, linear way—such as for faders or parameter tuning. |
-| [PiicoDev Potentiometers](./16_piicodev_potentiometer.md) | A knob-style variable resistor for adjusting values. | Perfect for dials, menu scrolls, continuous value inputs like tuning or volume control. |
-| [PiicoDev Rotary OLED Module](./17_piicodev_oled.md) | A compact monochrome (typically white on black) OLED display module with 128×64 pixel resolution. | Display text, simple graphics, sensor data, menus, or visual feedback in compact projects. |
-| [PiicoDev Servo Driver and Servo motors](./17a_piicodev_servo.md) | Controls up to four servo motors, handling PWM signals typically over I²C or similar interface. | Drive robotics, animatronics, remote-controlled models, or any motorised components smoothly. |
-| [PiicoDev Button](./19_piicodev_button.md) | A simple wired digital push-button, typically with PiicoDev connector for easy use. | Trigger events, serve as user input, implement menu selection, or emergency stops. |
-| [Glowbit Rainbow](./18_glowbit.md) | A colourful LED module that emits RGB hues or patterns. | Add visual flair, status lighting, decorative effects, or colour-coded feedback to your projects. |
