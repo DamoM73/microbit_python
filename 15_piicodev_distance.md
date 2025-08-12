@@ -16,11 +16,10 @@ Create a new folder for this example. Then download the following files and save
 
 - **[`PiicoDev_VL53L1X.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-VL53L1X-MicroPython-Module/main/min/PiicoDev_VL53L1X.py)** - The device driver.
 - **[`PiicoDev_Unified.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py)** - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules
-- **[`main.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-VL53L1X-MicroPython-Module/main/main.py)** - an example script for this PiicoDev Sensor
 
 ## Example code
 
-Below is the example code provided my Core Electronics in the `main.py`:
+Below is the example code provided my Core Electronics. Copy it into `main.py`:
 
 **[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VL53L1X.py` to the micro:bit and then **run** it.
 
@@ -30,10 +29,13 @@ Below is the example code provided my Core Electronics in the `main.py`:
 
 Lets look at the important parts of that code:
 
-- **line 1**: imports all the commands for the atmospheric sensor from the PiicoDev_BME280 library
-- **line 4**: labels the distance Sensor as `distSensor`
-- **line 7**: takes a reading from the sensor
-- **line 8**: prints the reading value
+- **line 1**: imports all the microbit commands
+- **line 2** imports all the commands for the atmospheric sensor from the PiicoDev_BME280 library
+- **line 6**: labels the distance Sensor as `distSensor`
+- **line 13**: takes a reading from the sensor
+- **line 16**: converts the reaidn into a string then append mm to it
+- **line 19**: prints the reading value
+- **line 20**: sleeps  100ms
 
 ## Commands
 

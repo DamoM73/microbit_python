@@ -37,13 +37,11 @@ Create a new folder for this example. Then download the following files and save
 
 ## Example code
 
-The PiicoDev Team has included two examples in the `main.py`.
+Copy the two example codes into `main.py` files and then **[upload](./12_piicodev_intro.md#uploading-to-the-microbit)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VEML6040.py` to the micro:bit and then **run** it.
 
-**[Upload](./12_piicodev_intro.md#uploading-to-the-microbit)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VEML6040.py` to the micro:bit and then **run** it.
+### RGB values
 
-### Example 1
-
-If you the `main.py` without making any changes you will get a printout reading of the RGB values being picked up by the sensor.
+In this example code, `main.py` will printout a reading of the RGB values being picked up by the sensor.
 
 ```{literalinclude} ./python_files/piico_colour_example/main.py
 :linenos:
@@ -61,9 +59,9 @@ Exploring the important parts of that code:
 - **line 22**: prints the **red**, **green** and **blue** values
 - **line 23**: waits half a second
 
-### Example 2
+### HSV Example
 
-Change the code in `main.py` to the same as the code below (make sure that the indentation of lines 27-30 is correct). This code will get a reading and classify what the sensor is looking at by using the values in the `fruitList`.
+Change the code in `main.py` to the same as the code below (make sure that the indentation of lines 27-30 is correct). This code will get a reading and classify what the sensor is looking at by using the values in the `COLOURS` dictionary.
 
 **[Upload](./12_piicodev_intro.md#uploading-to-the-microbit)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VEML6040.py` to the micro:bit and then **run** it.
 

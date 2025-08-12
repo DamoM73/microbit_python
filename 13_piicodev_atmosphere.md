@@ -16,7 +16,7 @@ Create a new folder for this example. Then download the following files and save
 
 - **[`PiicoDev_BME280.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-BME280-MicroPython-Module/main/min/PiicoDev_BME280.py)** - The device driver.
 - **[`PiicoDev_Unified.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py)** - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules
-- **[`main.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-BME280-MicroPython-Module/main/main.py)** - an example script for this PiicoDev Sensor
+** - an example script for this PiicoDev Sensor
 
 ## Example code
 
@@ -57,11 +57,14 @@ Below are the different commands available for the Atmospheric Sensor
 
 ### `values()`
 
+<div style="width:100%">
+
 | Parameter | Type | Range | Default | Description |
 | --- | --- | --- | --- | --- |
 | returned 1st | float | any | Temperature (degC) |
 | returned 2nd | float | any | Pressure (Pa) |
 | returned 3rd | float | Relative humidity (%) |
+</div>
 
 ## Exercises
 
