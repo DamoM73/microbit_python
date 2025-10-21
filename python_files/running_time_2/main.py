@@ -12,13 +12,13 @@ the micro:bit started in milliseconds.
 # start components
 
 # store variables
-running = False
-timer = 5000
+running = False                                 # variable that tracks if the timer is running
+timer = 5000                                    # 5 seconds for timer
 
 # --- RUNNING
 while True:
     # read sensor data
-    a_pressed = button_a.was_pressed()
+    a_pressed = button_a.was_pressed()          # checks if button a was pressed
     
     # process data
     if a_pressed:    

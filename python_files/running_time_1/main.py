@@ -8,4 +8,4 @@ the micro:bit started in milliseconds.
 '''
 
 while True:
-    print(running_time())
+    print(running_time())                   # prints the current running time
