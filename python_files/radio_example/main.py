@@ -5,6 +5,7 @@ import radio
 # start sensors
 
 # store variables
+radio.config(channel=7)
 
 # --- RUNNING
 while True:
