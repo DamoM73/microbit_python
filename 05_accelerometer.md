@@ -2,7 +2,7 @@
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UT35ODxvmS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-The BBC micro:bit comes with an **accelerometer**. An accelerometer can detect and measure how fast something is moving or how it's being tilted. It can sense motion in different directions like up, down, left, and right. 
+The BBC micro:bit has an **accelerometer**. An accelerometer can detect movement and tilt. It can sense motion in different directions, such as up, down, left, and right.
 
 ```{admonition} Accelerometer functions
 :class: important
@@ -11,15 +11,15 @@ Full details can be found at the **[BBC micro:bit MicroPython accelerometer docu
 
 ## Movement
 
-The micro:bit accelerometer measures movement along three axes:
+The micro:bit accelerometer measures movement along three axes. An axis is an imaginary line used to measure direction.
 
-- X - tilting from left to right.
-- Y - tilting forwards and backwards.
+- X - tilting left and right.
+- Y - tilting forward and backward.
 - Z - moving up and down.
 
 ### Get x
 
-There is a method for each axis that returns a positive or negative number indicating a measurement in milli-g’s. When the reading is 0 you are “level” along that particular axis.
+There is a method for each axis. Each method returns a positive or negative number measured in milli-gs. When the reading is `0`, the micro:bit is level on that axis.
 
 Below is an example for the x-axis:
 
@@ -27,16 +27,19 @@ Below is an example for the x-axis:
 :linenos:
 ```
 
-```{admonition} Code explaination
+```{admonition} Code explanation
 :class: notice
-- **line 5** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`.
-- **line 6** &rarr; gets the x-axis reading from the accelerometer and stores it in the x_reading variable.
-- **line 7** &rarr; displays the x_reading on matrix
+- **line 9** &rarr; creates an endless loop.
+- **line 11** &rarr; gets the x-axis reading and stores it in the `x_reading` variable.
+- **line 12** &rarr; gets the y-axis reading and stores it in the `y_reading` variable.
+- **line 13** &rarr; gets the z-axis reading and stores it in the `z_reading` variable.
+- **line 18** &rarr; prints the three readings in the shell.
+- **line 20** &rarr; waits 100 milliseconds before going back to the top of the loop.
 ```
 
 ### Get values
 
-You can also get a tuple containing the x, y and z values the micro:bit is experiencing:
+You can also get a tuple containing the x, y, and z values from the micro:bit:
 
 Below is an example:
 
@@ -44,34 +47,37 @@ Below is an example:
 :linenos:
 ```
 
-```{admonition} Code explaination
+```{admonition} Code explanation
 :class: notice
-- **line 5** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`.
-- **line 6** &rarr; gets the tuple of the accelerometer reading and stores it in the values variable.
-- **line 7** &rarr; displays accelerometer readings to the matrix
-- **line 8** &rarr; waits 1 second
+- **line 9** &rarr; creates an endless loop.
+- **line 11** &rarr; gets the accelerometer readings and stores them in the `values` variable.
+- **line 14** &rarr; gets the x-axis reading from the tuple.
+- **line 15** &rarr; gets the y-axis reading from the tuple.
+- **line 16** &rarr; gets the z-axis reading from the tuple.
+- **line 19** &rarr; prints the three readings in the shell.
+- **line 21** &rarr; waits 100 milliseconds before going back to the top of the loop.
 ```
 
 ```{admonition} Tuples
 :class: note
-Tuples in Python are like lists, but you can't change their values once they're created. They are useful for storing a collection of items that should not be modified. You create a tuple by placing the items inside parentheses, separated by commas, like this: my_tuple = (1, 2, 3).
+Tuples in Python are like lists, but you cannot change their values after they are created. They are useful for storing a group of items that should stay the same. You create a tuple by putting the items inside parentheses, separated by commas, like this: `my_tuple = (1, 2, 3)`.
 ```
 
-### Movement exercises
+### Movement Exercises
 
-1. Change the x-axis example above to show the value for the y-axis
-2. Change the x-axis example above to show the value for the z-axis
-3. Make a levelling device that shows a `-` if the x-axis is level, `L` if the left side is too high or `R` if the right side is too high.
+1. Change the x-axis example above to show the value for the y-axis.
+2. Change the x-axis example above to show the value for the z-axis.
+3. Make a levelling device that shows `-` if the x-axis is level, `L` if the left side is too high, or `R` if the right side is too high.
 
 ## Gestures
 
-The really interesting side-effect of having an accelerometer is gesture detection. If you move your BBC micro:bit in a certain way (as a gesture) then MicroPython is able to detect this.
+One useful feature of the accelerometer is gesture detection. If you move your BBC micro:bit in a certain way, MicroPython can detect that movement as a gesture.
 
-MicroPython is able to recognise the following gestures: `up`, `down`, `left`, `right`, `face up`, `face down`, `freefall`, `3g`, `6g`, `8g`, `shake`. Gestures are always represented as strings. While most of the names should be obvious, the `3g`, `6g` and `8g` gestures apply when the device encounters these levels of g-force (like when an astronaut is launched into space).
+MicroPython can recognise these gestures: `up`, `down`, `left`, `right`, `face up`, `face down`, `freefall`, `3g`, `6g`, `8g`, and `shake`. Gestures are written as strings. Most names are easy to understand. The `3g`, `6g`, and `8g` gestures happen when the micro:bit experiences those levels of g-force.
 
-### Current gestures
+### Current Gesture
 
-You can get the current gesture by using the `current_gesture` method which return a string.
+You can get the current gesture by using the `current_gesture()` method, which returns a string.
 
 Below is an example for displaying the current gesture:
 
@@ -79,52 +85,58 @@ Below is an example for displaying the current gesture:
 :linenos:
 ```
 
-```{admonition} Code explaination
+```{admonition} Code explanation
 :class: notice
-- **line 5** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`.
-- **line 6** &rarr; stores the current gesture in the variable called gesture
-- **line 7** &rarr; scrolls the gesture across the display
-- **line 8** &rarr; waits 1 second
+- **line 9** &rarr; creates an endless loop.
+- **line 11** &rarr; stores the current gesture in the `gesture` variable.
+- **line 16** &rarr; prints the gesture in the shell.
+- **line 17** &rarr; waits 1 second before going back to the top of the loop.
 ```
 
 ### Get gestures
 
-The micro:bit can also provide you with a list of historical gestures. It returns a tuple with the latest gesture first.
+The micro:bit can also give you a list of past gestures. It returns a tuple with the newest gesture first.
 
-Below is an example of `get_gestures`:
+Below is an example of `get_gestures()`:
 
 ```{literalinclude} ./python_files/gestures_get_gestures/main.py
 :linenos:
 ```
 
-```{admonition} Code explaination
+```{admonition} Code explanation
 :class: notice
-- **line 5** &rarr; waits 5 seconds
-- **line 7** &rarr; gets a list of all the guestures that have occured since the micro:bit was turned on and stores it in the variable called gestures
-- **line 9** &rarr; iterates over the list of gestures
-- **line 10** &rarr; scroll the current guesture across the display
+- **lines 10-16** &rarr; shows a countdown from `3` to `0`.
+- **line 18** &rarr; gets all the gestures that have happened since the last check and stores them in the `gestures` variable.
+- **line 23** &rarr; loops through the gestures.
+- **line 24** &rarr; prints each gesture in the shell.
+- **line 25** &rarr; shows the **NO** image to mark the end of the round.
+- **line 26** &rarr; waits 5 seconds before going back to the top of the loop.
 ```
 
-### Was gesture
+### Was Gesture
 
-The `was_gesture` method check to see if the micro:bit recorded a gesture since the last call.
+The `was_gesture()` method checks whether the micro:bit has recorded a specific gesture since the last check.
 
-Below is an example to see if the micro:bit was shaken during the 5 second sleep.
+Below is an example that checks if the micro:bit was shaken during the 3-second wait.
 
 ```{literalinclude} ./python_files/gestures_was_gesture/main.py
 :linenos:
 ```
 
-```{admonition} Code explaination
+```{admonition} Code explanation
 :class: notice
-- **line 5** &rarr; waits 5 seconds
-- **line 7** &rarr; checks if micro:bit was shaken since it started
-- **line 8** &rarr; displays the **YES** image (a tick)
-- **line 10** &rarr; displays the **NO** image (a cross)
+- **line 10** &rarr; displays the **YES** image to show the round has started.
+- **line 11** &rarr; waits 3 seconds.
+- **line 14** &rarr; checks if the micro:bit was shaken during the wait.
+- **line 19** &rarr; if the micro:bit was shaken, the next line will run.
+- **line 20** &rarr; displays a happy face.
+- **line 21** &rarr; if the micro:bit was not shaken, the next line will run.
+- **line 22** &rarr; displays a sad face.
+- **line 24** &rarr; waits 500 milliseconds before going back to the top of the loop.
 ```
 
-### Gesture exercises
+### Gesture Exercises
 
 1. Make the micro:bit display a happy face if it is face up, or display an angry face if it is not.
-2. Make a program that counts the number of times it has been shaken over a five second period
-3. Make a program that waits button **A** is pressed, and then reports if it has experienced 3gs
+2. Make a program that counts how many times the micro:bit has been shaken over a 5-second period.
+3. Make a program that waits until button **A** is pressed, and then reports if the micro:bit has experienced `3g`.

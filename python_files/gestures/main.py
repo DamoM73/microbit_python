@@ -3,7 +3,7 @@ from microbit import *
 # --- SETUP
 # start components
 
-# store vraiables
+# store variables
 
 # --- RUNNING
 while True:

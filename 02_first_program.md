@@ -4,91 +4,90 @@ Before we create our first program, we need to understand how MicroPython works.
 
 ## main.py
 
-When a MicroPython microcontroller (like our micro:bit) is turned on, it looks for a file called `main.py` and automatically executes this file. The project can have other files, but there has to be a `main.py`
+When a MicroPython microcontroller, like our micro:bit, is turned on, it looks for a file called `main.py` and automatically runs that file. The project can have other files, but it must have a `main.py` file.
 
-This means that every project will have a `main.py` file, which can become confusing, not just for us, but for the computer as well. So we need to be better organised with our Python files.
+This means every project will have a `main.py` file. That can become confusing for us and for the computer, so we need to keep our Python files organised.
 
 To achieve this, we will create a separate folder for each exercise.
 
 ## Creating Folders
 
-Create a new folder on your laptop called **micro:bit** then navigate to it in the Thonny file panel.
+Create a new folder on your laptop called **micro:bit**. Then open it in the Thonny file panel.
 
 ![micro:bit folder](./assets/first_program_folder.png)
 
-Then right mouse click in the file panel and choose **New directory...**
+Right-click in the file panel and choose **New directory...**
 
 ![new folder](./assets/first_program_new_folder.png)
 
 ```{admonition} Directories vs Folders
 :class: note
-In computing, directories and folders refer to the same thing, which is a container for files and other directories.
+In computing, directories and folders mean the same thing. They are containers for files and other directories.
 
-Historically, the term "directory" was used in earlier operating systems such as MS-DOS and UNIX to refer to a hierarchical structure for organizing files. As graphical user interfaces became more common, the term "folder" was introduced to make the concept more intuitive for users.
+The word "directory" was used in older text-based operating systems. The word "folder" became common when computers started using graphical interfaces with folder icons.
 ```
 
 Give the new directory the name **first_program**.
 
 ![name folder](./assets/first_program_name_folder.png)
 
-You will now see your **first_program** folder in the files panel. Double click on it to enter that folder.
+You will now see your **first_program** folder in the files panel. Double-click it to open that folder.
 
 ![open folder](./assets/first_program_open_folder.png)
 
 ## Create the New File
 
-Now we will create a new file, but before we do we need to check that we are in the correct folder (1). Then right mouse click and choose **New file...** (2).
+Now we will create a new file. First, check that you are in the correct folder (1). Then right-click and choose **New file...** (2).
 
 ![new file](./assets/first_program_new_file.png)
 
-Name the file **main.py** and click **OK**
+Name the file **main.py** and click **OK**.
 
 ![name file](./assets/first_program_name_file.png)
 
 ## Add the Code
 
-Now enter the code below into your newly created **main.py** file:
+Enter the code below into your new **main.py** file:
 
 ```{literalinclude} ./python_files/first_program/main.py
 :linenos:
 ```
 
-We're going to run our program for the first time, but before let's introduce the PRIMM concept.
+We are going to run our program for the first time. Before we do, let's introduce the PRIMM process.
 
 ```{admonition} PRIMM
 :class: note
-Throughout this course we will use the **PRIMM** process to reinforce our learning. **PRIMM** stands for **Predict**, **Run**, **Investigate**, **Modify**, and **Make**. It reflects effective programming practices and encourages curiosity in programming.
+Throughout this course, we will use the **PRIMM** process to help us learn. **PRIMM** stands for **Predict**, **Run**, **Investigate**, **Modify**, and **Make**.
 
-**Predict**: Before you run the code you need to predict what you think will happen. Go ahead and have a guess at what you think will happen.
+**Predict**: Before you run the code, write down what you think will happen.
 
-**Run**: Then run the program and see how accurate your prediction was. If your prediction was incorrect, how was the result different?
+**Run**: Run the program and check your prediction. If your prediction was incorrect, how was the result different?
 
-**Investigate**: Go through the code and work out what each line of code does.
+**Investigate**: Go through the code and work out what each line does.
 
-**Modify**: Edit the code. Change it around and see that results your get
+**Modify**: Edit the code. Change it and see what results you get.
 
-**Make**: Use your new understanding of the code to make a different program.
+**Make**: Use what you have learned to make a different program.
 ```
 
-Lets run through the **PRIMM** process now
+Let's run through the **PRIMM** process now.
 
-**Predict** in detail what you think the program will do, then **run** the program.
+**Predict** what you think the program will do. Be specific. Then **run** the program.
 
 ![first_program displayed](./assets/first_program.gif)
 
-Did you predict that the `"Hello world!"` would scroll across the dot matrix before displaying a heart for two seconds?
+Did you predict that `"Hello world!"` would scroll across the display before showing a heart for one second?
 
-```{admonition} Code explaination
+```{admonition} Code explanation
 :class: notice
-- **line 1** &rarr; comment identifying the project. This is super important since all our program will be called `main.py`
-- **line 3** &rarr; imports all the commands from the `micropython` library.
-- **line 5** &rarr; sets up the endless loop.
-- **line 6** &rarr; scrolls the text across the display.
-- **line 7** &rarr; shows the heart image.
-- **line 8** &rarr; waits 2000 milliseconds before going back to the top of the loop.
+- **line 1** &rarr; imports all the commands from the `microbit` library.
+- **line 9** &rarr; sets up the endless loop.
+- **line 15** &rarr; scrolls the text across the display.
+- **line 16** &rarr; shows the heart image.
+- **line 17** &rarr; waits 1000 milliseconds before going back to the top of the loop.
 ```
 
-For more details check the **[display.scroll docs](https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.scroll)**.
+For more details, check the **[display.scroll docs](https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.scroll)**.
 
 ### First Program Exercises
 
@@ -108,13 +107,13 @@ Time to **modify** the code and see what happens:
 
 ## Upload the code
 
-So when you unplugged the micro:bit and then plugged it back in, the program didn't restart. While this might not be a surprise, it defeats the purpose of microcontrollers. Microcontrollers are supposed to run by themselves without being connect to a computer.
+When you unplugged the micro:bit and plugged it back in, the program did not restart. This is a problem because microcontrollers are meant to run by themselves without being connected to a computer.
 
-If you look at Thonny's file panel you will see the problem is that your code is on your laptop not the micro:bit.
+If you look at Thonny's file panel, you will see the problem: your code is on your laptop, not on the micro:bit.
 
-To solve this we need to upload the code to the micro:bit. To achieve this:
+To solve this, we need to upload the code to the micro:bit.
 
-Right mouse click on `main.py` on your computer and choose **Upload to micro:bit**.
+Right-click `main.py` on your computer and choose **Upload to micro:bit**.
 
 ![upload file](./assets/first_program_upload.png)
 
@@ -124,19 +123,19 @@ You should now have `main.py` on both your laptop and the micro:bit.
 
 ```{admonition} Duplicate files
 :class: warning
-You now have two copies of `main.py`. These files **do not sync**. If you make changes in one file this will not flow onto the other file.
+You now have two copies of `main.py`. These files **do not sync**. If you make changes to one file, the other file will not update automatically.
 
-The best way to ensure files are updated is to develop a working habbit.
+The best way to keep files updated is to build a good working habit.
 
 I would suggest:
 
-- always edit the laptop copy of the file &rarr; it is your master
-- then upload the file to the micro:bit
+- always edit the laptop copy of the file &rarr; this is your main copy
+- then upload the file to the micro:bit.
 ```
 
-Now try unplugging and plugging your micro:bit back in. The program works. But it is still connected to your computer! That's because it needs your laptop's power.
+Now try unplugging your micro:bit and plugging it back in. The program works, but the micro:bit is still connected to your computer. That is because it needs power from your laptop.
 
-Let's truly liberate your micro:bit.
+Let's make your micro:bit run without the laptop.
 
 Get the battery back out of your kit. Unplug the micro:bit and plug the battery pack in (make sure the battery pack is turned on).
 

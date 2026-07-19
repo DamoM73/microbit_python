@@ -2,7 +2,7 @@
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hnT0qHM3_hQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-The Micro:bit has two input buttons **A** and **B** on the front. These buttons are an easy way to get user input. In Python these two buttons are called `button_a` and `button_b`.
+The micro:bit has two input buttons, **A** and **B**, on the front. These buttons are an easy way to get input from the user. In Python, these two buttons are called `button_a` and `button_b`.
 
 ```{admonition} Documentation
 :class: important
@@ -20,25 +20,28 @@ There are three ways you can work with the buttons.
 Full details can be found at the **[BBC micro:bit MicroPython button.get_presses documentation](https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.get_presses)**.
 ```
 
-`get_presses` counts the number of times that the button has been pressed. Restarting the Micro:bit or calling this function will return the count to `0`.
+`get_presses()` counts how many times the button has been pressed. Restarting the micro:bit or calling this function will reset the count to `0`.
 
-**main.py** file. Add the code below.
+Create a **main.py** file. Add the code below.
 
 ```{literalinclude} ./python_files/button_get_press/main.py
 :linenos:
 ```
 
-**Predict** in detail what you think will happen, and then **run** the program.
+**Predict** what you think will happen. Be specific. Then **run** the program.
 
-```{admonition} Code explaination
+```{admonition} Code explanation
 :class: notice
-- **line 3** &rarr; waits 5 seconds
-- **line 4** &rarr; counts the number of times button A has been pressed then displays it.
+- **line 9** &rarr; creates an endless loop.
+- **line 11** &rarr; counts how many times button **A** has been pressed since the last count.
+- **line 16** &rarr; displays the number of button presses.
+- **line 17** &rarr; waits 1000 milliseconds before going back to the top of the loop.
+- **line 18** &rarr; clears the display.
 ```
 
 ### Get Presses Exercises
 
-1. Create a program that challenges the player to press a button a certain number of times within a time limit.
+1. Create a program that challenges the player to press a button a certain number of times before time runs out.
 
 ## Is Pressed
 
@@ -49,34 +52,37 @@ Full details can be found at the **[BBC micro:bit MicroPython button.get_presses
 Full details can be found at the **[BBC micro:bit MicroPython button.is_pressed documentation](https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.is_pressed)**.
 ```
 
-`is_pressed` returns the value of `True` if the button is currently pressed, otherwise it returns `False`.
+`is_pressed()` returns `True` if the button is being pressed right now. Otherwise, it returns `False`.
 
-Create a new file, call it **main.py** and then add the following code:
+Create a new file called **main.py**, and then add the following code:
 
 ```{literalinclude} ./python_files/button_is_pressed/main.py
 :linenos:
 ```
 
-**Predict** in detail what you think will happen, and then **run** the program.
+**Predict** what you think will happen. Be specific. Then **run** the program.
 
-```{admonition} Code explaination
+```{admonition} Code explanation
 :class: notice
-- **line 3** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`
-- **line 4** &rarr; tests if button **A** is currently being pressed.
-- **line 5** &rarr; if line 4 is `True` then the display will show a smiley face
-- **line 6** &rarr; tests if button **B** is currently being pressed.
-- **line 7** &rarr; if line 6 is `True` then `break` will be called, and exit the `while` loop
-- **line 8** &rarr; if neither button **A** or button **B** is being pressed
-- **line 9** &rarr; displays a sad face
+- **line 9** &rarr; creates an endless loop.
+- **line 11** &rarr; checks if button **A** is being pressed right now.
+- **line 12** &rarr; checks if button **B** is being pressed right now.
+- **line 17** &rarr; if button **A** is pressed, the next line will run.
+- **line 18** &rarr; shows a happy face.
+- **line 19** &rarr; if button **A** is not pressed, this checks if button **B** is pressed.
+- **line 20** &rarr; exits the `while` loop.
+- **line 21** &rarr; if neither button is pressed, the next line will run.
+- **line 22** &rarr; shows a sad face.
+- **line 24** &rarr; clears the display after the loop ends.
 ```
 
-### Is pressed exercise
+### Is Pressed Exercise
 
-1. Create a program that tests a user reaction time. It should:
-   - Randomly choose which button to press **A** or **B**
-   - Do a 3-2-1 countdown then display the button to press
-   - Time how long it takes for the user to press the correct button (**[ticks_ms()](https://microbit-micropython.readthedocs.io/en/latest/utime.html#utime.utime.ticks_ms)** may be helpful)
-   - Show the reaction time on the display
+1. Create a program that tests the user's reaction time. It should:
+   - randomly choose which button to press: **A** or **B**
+   - do a 3-2-1 countdown, then display the button to press
+   - time how long it takes the user to press the correct button. **[ticks_ms()](https://microbit-micropython.readthedocs.io/en/latest/utime.html#utime.utime.ticks_ms)** may be helpful.
+   - show the reaction time on the display
 
 ## Was Pressed
 
@@ -87,31 +93,32 @@ Create a new file, call it **main.py** and then add the following code:
 Full details can be found at the **[BBC micro:bit MicroPython button.was_pressed documentation](https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.was_pressed)**.
 ```
 
-`was_pressed` will returns `True` or `False` to indicate if the button was pressed (went from up to down) since the device started, or the last time this method was called. Calling this method will clear the press state so that the button must be pressed again before this method will return `True` again.
+`was_pressed()` returns `True` if the button has been pressed since the micro:bit started, or since the last time this function was called. Otherwise, it returns `False`.
+
+Calling this function clears the press state. This means the button must be pressed again before `was_pressed()` can return `True` again.
 
 ```{literalinclude} ./python_files/button_was_pressed/main.py
 :linenos:
 ```
 
-```{admonition} Code explaination
+```{admonition} Code explanation
 :class: notice
-- **line 3** &rarr; clears the display of any previous image
-- **line 7** &rarr; creates an infinite loop, since the condition (`True`) will never be `False`
-- **line 8** &rarr; does two things:
-  - tests if button **A** has been pressed (moved from the up position to the down position)
-  - if `button_a.was_pressed()` is `True` resets it to `False`
-- **line 9** &rarr; changes display to smiley face
-- **line 10** &rarr; does two things:
-  - tests if button **B** has been pressed (moved from the up position to the down position)
-  - if `button_b.was_pressed()` is `True` resets it to `False`
-- **line 11** &rarr; changes display to sad face
+- **line 9** &rarr; clears the display of any previous image.
+- **line 11** &rarr; creates an endless loop.
+- **line 13** &rarr; checks if button **A** has been pressed since the last check.
+- **line 14** &rarr; checks if button **B** has been pressed since the last check.
+- **line 19** &rarr; if button **A** was pressed, the next line will run.
+- **line 20** &rarr; shows a happy face.
+- **line 21** &rarr; if button **A** was not pressed, this checks if button **B** was pressed.
+- **line 22** &rarr; shows a sad face.
 ```
 
 ### Was Pressed Exercise
 
-1. Create program that counts the number of times button **A** is pressed. The count should start at 0, and for each press of button A, the count should increment by 1. Pressing button **B** should reset the count to 0.
+1. Create a program that counts how many times button **A** is pressed. The count should start at `0`. Each time button **A** is pressed, the count should increase by `1`. Pressing button **B** should reset the count to `0`.
 2. Create a memory game that:
-   - randomly generates a 6 letter A or B pattern
+   - randomly generates a 6-letter pattern using **A** and **B**
    - displays the pattern to the user
-   - gets the user to repeat the pattern
-   - displays a smiley face if the repeated pattern is the same as the generated pattern or a sad face if they don't match
+   - asks the user to repeat the pattern
+   - displays a smiley face if the repeated pattern matches the generated pattern
+   - displays a sad face if the patterns do not match
