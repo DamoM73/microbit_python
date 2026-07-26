@@ -24,7 +24,7 @@ Full details can be found at the **[BBC micro:bit MicroPython button.get_presses
 
 Create a **main.py** file. Add the code below.
 
-```{literalinclude} ./python_files/button_get_press/main.py
+```{literalinclude} ./python_files/05_button_get_press/main.py
 :linenos:
 ```
 
@@ -56,7 +56,7 @@ Full details can be found at the **[BBC micro:bit MicroPython button.is_pressed 
 
 Create a new file called **main.py**, and then add the following code:
 
-```{literalinclude} ./python_files/button_is_pressed/main.py
+```{literalinclude} ./python_files/06_button_is_pressed/main.py
 :linenos:
 ```
 
@@ -97,7 +97,7 @@ Full details can be found at the **[BBC micro:bit MicroPython button.was_pressed
 
 Calling this function clears the press state. This means the button must be pressed again before `was_pressed()` can return `True` again.
 
-```{literalinclude} ./python_files/button_was_pressed/main.py
+```{literalinclude} ./python_files/07_button_was_pressed/main.py
 :linenos:
 ```
 

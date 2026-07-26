@@ -23,7 +23,7 @@ Below is the example code provided my Core Electronics. Copy it into `main.py`:
 
 **[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VL53L1X.py` to the micro:bit and then **run** it.
 
-```{literalinclude} ./python_files/piico_distance_example/main.py
+```{literalinclude} ./python_files/22_piico_distance_example/main.py
 :linenos:
 ```
 

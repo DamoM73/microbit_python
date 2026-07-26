@@ -22,7 +22,7 @@ MicroPython on the BBC micro:bit can play music and sound through the built-in s
 
 Notice that we import the music module. It contains methods used to make and control sound. For example:
 
-```{literalinclude} ./python_files/sound_music_example/main.py
+```{literalinclude} ./python_files/15_music_builtin/main.py
 :linenos:
 ```
 
@@ -59,7 +59,7 @@ For example, `"A1:4"` means note `A`, octave `1`, duration `4`.
 
 Make a list of notes to create a melody. This is similar to creating an animation with a list of images. For example, this code plays the opening of "Frere Jacques":
 
-```{literalinclude} ./python_files/sound_music_example_2/main.py
+```{literalinclude} ./python_files/15_music_custom/main.py
 :linenos:
 ```
 
@@ -74,7 +74,7 @@ Make a list of notes to create a melody. This is similar to creating an animatio
 
 MicroPython lets you make tones that are not musical notes. For example, this code creates a siren sound effect:
 
-```{literalinclude} ./python_files/sound_effects_example/main.py
+```{literalinclude} ./python_files/15_music_sound_effects/main.py
 :linenos:
 ```
 
@@ -103,7 +103,7 @@ Full details can be found at the **[BBC micro:bit MicroPython Speech documentati
 
 The simplest way to get the micro:bit to speak is to import the speech module and use the `say()` function like this:
 
-```{literalinclude} ./python_files/speech_example_1/main.py
+```{literalinclude} ./python_files/15_speech_say/main.py
 :linenos:
 ```
 
@@ -126,7 +126,7 @@ To adjust the settings, pass them into the `say()` function. **[More details can
 
 This example changes the voice settings:
 
-```{literalinclude} ./python_files/speech_example_2/main.py
+```{literalinclude} ./python_files/15_speech_say_2/main.py
 :linenos:
 ```
 
@@ -147,7 +147,7 @@ A **[full list of phonemes](https://microbit-micropython.readthedocs.io/en/lates
 
 The `pronounce()` function is used for phoneme output like this:
 
-```{literalinclude} ./python_files/speech_example_3/main.py
+```{literalinclude} ./python_files/15_speech_say_3/main.py
 :linenos:
 ```
 
@@ -167,7 +167,7 @@ The mapping from pitch numbers to musical notes is shown below:
 
 Annotations work by adding a hash sign (`#`) and a pitch number before the phoneme. The pitch stays the same until a new annotation is given. For example, this code makes MicroPython sing a scale:
 
-```{literalinclude} ./python_files/sing_example_1/main.py
+```{literalinclude} ./python_files/15_sing/main.py
 :linenos:
 ```
 
@@ -206,7 +206,7 @@ The microphone can respond to built-in sound events based on how loud the sound 
 
 For example:
 
-```{literalinclude} ./python_files/microphone_example/main.py
+```{literalinclude} ./python_files/15_microphone_1/main.py
 :linenos:
 ```
 
@@ -216,7 +216,7 @@ The microphone can also give a sound level reading from `0` to `255`.
 
 For example:
 
-```{literalinclude} ./python_files/microphone_example_2/main.py
+```{literalinclude} ./python_files/15_microphone_2/main.py
 :linenos:
 ```
 

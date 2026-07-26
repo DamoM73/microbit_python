@@ -17,7 +17,7 @@ The micro:bit uses the LEDs in its display to sense how much light is shining on
 
 For example:
 
-```{literalinclude} ./python_files/light/main.py
+```{literalinclude} ./python_files/11_light/main.py
 :linenos:
 ```
 

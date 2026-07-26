@@ -49,7 +49,7 @@ Name the file **main.py** and click **OK**.
 
 Enter the code below into your new **main.py** file:
 
-```{literalinclude} ./python_files/first_program/main.py
+```{literalinclude} ./python_files/01_first_program/main.py
 :linenos:
 ```
 

@@ -38,7 +38,7 @@ The PiicoDev OLED Module screen has 128 pixels x 64 pixels, with the `(0,0)` coo
 
 **[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
 
-```{literalinclude} ./python_files/piico_servo_cont/main.py
+```{literalinclude} ./python_files/25_piico_servo_cont/main.py
 :linenos:
 ```
 
@@ -48,6 +48,6 @@ Change the code in `main.py` to the code below.
 
 **[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
 
-```{literalinclude} ./python_files/piico_servo_micro/main.py
+```{literalinclude} ./python_files/25_piico_servo_micro/main.py
 :linenos:
 ```

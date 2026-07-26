@@ -17,7 +17,7 @@ Calling `pin_logo.is_touched()` returns `True` if the logo is being touched.
 
 For example:
 
-```{literalinclude} ./python_files/touch/main.py
+```{literalinclude} ./python_files/14_touch/main.py
 :linenos:
 ```
 
@@ -36,7 +36,7 @@ Pins 0, 1, and 2 can also work as touch inputs, but they need to be set up first
 
 For example:
 
-```{literalinclude} ./python_files/touch_pins/main.py
+```{literalinclude} ./python_files/14_touch_pins/main.py
 :linenos:
 ```
 

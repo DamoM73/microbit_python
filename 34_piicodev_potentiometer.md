@@ -29,7 +29,7 @@ Create a new file called `main.py` and add the code below.
 
 **[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_Potentiometer.py` to the micro:bit and then **run** it.
 
-```{literalinclude} ./python_files/piico_pot_example_1/main.py
+```{literalinclude} ./python_files/23_piico_pot_example_1/main.py
 :linenos:
 ```
 
@@ -41,7 +41,7 @@ Change your `main.py` to the code below.
 
 **[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_Potentiometer.py` to the micro:bit and then **run** it.
 
-```{literalinclude} ./python_files/piico_pot_example_2/main.py
+```{literalinclude} ./python_files/23_piico_pot_example_2/main.py
 :linenos:
 ```
 
@@ -57,6 +57,6 @@ Before running this code, we need to change the hardware. Daisy-chain a rotary p
 
 Then change your `main.py` code to the code below:
 
-```{literalinclude} ./python_files/piico_pot_example_3/main.py
+```{literalinclude} ./python_files/23_piico_pot_example_3/main.py
 :linenos:
 ```

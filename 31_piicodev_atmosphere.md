@@ -24,7 +24,7 @@ Below is the example code provided my Core Electronics in the `main.py`.
 
 **[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_BME280.py` to the micro:bit and then **run** it.
 
-```{literalinclude} ./python_files/piico_atmosphere_example/main.py
+```{literalinclude} ./python_files/20_piico_atmosphere/main.py
 :linenos:
 ```
 

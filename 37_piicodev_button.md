@@ -25,7 +25,7 @@ Create a new directory called `is_pressed` then create a new file inside it call
 
 Upload `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_Switch.py` to the micro:bit and then **run** it. Notice what happens when you hold the button down.
 
-```{literalinclude} ./python_files/piico_button_ispressed/main.py
+```{literalinclude} ./python_files/26_piico_button_ispressed/main.py
 :linenos:
 ```
 
@@ -46,7 +46,7 @@ Create a new directory called `double_pressed` then create a new file inside it 
 
 Upload `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_Switch.py` to the micro:bit and then run it. Notice what happens when you hold the button down.
 
-```{literalinclude} ./python_files/piico_button_waspressed/main.py
+```{literalinclude} ./python_files/26_piico_button_waspressed/main.py
 :linenos:
 ```
 
@@ -67,7 +67,7 @@ Create a new directory called `was_double_pressed` then create a new file inside
 
 Upload `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_Switch.py` to the micro:bit and then run it. Notice what happens when you hold the button down.
 
-```{literalinclude} ./python_files/piico_button_doublepressed/main.py
+```{literalinclude} ./python_files/26_piico_button_doublepressed/main.py
 :linenos:
 ```
 

@@ -43,7 +43,7 @@ Copy the two example codes into `main.py` files and then **[upload](./12_piicode
 
 In this example code, `main.py` will printout a reading of the RGB values being picked up by the sensor.
 
-```{literalinclude} ./python_files/piico_colour_example/main.py
+```{literalinclude} ./python_files/21_piico_colour_example/main.py
 :linenos:
 ```
 
@@ -65,7 +65,7 @@ Change the code in `main.py` to the same as the code below (make sure that the i
 
 **[Upload](./12_piicodev_intro.md#uploading-to-the-microbit)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VEML6040.py` to the micro:bit and then **run** it.
 
-```{literalinclude} ./python_files/piico_colour_example_2/main.py
+```{literalinclude} ./python_files/21_piico_colour_example_2/main.py
 :linenos:
 ```
 

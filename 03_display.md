@@ -24,7 +24,7 @@ Full details can be found at the **[BBC micro:bit MicroPython display.scroll doc
 
 Our first program used the `scroll()` function to make a string scroll across the display.
 
-```{literalinclude} ./python_files/first_program/main.py
+```{literalinclude} ./python_files/01_first_program/main.py
 :linenos:
 ```
 
@@ -51,7 +51,7 @@ Before we can run the code below, we need to:
 
 Create a new file called **main.py** and add the code below.
 
-```{literalinclude} ./python_files/display_show/main.py
+```{literalinclude} ./python_files/02_display_show/main.py
 :linenos:
 ```
 
@@ -99,7 +99,7 @@ Again, since we are making a new program, create a new folder called **display_i
 
 Add the following code to the file.
 
-```{literalinclude} ./python_files/display_images/main.py
+```{literalinclude} ./python_files/03_display_images/main.py
 :linenos:
 ```
 
@@ -152,7 +152,7 @@ To explore this, we will make a new program. Create a new folder called **displa
 
 Add the code below, save it, and then run it on the micro:bit.
 
-```{literalinclude} ./python_files/display_custom/main.py
+```{literalinclude} ./python_files/04_display_custom/main.py
 :linenos:
 ```
 

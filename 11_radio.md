@@ -25,7 +25,7 @@ When a micro:bit receives a message, it is placed in a message **queue**. A comp
 
 The example below shows how radio messages work. One micro:bit sends a message, and the other micro:bit displays an image. Run the same code on two micro:bits.
 
-```{literalinclude} ./python_files/radio_example/main.py
+```{literalinclude} ./python_files/16_radio/main.py
 :linenos:
 ```
 

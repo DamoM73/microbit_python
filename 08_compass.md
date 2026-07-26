@@ -25,7 +25,7 @@ The image below shows how the numbers match the compass directions: North, South
 
 The code below shows `heading()` in action:
 
-```{literalinclude} ./python_files/heading/main.py
+```{literalinclude} ./python_files/12_heading/main.py
 :linenos:
 ```
 
@@ -50,7 +50,7 @@ The `get_field_strength()` method returns the strength of the magnetic field aro
 
 Run the program below and use the magnet in your kit to change the value.
 
-```{literalinclude} ./python_files/mag_strength/main.py
+```{literalinclude} ./python_files/13_mag_strength/main.py
 :linenos:
 ```
 

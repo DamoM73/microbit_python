@@ -6,13 +6,13 @@ Below you will find **a** solution to all the exercises from this course. Like a
 
 ### First Program Exercise 1
 
-```{literalinclude} ./python_files/first_program_ex1/main.py
+```{literalinclude} ./python_files/01_first_program_ex1/main.py
 :linenos:
 ```
 
 ### First Program Exercise 2
 
-```{literalinclude} ./python_files/first_program_ex2/main.py
+```{literalinclude} ./python_files/01_first_program_ex2/main.py
 :linenos:
 ```
 
@@ -28,37 +28,37 @@ When the micro:bit is unplugged it turns off because it is using the power from 
 
 ### Text Exercise 1
 
-```{literalinclude} ./python_files/display_show_ex1/main.py
+```{literalinclude} ./python_files/02_display_show_ex1/main.py
 :linenos:
 ```
 
 ### Text Exercise 2
 
-```{literalinclude} ./python_files/display_show_ex2/main.py
+```{literalinclude} ./python_files/02_display_show_ex2/main.py
 :linenos:
 ```
 
 ### Text Exercise 3
 
-```{literalinclude} ./python_files/display_show_ex3/main.py
+```{literalinclude} ./python_files/02_display_show_ex3/main.py
 :linenos:
 ```
 
 ### Image Exercise 1
 
-```{literalinclude} ./python_files/display_images_ex1/main.py
+```{literalinclude} ./python_files/03_display_images_ex1/main.py
 :linenos:
 ```
 
 ### Image Exercise 2
 
-```{literalinclude} ./python_files/display_images_ex2/main.py
+```{literalinclude} ./python_files/03_display_images_ex2/main.py
 :linenos:
 ```
 
 ### Image Exercise 3
 
-```{literalinclude} ./python_files/display_images_ex3/main.py
+```{literalinclude} ./python_files/03_display_images_ex3/main.py
 :linenos:
 ```
 
@@ -70,13 +70,13 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 
 ### Custom Exercise 2
 
-```{literalinclude} ./python_files/display_custom_ex2/main.py
+```{literalinclude} ./python_files/04_display_custom_ex2/main.py
 :linenos:
 ```
 
 ### Custom Exercise 3
 
-```{literalinclude} ./python_files/display_custom_ex3/main.py
+```{literalinclude} ./python_files/04_display_custom_ex3/main.py
 :linenos:
 ```
 
@@ -84,25 +84,25 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 
 ### Get Presses Exercises 1
 
-```{literalinclude} ./python_files/button_was_pressed_ex1/main.py
+```{literalinclude} ./python_files/07_button_was_pressed_ex1/main.py
 :linenos:
 ```
 
 ### Is Pressed Exercise 1
 
-```{literalinclude} ./python_files/button_is_pressed_ex1/main.py
+```{literalinclude} ./python_files/06_button_is_pressed_ex1/main.py
 :linenos:
 ```
 
 ### Was Pressed Exercise 1
 
-```{literalinclude} ./python_files/button_was_pressed_ex1/main.py
+```{literalinclude} ./python_files/07_button_was_pressed_ex1/main.py
 :linenos:
 ```
 
 ### Was Pressed Exercise 2
 
-```{literalinclude} ./python_files/button_was_pressed_ex2/main.py
+```{literalinclude} ./python_files/07_button_was_pressed_ex2/main.py
 :linenos:
 ```
 
@@ -110,37 +110,37 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 
 ### Movement Exercise 1
 
-```{literalinclude} ./python_files/movement_ex1/main.py
+```{literalinclude} ./python_files/08_movement_ex1/main.py
 :linenos:
 ```
 
 ### Movement Exercise 2
 
-```{literalinclude} ./python_files/movement_ex2/main.py
+```{literalinclude} ./python_files/08_movement_ex2/main.py
 :linenos:
 ```
 
 ### Movement Exercise 3
 
-```{literalinclude} ./python_files/movement_ex3/main.py
+```{literalinclude} ./python_files/08_movement_ex3/main.py
 :linenos:
 ```
 
 ### Gesture Exercise 1
 
-```{literalinclude} ./python_files/gestures_ex1/main.py
+```{literalinclude} ./python_files/09_gestures_ex1/main.py
 :linenos:
 ```
 
 ### Gesture Exercise 2
 
-```{literalinclude} ./python_files/gestures_ex2/main.py
+```{literalinclude} ./python_files/09_gestures_ex2/main.py
 :linenos:
 ```
 
 ### Gesture Exercise 3
 
-```{literalinclude} ./python_files/gestures_ex3/main.py
+```{literalinclude} ./python_files/09_gestures_ex3/main.py
 :linenos:
 ```
 
@@ -148,13 +148,13 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 
 ### Temperature Exercise 1
 
-```{literalinclude} ./python_files/temp_ex1/main.py
+```{literalinclude} ./python_files/10_temp_ex1/main.py
 :linenos:
 ```
 
 ### Temperature Exercise 2
 
-```{literalinclude} ./python_files/temp_ex2/main.py
+```{literalinclude} ./python_files/10_temp_ex2/main.py
 :linenos:
 ```
 
@@ -162,13 +162,13 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 
 ### Light Exercise 1
 
-```{literalinclude} ./python_files/light_ex1/main.py
+```{literalinclude} ./python_files/11_light_ex1/main.py
 :linenos:
 ```
 
 ### Light Exercise 2
 
-```{literalinclude} ./python_files/light_ex2/main.py
+```{literalinclude} ./python_files/11_light_ex2/main.py
 :linenos:
 ```
 
@@ -176,25 +176,25 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 
 ### Heading Exercise 1
 
-```{literalinclude} ./python_files/heading_ex1/main.py
+```{literalinclude} ./python_files/12_heading_ex1/main.py
 :linenos:
 ```
 
 ### Heading Exercise 2
 
-```{literalinclude} ./python_files/heading_ex2/main.py
+```{literalinclude} ./python_files/12_heading_ex2/main.py
 :linenos:
 ```
 
 ### Magnetic Strength Exercise 1
 
-```{literalinclude} ./python_files/mag_strength_ex1/main.py
+```{literalinclude} ./python_files/13_mag_strength_ex1/main.py
 :linenos:
 ```
 
 ### Magnetic Strength Exercise 2
 
-```{literalinclude} ./python_files/mag_strength_ex2/main.py
+```{literalinclude} ./python_files/13_mag_strength_ex2/main.py
 :linenos:
 ```
 
@@ -202,13 +202,13 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 
 ### Touch Exercise 1
 
-```{literalinclude} ./python_files/touch_ex1/main.py
+```{literalinclude} ./python_files/14_touch_ex1/main.py
 :linenos:
 ```
 
 ### Touch Exercise 2
 
-```{literalinclude} ./python_files/touch_ex2/main.py
+```{literalinclude} ./python_files/14_touch_ex2/main.py
 :linenos:
 ```
 
@@ -216,19 +216,19 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 
 ### Sound Exercise 1
 
-```{literalinclude} ./python_files/sound_exercise_1/main.py
+```{literalinclude} ./python_files/15_sound_exercise_1/main.py
 :linenos:
 ```
 
 ### Sound Exercise 2
 
-```{literalinclude} ./python_files/sound_exercise_2/main.py
+```{literalinclude} ./python_files/15_sound_exercise_2/main.py
 :linenos:
 ```
 
 ### Sound Exercise 3
 
-```{literalinclude} ./python_files/sound_exercise_3/main.py
+```{literalinclude} ./python_files/15_sound_exercise_3/main.py
 :linenos:
 ```
 
@@ -236,13 +236,13 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 
 ### Radio Exercise 1
 
-```{literalinclude} ./python_files/radio_ex1/main.py
+```{literalinclude} ./python_files/16_radio_ex1/main.py
 :linenos:
 ```
 
 ### Radio Exercise 2
 
-```{literalinclude} ./python_files/radio_ex2/main.py
+```{literalinclude} ./python_files/16_radio_ex2/main.py
 :linenos:
 ```
 
@@ -250,13 +250,13 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 
 #### Outdoor
 
-```{literalinclude} ./python_files/radio_ex3/outside/main.py
+```{literalinclude} ./python_files/16_radio_ex3/outside/main.py
 :linenos:
 ```
 
 #### Indoor
 
-```{literalinclude} ./python_files/radio_ex3/inside/main.py
+```{literalinclude} ./python_files/16_radio_ex3/inside/main.py
 :linenos:
 ```
 
@@ -264,13 +264,13 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 
 ### Atmospheric Sensor Exercise 1
 
-```{literalinclude} ./python_files/piico_atmosphere_ex1/main.py
+```{literalinclude} ./python_files/20_piico_atmosphere_ex1/main.py
 :linenos:
 ```
 
 ### Atmospheric Sensor Exercise 2
 
-```{literalinclude} ./python_files/piico_atmosphere_ex2/main.py
+```{literalinclude} ./python_files/20_piico_atmosphere_ex2/main.py
 :linenos:
 ```
 
@@ -278,13 +278,13 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 
 ### Colour Sensor Exercise 1
 
-```{literalinclude} ./python_files/piico_colour_ex1/main.py
+```{literalinclude} ./python_files/21_piico_colour_ex1/main.py
 :linenos:
 ```
 
 ### Colour Sensor Exercise 2
 
-```{literalinclude} ./python_files/piico_colour_ex1/main.py
+```{literalinclude} ./python_files/21_piico_colour_ex1/main.py
 :linenos:
 ```
 
@@ -292,6 +292,6 @@ This is caused by the micro:bit processor working faster than the LEDs. By the t
 
 ### Distance Sensor Exercise 1
 
-```{literalinclude} ./python_files/piico_distance_ex1/main.py
+```{literalinclude} ./python_files/22_piico_distance_ex1/main.py
 :linenos:
 ```

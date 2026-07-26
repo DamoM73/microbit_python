@@ -15,7 +15,7 @@ The `running_time()` function measures how long the micro:bit has been running s
 
 The code below shows how to use `running_time()` to print the current time count in the terminal.
 
-```{literalinclude} ./python_files/running_time_1/main.py
+```{literalinclude} ./python_files/17_running_time_1/main.py
 :linenos:
 ```
 
@@ -23,7 +23,7 @@ The code below shows how to use `running_time()` to print the current time count
 
 The code below uses `running_time()` to create a 5-second countdown timer. The timer starts when button **A** is pressed.
 
-```{literalinclude} ./python_files/running_time_2/main.py
+```{literalinclude} ./python_files/17_running_time_2/main.py
 :linenos:
 ```
 
@@ -33,7 +33,7 @@ The `set_volume()` function changes the volume of the micro:bit's speaker. Use a
 
 ### Set Volume Demonstration
 
-```{literalinclude} ./python_files/set_volume_1/main.py
+```{literalinclude} ./python_files/17_set_volume_1/main.py
 :linenos:
 ```
 
@@ -43,7 +43,7 @@ The `sleep()` function pauses the program for a chosen number of milliseconds. U
 
 ### Sleep Demonstration
 
-```{literalinclude} ./python_files/sleep_1/main.py
+```{literalinclude} ./python_files/17_sleep_1/main.py
 :linenos:
 ```
 
@@ -53,7 +53,7 @@ The `run_every()` function runs another function at regular time intervals. This
 
 ### Run Every Demonstration
 
-```{literalinclude} ./python_files/run_every_1/main.py
+```{literalinclude} ./python_files/17_run_every_1/main.py
 :linenos:
 ```
 
@@ -61,6 +61,6 @@ The `run_every()` function runs another function at regular time intervals. This
 
 The code below uses `run_every()` to create a countdown timer. The timer only counts down while a button is being pressed.
 
-```{literalinclude} ./python_files/run_every_2/main.py
+```{literalinclude} ./python_files/17_run_every_2/main.py
 :linenos:
 ```

@@ -15,7 +15,7 @@ To get a temperature reading, call the `temperature()` function.
 
 For example:
 
-```{literalinclude} ./python_files/temp/main.py
+```{literalinclude} ./python_files/10_temp/main.py
 :linenos:
 ```
 

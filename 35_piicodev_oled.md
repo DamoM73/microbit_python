@@ -41,7 +41,7 @@ The following example draws horizontal and vertical lines from the same point an
 
 **[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
 
-```{literalinclude} ./python_files/oled_example_1/main.py
+```{literalinclude} ./python_files/24_oled_example_1/main.py
 :linenos:
 ```
 
@@ -57,7 +57,7 @@ Change the code in `main.py` to the code below.
 
 **[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
 
-```{literalinclude} ./python_files/oled_example_2/main.py
+```{literalinclude} ./python_files/24_oled_example_2/main.py
 :linenos:
 ```
 
@@ -75,7 +75,7 @@ Change the code in `main.py` to the code below.
 
 **[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
 
-```{literalinclude} ./python_files/oled_example_3/main.py
+```{literalinclude} ./python_files/24_oled_example_3/main.py
 :linenos:
 ```
 
@@ -91,7 +91,7 @@ Change the code in `main.py` to the code below.
 
 **[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
 
-```{literalinclude} ./python_files/oled_example_4/main.py
+```{literalinclude} ./python_files/24_oled_example_4/main.py
 :linenos:
 ```
 
@@ -109,7 +109,7 @@ Change the code in `main.py` to the code below.
 
 **[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
 
-```{literalinclude} ./python_files/oled_example_5/main.py
+```{literalinclude} ./python_files/24_oled_example_5/main.py
 :linenos:
 ```
 
@@ -128,7 +128,7 @@ Change the code in `main.py` to the code below.
 
 **[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
 
-```{literalinclude} ./python_files/oled_example_6/main.py
+```{literalinclude} ./python_files/24_oled_example_6/main.py
 :linenos:
 ```
 

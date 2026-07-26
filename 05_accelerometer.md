@@ -23,7 +23,7 @@ There is a method for each axis. Each method returns a positive or negative numb
 
 Below is an example for the x-axis:
 
-```{literalinclude} ./python_files/movement/main.py
+```{literalinclude} ./python_files/08_movement_get_axis/main.py
 :linenos:
 ```
 
@@ -43,7 +43,7 @@ You can also get a tuple containing the x, y, and z values from the micro:bit:
 
 Below is an example:
 
-```{literalinclude} ./python_files/movement_values/main.py
+```{literalinclude} ./python_files/08_movement_get_values/main.py
 :linenos:
 ```
 
@@ -81,7 +81,7 @@ You can get the current gesture by using the `current_gesture()` method, which r
 
 Below is an example for displaying the current gesture:
 
-```{literalinclude} ./python_files/gestures/main.py
+```{literalinclude} ./python_files/09_gestures_current/main.py
 :linenos:
 ```
 
@@ -99,7 +99,7 @@ The micro:bit can also give you a list of past gestures. It returns a tuple with
 
 Below is an example of `get_gestures()`:
 
-```{literalinclude} ./python_files/gestures_get_gestures/main.py
+```{literalinclude} ./python_files/09_gestures_get/main.py
 :linenos:
 ```
 
@@ -119,7 +119,7 @@ The `was_gesture()` method checks whether the micro:bit has recorded a specific 
 
 Below is an example that checks if the micro:bit was shaken during the 3-second wait.
 
-```{literalinclude} ./python_files/gestures_was_gesture/main.py
+```{literalinclude} ./python_files/09_gestures_was/main.py
 :linenos:
 ```
 

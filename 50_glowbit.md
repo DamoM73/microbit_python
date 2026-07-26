@@ -18,6 +18,6 @@ It's best to unpower your micro:bit when wiring - make sure the USB lead or any 
 
 **Create** a new folder a for this example, and then **create** a new file called `main.py` in it. Then add the code below to it. Save it, **upload** it to the mirco:bit and the **run** it.
 
-```{literalinclude} ./python_files/glow_bit_rainbow/main.py
+```{literalinclude} ./python_files/30_glow_bit_rainbow/main.py
 :linenos:
 ```
