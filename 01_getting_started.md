@@ -1,26 +1,26 @@
 # Getting Started
 
-During this course we will use **Thonny** to write **MicroPython** code to run on **micro:bits**. This section is about getting all three of these elements working together.
+During this course we will use **Thonny** to write **MicroPython** code for **micro:bits**. This section shows how to set everything up.
 
 ## What is MicroPython
 
-MicroPython is a programming language based on Python. It is designed to run on small **microcontrollers**, which are small computer chips that are used in many electronic devices such as robots, sensors, and even some household appliances. Writing programs for microcontrollers is called **embedding programming**.
+MicroPython is a programming language based on Python. It is designed to run on small **microcontrollers**. Microcontrollers are tiny computer chips used in devices such as robots, sensors, and some household appliances. Writing programs for microcontrollers is called **embedded programming**.
 
 ## What is a micro:bit
 
-We will be using a educational microcontroller called a micro:bit. Micro:bits are small, pocket-sized computers that are designed to help people learn about coding and electronics. They have a variety of features, including buttons, a display, and sensors, that can be programmed to perform different tasks.
+We will use an educational microcontroller called a micro:bit. A micro:bit is a small, pocket-sized computer designed to help people learn coding and electronics. It has buttons, a display, and sensors that can be programmed to do different tasks.
 
 ![micro:bit](https://cdn.sanity.io/images/ajwvhvgo/production/dbc7a8e2d9e21015787f4dab1a84e731ae192ba9-800x326.png?q=95)
 
 ## What is Thonny
 
-For this course we will be using the Thonny IDE. Thonny is an educational IDE which has built in supporting for working with MicroPython and micro:bits. If you don't already have Thonny, download it from **[Thonny.org](https://thonny.org/)** and install it.
+For this course we will use the Thonny IDE. An IDE is an app for writing and running code. Thonny has built-in support for MicroPython and micro:bits. If you don't already have Thonny, download it from **[Thonny.org](https://thonny.org/)** and install it.
 
 ## Setup
 
 ### Prepare Thonny
 
-The first step in our setup is preparing Thonny to use MicroPython on the micro:bit.
+The first setup step is to tell Thonny to use MicroPython on the micro:bit.
 
 #### Connect micro:bit
 
@@ -34,11 +34,11 @@ By default, Thonny uses its own copy of Python 3 to run your Python scripts. For
 
 To change the interpreter:
 
-Choose **Tools** &rarr **Options**
+Choose **Tools** &rarr; **Options**
 
 ![options](assets/setup_options.png)
 
-Then click on **Interpreter**, then the **dropdown** &rarr; **MicroPython (BBC micro:bit)**
+Click **Interpreter**, then choose **MicroPython (BBC micro:bit)** from the dropdown.
 
 ![change interpreter 1](./assets/setup_interpreter_1.png)
 
@@ -48,7 +48,7 @@ Then click **OK**
 
 #### Change Thonny panels
 
-To work with the micro:bits, we need to access the files panel in Thonny. To do this:
+To work with files on the micro:bit, we need to show the **Files** panel in Thonny.
 
 Click **View** and make sure **Files** is selected.
 
@@ -57,19 +57,19 @@ Click **View** and make sure **Files** is selected.
 
 #### Installing MicroPython (optional)
 
-Finally, you may need to update or install MicroPython on the micro:bit. This will be necessary if the micro:bit has a different operating system installed or if its MicroPython is corrupted. 
+You may need to update or install MicroPython on the micro:bit. Do this if your teacher asks you to, or if the micro:bit is not working properly with Thonny.
 
-To do this, again go to the interpreter page like above.
+Go back to the **Interpreter** page.
 
 Then click on **Install or update MicroPython**
 
 ![install MicroPython](./assets/setup_install_1.png)
 
-Click the **Target volume dropdown** then select **MICROBIT** (your drive letter may be different). 
+Open the **Target volume** dropdown, then select **MICROBIT**. Your drive letter may be different.
 
 ![install MicroPython](./assets/setup_install_2.png)
 
-Then select the **MicroPython Variant dropdown** and select **BBC . micro:bit v2 (original simplified API)**
+Open the **MicroPython variant** dropdown, then select **BBC micro:bit v2 (original simplified API)**.
 
 ![install MicroPython](./assets/setup_install_3.png)
 
@@ -83,15 +83,15 @@ Wait until the progress says **Done** (1), then click **Close** (2)
 
 ## The IDE
 
-Thonny is now setup. Your UI should look similar to the one below.
+Thonny is now set up. Your screen should look similar to the one below.
 
 Some interesting points to note:
 
 1. This is your computer files panel. It shows the files on your computer.
 2. This is the micro:bit file panel. It shows the files that are on the micro:bit.
-3. The prompt in the Shell should indicate:
-   - your interpreter is MicroPython along with its version
-   - your processor is a micro:bit along with its version
+3. The prompt in the Shell should show:
+   - MicroPython and its version
+   - the micro:bit and its version
 4. This shows that you are connected to a micro:bit and the port it is connected to.
 
 ![install MicroPython](./assets/setup_ide.png)

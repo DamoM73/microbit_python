@@ -1,19 +1,19 @@
 # Micro:bit Module
 
-The micro:bit has built-in funtions that provide features beyond the input and output  compenents we have already explored. These functions are grouped together in the `microbit` module.
+The micro:bit has built-in functions for useful tasks we have not used yet. These functions are grouped in the `microbit` module. A module is a collection of code that you can import and use in your own program.
 
 ```{admonition} Documentation
 :class: important
-All the microbit module functions can be at **[BBC micro:bit MicroPython Microbit documentation](https://microbit-micropython.readthedocs.io/en/v2-docs/microbit.html#microbit.running_time)**.
+All the `microbit` module functions can be found in the **[BBC micro:bit MicroPython micro:bit documentation](https://microbit-micropython.readthedocs.io/en/v2-docs/microbit.html#microbit.running_time)**.
 ```
 
 ## Running Time
 
-The `running_time()` function measures how long the device has been running since the last power-on or reset. It returns the elapsed time in milliseconds.
+The `running_time()` function measures how long the micro:bit has been running since it was turned on or reset. It gives the time in milliseconds. There are `1000` milliseconds in one second.
 
 ### Running Time Demonstration
 
-The code below shows how to use the `running_time()` function to show it's current count in the terminal.
+The code below shows how to use `running_time()` to print the current time count in the terminal.
 
 ```{literalinclude} ./python_files/running_time_1/main.py
 :linenos:
@@ -21,7 +21,7 @@ The code below shows how to use the `running_time()` function to show it's curre
 
 ### Running Time Example
 
-The code belw shows how to use `running_time()` to create a 5 second countdown timer, that starts when button a is pressed.
+The code below uses `running_time()` to create a 5-second countdown timer. The timer starts when button **A** is pressed.
 
 ```{literalinclude} ./python_files/running_time_2/main.py
 :linenos:
@@ -29,7 +29,7 @@ The code belw shows how to use `running_time()` to create a 5 second countdown t
 
 ## Set Volume
 
-The `set_volume()` function adjusts the volume of the micro:bit's speaker. It takes a single argument, which is the volume level (0-255).
+The `set_volume()` function changes the volume of the micro:bit's speaker. Use a number from `0` to `255`, where `0` is silent and `255` is the loudest.
 
 ### Set Volume Demonstration
 
@@ -39,7 +39,7 @@ The `set_volume()` function adjusts the volume of the micro:bit's speaker. It ta
 
 ## Sleep
 
-The `sleep()` function pauses the execution of the program for a specified number of milliseconds. This is useful for creating delays in your code.
+The `sleep()` function pauses the program for a chosen number of milliseconds. Use it when you want the micro:bit to wait before doing the next instruction.
 
 ### Sleep Demonstration
 
@@ -49,7 +49,7 @@ The `sleep()` function pauses the execution of the program for a specified numbe
 
 ## Run Every
 
-The `run_every()` function allows you to schedule a function to be called at regular intervals. This lets your program perform a task again and again without stopping the rest of it from running.
+The `run_every()` function runs another function at regular time intervals. This lets your program repeat a task, such as updating a timer, while the rest of the program keeps running.
 
 ### Run Every Demonstration
 
@@ -59,7 +59,7 @@ The `run_every()` function allows you to schedule a function to be called at reg
 
 ### Run Every Example
 
-The code below shows how to use `run_every()` to create a countdown timer that reduces the time every second only when a button is pressed.
+The code below uses `run_every()` to create a countdown timer. The timer only counts down while a button is being pressed.
 
 ```{literalinclude} ./python_files/run_every_2/main.py
 :linenos:

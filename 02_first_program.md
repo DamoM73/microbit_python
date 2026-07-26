@@ -4,9 +4,9 @@ Before we create our first program, we need to understand how MicroPython works.
 
 ## main.py
 
-When a MicroPython microcontroller, like our micro:bit, is turned on, it looks for a file called `main.py` and automatically runs that file. The project can have other files, but it must have a `main.py` file.
+When a MicroPython microcontroller, like our micro:bit, is turned on, it looks for a file called `main.py` and runs that file. The project can have other files, but it must have a `main.py` file.
 
-This means every project will have a `main.py` file. That can become confusing for us and for the computer, so we need to keep our Python files organised.
+This means every project will have a `main.py` file. That can become confusing, so we need to keep our Python files organised.
 
 To achieve this, we will create a separate folder for each exercise.
 
@@ -16,7 +16,7 @@ Create a new folder on your laptop called **micro:bit**. Then open it in the Tho
 
 ![micro:bit folder](./assets/first_program_folder.png)
 
-Right-click in the file panel and choose **New directory...**
+Right-click in the file panel and choose **New directory...**. A directory is the same thing as a folder.
 
 ![new folder](./assets/first_program_new_folder.png)
 
@@ -27,7 +27,7 @@ In computing, directories and folders mean the same thing. They are containers f
 The word "directory" was used in older text-based operating systems. The word "folder" became common when computers started using graphical interfaces with folder icons.
 ```
 
-Give the new directory the name **first_program**.
+Name the new folder **first_program**.
 
 ![name folder](./assets/first_program_name_folder.png)
 
@@ -61,13 +61,13 @@ Throughout this course, we will use the **PRIMM** process to help us learn. **PR
 
 **Predict**: Before you run the code, write down what you think will happen.
 
-**Run**: Run the program and check your prediction. If your prediction was incorrect, how was the result different?
+**Run**: Run the program and check your prediction. If your prediction was not correct, how was the result different?
 
 **Investigate**: Go through the code and work out what each line does.
 
 **Modify**: Edit the code. Change it and see what results you get.
 
-**Make**: Use what you have learned to make a different program.
+**Make**: Use what you have learned to make your own program.
 ```
 
 Let's run through the **PRIMM** process now.
@@ -107,7 +107,7 @@ Time to **modify** the code and see what happens:
 
 ## Upload the code
 
-When you unplugged the micro:bit and plugged it back in, the program did not restart. This is a problem because microcontrollers are meant to run by themselves without being connected to a computer.
+When you unplugged the micro:bit and plugged it back in, the program did not restart. This is a problem because microcontrollers are often meant to run by themselves, without being connected to a computer.
 
 If you look at Thonny's file panel, you will see the problem: your code is on your laptop, not on the micro:bit.
 
@@ -127,10 +127,10 @@ You now have two copies of `main.py`. These files **do not sync**. If you make c
 
 The best way to keep files updated is to build a good working habit.
 
-I would suggest:
+Use this habit:
 
 - always edit the laptop copy of the file &rarr; this is your main copy
-- then upload the file to the micro:bit.
+- then upload the file to the micro:bit
 ```
 
 Now try unplugging your micro:bit and plugging it back in. The program works, but the micro:bit is still connected to your computer. That is because it needs power from your laptop.
@@ -139,4 +139,4 @@ Let's make your micro:bit run without the laptop.
 
 Get the battery back out of your kit. Unplug the micro:bit and plug the battery pack in (make sure the battery pack is turned on).
 
-**The micro:bit is free!**
+The micro:bit can now run without the laptop.
