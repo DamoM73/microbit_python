@@ -15,11 +15,18 @@ The micro:bit uses the LEDs in its display to sense how much light is shining on
 
 `read_light_level()` returns an integer between `0` and `255`. A larger number means more light.
 
-For example:
+1. Stop and close the current **main.py** file.
+2. Navigate to the **11_light** folder in Thonny and open the **main.py** file.
+
+You should see the code below:
 
 ```{literalinclude} ./python_files/11_light/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -29,7 +36,14 @@ For example:
 - **line 18** &rarr; waits 500 milliseconds before going back to the top of the loop.
 ```
 
-### Light Exercises
+### Light Exercise 1
 
-1. Create a program that checks the light level every 2 seconds. It should display a message showing whether the light level has increased (&uarr;) or decreased (&darr;).
-2. Create a program that measures the light level and turns on all the LEDs when the light level falls below `100`.
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **11_light_ex1** folder in Thonny.
+3. Create a program that checks the light level every 2 seconds. It should display a message showing whether the light level has increased (&uarr;) or decreased (&darr;).
+
+### Light Exercise 2
+
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **11_light_ex2** folder in Thonny.
+3. Create a program that measures the light level and turns on all the LEDs when the light level falls below `100`.

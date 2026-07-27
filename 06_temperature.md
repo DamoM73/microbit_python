@@ -13,11 +13,18 @@ Full details can be found at the **[BBC micro:bit MicroPython temperature docume
 
 To get a temperature reading, call the `temperature()` function.
 
-For example:
+1. Stop and close the current **main.py** file.
+2. Navigate to the **10_temp** folder in Thonny and open the **main.py** file.
+
+You should see the code below:
 
 ```{literalinclude} ./python_files/10_temp/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -27,7 +34,14 @@ For example:
 - **line 17** &rarr; scrolls the current temperature across the display.
 ```
 
-### Temperature Exercises
+### Temperature Exercise 1
 
-1. Create a program that checks the air temperature every 2 seconds and keeps track of the minimum and maximum temperatures. When button **A** is pressed, display the minimum temperature. When button **B** is pressed, display the maximum temperature.
-2. A comfortable room temperature for humans is usually between 20 and 22 degrees Celsius. Make your micro:bit monitor the room temperature and show a happy face if it is in that range. If the temperature is too high, show an up arrow. If it is too low, show a down arrow.
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **10_temp_ex1** folder in Thonny.
+3. Create a program that checks the air temperature every 2 seconds and keeps track of the minimum and maximum temperatures. When button **A** is pressed, display the minimum temperature. When button **B** is pressed, display the maximum temperature.
+
+### Temperature Exercise 2
+
+1. Stop and close the current **main.py** file. 
+2. Open the **main.py** file in the **10_temp_ex2** folder in Thonny.
+3. A comfortable room temperature for humans is usually between 20 and 22 degrees Celsius. Make your micro:bit monitor the room temperature and show a happy face if it is in that range. If the temperature is too high, show an up arrow. If it is too low, show a down arrow.
