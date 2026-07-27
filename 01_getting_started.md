@@ -95,3 +95,13 @@ Some interesting points to note:
 4. This shows that you are connected to a micro:bit and the port it is connected to.
 
 ![install MicroPython](./assets/setup_ide.png)
+
+## Tutorial files
+
+All the files we will use in this course are in this zip file: [Download](./python_files/microbit_tutorials.zip).
+
+Then extract the zip file in your **Year 8 Technologies folder**. 
+
+If successful, you should see a folder called **microbit_tutorials**. Inside that folder are all the files we will use in this course.
+
+Using the files panel in Thonny, navigate to the **microbit_tutorials** folder.
