@@ -22,13 +22,18 @@ Full details can be found at the **[BBC micro:bit MicroPython button.get_presses
 
 `get_presses()` counts how many times the button has been pressed. Restarting the micro:bit or calling this function will reset the count to `0`.
 
-Create a **main.py** file. Add the code below.
+1. Stop and close any main.py programs that are running on your micro:bit.
+2. navigate to the **05_button_get_press** folder in Thonny and open the **main.py** file.
+
+You should now see the code below:
 
 ```{literalinclude} ./python_files/05_button_get_press/main.py
 :linenos:
 ```
 
-**Predict** what you think will happen. Be specific. Then **run** the program.
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -39,9 +44,11 @@ Create a **main.py** file. Add the code below.
 - **line 18** &rarr; clears the display.
 ```
 
-### Get Presses Exercises
+### Get Presses Exercise 1
 
-1. Create a program that challenges the player to press a button a certain number of times before time runs out.
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **05_button_get_press_ex1** folder in Thonny.
+3. Create a program that challenges the player to press a button a certain number of times before time runs out.
 
 ## Is Pressed
 
@@ -54,13 +61,18 @@ Full details can be found at the **[BBC micro:bit MicroPython button.is_pressed 
 
 `is_pressed()` returns `True` if the button is being pressed right now. Otherwise, it returns `False`.
 
-Create a new file called **main.py**, and then add the following code:
+1. Stop and close any **main.py** programs that are running on your micro:bit.
+2. Navigate to the **06_button_is_pressed** folder in Thonny and open the **main.py** file.
+
+You should now see the code below:
 
 ```{literalinclude} ./python_files/06_button_is_pressed/main.py
 :linenos:
 ```
 
-**Predict** what you think will happen. Be specific. Then **run** the program.
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -76,9 +88,11 @@ Create a new file called **main.py**, and then add the following code:
 - **line 24** &rarr; clears the display after the loop ends.
 ```
 
-### Is Pressed Exercise
+### Is Pressed Exercise 1
 
-1. Create a program that tests the user's reaction time. It should:
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **06_button_is_pressed_ex1** folder in Thonny.
+3. Create a program that tests the user's reaction time. It should:
    - randomly choose which button to press: **A** or **B**
    - do a 3-2-1 countdown, then display the button to press
    - time how long it takes the user to press the correct button. **[ticks_ms()](https://microbit-micropython.readthedocs.io/en/latest/utime.html#utime.utime.ticks_ms)** may be helpful.
@@ -97,9 +111,18 @@ Full details can be found at the **[BBC micro:bit MicroPython button.was_pressed
 
 Calling this function clears the press state. This means the button must be pressed again before `was_pressed()` can return `True` again.
 
+1. Stop and close any **main.py** programs that are running on your micro:bit.
+2. Navigate to the **07_button_was_pressed** folder in Thonny and open the **main.py** file.
+
+You should now see the code below:
+
 ```{literalinclude} ./python_files/07_button_was_pressed/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -113,10 +136,17 @@ Calling this function clears the press state. This means the button must be pres
 - **line 22** &rarr; shows a sad face.
 ```
 
-### Was Pressed Exercise
+### Was Pressed Exercise 1
 
-1. Create a program that counts how many times button **A** is pressed. The count should start at `0`. Each time button **A** is pressed, the count should increase by `1`. Pressing button **B** should reset the count to `0`.
-2. Create a memory game that:
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **07_button_was_pressed_ex1** folder in Thonny.
+3. Create a program that counts how many times button **A** is pressed. The count should start at `0`. Each time button **A** is pressed, the count should increase by `1`. Pressing button **B** should reset the count to `0`.
+
+### Was Pressed Exercise 2
+
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **07_button_was_pressed_ex2** folder in Thonny.
+4. Create a memory game that:
    - randomly generates a 6-letter pattern using **A** and **B**
    - displays the pattern to the user
    - asks the user to repeat the pattern

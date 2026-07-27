@@ -45,9 +45,10 @@ Another way to display characters is to use the `show()` function.
 
 Before we can run the code below, we need to:
 
-- stop the micro:bit by clicking Thonny's **stop** button
-- navigate back to the **micro:bit** directory and create a new directory called **display_show**.
-- navigate to the **display_show** directory.
+1. stop the micro:bit by clicking Thonny's **stop** button
+2. close **main.py**
+3. navigate back to the **micro:bit** directory and open the **02_display_show** folder
+4. double-click the **main.py** file to open it in Thonny
 
 Create a new file called **main.py** and add the code below.
 
@@ -55,7 +56,8 @@ Create a new file called **main.py** and add the code below.
 :linenos:
 ```
 
-**Predict** what you think the program will do. Be specific. For example, "pause for 2 seconds" is better than just "pause". Then **run** the program.
+1. **Predict** what you think the program will do. Be specific. For example, "pause for 2 seconds" is better than just "pause". 
+2. Then **run** the program.
 
 ![display show](./assets/display_show.gif)
 
@@ -72,16 +74,25 @@ Create a new file called **main.py** and add the code below.
 
 Time to **modify** the code and see what happens:
 
-### Text Exercises
+### Show Exercise 1
 
-1. Can you make it display a different message? For example:
+1. Open the **main.py** file in the **02_display_show_ex1** folder in Thonny.
+2. Can you make it display a different message? For example:
 
 ![Display Text Exercise 1](./assets/display_text_ex1.gif)
 
-2. Can you change the time between each character? For example:
+### Show Exercise 2
+
+1. Stop and close the current **main.py** file. 
+2. Open the **main.py** file in the **02_display_show_ex2** folder in Thonny. 
+3. Can you change the time between each character? For example:
 
 ![Display Text Exercise 2](./assets/display_text_ex2.gif)
 
+### Show Exercise 3
+
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **02_display_show_ex3** folder in Thonny. 
 3. Using the details in the **display.show docs**, can you display the same message without the `while True` loop?
 
 ![Display Text Exercise 3](./assets/display_text_ex3.gif)
@@ -95,15 +106,18 @@ The micro:bit has a wide range of **[pre-set images](https://microbit-micropytho
 
 You can also use the `display.show()` function to display pre-set images.
 
-Again, since we are making a new program, create a new folder called **display_images** in the **micro:bit** folder. Then create a new **main.py** file.
+1. Stop and close the **main.py** file in the **02_display_show** folder.
+2. Navigate to the **03_display_images** folder in Thonny.
+3. Double-click the **main.py** file to open it in Thonny.
 
-Add the following code to the file.
+You should see the code below:
 
 ```{literalinclude} ./python_files/03_display_images/main.py
 :linenos:
 ```
 
-**Predict** what you think the program will do. Remember to be specific. Then **run** the program.
+1. **Predict** what you think the program will do. Remember to be specific. Then
+2. **Run** the program.
 
 ![display image](./assets/display_image.gif)
 
@@ -115,17 +129,27 @@ Add the following code to the file.
 
 Time to **modify** the code:
 
-### Image Exercises
+### Image Exercise 1
 
-1. Can you change the heartbeat animation so it looks more like an **[actual heartbeat](https://www.youtube.com/watch?v=gJpT_wHZeF8)**? Like this:
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **03_display_images_ex1** folder in Thonny.
+3. Change the heartbeat animation so it looks more like an **[actual heartbeat](https://www.youtube.com/watch?v=gJpT_wHZeF8)**? Like this:
 
 ![display image ex1](./assets/display_image_ex1.gif)
-
-2. Can you make the display show a clock face progressing from 1 to 12? Like this:
+  
+### Image Exercise 2
+  
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **03_display_images_ex2** folder in Thonny.
+3. Use the **[pre-set images](https://microbit-micropython.readthedocs.io/en/latest/image.html#attributes)** to make the display show a clock face progressing from 1 to 12? Like this:
 
 ![display image ex2](./assets/display_image_ex2.gif)
 
-3. Can you make the display show a square spinning? Like this:
+### Image Exercise 3
+
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **03_display_images_ex3** folder in Thonny.
+3. Use the **[pre-set images](https://microbit-micropython.readthedocs.io/en/latest/image.html#attributes)** to make the display show a square spinning? Like this:
 
 ![display image ex3](./assets/display_image_ex3.gif)
 
@@ -148,15 +172,18 @@ You can also directly control the individual LEDs on the display. The image belo
 
 Each pixel can be set to a value from `0` (off) to `9` (brightest).
 
-To explore this, we will make a new program. Create a new folder called **display_custom** in the **micro:bit** folder. Then create a new **main.py** file.
+1. Stop and close the **main.py** file in the **03_display_images** folder.
+2. Navigate to the **04_display_custom** folder in Thonny.
+3. Double-click the **main.py** file to open it in Thonny.
 
-Add the code below, save it, and then run it on the micro:bit.
+You should see the code below:
 
 ```{literalinclude} ./python_files/04_display_custom/main.py
 :linenos:
 ```
 
-**Predict** what you think the program will do. Remember to be specific. Then **run** the program.
+1. **Predict** what you think the program will do. Remember to be specific.
+2. **Run** the program.
 
 ![display custom](./assets/display_custom.gif)
 
@@ -177,15 +204,25 @@ This code uses nested loops. A nested loop is a loop inside another loop.
 
 Time to **modify** the code:
 
-### Custom Exercises
+### Custom Exercise 1
 
-1. What happens if you remove the `sleep(50)` statement? Why do you think this happens?
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **04_display_custom_ex1** folder in Thonny.
+3. What happens if you remove the `sleep(50)` statement? Why do you think this happens?
 
-2. Can you change the code so it moves across the rows instead of down the columns? 
+### Custom Exercise 2
+
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **04_display_custom_ex2** folder in Thonny.
+3. Can you change the code so it moves across the rows instead of down the columns? 
 
 ![display custom ex2](./assets/display_custom_ex2.gif)
 
-3. Can you create this smiley face with glasses? The **[Image class](https://microbit-micropython.readthedocs.io/en/latest/image.html#microbit.Image)** might help.
+### Custom Exercise 3
+
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **04_display_custom_ex3** folder in Thonny.
+3. 4. Can you create this smiley face with glasses? The **[Image class](https://microbit-micropython.readthedocs.io/en/latest/image.html#microbit.Image)** might help.
 
 ![display custom ex3](./assets/display_custom_ex3.png)
 

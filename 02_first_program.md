@@ -6,17 +6,17 @@ Before we create our first program, we need to understand how MicroPython works.
 
 When a MicroPython microcontroller, like our micro:bit, is turned on, it looks for a file called `main.py` and runs that file. The project can have other files, but it must have a `main.py` file.
 
-This means every project will have a `main.py` file. That can become confusing, so we need to keep our Python files organised.
+This means every project will have a `main.py` file. This causes a probelm because folders cannot have two files with the same name. If we put all our exercises in the same folder, we will not be able to have a `main.py` file for each exercise.
 
-To achieve this, we will create a separate folder for each exercise.
+To solve this problem we will create a new folder for each exercise. Each folder will have its own `main.py` file. This is the reason we created the **microbit_tutorials** folder in the previous section. Inside that folder there is a folder for each exercise, and each exercise folder has its own `main.py` file.
 
-## Creating Folders
+## Creating additional programs (optional)
 
-Create a new folder on your laptop called **micro:bit**. Then open it in the Thonny file panel.
+If you want to program in addition to our tutorial programs, you will need to create your own folders.
 
-![micro:bit folder](./assets/first_program_folder.png)
+### Creating Folders
 
-Right-click in the file panel and choose **New directory...**. A directory is the same thing as a folder.
+To create a new folder in Thonny right-click in the file panel and choose **New directory...**. A directory is the same thing as a folder.
 
 ![new folder](./assets/first_program_new_folder.png)
 
@@ -27,15 +27,7 @@ In computing, directories and folders mean the same thing. They are containers f
 The word "directory" was used in older text-based operating systems. The word "folder" became common when computers started using graphical interfaces with folder icons.
 ```
 
-Name the new folder **first_program**.
-
-![name folder](./assets/first_program_name_folder.png)
-
-You will now see your **first_program** folder in the files panel. Double-click it to open that folder.
-
-![open folder](./assets/first_program_open_folder.png)
-
-## Create the New File
+### Create the New File
 
 Now we will create a new file. First, check that you are in the correct folder (1). Then right-click and choose **New file...** (2).
 
@@ -45,9 +37,10 @@ Name the file **main.py** and click **OK**.
 
 ![name file](./assets/first_program_name_file.png)
 
-## Add the Code
+## Running your first program
 
-Enter the code below into your new **main.py** file:
+1. Navigate to the **01_first_program** folder in Thonny. 
+2. You should see a file called **main.py**. Double-click it to open it. You should see the code below:
 
 ```{literalinclude} ./python_files/01_first_program/main.py
 :linenos:
@@ -89,21 +82,31 @@ Did you predict that `"Hello world!"` would scroll across the display before sho
 
 For more details, check the **[display.scroll docs](https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.scroll)**.
 
-### First Program Exercises
+## First Program Exercises
 
 Time to **modify** the code and see what happens:
 
-1. Can you make it display a different message? For example:
+### Exercise 1
+
+1. Navigate to the **01_first_program_ex1** folder in Thonny and open the **main.py** file.
+2. Adjust the code to make it display a different message? For example:
 
 ![first_program displayed](./assets/first_program_ex1.gif)
 
-2. Are there other shapes you can display? For example:
+### Exercise 2
+
+1. Stop **main.py** then navigate to the **01_first_program_ex2** folder in Thonny and open the **main.py** file.
+2. Adjust so that is displays other shapes. For example:
 
 ![first_program displayed](./assets/first_program_ex2.gif)
 
-3. What happens if you remove the `while` statement? Why?
+### Exercise 3
 
-4. What happens if you unplug the micro:bit and plug it back in again? Why?
+What happens if you remove the `while` statement? Why?
+
+### Exercise 4
+
+What happens if you unplug the micro:bit and plug it back in again? Why?
 
 ## Upload the code
 
