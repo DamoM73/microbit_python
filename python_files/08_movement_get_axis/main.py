@@ -9,12 +9,10 @@ from microbit import *
 while True:
     # read sensor data
     x_reading = accelerometer.get_x()
-    y_reading = accelerometer.get_y()
-    z_reading = accelerometer.get_z()
     
     # process data
     
     # output data
-    print(x_reading, y_reading, z_reading)
+    print(x_reading)
     
     sleep(100)

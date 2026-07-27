@@ -21,11 +21,18 @@ The micro:bit accelerometer measures movement along three axes. An axis is an im
 
 There is a method for each axis. Each method returns a positive or negative number measured in milli-gs. When the reading is `0`, the micro:bit is level on that axis.
 
-Below is an example for the x-axis:
+1. Stop and close the current **main.py** file.
+2. Navigate to the **08_movement_get_axis** folder in Thonny and open the **main.py** file.
+
+You should see the code below, it is an example for the x-axis:
 
 ```{literalinclude} ./python_files/08_movement_get_axis/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -39,13 +46,20 @@ Below is an example for the x-axis:
 
 ### Get values
 
-You can also get a tuple containing the x, y, and z values from the micro:bit:
+You can also get a tuple containing the x, y, and z values from the micro:bit.
 
-Below is an example:
+1. Stop and close the current **main.py** file.
+2. Navigate to the **08_movement_get_values** folder in Thonny and open the **main.py** file.
+
+You should see the code below:
 
 ```{literalinclude} ./python_files/08_movement_get_values/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -63,10 +77,21 @@ Below is an example:
 Tuples in Python are like lists, but you cannot change their values after they are created. They are useful for storing a group of items that should stay the same. You create a tuple by putting the items inside parentheses, separated by commas, like this: `my_tuple = (1, 2, 3)`.
 ```
 
-### Movement Exercises
+### Movement Exercise 1
 
-1. Change the x-axis example above to show the value for the y-axis.
-2. Change the x-axis example above to show the value for the z-axis.
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **08_movement_get_values_ex1** folder in Thonny.
+3. Change the code to show the value for the y-axis.
+
+### Movement Exercise 2
+
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **08_movement_get_values_ex2** folder in Thonny.
+3. Change the code to show the value for the z-axis.
+
+### Movement Exercise 3
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **08_movement_get_values_ex3** folder in Thonny.
 3. Make a levelling device that shows `-` if the x-axis is level, `L` if the left side is too high, or `R` if the right side is too high.
 
 ## Gestures
@@ -79,11 +104,18 @@ MicroPython can recognise these gestures: `up`, `down`, `left`, `right`, `face u
 
 You can get the current gesture by using the `current_gesture()` method, which returns a string.
 
-Below is an example for displaying the current gesture:
+1. Stop and close the current **main.py** file.
+2. Navigate to the **09_gestures_current** folder in Thonny and open the **main.py** file.
+
+You should see the code below:
 
 ```{literalinclude} ./python_files/09_gestures_current/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -97,11 +129,18 @@ Below is an example for displaying the current gesture:
 
 The micro:bit can also give you a list of past gestures. It returns a tuple with the newest gesture first.
 
-Below is an example of `get_gestures()`:
+1. Stop and close the current **main.py** file.
+2. Navigate to the **09_gestures_get** folder in Thonny and open the **main.py** file.  
+
+You should see the code below:
 
 ```{literalinclude} ./python_files/09_gestures_get/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -117,11 +156,18 @@ Below is an example of `get_gestures()`:
 
 The `was_gesture()` method checks whether the micro:bit has recorded a specific gesture since the last check.
 
-Below is an example that checks if the micro:bit was shaken during the 3-second wait.
+1. Stop and close the current **main.py** file.
+2. Navigate to the **09_gestures_was** folder in Thonny and open the **main.py** file.
+
+You should see the code below that checks if the micro:bit was shaken during the 3-second wait.
 
 ```{literalinclude} ./python_files/09_gestures_was/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -135,8 +181,19 @@ Below is an example that checks if the micro:bit was shaken during the 3-second 
 - **line 24** &rarr; waits 500 milliseconds before going back to the top of the loop.
 ```
 
-### Gesture Exercises
+### Gesture Exercise 1
 
-1. Make the micro:bit display a happy face if it is face up, or display an angry face if it is not.
-2. Make a program that counts how many times the micro:bit has been shaken over a 5-second period.
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **09_gestures_was_ex1** folder in Thonny.
+3. Make the micro:bit display a happy face if it is face up, or display an angry face if it is not.
+
+### Gesture Exercise 2
+
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **09_gestures_was_ex2** folder in Thonny.
+3. Make a program that counts how many times the micro:bit has been shaken over a 5-second period.
+
+### Gesture Exercise 3
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **09_gestures_was_ex3** folder in Thonny.
 3. Make a program that waits until button **A** is pressed, and then reports if the micro:bit has experienced `3g`.
