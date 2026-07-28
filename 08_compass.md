@@ -23,11 +23,18 @@ The image below shows how the numbers match the compass directions: North, South
 
 ![compass headings](assets/compass_headings.png)
 
-The code below shows `heading()` in action:
+1. Stop and close the current **main.py** file.
+2. Navigate to the **12_heading** folder in Thonny and open the **main.py** file.
+
+You should see the code below:
 
 ```{literalinclude} ./python_files/12_heading/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -37,10 +44,17 @@ The code below shows `heading()` in action:
 - **line 18** &rarr; waits 500 milliseconds before going back to the top of the loop.
 ```
 
-### Heading Exercises
+### Heading Exercise 1
 
-1. Make a program that displays `N` when the micro:bit is pointing North.
-2. Improve the last program so it shows the 8 compass directions from the image above when button **A** is pressed.
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **12_heading_ex1** folder in Thonny.
+3. Make a program that displays `N` when the micro:bit is pointing North.
+
+### Heading Exercise 2
+
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **12_heading_ex2** folder in Thonny.
+3. Improve the last program so it shows the 8 compass directions from the image above when button **A** is pressed.
 
 ## Magnetic Strength
 
@@ -48,11 +62,18 @@ The magnetometer measures magnetic fields. When it measures the Earth's magnetic
 
 The `get_field_strength()` method returns the strength of the magnetic field around the micro:bit in nanoteslas.
 
-Run the program below and use the magnet in your kit to change the value.
+1. Stop and close the current **main.py** file.
+2. Navigate to the **13_mag_strength** folder in Thonny and open the **main.py** file.
+
+You should see the code below:
 
 ```{literalinclude} ./python_files/13_mag_strength/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -62,7 +83,14 @@ Run the program below and use the magnet in your kit to change the value.
 - **line 18** &rarr; waits 500 milliseconds before going back to the top of the loop.
 ```
 
-### Magnetic Strength Exercises
+### Magnetic Strength Exercise 1
 
-1. Change the magnetic strength example above so it displays microteslas with no decimal places.
-2. Make a program that shows a smiley face if the magnet is touching the right side of the micro:bit. Otherwise, it should show an angry face.
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **13_mag_strength_ex1** folder
+3. Change the code so it displays microteslas with no decimal places.
+
+### Magnetic Strength Exercise 2
+
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **13_mag_strength_ex2** folder
+3. Make a program that shows a smiley face if the magnet is touching the right side of the micro:bit. Otherwise, it should show an angry face.
