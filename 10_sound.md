@@ -20,11 +20,20 @@ MicroPython on the BBC micro:bit can play music and sound through the built-in s
 
 ### Built-in tunes
 
-Notice that we import the music module. It contains methods used to make and control sound. For example:
+Notice that we import the music module. It contains methods used to make and control sound.
+
+1. Stop and close the current **main.py** file.
+2. Navigate to the **15_music_builtin** folder in Thonny and open the **main.py** file.
+
+You should see the code below:
 
 ```{literalinclude} ./python_files/15_music_builtin/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -57,11 +66,20 @@ NOTE[octave][:duration]
 
 For example, `"A1:4"` means note `A`, octave `1`, duration `4`.
 
-Make a list of notes to create a melody. This is similar to creating an animation with a list of images. For example, this code plays the opening of "Frere Jacques":
+Make a list of notes to create a melody. This is similar to creating an animation with a list of images. For example, this code plays the opening of "Frere Jacques".
+
+1. Stop and close the current **main.py** file.
+2. Navigate to the **15_music_custom** folder in Thonny and open the **main.py** file.
+
+You should see the code below:
 
 ```{literalinclude} ./python_files/15_music_custom/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -72,13 +90,22 @@ Make a list of notes to create a melody. This is similar to creating an animatio
 
 ### Sound Effects
 
-MicroPython lets you make tones that are not musical notes. For example, this code creates a siren sound effect:
+MicroPython lets you make tones that are not musical notes. 
+
+1. Stop and close the current **main.py** file.
+2. Navigate to the **15_music_sound_effects** folder in Thonny and open the **main.py** file.
+
+You should see the code below, which creates a siren sound effect:
 
 ```{literalinclude} ./python_files/15_music_sound_effects/main.py
 :linenos:
 ```
 
 This example uses the `music.pitch()` method. It needs a frequency. For example, `440` is the frequency of the note A used by many musicians when tuning instruments.
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -101,11 +128,20 @@ Full details can be found at the **[BBC micro:bit MicroPython Speech documentati
 
 ### Say
 
-The simplest way to get the micro:bit to speak is to import the speech module and use the `say()` function like this:
+The simplest way to get the micro:bit to speak is to import the speech module and use the `say()`.
+
+1. Stop and close the current **main.py** file.
+2. Navigate to the **15_speech_say** folder in Thonny and open the **main.py** file.
+
+You should see the code below:
 
 ```{literalinclude} ./python_files/15_speech_say/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -124,11 +160,18 @@ Together, these settings control the **timbre** of the voice. Timbre means the s
 
 To adjust the settings, pass them into the `say()` function. **[More details can be found in the speech module API documentation](https://microbit-micropython.readthedocs.io/en/latest/speech.html#timbre)**.
 
+1. Stop and close the current **main.py** file.
+2. Navigate to the **15_speech_say_2** folder in Thonny and open the **main.py** file.
+
 This example changes the voice settings:
 
 ```{literalinclude} ./python_files/15_speech_say_2/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -145,11 +188,18 @@ When you use phonemes, you write the word the way it sounds, not the way it is n
 
 A **[full list of phonemes](https://microbit-micropython.readthedocs.io/en/latest/speech.html#phonemes)** is available in the speech documentation. You can also pass English words into the **[translate function](https://microbit-micropython.readthedocs.io/en/latest/speech.html#speech.translate)**. It returns a first version of the phonemes that the speech synthesiser would use. You can then edit the result to improve how it sounds.
 
+1. Stop and close the current **main.py** file.
+2. Navigate to the **15_speech_pronounce** folder in Thonny and open the **main.py** file.
+
 The `pronounce()` function is used for phoneme output like this:
 
 ```{literalinclude} ./python_files/15_speech_say_3/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -165,11 +215,20 @@ The mapping from pitch numbers to musical notes is shown below:
 
 ![speech-pitch](assets/speech-pitch.jpg)
 
-Annotations work by adding a hash sign (`#`) and a pitch number before the phoneme. The pitch stays the same until a new annotation is given. For example, this code makes MicroPython sing a scale:
+Annotations work by adding a hash sign (`#`) and a pitch number before the phoneme. The pitch stays the same until a new annotation is given. 
+
+1. Stop and close the current **main.py** file.
+2. Navigate to the **15_sing** folder in Thonny and open the **main.py** file.
+
+In this example, the code makes MicroPython sing a scale:
 
 ```{literalinclude} ./python_files/15_sing/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -204,7 +263,10 @@ The microphone can respond to built-in sound events based on how loud the sound 
 - `microbit.SoundEvent.QUIET` &rarr; sound changes from loud to quiet
 - `microbit.SoundEvent.LOUD` &rarr; sound changes from quiet to loud
 
-For example:
+1. Stop and close the current **main.py** file.
+2. Navigate to the **15_microphone_1** folder in Thonny and open the **main.py** file.
+
+You should see the code below:
 
 ```{literalinclude} ./python_files/15_microphone_1/main.py
 :linenos:
@@ -214,14 +276,26 @@ For example:
 
 The microphone can also give a sound level reading from `0` to `255`.
 
-For example:
+1. Stop and close the current **main.py** file.
+2. Navigate to the **15_microphone_2** folder in Thonny and open the **main.py** file.
+
+You should see the code below:
 
 ```{literalinclude} ./python_files/15_microphone_2/main.py
 :linenos:
 ```
 
-## Sound exercises
+## Sound exercise 1
+1. Stop and close the current **main.py** file.
+2. Navigate to the **15_sound_ex1** folder in Thonny and open the **main.py** file.
+3. Create a program that plays your own tune
 
-1. Create a program that plays your own tune
-2. Create a program that sings the College Song
+## Sound exercise 2
+1. Stop and close the current **main.py** file. 
+2. Navigate to the **15_sound_ex2** folder in Thonny and open the **main.py** file.
+3. Create a program that sings the College Song
+
+## Sound exercise 3
+1. Stop and close the current **main.py** file.   
+2. Navigate to the **15_sound_ex3** folder in Thonny and open the **main.py** file.
 3. Create a program that lights up the display based on how loud the sound is

@@ -23,19 +23,45 @@ When a micro:bit receives a message, it is placed in a message **queue**. A comp
 
 ## Example
 
-The example below shows how radio messages work. One micro:bit sends a message, and the other micro:bit displays an image. Run the same code on two micro:bits.
+The example below shows how radio messages work. One micro:bit sends a message, and the other micro:bit displays an image. 
+
+On two seprate micro:bits:
+1. Stop and close the current **main.py** file.
+2. open the **main.py** file in the **16_radio** folder in Thonny. 
+   
+You should see the code below:
 
 ```{literalinclude} ./python_files/16_radio/main.py
 :linenos:
 ```
 
-## Radio Exercises
+## Radio Exercise 1
 
-1. Move an image between two micro:bits when one micro:bit is shaken.
-2. Use the micro:bit radio feature to send a private yes or no answer.
+On two separate micro:bits:
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **16_radio_exercise_1** folder in Thonny.
+3. Write code to move an image between two micro:bits when one micro:bit is shaken.
+
+## Radio Exercise 2
+
+On two separate micro:bits:
+1. Stop and close the current **main.py** file. 
+2. Open the **main.py** file in the **16_radio_exercise_2** folder in Thonny.
+3. Write code to use the micro:bit radio feature to send a private yes or no answer.
    - Choose either **yes** or **no** and send it to another micro:bit.
    - Display the answer on the other micro:bit for half a second.
    - Use **[`radio.config`](https://microbit-micropython.readthedocs.io/en/v2-docs/radio.html#radio.config)** to choose a group so other nearby micro:bits do not receive your message.
-3. Use two micro:bits to display the outdoor and indoor temperatures.
-   - The **outdoor micro:bit** should take a temperature reading and transmit it every 5 seconds.
-   - The **indoor micro:bit** should display the indoor temperature when button **A** is pressed, or the outdoor temperature when button **B** is pressed.
+
+## Radio Exercise 3
+
+On one micro:bit:
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **16_radio_exercise_3/inside** folder in Thonny.
+3. Write code to display the indoor temperature when button **A** is pressed.
+
+On a differnt micro:bit:
+1. Stop and close the current **main.py** file.
+2. Open the **main.py** file in the **16_radio_exercise_3/outside** folder in Thonny.
+3. Write code to take a temperature reading and transmit it every 5 seconds.
+
+ Place the outside micro:bit outside and the inside micro:bit inside. When you press button **A** on the inside micro:bit, it should display the temperature reading from the inside micro:bit. When you press button **B**, it should display the outdoor temperature.
