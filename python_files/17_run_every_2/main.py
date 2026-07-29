@@ -6,15 +6,15 @@ def reduce_time():
     it does depends on running variable set in the main program
     '''
     
-    global timer, running           # allow function to change main program variables
+    global timer, running
     
-    if running:                     # only reduce time if running is True
+    if running:
         timer = timer - 1
         if timer == 0:
             display.show(Image.NO)
             sleep(1000)
             running = False
-    else:                           # reset timer when not running is not True
+    else:
         timer = 5
     
 
@@ -26,7 +26,7 @@ running = False
 timer = 5
 
 # --- RUNNING
-run_every(reduce_time,s=1)          # runs reduce_time() every second
+run_every(reduce_time,s=1)
 
 while True:
     # read data

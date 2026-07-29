@@ -1,11 +1,16 @@
 # running_time()
 from microbit import *
 
-'''
-The microbit has a very simple timing mechanism called running_time().
-It keeps a running count of the number of the time since
-the micro:bit started in milliseconds.
-'''
+# --- SETUP
+# start sensors
 
+# store variables
+
+# --- RUNNING
 while True:
-    print(running_time())                   # prints the current running time
+    # read sensor data
+    time = running_time()
+    # process data
+    
+    # output data
+    print(time)

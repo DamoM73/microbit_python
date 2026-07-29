@@ -1,7 +1,7 @@
 from microbit import *
 import music
 
-def beep():                             # the function that will be called
+def beep():
     music.pitch(880,250)
 
 # --- SETUP
@@ -10,7 +10,7 @@ def beep():                             # the function that will be called
 # store vairables
 
 # --- RUNNING
-run_every(beep, s=1)                    # sets beep to be called every second
+run_every(beep, s=1)
 
 # this is the main program that will 
 # run independent of the beeping
