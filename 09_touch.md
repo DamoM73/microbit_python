@@ -15,11 +15,18 @@ The logo at the top of the micro:bit is a capacitive touch button.
 
 Calling `pin_logo.is_touched()` returns `True` if the logo is being touched.
 
-For example:
+1. Stop and close the current **main.py** file.
+2. Navigate to the **14_touch** folder in Thonny and open the **main.py** file.
+
+You should see the code below:
 
 ```{literalinclude} ./python_files/14_touch/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -34,11 +41,18 @@ For example:
 
 Pins 0, 1, and 2 can also work as touch inputs, but they need to be set up first.
 
-For example:
+1. Stop and close the current **main.py** file.
+2. Navigate to the **14_touch_pins** folder in Thonny and open the **main.py** file.
+
+You should see the code below:
 
 ```{literalinclude} ./python_files/14_touch_pins/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 ```{admonition} Code explanation
 :class: notice
@@ -50,7 +64,8 @@ For example:
 - **line 11** &rarr; waits for 10 milliseconds 
 ```
 
-## Touch exercises
+## Touch exercise 1
 
-1. Draw one pixel on the screen at position `(2, 2)`. Make the pixel move right if pin 2 is touched, or left if pin 0 is touched.
-2. Improve the program so the pixel wraps around to the other side of the screen instead of disappearing.
+1. Stop and close the current **main.py** file.
+2. Navigate to the **14_touch_ex1** folder in Thonny and open the **main.py** file.
+3. Draw one pixel on the screen at position `(2, 2)`. Make the pixel move right if pin 2 is touched, or left if pin 0 is touched.
