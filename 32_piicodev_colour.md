@@ -28,18 +28,16 @@ The HSV model is really useful for identifying or classifying colours because th
 
 Plug your Micro:bit into the PiicoDev adapter (buttons LED matrix facing up), connect your module to the adapter via the PiicoDev cable and connect your Micro:bit to your computer with a USB lead.
 
-### Download the PiicoDev Modules and Example Code
+## RGB values
 
-Create a new folder for this example. Then download the following files and save them to your new folder (Right Click > "Save Link As").
-
-- **[`PiicoDev_VEML6040.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-VEML6040-MicroPython-Module/main/min/PiicoDev_VEML6040.py)** - The device driver.
-- **[`PiicoDev_Unified.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py)** - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules
-
-## Example code
-
-Copy the two example codes into `main.py` files and then **[upload](./12_piicodev_intro.md#uploading-to-the-microbit)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VEML6040.py` to the micro:bit and then **run** it.
-
-### RGB values
+1. Stop the program running on your micro:bit by clicking the **Stop** button in Thonny.
+2. Open the **21_piico_colour_example** folder in Thonny.
+3. Check that the following files are in the folder:
+   - `main.py`
+   - `PiicoDev_Unified.py` - Drives I2C communications for PiicoDev modules
+   - `PiicoDev_VEML6040.py` - The device driver for the PiicoDev Colour Sensor
+4. To run the program you will need to upload all three files to the micro:bit. To do this, select all three files in the file browser, right-click and select **Upload to micro:bit**.
+5. Open `main.py` and your should see the code below
 
 In this example code, `main.py` will printout a reading of the RGB values being picked up by the sensor.
 
@@ -47,7 +45,9 @@ In this example code, `main.py` will printout a reading of the RGB values being 
 :linenos:
 ```
 
-Exploring the important parts of that code:
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 - **line 1**: imports all the command fopr the microbit
 - **line 2**: imports all the commands for the atmospheric sensor from the PiicoDev_VEML6040 library
@@ -61,15 +61,25 @@ Exploring the important parts of that code:
 
 ### HSV Example
 
-Change the code in `main.py` to the same as the code below (make sure that the indentation of lines 27-30 is correct). This code will get a reading and classify what the sensor is looking at by using the values in the `COLOURS` dictionary.
 
-**[Upload](./12_piicodev_intro.md#uploading-to-the-microbit)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VEML6040.py` to the micro:bit and then **run** it.
+1. Stop the program running on your micro:bit by clicking the **Stop** button in Thonny.
+2. Open the **21_piico_colour_example_2** folder in Thonny.
+3. Check that the following files are in the folder:
+   - `main.py`
+   - `PiicoDev_Unified.py` - Drives I2C communications for PiicoDev modules
+   - `PiicoDev_VEML6040.py` - The device driver for the PiicoDev Colour Sensor
+4. To run the program you will need to upload all three files to the micro:bit. To do this, select all three files in the file browser, right-click and select **Upload to micro:bit**.
+5. Open `main.py` and your should see the code below
+
+This code will get a reading and classify what the sensor is looking at by using the values in the `COLOURS` dictionary.
 
 ```{literalinclude} ./python_files/21_piico_colour_example_2/main.py
 :linenos:
 ```
 
-Exploring the important parts of that code:
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 - **line 1**: imports all the command fopr the microbit
 - **line 2**: imports all the commands for the atmospheric sensor from the PiicoDev_VEML6040 library
@@ -125,7 +135,13 @@ hues={
 min_brightness=0
 ```
 
-## Exercises
+## Piicodev Colour Exercise 1
 
-1. Write a program that will print the full return dictionary of a `readRGB` every second
-2. Write a program that will print the full return dictionary of a `readHSV` every second
+1. Stop the program running on your micro:bit by clicking the **Stop** button in Thonny.
+2. Open the **21_piico_colour_ex1** folder in Thonny.
+3. In **main.py**, write a program that will print the full return dictionary of a `readRGB` every second
+
+## Piicodev Colour Exercise 2
+1. Stop the program running on your micro:bit by clicking the **Stop** button in Thonny.
+2. Open the **21_piico_colour_ex2** folder in Thonny.
+3. In **main.py**, write a program that will print the full return dictionary of a `readHSV` every second

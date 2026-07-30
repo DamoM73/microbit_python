@@ -10,22 +10,23 @@ The PiicoDev Distance Sensor is a long-distance laser-ranging sensor that uses T
 
 Plug your Micro:bit into the PiicoDev adapter (buttons LED matrix facing up), connect your sensor to the adapter via the PiicoDev cable and connect your Micro:bit to your computer with a USB lead.
 
-### Download the PiicoDev Modules and Example Code
-
-Create a new folder for this example. Then download the following files and save them to your new folder (Right Click > "Save Link As").
-
-- **[`PiicoDev_VL53L1X.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-VL53L1X-MicroPython-Module/main/min/PiicoDev_VL53L1X.py)** - The device driver.
-- **[`PiicoDev_Unified.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py)** - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules
-
 ## Example code
 
-Below is the example code provided my Core Electronics. Copy it into `main.py`:
-
-**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_VL53L1X.py` to the micro:bit and then **run** it.
+1. Stop the program running on your micro:bit by clicking the **Stop** button in Thonny.
+2. Open the **22_piico_distance_example** folder in Thonny.
+3. Check that the following files are in the folder:
+   - `main.py`
+   - `PiicoDev_Unified.py` - Drives I2C communications for PiicoDev modules
+   - `PiicoDev_VL53L1X.py` - The device driver for the PiicoDev Distance Sensor
+4. To run the program you will need to upload all three files to the micro:bit. To do this, select all three files in the file browser, right-click and select **Upload to micro:bit**.
+5. Open `main.py` and your should see the code below
 
 ```{literalinclude} ./python_files/22_piico_distance_example/main.py
 :linenos:
 ```
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 Lets look at the important parts of that code:
 
@@ -47,6 +48,8 @@ Return the distance to object in front of sensor in mm up to 4000
 | --- | --- | --- | --- |
 | returned | int | mm | Range |
 
-## Exercise
+## Piicodev Distance Exercise 1
 
-1. Make a program that displays a distance reading on the micro:bit when button **A** is pressed
+1. Stop the program running on your micro:bit by clicking the **Stop** button in Thonny.
+2. Open the **22_piico_distance_ex1** folder in Thonny.
+3. In **main.py**, write a program that displays a distance reading on the micro:bit when button **A** is pressed.
