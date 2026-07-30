@@ -10,23 +10,24 @@ The PiicoDev Atmospheric Sensor allows you to easily measure barometric pressure
 
 Plug your Micro:bit into the PiicoDev adapter (buttons LED matrix facing up), connect your module to the adapter via the PiicoDev cable and connect your Micro:bit to your computer with a USB lead.
 
-### Download the PiicoDev Modules and Example Code
+## Checking the files
 
-Create a new folder for this example. Then download the following files and save them to your new folder (Right Click > "Save Link As").
-
-- **[`PiicoDev_BME280.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-BME280-MicroPython-Module/main/min/PiicoDev_BME280.py)** - The device driver.
-- **[`PiicoDev_Unified.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py)** - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules
-** - an example script for this PiicoDev Sensor
-
-## Example code
-
-Below is the example code provided my Core Electronics in the `main.py`.
-
-**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py` and `PiicoDev_BME280.py` to the micro:bit and then **run** it.
+1. Stop the program running on your micro:bit by clicking the **Stop** button in Thonny.
+2. Open the **20_piico_atmosphere** folder in Thonny.
+3. Check that the following files are in the folder:
+   - `main.py`
+   - `PiicoDev_Unified.py` - Drives I2C communications for PiicoDev modules
+   - `PiicoDev_BME280.py` - The device driver for the PiicoDev Atmospheric Sensor
+4. To run the program you will need to upload all three files to the micro:bit. To do this, select all three files in the file browser, right-click and select **Upload to micro:bit**.
+5. Open `main.py` and your should see the code below
 
 ```{literalinclude} ./python_files/20_piico_atmosphere/main.py
 :linenos:
 ```
+
+1. **Predict** what you think will happen. Be specific.
+2. **Run** the program.
+3. Time to **investigate** the code. What does each line do?
 
 Lets look at the important parts of that code:
 
@@ -66,9 +67,14 @@ Below are the different commands available for the Atmospheric Sensor
 | returned 3rd | float | Relative humidity (%) |
 </div>
 
-## Exercises
-
-1. Have the micro:bit display to the nearest whole number:
+## Piico Atmospheric Sensor Exercise 1
+1. Stop the program running on your micro:bit by clicking the **Stop** button in Thonny.
+2. Open the **20_piico_atmosphere_ex1** folder in Thonny.
+3. Edit the `main.py` file so that the micro:bit display to the nearest whole number:
    - temperature when button **A** is pressed
    - humidity when button **B** is pressed
-2. Set the micro:bit so upon pressing button **A** it will display the change in altitude from the last time button **A** was pressed.
+
+## Piico Atmospheric Sensor Exercise 2
+1. Stop the program running on your micro:bit by clicking the **Stop** button in Thonny.
+2. Open the **20_piico_atmosphere_ex2** folder in Thonny  
+3. Edit the `main.py` file so that the micro:bit upon pressing button **A** it will display the change in altitude from the last time button **A** was pressed.
