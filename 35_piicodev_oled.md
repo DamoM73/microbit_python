@@ -4,6 +4,8 @@
 
 The PiicoDev OLED Display Module is perfect for adding a graphical display to your project. The monochrome white-on-black display provides a sharp image and fits a surprising amount of detail. Use this module to display text, draw shapes, animations, and even create plots.
 
+The PiicoDev OLED Module screen has 128 pixels x 64 pixels, with the `(0,0)` coordinate in the top lefthand corner.
+
 ## Getting set up
 
 ### Connect the PiicoDev module to your Micro:bit
@@ -14,20 +16,9 @@ Make sure that the ASW switch is in the off position (see below)
 
 ![OLED AWS Switch](assets/oled_asw_switch.jpg)
 
-### Download the PiicoDev Modules
-
-Create a new folder for this example. Then download the following files and save them to your new folder (Right Click > "Save Link As").
-
-- **[`PiicoDev_SSD1306.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-SSD1306-MicroPython-Module/main/min/PiicoDev_SSD1306.py)** - The device driver.
-- **[`PiicoDev_Unified.py`](https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-Unified/main/min/PiicoDev_Unified.py)** - The PiicoDev Unified Libraries: Drives I2C communications for PiicoDev modules
-- **[`font-pet-me-128.dat`](https://github.com/CoreElectronics/CE-PiicoDev-SSD1306-MicroPython-Module/raw/main/font-pet-me-128.dat)** - The font file
-- **[`piicodev-logo.pbm`](https://github.com/CoreElectronics/CE-PiicoDev-SSD1306-MicroPython-Module/raw/main/bitmap/piicodev-logo.pbm)** - PiicoDev Test Image
-
-## Examples
-
 The PiicoDev OLED Module screen has 128 pixels x 64 pixels, with the `(0,0)` coordinate in the top lefthand corner.
 
-### Line
+## Line Example
 
 There are several options for drawing simple lines.
 
@@ -37,15 +28,20 @@ There are several options for drawing simple lines.
 
 The following example draws horizontal and vertical lines from the same point and joins their ends with a two-point line. There is a small delay between the drawing of each line.
 
-**Create** a `main.py` file in the folder and add the code below.
-
-**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
+1. Stop the program running on your micro:bit by clicking the **Stop** button in Thonny.
+2. Open the **24_oled_example_1** folder in Thonny.
+3. Check that the following files are in the folder:
+   - `main.py`
+   - `PiicoDev_Unified.py` - Drives I2C communications for PiicoDev modules
+   - `PiicoDev_SSD1306.py` - The device driver for the PiicoDev OLED Module
+4. To run the program you will need to upload these three files to the micro:bit. To do this, select all three files in the file browser, right-click and select **Upload to micro:bit**.
+5. Open `main.py` and your should see the code below
 
 ```{literalinclude} ./python_files/24_oled_example_1/main.py
 :linenos:
 ```
 
-### Rectangle
+## Rectangle Example
 
 Draw an unfilled rectangle with `rect(x,y,width,height,colour)`
 
@@ -53,15 +49,20 @@ The top-left corner is specified by `x` and `y`. `width` and `height` set the wi
 
 The following example draws an unfilled rectangle to the left of the display, and a filled white rectangle to the right. A filled black rectangle is then drawn over the top.
 
-Change the code in `main.py` to the code below. 
-
-**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
+1. Stop the program running on your micro:bit by clicking the **Stop** button in Thonny.
+2. Open the **24_oled_example_2** folder in Thonny.
+3. Check that the following files are in the folder:
+   - `main.py`
+   - `PiicoDev_Unified.py` - Drives I2C communications for PiicoDev modules
+   - `PiicoDev_SSD1306.py` - The device driver for the PiicoDev OLED Module
+4. To run the program you will need to upload these three files to the micro:bit. To do this, select all three files in the file browser, right-click and select **Upload to micro:bit**.
+5. Open `main.py` and your should see the code below
 
 ```{literalinclude} ./python_files/24_oled_example_2/main.py
 :linenos:
 ```
 
-### Text
+## Text Example
 
 Display alphanumeric text with `text(string, x, y, colour)`, where;
 
@@ -71,15 +72,20 @@ Display alphanumeric text with `text(string, x, y, colour)`, where;
 
 The following example prints four lines. The first is a literal string, where the text to be printed is inserted into the function call. The second prints a string variable myString. The third and fourth print the value stored in a variable.
 
-Change the code in `main.py` to the code below. 
-
-**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
+1. Stop the program running on your micro:bit by clicking the **Stop** button in Thonny.
+2. Open the **24_oled_example_3** folder in Thonny.
+3. Check that the following files are in the folder:
+   - `main.py`
+   - `PiicoDev_Unified.py` - Drives I2C communications for PiicoDev modules
+   - `PiicoDev_SSD1306.py` - The device driver for the PiicoDev OLED Module
+   - `font-pet-me-128.dat` - The font file used to display text 
+4. To run the program you will need to upload these four files to the micro:bit. To do this, select all four files in the file browser, right-click and select **Upload to micro:bit**.
+5. Open `main.py` and your should see the code below
 
 ```{literalinclude} ./python_files/24_oled_example_3/main.py
 :linenos:
 ```
-
-### Graph
+## Graph
 
 Graphs are created with the `graph2D()` function allows plotting a single variable as it changes over time. The plot starts at the right-hand side of the display and shifts to the left every time it is updated.
 
@@ -87,9 +93,16 @@ Graphs are created with the `graph2D()` function allows plotting a single variab
 
 The following example graphs two functions independently.
 
-Change the code in `main.py` to the code below. 
+1. Stop the program running on your micro:bit by clicking the **Stop** button in Thonny.
+2. Open the **24_oled_example_4** folder in Thonny.
+3. Check that the following files are in the folder:
+   - `main.py`
+   - `PiicoDev_Unified.py` - Drives I2C communications for PiicoDev modules
+   - `PiicoDev_SSD1306.py` - The device driver for the PiicoDev OLED Module
+   - `font-pet-me-128.dat` - The font file used to display text 
+4. To run the program you will need to upload these four files to the micro:bit. To do this, select all four files in the file browser, right-click and select **Upload to micro:bit**.
+5. Open `main.py` and your should see the code below
 
-**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
 
 ```{literalinclude} ./python_files/24_oled_example_4/main.py
 :linenos:
@@ -105,9 +118,15 @@ In general, the steps to create an animation are:
 
 The following example animates a rectangle bouncing around the screen.
 
-Change the code in `main.py` to the code below. 
-
-**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
+1. Stop the program running on your micro:bit by clicking the **Stop** button in Thonny.
+2. Open the **24_oled_example_5** folder in Thonny.
+3. Check that the following files are in the folder:
+   - `main.py`
+   - `PiicoDev_Unified.py` - Drives I2C communications for PiicoDev modules
+   - `PiicoDev_SSD1306.py` - The device driver for the PiicoDev OLED Module
+   - `font-pet-me-128.dat` - The font file used to display text 
+4. To run the program you will need to upload these four files to the micro:bit. To do this, select all four files in the file browser, right-click and select **Upload to micro:bit**.
+5. Open `main.py` and your should see the code below
 
 ```{literalinclude} ./python_files/24_oled_example_5/main.py
 :linenos:
@@ -124,9 +143,15 @@ Beware: the memory on a micro:bit is very limited and bitmap images will take a 
 
 The following example displays the PiicoDev logo on the screen.
 
-Change the code in `main.py` to the code below. 
-
-**[Upload](./12_piicodev_intro.md#upload)** `main.py` along with `PiicoDev_Unified.py`, `PiicoDev_SSD1306.py`, `font-pet-me-128.dat` and `piicodev-logo.pbm` to the micro:bit and then **run** it.
+1. Stop the program running on your micro:bit by clicking the **Stop** button in Thonny.
+2. Open the **24_oled_example_6** folder in Thonny.
+3. Check that the following files are in the folder:
+   - `main.py`
+   - `PiicoDev_Unified.py` - Drives I2C communications for PiicoDev modules
+   - `PiicoDev_SSD1306.py` - The device driver for the PiicoDev OLED Module
+   - `PiicoDev_logo.pbm` - The bitmap image file to be displayed
+4. To run the program you will need to upload these four files to the micro:bit. To do this, select all four files in the file browser, right-click and select **Upload to micro:bit**.
+5. Open `main.py` and your should see the code below
 
 ```{literalinclude} ./python_files/24_oled_example_6/main.py
 :linenos:
