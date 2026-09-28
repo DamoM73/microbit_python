@@ -10,7 +10,7 @@ Possible uses:
 
 ## Connect it
 
-These functions are built into MicroPython on the micro:bit, so there is nothing to connect.
+These functions are built into MicroPython on the micro:bit, so we don't need to connect anything.
 
 - Each example is a `main.py` file. See [Your First Program](../micropython/first-program.md) for how to create, upload and run it.
 - Times are in **milliseconds** (ms). There are `1000` milliseconds in one second.
@@ -18,7 +18,7 @@ These functions are built into MicroPython on the micro:bit, so there is nothing
 
 ## Set it up
 
-Import the `microbit` module at the top of every program:
+We import the `microbit` module at the top of every program:
 
 ```python linenums="1"
 from microbit import *
@@ -34,31 +34,46 @@ from microbit import *
 
 ### `sleep()`
 
+Pauses the program for a number of milliseconds before running the next line.
+
 ```python linenums="1"
 --8<-- "examples/microbit/module/sleep/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → prints a line in the Shell
-    - line 5 → prints the next line straight away
-    - line 6 → pauses the program for 2000 milliseconds (2 seconds)
-    - line 7 → prints the last line after the pause
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → prints a line in the Shell.
+    - **line 5** → prints the next line straight away.
+    - **line 6** → pauses the program for 2000 milliseconds (2 seconds).
+    - **line 7** → prints the last line after the pause.
 
 ### `running_time()`
+
+Returns how many milliseconds have passed since the micro:bit was turned on or reset.
 
 ```python linenums="1"
 --8<-- "examples/microbit/module/running_time/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → checks if button **A** was pressed
-    - line 6 → gets the running time and divides it by 1000 (with `//`, which drops the decimals) to turn it into whole seconds
-    - line 7 → scrolls the number of seconds across the display
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → prints the number of milliseconds since the micro:bit started.
+    - **line 6** → waits 1 second before the loop repeats.
 
 ### `run_every()`
+
+Runs a function over and over at a set time interval.
 
 The function keeps running on schedule while the main loop does something else.
 
@@ -66,14 +81,19 @@ The function keeps running on schedule while the main loop does something else.
 --8<-- "examples/microbit/module/run_every/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 2 → imports the `music` module
-    - line 5 → defines a function called `beep`
-    - line 6 → the function plays an 880 Hz tone for 100 milliseconds
-    - line 8 → runs `beep` every 1 second in the background
-    - line 11 → starts an endless loop
-    - lines 12–15 → shows a beating heart, while the beep keeps running every second
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 2** → imports the `music` module.
+    - **line 5** → defines a function called `beep`.
+    - **line 6** → the function plays an 880 Hz tone for 100 milliseconds.
+    - **line 8** → runs `beep` every 1 second in the background.
+    - **line 11** → starts an endless loop.
+    - **line 12** → scrolls `Hello`, while the beep keeps running every second.
 
 ## Documentation
 

@@ -1,0 +1,121 @@
+/* ------------------------------------------------------------------
+   Site colour scheme
+   navy   #476088  top bar, links, headings, current page (light mode)
+   yellow #ffc562  warnings, headings (dark mode)
+   coral  #ff6d74  PRIMM callouts
+   teal   #4fddc3  Code explanation (note) callouts
+   blue   #61a8e8  tips, links (dark mode)
+   ------------------------------------------------------------------ */
+:root {
+  --navy: #476088;
+  --yellow: #ffc562;
+  --coral: #ff6d74;
+  --teal: #4fddc3;
+  --blue: #61a8e8;
+}
+
+/* Light mode */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--navy);
+  --md-primary-fg-color--light: #6a80a4;
+  --md-primary-fg-color--dark: #34486a;
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: var(--navy);
+  --md-typeset-a-color: var(--navy);
+  --heading-colour: var(--navy);
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--navy);
+  --md-primary-fg-color--light: #6a80a4;
+  --md-primary-fg-color--dark: #34486a;
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: var(--yellow);
+  --md-typeset-a-color: var(--blue);
+  --heading-colour: var(--yellow);
+}
+
+/* Headings, including code inside headings */
+.md-typeset h1, .md-typeset h2, .md-typeset h3,
+.md-typeset h4, .md-typeset h5, .md-typeset h6,
+.md-typeset h1 code, .md-typeset h2 code, .md-typeset h3 code,
+.md-typeset h4 code, .md-typeset h5 code, .md-typeset h6 code {
+  color: var(--heading-colour);
+}
+
+/* Callout colours: each type gets a border, a light tint and a coloured icon */
+.md-typeset .admonition.primm, .md-typeset details.primm { --callout: var(--coral); }
+.md-typeset .admonition.note,  .md-typeset details.note  { --callout: var(--teal); }
+.md-typeset .admonition.tip,   .md-typeset details.tip   { --callout: var(--blue); }
+.md-typeset .admonition.warning, .md-typeset details.warning { --callout: var(--yellow); }
+
+.md-typeset :is(.admonition, details):is(.primm, .note, .tip, .warning) {
+  border-color: var(--callout);
+  background-color: color-mix(in srgb, var(--callout) 12%, transparent);
+}
+
+.md-typeset :is(.admonition, details):is(.primm, .note, .tip, .warning):focus-within {
+  box-shadow: 0 0 0 .2rem color-mix(in srgb, var(--callout) 12%, transparent);
+}
+
+.md-typeset :is(.primm, .note, .tip, .warning) > :is(.admonition-title, summary) {
+  background-color: transparent;
+}
+
+.md-typeset :is(.primm, .note, .tip, .warning) > :is(.admonition-title, summary)::before {
+  background-color: var(--callout);
+}
+
+.md-typeset :is(.primm, .note, .tip, .warning) > :is(.admonition-title, summary)::after {
+  color: var(--callout);
+}
+
+/* PRIMM uses the question-mark icon */
+.md-typeset .primm > :is(.admonition-title, summary)::before {
+  -webkit-mask-image: var(--md-admonition-icon--question);
+  mask-image: var(--md-admonition-icon--question);
+}
+
+/* Navy top bar and section tabs */
+.md-header,
+.md-tabs {
+  background-color: var(--navy);
+  color: #ffffff;
+}
+
+.md-header :is(.md-header__title, .md-header__button, .md-source),
+.md-tabs .md-tabs__link {
+  color: #ffffff;
+}
+
+.md-tabs .md-tabs__link:hover,
+.md-tabs .md-tabs__item--active .md-tabs__link {
+  color: var(--yellow);
+}
+
+/* Current page in the side navigation */
+.md-nav__link--active,
+.md-nav__item .md-nav__link--active {
+  color: var(--md-typeset-a-color);
+  font-weight: 700;
+}
+
+/* White search box in the navy top bar (light and dark mode) */
+.md-header .md-search__button,
+.md-header .md-search__button:focus,
+.md-header .md-search__button:hover {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Magnifying-glass icon */
+.md-header .md-search__button::before {
+  background-color: #333333;
+}
+
+/* "Ctrl+K" shortcut badge */
+.md-header .md-search__button::after {
+  color: #333333;
+  background-color: #eeeeee;
+}

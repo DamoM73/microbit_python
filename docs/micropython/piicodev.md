@@ -1,6 +1,6 @@
 # Using PiicoDev
 
-PiicoDev is a range of plug-and-play sensors and output modules made by the Australian company [Core Electronics](https://core-electronics.com.au/). Every PiicoDev module uses the same cable, so you can connect modules to the micro:bit without soldering or breadboards.
+PiicoDev is a range of plug-and-play sensors and output modules made by the Australian company [Core Electronics](https://core-electronics.com.au/). Every PiicoDev module uses the same cable, so we can connect modules to the micro:bit without soldering or breadboards.
 
 ## Connect a module
 
@@ -14,7 +14,7 @@ PiicoDev is a range of plug-and-play sensors and output modules made by the Aust
 
 ## Files a PiicoDev program needs
 
-The code for the micro:bit's own components is already on the micro:bit. The code for PiicoDev modules is not, so every PiicoDev program folder needs extra files next to `main.py`:
+The code for the micro:bit's own components is already on the micro:bit. The code for PiicoDev modules is not, so we need to add extra files to every PiicoDev program folder, next to `main.py`:
 
 - `PiicoDev_Unified.py` → handles communication with all PiicoDev modules. You need one copy in each program folder.
 - **a device driver** → the commands for one type of module. You need one driver for each **type** of module you use.
@@ -39,7 +39,7 @@ The example and exercise folders in your tutorial files already contain the file
 
 ## Upload the files
 
-A PiicoDev program only works when **all** its files are on the micro:bit. Upload them together:
+A PiicoDev program only works when **all** its files are on the micro:bit, so we upload them together:
 
 1. **Stop** any running program.
 2. In the **This computer** part of the Files panel, open the program folder.
@@ -62,3 +62,8 @@ A PiicoDev program only works when **all** its files are on the micro:bit. Uploa
 
 !!! tip
     Driver files stay on the micro:bit after they are uploaded. You only need to upload them again when you use a module that needs a different driver. While you are testing, you can run `main.py` straight from Thonny without uploading it each time.
+
+!!! warning "Remove drivers you aren't using"
+    The micro:bit has very limited memory for storing files. Driver files left over from earlier projects fill this space and can stop new files uploading or programs running.
+
+    Before uploading a new project, check the **BBC micro:bit** part of the Files panel. Right-click any driver files the new project doesn't use and choose **Delete**.

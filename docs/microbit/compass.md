@@ -12,7 +12,7 @@ Possible uses:
 
 ## Connect it
 
-The compass is built into the micro:bit, so there is nothing to connect.
+The compass is built into the micro:bit, so we don't need to connect anything.
 
 - Each example is a `main.py` file. See [Your First Program](../micropython/first-program.md) for how to create, upload and run it.
 - The compass must be **calibrated** before it gives headings. Calibration starts automatically the first time a heading is needed: tilt the micro:bit in every direction until all the LEDs are lit.
@@ -22,7 +22,7 @@ The compass is built into the micro:bit, so there is nothing to connect.
 
 ## Set it up
 
-The compass is part of the `microbit` library. Import it at the top of every program:
+The compass is part of the `microbit` library. We import it at the top of every program:
 
 ```python linenums="1"
 from microbit import *
@@ -39,56 +39,77 @@ from microbit import *
 
 ### `compass.calibrate()`
 
+Starts the calibration game: tilt the micro:bit until every LED is lit.
+
 ```python linenums="1"
 --8<-- "examples/microbit/compass/calibrate/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts calibration. Tilt the micro:bit until every LED is lit.
-    - line 7 → starts an endless loop
-    - line 8 → shows a tick once calibration is finished
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts calibration. Tilt the micro:bit until every LED is lit.
+    - **line 7** → starts an endless loop.
+    - **line 8** → shows a tick once calibration is finished.
 
 ### `compass.is_calibrated()`
+
+Checks whether the compass has been calibrated.
 
 ```python linenums="1"
 --8<-- "examples/microbit/compass/is_calibrated/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → checks if the compass has been calibrated
-    - line 6 → if it has, shows a tick
-    - line 7 → if it hasn't…
-    - line 8 → …shows a cross
-    - line 9 → waits 1 second before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → prints `True` in the Shell if the compass has been calibrated, or `False` if it hasn't.
+    - **line 6** → waits 1 second before the loop repeats.
 
 ### `compass.heading()`
+
+Returns the direction the top of the micro:bit is pointing, from `0` to `359` degrees.
 
 ```python linenums="1"
 --8<-- "examples/microbit/compass/heading/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → gets the compass heading and stores it in `heading`
-    - line 6 → scrolls the heading across the display
-    - line 7 → waits 500 milliseconds before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → gets the compass heading and scrolls it across the display.
 
 ### `compass.get_field_strength()`
+
+Returns the strength of the magnetic field around the micro:bit. It goes up when a magnet is nearby.
 
 ```python linenums="1"
 --8<-- "examples/microbit/compass/get_field_strength/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → gets the magnetic field strength and stores it in `field`
-    - line 6 → scrolls the field strength across the display
-    - line 7 → waits 500 milliseconds before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → gets the magnetic field strength and scrolls it across the display.
 
 ## Documentation
 
@@ -96,28 +117,31 @@ from microbit import *
 
 ## Exercises
 
+!!! primm "PRIMM"
+    Time to **modify** the code and see what happens.
+
 Starter files are in the `compass` folder of your tutorial files. Solutions are on the [Exercise Solutions](../reference/solutions.md#compass) page.
 
 ### Exercise 1
 
 Starter: `compass/ex1_north`
 
-Show `N` when the micro:bit is pointing North.
+Can you make the micro:bit show `N` when it is pointing North?
 
 ### Exercise 2
 
 Starter: `compass/ex2_eight_points`
 
-When button **A** is pressed, show which of the 8 compass directions in the image above the micro:bit is pointing (N, NE, E, SE, S, SW, W, NW).
+Can you make the micro:bit show which of the 8 compass directions in the image above it is pointing (N, NE, E, SE, S, SW, W, NW) when button **A** is pressed?
 
 ### Exercise 3
 
 Starter: `compass/ex3_microtesla`
 
-Change the `get_field_strength()` example to show the reading in microtesla with no decimal places (1 microtesla = 1000 nanotesla).
+Can you change the `get_field_strength()` example to show the reading in microtesla with no decimal places? (1 microtesla = 1000 nanotesla)
 
 ### Exercise 4
 
 Starter: `compass/ex4_magnet`
 
-Show a happy face when a magnet is touching the right side of the micro:bit. Otherwise show an angry face.
+Can you make the micro:bit show a happy face when a magnet is touching its right side, and an angry face otherwise?

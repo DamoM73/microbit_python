@@ -253,3 +253,73 @@ Press **A** on one micro:bit to give it the image to start.
 ```python linenums="1"
 --8<-- "solutions/microbit/radio/ex3_inside.py"
 ```
+
+## Atmospheric Sensor
+
+### Exercise 1
+
+```python linenums="1"
+--8<-- "solutions/piicodev/atmospheric/ex1_buttons.py"
+```
+
+### Exercise 2
+
+```python linenums="1"
+--8<-- "solutions/piicodev/atmospheric/ex2_height_change.py"
+```
+
+## Colour Sensor
+
+### Exercise 1
+
+`white` is the amount of ambient light in lux. `cct` is the colour temperature in kelvin: lower numbers are warmer (more orange) light, higher numbers are cooler (more blue) light.
+
+```python linenums="1"
+--8<-- "solutions/piicodev/colour/ex1_rgb_dictionary.py"
+```
+
+### Exercise 2
+
+`classifyHue()` returns `None` when it can't decide, so the `if colour:` check skips those readings.
+
+```python linenums="1"
+--8<-- "solutions/piicodev/colour/ex2_show_colour.py"
+```
+
+## Distance Sensor
+
+### Exercise 1
+
+```python linenums="1"
+--8<-- "solutions/piicodev/distance/ex1_button_reading.py"
+```
+
+## Real Time Clock
+
+### Exercise 1
+
+`"{:02}".format()` adds a leading zero, so 9 minutes shows as `09`.
+
+```python linenums="1"
+--8<-- "solutions/piicodev/rtc/ex1_clock.py"
+```
+
+### Exercise 2
+
+```python linenums="1"
+--8<-- "solutions/piicodev/rtc/ex2_stopwatch.py"
+```
+
+## 3x RGB LED
+
+### Exercise 1
+
+```python linenums="1"
+--8<-- "solutions/piicodev/rgb_led/ex1_traffic_light.py"
+```
+
+### Exercise 2
+
+```python linenums="1"
+--8<-- "solutions/piicodev/rgb_led/ex2_temperature_light.py"
+```

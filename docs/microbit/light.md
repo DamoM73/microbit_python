@@ -13,14 +13,14 @@ Possible uses:
 
 ## Connect it
 
-The light sensor is the display itself, so there is nothing to connect.
+The light sensor is the display itself, so we don't need to connect anything.
 
 - Each example is a `main.py` file. See [Your First Program](../micropython/first-program.md) for how to create, upload and run it.
 - Readings go from `0` (dark) to `255` (bright).
 
 ## Set it up
 
-The light sensor is part of the `microbit` library. Import it at the top of every program:
+The light sensor is part of the `microbit` library. We import it at the top of every program:
 
 ```python linenums="1"
 from microbit import *
@@ -34,16 +34,21 @@ from microbit import *
 
 ### `display.read_light_level()`
 
+Returns how much light is shining on the display, from `0` (dark) to `255` (bright).
+
 ```python linenums="1"
 --8<-- "examples/microbit/light/read_light_level/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → reads the light level and stores it in `light`
-    - line 6 → scrolls the light level across the display
-    - line 7 → waits 500 milliseconds before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → reads the light level and scrolls it across the display.
 
 ## Documentation
 
@@ -51,16 +56,19 @@ from microbit import *
 
 ## Exercises
 
+!!! primm "PRIMM"
+    Time to **modify** the code and see what happens.
+
 Starter files are in the `light` folder of your tutorial files. Solutions are on the [Exercise Solutions](../reference/solutions.md#light-sensor) page.
 
 ### Exercise 1
 
 Starter: `light/ex1_up_down`
 
-Check the light level every 2 seconds. Show an up arrow if it has increased since the last check, or a down arrow if it has decreased.
+Can you create a program that checks the light level every 2 seconds, and shows an up arrow if it has increased since the last check, or a down arrow if it has decreased?
 
 ### Exercise 2
 
 Starter: `light/ex2_night_light`
 
-Turn on all the LEDs when the light level falls below `100`.
+Can you create a program that turns on all the LEDs when the light level falls below `100`?

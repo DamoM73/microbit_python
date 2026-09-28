@@ -1,12 +1,12 @@
 # Your First Program
 
-This page shows how every program on this site is created, run and uploaded. Come back here whenever you need a reminder.
+Before we create our first program, we need to understand how MicroPython works. This page shows how we create, run and upload every program in this course. Come back here whenever you need a reminder.
 
 ## How MicroPython runs programs
 
 When a micro:bit running MicroPython turns on, it looks for a file called `main.py` and runs it. A project can have other files, but it must have a `main.py`.
 
-A folder can't have two files with the same name, so **every program gets its own folder** with its own `main.py`. That is why the tutorial files have a separate folder for each example and exercise.
+A folder can't have two files with the same name, so **every program gets its own folder** with its own `main.py`. That is why we have a separate folder for each example and exercise in the tutorial files.
 
 ## Open an example
 
@@ -41,14 +41,14 @@ Use this when you want to write your own program.
 
 ## Run the first program
 
-Open `micropython/first_program/main.py`:
+We are going to run our program for the first time. Open `micropython/first_program/main.py`:
 
 ```python linenums="1"
 --8<-- "examples/micropython/first_program/main.py"
 ```
 
 !!! note "PRIMM"
-    Throughout this course we use **PRIMM** to learn from code:
+    Throughout this course, we will use the **PRIMM** process to help us learn:
 
     - **Predict** → before running the code, write down what you think will happen
     - **Run** → run the program and check your prediction
@@ -61,17 +61,17 @@ Open `micropython/first_program/main.py`:
 ![first_program displayed](../assets/first_program.gif)
 
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → scrolls `"Hello world!"` across the display
-    - line 6 → shows the built-in heart image
-    - line 7 → waits 1000 milliseconds (1 second) before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → scrolls `"Hello world!"` across the display.
+    - **line 6** → shows the built-in heart image.
+    - **line 7** → waits 1000 milliseconds (1 second) before the loop repeats.
 
 ## Upload a program
 
-If you unplug the micro:bit and plug it back in, the program doesn't restart. Look at the Files panel: your code is on your computer, not on the micro:bit.
+When we unplug the micro:bit and plug it back in, the program doesn't restart. If we look at the Files panel, we can see the problem: our code is on the computer, not on the micro:bit.
 
-To make the micro:bit run the program by itself, upload it:
+To solve this, we need to upload the code to the micro:bit:
 
 1. **Stop** any running program.
 2. In the **This computer** part of the Files panel, right-click `main.py` and choose **Upload to micro:bit**.
@@ -94,13 +94,16 @@ To make the micro:bit run the program by itself, upload it:
 
 ## Exercises
 
+!!! primm "PRIMM"
+    Time to **modify** the code and see what happens.
+
 Starter files are in the `micropython` folder of your tutorial files. Solutions are on the [Exercise Solutions](../reference/solutions.md#your-first-program) page.
 
 ### Exercise 1
 
 Starter: `micropython/ex1_message`
 
-Change the program to show a different message.
+Can you make it show a different message? For example:
 
 ![first_program exercise 1](../assets/first_program_ex1.gif)
 
@@ -108,7 +111,7 @@ Change the program to show a different message.
 
 Starter: `micropython/ex2_shapes`
 
-Change the program to show other shapes.
+Can you make it show other shapes? For example:
 
 ![first_program exercise 2](../assets/first_program_ex2.gif)
 

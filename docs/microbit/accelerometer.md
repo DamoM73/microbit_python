@@ -13,7 +13,7 @@ Possible uses:
 
 ## Connect it
 
-The accelerometer is built into the micro:bit, so there is nothing to connect.
+The accelerometer is built into the micro:bit, so we don't need to connect anything.
 
 - Each example is a `main.py` file. See [Your First Program](../micropython/first-program.md) for how to create, upload and run it.
 - Most examples print readings. Watch them in Thonny's **Shell**.
@@ -26,7 +26,7 @@ The accelerometer is built into the micro:bit, so there is nothing to connect.
 
 ## Set it up
 
-The accelerometer is part of the `microbit` library. Import it at the top of every program:
+The accelerometer is part of the `microbit` library. We import it at the top of every program:
 
 ```python linenums="1"
 from microbit import *
@@ -47,42 +47,63 @@ from microbit import *
 
 ### `get_x()`
 
+Reads how much the micro:bit is tilted or moving left and right.
+
 ```python linenums="1"
 --8<-- "examples/microbit/accelerometer/get_x/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → gets the x-axis reading and stores it in `x`
-    - line 6 → prints the reading in the Shell
-    - line 7 → waits 100 milliseconds before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → gets the x-axis reading and stores it in `x`.
+    - **line 6** → prints the reading in the Shell.
+    - **line 7** → waits 100 milliseconds before the loop repeats.
 
 ### `get_y()`
+
+Reads how much the micro:bit is tilted or moving forwards and backwards.
 
 ```python linenums="1"
 --8<-- "examples/microbit/accelerometer/get_y/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → gets the y-axis reading and stores it in `y`
-    - line 6 → prints the reading in the Shell
-    - line 7 → waits 100 milliseconds before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → gets the y-axis reading and stores it in `y`.
+    - **line 6** → prints the reading in the Shell.
+    - **line 7** → waits 100 milliseconds before the loop repeats.
 
 ### `get_z()`
+
+Reads how much the micro:bit is moving up and down.
 
 ```python linenums="1"
 --8<-- "examples/microbit/accelerometer/get_z/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → gets the z-axis reading and stores it in `z`
-    - line 6 → prints the reading in the Shell
-    - line 7 → waits 100 milliseconds before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → gets the z-axis reading and stores it in `z`.
+    - **line 6** → prints the reading in the Shell.
+    - **line 7** → waits 100 milliseconds before the loop repeats.
 
 ### `get_values()`
 
@@ -92,75 +113,102 @@ Gets all three readings at once as a **tuple**.
 --8<-- "examples/microbit/accelerometer/get_values/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → gets all three readings and **unpacks** them: the first value goes into `x`, the second into `y`, the third into `z`
-    - line 6 → prints the three readings in the Shell
-    - line 7 → waits 100 milliseconds before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → gets all three readings and **unpacks** them: the first value goes into `x`, the second into `y`, the third into `z`.
+    - **line 6** → prints the three readings in the Shell.
+    - **line 7** → waits 100 milliseconds before the loop repeats.
 
 !!! note "Tuples"
     A tuple is like a list, but its values can't be changed after it is created. It is written with round brackets, for example `(1, 2, 3)`.
 
 ### `current_gesture()`
 
+Returns the name of the gesture happening right now, such as `"face up"` or `"shake"`.
+
 ```python linenums="1"
 --8<-- "examples/microbit/accelerometer/current_gesture/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → gets the current gesture as a string and stores it in `gesture`
-    - line 6 → prints the gesture in the Shell
-    - line 7 → waits 500 milliseconds before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → gets the current gesture as a string and stores it in `gesture`.
+    - **line 6** → prints the gesture in the Shell.
+    - **line 7** → waits 500 milliseconds before the loop repeats.
 
 ### `is_gesture()`
+
+Checks whether a particular gesture is happening **right now**.
 
 ```python linenums="1"
 --8<-- "examples/microbit/accelerometer/is_gesture/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → checks if the micro:bit is face up right now
-    - line 6 → if it is, shows a happy face
-    - line 7 → if it isn't…
-    - line 8 → …shows a sleeping face
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → checks if the micro:bit is face up right now.
+    - **line 6** → if it is, shows a happy face.
+    - **line 7** → if it isn't…
+    - **line 8** → …shows a sleeping face.
 
 ### `was_gesture()`
+
+Checks whether a particular gesture has happened **since the last check**, even if it has finished.
 
 ```python linenums="1"
 --8<-- "examples/microbit/accelerometer/was_gesture/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → shows a tick to start the round
-    - line 6 → waits 3 seconds. Shake the micro:bit now.
-    - line 7 → checks if a shake happened since the last check
-    - line 8 → if it did, shows a happy face
-    - line 9 → if it didn't…
-    - line 10 → …shows a sad face
-    - line 11 → waits 1 second before the next round
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → waits 3 seconds. Shake the micro:bit now.
+    - **line 6** → checks if a shake happened since the last check.
+    - **line 7** → if it did, shows a happy face.
+    - **line 8** → if it didn't…
+    - **line 9** → …shows a sad face.
 
 ### `get_gestures()`
+
+Returns every gesture that has happened since the last check, oldest first.
 
 ```python linenums="1"
 --8<-- "examples/microbit/accelerometer/get_gestures/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → shows a tick to start the round
-    - line 6 → waits 3 seconds. Move the micro:bit around now.
-    - line 7 → gets every gesture since the last check and stores them in `gestures`
-    - line 8 → prints the gestures in the Shell
-    - line 9 → shows a cross to end the round
-    - line 10 → waits 2 seconds before the next round
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → waits 3 seconds. Move the micro:bit around now.
+    - **line 6** → gets every gesture since the last check and prints them in the Shell.
 
 ## Documentation
 
@@ -168,28 +216,31 @@ Gets all three readings at once as a **tuple**.
 
 ## Exercises
 
+!!! primm "PRIMM"
+    Time to **modify** the code and see what happens.
+
 Starter files are in the `accelerometer` folder of your tutorial files. Solutions are on the [Exercise Solutions](../reference/solutions.md#accelerometer) page.
 
 ### Exercise 1
 
 Starter: `accelerometer/ex1_spirit_level`
 
-Make a spirit level that shows `-` if the micro:bit is level left to right, `L` if the left side is too high, or `R` if the right side is too high.
+Can you make a spirit level that shows `-` if the micro:bit is level left to right, `L` if the left side is too high, or `R` if the right side is too high?
 
 ### Exercise 2
 
 Starter: `accelerometer/ex2_face_up`
 
-Show a happy face if the micro:bit is face up, or an angry face if it isn't.
+Can you make the micro:bit show a happy face if it is face up, or an angry face if it isn't?
 
 ### Exercise 3
 
 Starter: `accelerometer/ex3_shake_count`
 
-Count how many times the micro:bit is shaken in 5 seconds, then show the count.
+Can you count how many times the micro:bit is shaken in 5 seconds, then show the count?
 
 ### Exercise 4
 
 Starter: `accelerometer/ex4_3g`
 
-Wait until button **A** is pressed, then show whether the micro:bit has experienced `3g` since the program started.
+Can you make a program that waits until button **A** is pressed, then shows whether the micro:bit has experienced `3g` since the program started?

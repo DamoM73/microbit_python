@@ -2,8 +2,5 @@ from microbit import *
 
 # Main loop
 while True:
-    if compass.is_calibrated():
-        display.show(Image.YES)
-    else:
-        display.show(Image.NO)
+    print(compass.is_calibrated())
     sleep(1000)

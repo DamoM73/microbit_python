@@ -7,6 +7,7 @@ repo_url = "https://github.com/damom73/microbit_python"
 repo_name = "damom73/microbit_python"
 copyright = "Content licensed under CC BY-NC-SA 4.0. Code licensed under GPLv3."
 docs_dir = "docs"
+extra_css = ["stylesheets/extra.css"]
 
 nav = [
   { "Home" = "index.md" },
@@ -14,6 +15,7 @@ nav = [
     { "Setting up Thonny" = "micropython/thonny.md" },
     { "Your First Program" = "micropython/first-program.md" },
     { "Using PiicoDev" = "micropython/piicodev.md" },
+    { "Creating Your Program" = "micropython/creating-your-program.md" },
   ] },
   { "micro:bit" = [
     { "Display" = "microbit/display.md" },
@@ -27,8 +29,27 @@ nav = [
     { "Radio" = "microbit/radio.md" },
     { "microbit Module" = "microbit/module.md" },
   ] },
+  { "PiicoDev Inputs" = [
+    { "Atmospheric Sensor" = "piicodev-inputs/atmospheric.md" },
+    { "Colour Sensor" = "piicodev-inputs/colour.md" },
+    { "Distance Sensor" = "piicodev-inputs/distance.md" },
+    { "Potentiometers" = "piicodev-inputs/potentiometer.md" },
+    { "Button" = "piicodev-inputs/button.md" },
+    { "Real Time Clock" = "piicodev-inputs/rtc.md" },
+  ] },
+  { "PiicoDev Outputs" = [
+    { "3x RGB LED" = "piicodev-outputs/rgb-led.md" },
+    { "OLED Display" = "piicodev-outputs/oled.md" },
+    { "Servo Driver" = "piicodev-outputs/servo.md" },
+  ] },
+  { "Other" = [
+    { "Glowbit Rainbow" = "other/glowbit.md" },
+  ] },
   { "Reference" = [
+    { "Components" = "reference/components.md" },
+    { "Debugging with Thonny" = "reference/debugging.md" },
     { "Exercise Solutions" = "reference/solutions.md" },
+    { "Licence" = "reference/licence.md" },
   ] },
 ]
 
@@ -58,12 +79,16 @@ toggle.name = "Switch to light mode"
 [[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
 scheme = "default"
+primary = "custom"
+accent = "custom"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
+primary = "custom"
+accent = "custom"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to system preference"
 

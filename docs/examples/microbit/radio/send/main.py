@@ -9,4 +9,3 @@ radio.on()
 while True:
     if button_a.was_pressed():
         radio.send("happy")
-        display.show("A")

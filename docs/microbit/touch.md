@@ -13,14 +13,14 @@ Possible uses:
 
 ## Connect it
 
-The touch logo and pins are built into the micro:bit, so there is nothing to connect.
+The touch logo and pins are built into the micro:bit, so we don't need to connect anything.
 
 - Each example is a `main.py` file. See [Your First Program](../micropython/first-program.md) for how to create, upload and run it.
 - The logo is ready to use. Pins 0, 1 and 2 must be set to capacitive touch mode first.
 
 ## Set it up
 
-The touch logo and pins are part of the `microbit` library. Import it at the top of every program:
+The touch logo and pins are part of the `microbit` library. We import it at the top of every program:
 
 ```python linenums="1"
 from microbit import *
@@ -36,32 +36,46 @@ from microbit import *
 
 ### `pin_logo.is_touched()`
 
+Checks whether the gold logo is being touched right now.
+
 ```python linenums="1"
 --8<-- "examples/microbit/touch/pin_logo/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → checks if the logo is being touched
-    - line 6 → if it is, shows a happy face
-    - line 7 → if it isn't…
-    - line 8 → …shows a sad face
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → checks if the logo is being touched.
+    - **line 6** → if it is, shows a happy face.
+    - **line 7** → if it isn't…
+    - **line 8** → …shows a sad face.
 
 ### `set_touch_mode()` and `is_touched()` on pins
+
+`set_touch_mode()` makes a pin sense touch the same way as the logo. `is_touched()` then checks whether that pin is being touched.
 
 ```python linenums="1"
 --8<-- "examples/microbit/touch/pins/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → sets pin 0 to capacitive touch mode
-    - line 7 → starts an endless loop
-    - line 8 → checks if pin 0 is being touched
-    - line 9 → if it is, shows a happy face
-    - line 10 → if it isn't…
-    - line 11 → …shows a sad face
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → sets pin 0 to capacitive touch mode.
+    - **line 7** → starts an endless loop.
+    - **line 8** → checks if pin 0 is being touched.
+    - **line 9** → if it is, shows a happy face.
+    - **line 10** → if it isn't…
+    - **line 11** → …shows a sad face.
 
 ## Documentation
 
@@ -69,10 +83,13 @@ from microbit import *
 
 ## Exercises
 
+!!! primm "PRIMM"
+    Time to **modify** the code and see what happens.
+
 Starter files are in the `touch` folder of your tutorial files. Solutions are on the [Exercise Solutions](../reference/solutions.md#touch) page.
 
 ### Exercise 1
 
 Starter: `touch/ex1_move_pixel`
 
-Light the pixel at `(2, 2)`. Move it right when pin 2 is touched and left when pin 0 is touched.
+Can you light the pixel at `(2, 2)`, then move it right when pin 2 is touched and left when pin 0 is touched?

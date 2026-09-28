@@ -13,7 +13,7 @@ Possible uses:
 
 ## Connect it
 
-The speaker and microphone are built into the micro:bit v2, so there is nothing to connect.
+The speaker and microphone are built into the micro:bit v2, so we don't need to connect anything.
 
 - Each example is a `main.py` file. See [Your First Program](../micropython/first-program.md) for how to create, upload and run it.
 - The microphone is on the front of the board. The LED next to it lights up while the microphone is in use.
@@ -63,21 +63,28 @@ For example, `"A1:4"` is note A, octave 1, duration 4.
 
 ### `set_volume()`
 
+Sets how loud the speaker is, from `0` (silent) to `255` (loudest).
+
 ```python linenums="1"
 --8<-- "examples/microbit/sound/set_volume/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 2 → imports the `music` module
-    - line 5 → starts an endless loop
-    - line 6 → sets the volume to the loudest (`255`)
-    - line 7 → plays the built-in `BA_DING` sound
-    - line 8 → sets the volume much quieter (`50`)
-    - line 9 → plays `BA_DING` again
-    - line 10 → waits 1 second before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 2** → imports the `music` module.
+    - **line 5** → sets the volume to `50` (out of `255`).
+    - **line 8** → starts an endless loop.
+    - **line 9** → plays the built-in `BA_DING` sound at the new volume.
+    - **line 10** → waits 1 second before the loop repeats.
 
 ### `music.play()` — built-in tunes
+
+Plays a tune through the speaker.
 
 The micro:bit has many [built-in tunes](https://microbit-micropython.readthedocs.io/en/v2-docs/music.html#built-in-melodies).
 
@@ -85,60 +92,82 @@ The micro:bit has many [built-in tunes](https://microbit-micropython.readthedocs
 --8<-- "examples/microbit/sound/play_builtin/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 2 → imports the `music` module
-    - line 5 → starts an endless loop
-    - line 6 → plays the built-in tune `NYAN`
-    - line 7 → waits 500 milliseconds before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 2** → imports the `music` module.
+    - **line 5** → starts an endless loop.
+    - **line 6** → plays the built-in tune `NYAN`.
 
 ### `music.play()` — custom tunes
+
+`music.play()` can also play your own tune, written as a list of notes (see [Writing notes](#writing-notes)).
 
 ```python linenums="1"
 --8<-- "examples/microbit/sound/play_custom/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 2 → imports the `music` module
-    - lines 5–8 → stores the notes of "Frère Jacques" in a list called `tune`
-    - line 11 → starts an endless loop
-    - line 12 → plays the notes in `tune`
-    - line 13 → waits 500 milliseconds before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 2** → imports the `music` module.
+    - **line 5** → stores four notes, all in octave 4 with duration 4, in a list called `tune`.
+    - **line 8** → starts an endless loop.
+    - **line 9** → plays the notes in `tune`.
 
 ### `music.pitch()`
 
-Plays tones that aren't musical notes, such as sirens and sound effects. `440` Hz is the note A that musicians tune to.
+Plays a tone at any frequency, not just musical notes, which is useful for sound effects. `440` Hz is the note A that musicians tune to.
 
 ```python linenums="1"
 --8<-- "examples/microbit/sound/pitch/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 2 → imports the `music` module
-    - line 5 → starts an endless loop
-    - line 6 → steps `freq` up from `880` to `1760` in steps of `16`
-    - line 7 → plays `freq` for 20 milliseconds
-    - line 8 → steps `freq` back down from `1760` to `880` in steps of `-16`
-    - line 9 → plays `freq` for 20 milliseconds
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 2** → imports the `music` module.
+    - **line 5** → starts an endless loop.
+    - **line 6** → plays a 440 Hz tone for 500 milliseconds.
+    - **line 7** → waits 500 milliseconds, so the tone beeps.
 
 ### `speech.say()`
 
-Change the voice with `pitch` (higher number = lower voice) and `speed` (higher number = slower). The speech sounds robotic because it uses a simple speech synthesiser.
+Speaks English words through the speaker.
+
+The speech sounds robotic because it uses a simple speech synthesiser. You can change the voice with the `pitch` and `speed` parameters: a higher number gives a lower or slower voice.
 
 ```python linenums="1"
 --8<-- "examples/microbit/sound/say/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 2 → imports the `speech` module
-    - line 5 → starts an endless loop
-    - line 6 → says "Hello world" with a slightly slower, higher voice than the default
-    - line 7 → waits 1 second before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 2** → imports the `speech` module.
+    - **line 5** → starts an endless loop.
+    - **line 6** → says "Hello world".
+    - **line 7** → waits 1 second before the loop repeats.
 
 ### `speech.pronounce()`
+
+Speaks exact sounds, written as phonemes.
 
 When `say()` doesn't sound right, write the word the way it sounds using [phonemes](https://microbit-micropython.readthedocs.io/en/v2-docs/speech.html#phonemes). `speech.translate()` gives you a starting point to edit.
 
@@ -146,57 +175,79 @@ When `say()` doesn't sound right, write the word the way it sounds using [phonem
 --8<-- "examples/microbit/sound/pronounce/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 2 → imports the `speech` module
-    - line 5 → starts an endless loop
-    - line 6 → speaks the phonemes for "Moreton Bay Boys' College"
-    - line 7 → waits 1 second before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 2** → imports the `speech` module.
+    - **line 5** → starts an endless loop.
+    - **line 6** → speaks the phonemes for "Moreton Bay Boys' College".
+    - **line 7** → waits 1 second before the loop repeats.
 
 ### `speech.sing()`
 
-To make a note last longer, repeat its vowel sounds, for example `"DOWWWWWW"`.
+Sings phonemes at set pitches.
+
+Each note is a pitch number after `#`, followed by the sound to sing. To make a note last longer, repeat its vowel sounds, for example `"DOWWWWWW"`.
 
 ```python linenums="1"
 --8<-- "examples/microbit/sound/sing/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 2 → imports the `speech` module
-    - lines 5–6 → stores the notes of a scale (doh, re, mi…) in a list. Each string is a pitch number (such as `#115`) followed by the sound to sing.
-    - line 7 → joins the list into one string called `song`
-    - line 10 → starts an endless loop
-    - line 11 → sings `song`
-    - line 12 → waits 1 second before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 2** → imports the `speech` module.
+    - **line 5** → starts an endless loop.
+    - **line 6** → sings three notes: "doh" at pitch `115`, "re" at pitch `103` and "mi" at pitch `94`.
+    - **line 7** → waits 1 second before the loop repeats.
 
 ### `microphone.current_event()`
+
+Returns `SoundEvent.LOUD` when the sound has just changed from quiet to loud, or `SoundEvent.QUIET` when it has just changed from loud to quiet.
 
 ```python linenums="1"
 --8<-- "examples/microbit/sound/current_event/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → checks if the sound has just changed from quiet to loud
-    - line 6 → if it has, shows a big heart
-    - line 7 → keeps the big heart on for 200 milliseconds
-    - line 8 → if it hasn't…
-    - line 9 → …shows a small heart
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → checks if the sound has just changed from quiet to loud.
+    - **line 6** → if it has, shows a big heart.
+    - **line 7** → keeps the big heart on for 200 milliseconds.
+    - **line 8** → if it hasn't…
+    - **line 9** → …shows a small heart.
 
 ### `microphone.sound_level()`
+
+Returns how loud the sound around the micro:bit is, from `0` (silent) to `255` (loud).
 
 ```python linenums="1"
 --8<-- "examples/microbit/sound/sound_level/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → gets the sound level and stores it in `level`
-    - line 6 → scrolls the sound level across the display
-    - line 7 → waits 500 milliseconds before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → gets the sound level and scrolls it across the display.
 
 ## Documentation
 
@@ -207,22 +258,25 @@ To make a note last longer, repeat its vowel sounds, for example `"DOWWWWWW"`.
 
 ## Exercises
 
+!!! primm "PRIMM"
+    Time to **modify** the code and see what happens.
+
 Starter files are in the `sound` folder of your tutorial files. Solutions are on the [Exercise Solutions](../reference/solutions.md#sound) page.
 
 ### Exercise 1
 
 Starter: `sound/ex1_my_tune`
 
-Create a program that plays your own tune.
+Can you create a program that plays your own tune?
 
 ### Exercise 2
 
 Starter: `sound/ex2_college_song`
 
-Create a program that sings the College Song.
+Can you create a program that sings the College Song?
 
 ### Exercise 3
 
 Starter: `sound/ex3_sound_meter`
 
-Light up the display based on how loud the sound is: more LEDs for louder sounds.
+Can you light up the display based on how loud the sound is, with more LEDs for louder sounds?

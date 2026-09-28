@@ -10,4 +10,3 @@ boat = Image("05050:"
 # Main loop
 while True:
     display.show(boat)
-    sleep(1000)

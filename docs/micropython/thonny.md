@@ -1,6 +1,6 @@
 # Setting up Thonny
 
-We use **Thonny** to write **MicroPython** programs for the **micro:bit**. This page shows how to set everything up.
+During this course we will use **Thonny** to write **MicroPython** programs for the **micro:bit**. This page shows how to set everything up.
 
 ## What is MicroPython?
 
@@ -8,13 +8,13 @@ MicroPython is a version of Python designed to run on **microcontrollers**. Micr
 
 ## What is a micro:bit?
 
-The micro:bit is a small, pocket-sized computer designed for learning coding and electronics. It has buttons, a display and sensors that can be programmed to do different tasks.
+We will use an educational microcontroller called a micro:bit. It is a small, pocket-sized computer designed for learning coding and electronics. It has buttons, a display and sensors that can be programmed to do different tasks.
 
 ![micro:bit](https://cdn.sanity.io/images/ajwvhvgo/production/dbc7a8e2d9e21015787f4dab1a84e731ae192ba9-800x326.png?q=95)
 
 ## What is Thonny?
 
-Thonny is an **IDE** (Integrated Development Environment), an app for writing and running code. It has built-in support for MicroPython and the micro:bit. If you don't have Thonny, download it from [thonny.org](https://thonny.org/) and install it.
+For this course we will use Thonny, an **IDE** (Integrated Development Environment). An IDE is an app for writing and running code. It has built-in support for MicroPython and the micro:bit. If you don't have Thonny, download it from [thonny.org](https://thonny.org/) and install it.
 
 ## Setup
 
@@ -42,7 +42,7 @@ Click **OK**.
 
 ### 3. Show the Files panel
 
-To work with files on the micro:bit, Thonny needs to show the **Files** panel.
+To work with files on the micro:bit, we need to show the **Files** panel in Thonny.
 
 Click **View** and make sure **Files** is ticked.
 
@@ -85,7 +85,7 @@ Thonny is now set up. Your screen should look similar to the one below.
 
 ## Tutorial files
 
-All the example and exercise files are in this zip file: [microbit_tutorials.zip](../downloads/microbit_tutorials.zip)
+All the example and exercise files we will use in this course are in this zip file: [microbit_tutorials.zip](../downloads/microbit_tutorials.zip)
 
 1. Download the zip file.
 2. Extract it into your Technologies folder.

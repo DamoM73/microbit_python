@@ -13,7 +13,7 @@ Possible uses:
 
 ## Connect it
 
-The display is built into the micro:bit, so there is nothing to connect.
+The display is built into the micro:bit, so we don't need to connect anything.
 
 - Each example is a `main.py` file. See [Your First Program](../micropython/first-program.md) for how to create, upload and run it.
 - Pixels are located by `(x, y)` coordinates. `(0, 0)` is the top left and `(4, 4)` is the bottom right.
@@ -23,7 +23,7 @@ The display is built into the micro:bit, so there is nothing to connect.
 
 ## Set it up
 
-The display is part of the `microbit` library. Import it at the top of every program:
+The display is part of the `microbit` library. We import it at the top of every program:
 
 ```python linenums="1"
 from microbit import *
@@ -50,11 +50,15 @@ Scrolls text across the display from right to left.
 --8<-- "examples/microbit/display/scroll/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → scrolls `"Hello world!"` across the display
-    - line 6 → waits 1000 milliseconds (1 second) before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → scrolls `"Hello world!"` across the display.
 
 ### `display.show()` — text and numbers
 
@@ -64,12 +68,15 @@ Shows characters one at a time instead of scrolling them.
 --8<-- "examples/microbit/display/show/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → shows each character of `3.14159` one at a time
-        - `delay=500` → each character stays on the display for 500 milliseconds
-    - line 6 → waits 1 second before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → shows each character of `3.14159` one at a time.
 
 ### `display.show()` — images
 
@@ -79,15 +86,15 @@ The micro:bit has a range of [built-in images](https://microbit-micropython.read
 --8<-- "examples/microbit/display/show_image/main.py"
 ```
 
-![display image](../assets/display_image.gif)
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
 
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → shows the built-in heart image
-    - line 6 → waits 1 second
-    - line 7 → shows the built-in small heart image
-    - line 8 → waits 1 second before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → shows the built-in heart image.
 
 ### `Image()` — custom images
 
@@ -97,14 +104,18 @@ Make your own image with a string of 25 brightness values: five rows of five dig
 --8<-- "examples/microbit/display/custom_image/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - lines 4–8 → creates a custom image called `boat`
-        - each string is one row, from top to bottom
-        - each digit is the brightness of one pixel, from left to right
-    - line 11 → starts an endless loop
-    - line 12 → shows the `boat` image
-    - line 13 → waits 1 second before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **lines 4–8** → creates a custom image called `boat`.
+        - each string is one row, from top to bottom.
+        - each digit is the brightness of one pixel, from left to right.
+    - **line 11** → starts an endless loop.
+    - **line 12** → shows the `boat` image.
 
 ### `display.clear()`
 
@@ -114,13 +125,18 @@ Turns every pixel off.
 --8<-- "examples/microbit/display/clear/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → starts an endless loop
-    - line 5 → shows the built-in tick image
-    - line 6 → waits 1 second
-    - line 7 → clears the display
-    - line 8 → waits 1 second before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → shows the built-in tick image.
+    - **line 6** → waits 1 second.
+    - **line 7** → clears the display.
+    - **line 8** → waits 1 second before the loop repeats.
 
 ### `display.set_pixel()`
 
@@ -130,17 +146,15 @@ Sets the brightness of a single pixel.
 --8<-- "examples/microbit/display/set_pixel/main.py"
 ```
 
-![display custom](../assets/display_custom.gif)
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
 
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → clears the display before the loop starts
-    - line 7 → starts an endless loop
-    - line 8 → steps `x` through the columns `0` to `4`
-    - line 9 → for each column, steps `y` through the rows `0` to `4` (a **nested loop**)
-    - line 10 → turns the pixel at `(x, y)` on at full brightness
-    - line 11 → waits 50 milliseconds so the pixel can be seen
-    - line 12 → clears the display before moving to the next pixel
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → turns on the centre pixel `(2, 2)` at full brightness (`9`).
 
 ### `display.get_pixel()`
 
@@ -150,13 +164,17 @@ Reads the brightness of a single pixel.
 --8<-- "examples/microbit/display/get_pixel/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → sets the centre pixel to brightness `5`
-    - line 7 → starts an endless loop
-    - line 8 → reads the brightness of the centre pixel and stores it in `brightness`
-    - line 9 → prints the brightness in the Thonny Shell
-    - line 10 → waits 1 second before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → sets the centre pixel to brightness `5`.
+    - **line 7** → starts an endless loop.
+    - **line 8** → reads the brightness of the centre pixel and prints it in the Thonny Shell.
+    - **line 9** → waits 1 second before the loop repeats.
 
 ### `display.off()` and `display.on()`
 
@@ -166,14 +184,19 @@ Turns the whole display off and back on. The image is remembered while the displ
 --8<-- "examples/microbit/display/on_off/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → shows the built-in happy face
-    - line 7 → starts an endless loop
-    - line 8 → turns the display off
-    - line 9 → waits 1 second
-    - line 10 → turns the display back on, showing the happy face again
-    - line 11 → waits 1 second before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → shows the built-in happy face.
+    - **line 7** → starts an endless loop.
+    - **line 8** → turns the display off.
+    - **line 9** → waits 1 second.
+    - **line 10** → turns the display back on, showing the happy face again.
+    - **line 11** → waits 1 second before the loop repeats.
 
 !!! tip
     Turning the display off frees pins 3, 4, 6, 7, 9 and 10 for other uses.
@@ -186,16 +209,16 @@ Checks whether the display is on.
 --8<-- "examples/microbit/display/is_on/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 4 → shows the built-in happy face
-    - line 7 → starts an endless loop
-    - line 8 → turns the display off
-    - line 9 → prints `False` in the Thonny Shell, because the display is off
-    - line 10 → waits 1 second
-    - line 11 → turns the display on
-    - line 12 → prints `True` in the Thonny Shell, because the display is on
-    - line 13 → waits 1 second before the loop repeats
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 4** → starts an endless loop.
+    - **line 5** → prints `True` in the Thonny Shell, because the display is on.
+    - **line 6** → waits 1 second before the loop repeats.
 
 ## Documentation
 
@@ -204,13 +227,16 @@ Checks whether the display is on.
 
 ## Exercises
 
+!!! primm "PRIMM"
+    Time to **modify** the code and see what happens.
+
 Starter files are in the `display` folder of your tutorial files. Solutions are on the [Exercise Solutions](../reference/solutions.md#display) page.
 
 ### Exercise 1
 
 Starter: `display/ex1_show_message`
 
-Change the program to show a different message.
+Can you make it show a different message? For example:
 
 ![Display Text Exercise 1](../assets/display_text_ex1.gif)
 
@@ -218,7 +244,7 @@ Change the program to show a different message.
 
 Starter: `display/ex2_show_delay`
 
-Change the time between each character.
+Can you change the time between each character? For example:
 
 ![Display Text Exercise 2](../assets/display_text_ex2.gif)
 
@@ -226,7 +252,7 @@ Change the time between each character.
 
 Starter: `display/ex3_show_no_loop`
 
-Use the `display.show()` parameters in the methods table to show the same message repeatedly without a `while True` loop.
+Using the `display.show()` parameters in the methods table, can you show the same message repeatedly without the `while True` loop? For example:
 
 ![Display Text Exercise 3](../assets/display_text_ex3.gif)
 
@@ -234,7 +260,7 @@ Use the `display.show()` parameters in the methods table to show the same messag
 
 Starter: `display/ex4_heartbeat`
 
-Change the animation so it looks more like an [actual heartbeat](https://www.youtube.com/watch?v=gJpT_wHZeF8).
+Can you change the animation so it looks more like an [actual heartbeat](https://www.youtube.com/watch?v=gJpT_wHZeF8)? For example:
 
 ![display image ex1](../assets/display_image_ex1.gif)
 
@@ -242,7 +268,7 @@ Change the animation so it looks more like an [actual heartbeat](https://www.you
 
 Starter: `display/ex5_clock`
 
-Use the [built-in images](https://microbit-micropython.readthedocs.io/en/v2-docs/image.html#attributes) to show a clock face moving from 1 o'clock to 12 o'clock.
+Can you use the [built-in images](https://microbit-micropython.readthedocs.io/en/v2-docs/image.html#attributes) to show a clock face moving from 1 o'clock to 12 o'clock? For example:
 
 ![display image ex2](../assets/display_image_ex2.gif)
 
@@ -250,7 +276,7 @@ Use the [built-in images](https://microbit-micropython.readthedocs.io/en/v2-docs
 
 Starter: `display/ex6_spinning_square`
 
-Use the [built-in images](https://microbit-micropython.readthedocs.io/en/v2-docs/image.html#attributes) to show a spinning square.
+Can you use the [built-in images](https://microbit-micropython.readthedocs.io/en/v2-docs/image.html#attributes) to show a spinning square? For example:
 
 ![display image ex3](../assets/display_image_ex3.gif)
 
@@ -258,13 +284,13 @@ Use the [built-in images](https://microbit-micropython.readthedocs.io/en/v2-docs
 
 Starter: `display/ex7_no_sleep`
 
-What happens if you remove `sleep(50)` from the `set_pixel()` example? Why do you think this happens?
+The starter code lights each pixel in turn, down each column. What happens if you remove `sleep(50)`? Why do you think this happens?
 
 ### Exercise 8
 
 Starter: `display/ex8_rows`
 
-Change the `set_pixel()` example so the pixel moves across the rows instead of down the columns.
+The starter code moves a pixel down each column. Can you change it so the pixel moves across the rows instead? For example:
 
 ![display custom ex2](../assets/display_custom_ex2.gif)
 
@@ -272,6 +298,6 @@ Change the `set_pixel()` example so the pixel moves across the rows instead of d
 
 Starter: `display/ex9_glasses`
 
-Create this smiley face with glasses. Custom images using `Image()` will help.
+Can you create this smiley face with glasses? Custom images using `Image()` will help.
 
 ![display custom ex3](../assets/display_custom_ex3.png)

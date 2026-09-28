@@ -3,5 +3,5 @@ import speech
 
 # Main loop
 while True:
-    speech.say("Hello world", speed=90, pitch=60)
+    speech.say("Hello world")
     sleep(1000)

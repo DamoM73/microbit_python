@@ -5,6 +5,5 @@ display.set_pixel(2, 2, 5)
 
 # Main loop
 while True:
-    brightness = display.get_pixel(2, 2)
-    print(brightness)
+    print(display.get_pixel(2, 2))
     sleep(1000)

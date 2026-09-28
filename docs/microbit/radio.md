@@ -13,7 +13,7 @@ Possible uses:
 
 ## Connect it
 
-The radio is built into the micro:bit, so there is nothing to connect. You need **at least two micro:bits**.
+The radio is built into the micro:bit, so we don't need to connect anything. We need **at least two micro:bits**.
 
 - Each example is a `main.py` file. See [Your First Program](../micropython/first-program.md) for how to create, upload and run it. Upload the program to each micro:bit.
 - Micro:bits only hear messages from micro:bits in the same **group** (`0`–`255`). Pick a group that other students aren't using.
@@ -24,7 +24,7 @@ The radio is built into the micro:bit, so there is nothing to connect. You need 
 
 ## Set it up
 
-The radio has its own module. Import it after the `microbit` library:
+The radio has its own module. We import it after the `microbit` library:
 
 ```python linenums="1"
 from microbit import *
@@ -42,48 +42,70 @@ import radio
 
 ### `radio.on()`
 
+Turns the radio on. It is off by default to save power, so every radio program needs this.
+
 ```python linenums="1"
 --8<-- "examples/microbit/radio/on/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 2 → imports the `radio` module
-    - line 5 → turns the radio on
-    - line 8 → starts an endless loop
-    - line 9 → shows a tick to show the radio is ready
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 2** → imports the `radio` module.
+    - **line 5** → turns the radio on.
+    - **line 8** → starts an endless loop.
+    - **line 9** → shows a tick to show the radio is ready.
 
 ### `radio.config()`
+
+Changes the radio settings. The most useful setting is `group`, which chooses which micro:bits can hear each other.
 
 ```python linenums="1"
 --8<-- "examples/microbit/radio/config/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 2 → imports the `radio` module
-    - line 5 → sets the radio group to `7`
-    - line 6 → turns the radio on
-    - line 9 → starts an endless loop
-    - line 10 → shows the group number
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 2** → imports the `radio` module.
+    - **line 5** → sets the radio group to `7`.
+    - **line 6** → turns the radio on.
+    - **line 9** → starts an endless loop.
+    - **line 10** → shows the group number.
 
 ### `radio.send()`
+
+Sends a message to every micro:bit in the same group.
 
 ```python linenums="1"
 --8<-- "examples/microbit/radio/send/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 2 → imports the `radio` module
-    - line 5 → sets the radio group to `7`
-    - line 6 → turns the radio on
-    - line 9 → starts an endless loop
-    - line 10 → checks if button **A** was pressed
-    - line 11 → if it was, sends the message `"happy"` to group 7
-    - line 12 → shows `A` to confirm the message was sent
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 2** → imports the `radio` module.
+    - **line 5** → sets the radio group to `7`.
+    - **line 6** → turns the radio on.
+    - **line 9** → starts an endless loop.
+    - **line 10** → checks if button **A** was pressed.
+    - **line 11** → if it was, sends the message `"happy"` to group 7.
 
 ### `radio.receive()`
+
+Returns the oldest message waiting in the queue, or `None` if no messages have arrived.
 
 Run this on a second micro:bit while the first runs the `send()` example.
 
@@ -91,15 +113,20 @@ Run this on a second micro:bit while the first runs the `send()` example.
 --8<-- "examples/microbit/radio/receive/main.py"
 ```
 
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
 ??? note "Code explanation"
-    - line 1 → imports all the commands from the `microbit` library
-    - line 2 → imports the `radio` module
-    - line 5 → sets the radio group to `7`
-    - line 6 → turns the radio on
-    - line 9 → starts an endless loop
-    - line 10 → gets the oldest message in the queue (or `None`) and stores it in `message`
-    - line 11 → checks if the message is `"happy"`
-    - line 12 → if it is, shows a happy face
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 2** → imports the `radio` module.
+    - **line 5** → sets the radio group to `7`.
+    - **line 6** → turns the radio on.
+    - **line 9** → starts an endless loop.
+    - **line 10** → gets the oldest message in the queue (or `None`) and stores it in `message`.
+    - **line 11** → checks if the message is `"happy"`.
+    - **line 12** → if it is, shows a happy face.
 
 ## Documentation
 
@@ -107,19 +134,22 @@ Run this on a second micro:bit while the first runs the `send()` example.
 
 ## Exercises
 
+!!! primm "PRIMM"
+    Time to **modify** the code and see what happens.
+
 Starter files are in the `radio` folder of your tutorial files. Solutions are on the [Exercise Solutions](../reference/solutions.md#radio) page.
 
 ### Exercise 1
 
 Starter: `radio/ex1_pass_image` (both micro:bits)
 
-Move an image between two micro:bits: when the micro:bit showing the image is shaken, the image disappears and appears on the other micro:bit.
+Can you move an image between two micro:bits? When the micro:bit showing the image is shaken, the image should disappear and appear on the other micro:bit.
 
 ### Exercise 2
 
 Starter: `radio/ex2_yes_no` (both micro:bits)
 
-Send a private yes or no answer:
+Can you send a private yes or no answer? Your program should:
 
 - press **A** to send yes, or **B** to send no
 - show the answer on the other micro:bit for half a second
@@ -129,7 +159,7 @@ Send a private yes or no answer:
 
 Starters: `radio/ex3_outside` and `radio/ex3_inside`
 
-Make a wireless thermometer:
+Can you make a wireless thermometer? It should work like this:
 
 - the **outside** micro:bit sends its temperature every 5 seconds
 - the **inside** micro:bit shows its own temperature when button **A** is pressed, and the latest outside temperature when button **B** is pressed
