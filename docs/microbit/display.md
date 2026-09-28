@@ -2,7 +2,14 @@
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eRhlaXqT-0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-The micro:bit display is a 5 × 5 grid of red LEDs that can show text, numbers, images and individual pixels at 10 brightness levels. Use it to show messages, scores, sensor readings, icons and simple animations in your projects.
+The micro:bit display is a 5 × 5 grid of red LEDs that can show text, numbers, images and individual pixels at 10 brightness levels.
+
+Possible uses:
+
+- messages and scores
+- sensor readings
+- icons
+- simple animations
 
 ## Connect it
 
