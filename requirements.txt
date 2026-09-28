@@ -1,5 +1,1 @@
-sphinx
-sphinx-autobuild
-myst-parser
-furo
-sphinx-copybutton
+zensical==0.0.65

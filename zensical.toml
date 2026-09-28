@@ -1,0 +1,70 @@
+[project]
+site_name = "Python meets micro:bit"
+site_description = "MicroPython tutorials for the BBC micro:bit and PiicoDev modules"
+site_author = "Damien Murtagh"
+site_url = "https://damom73.github.io/microbit_python/"
+repo_url = "https://github.com/damom73/microbit_python"
+repo_name = "damom73/microbit_python"
+copyright = "Content licensed under CC BY-NC-SA 4.0. Code licensed under GPLv3."
+docs_dir = "docs"
+
+nav = [
+  { "Home" = "index.md" },
+  { "micro:bit" = [
+    { "Display" = "microbit/display.md" },
+  ] },
+  { "Reference" = [
+    { "Exercise Solutions" = "reference/solutions.md" },
+  ] },
+]
+
+[project.theme]
+language = "en"
+logo = "assets/microbit_python_logo.jpg"
+favicon = "assets/microbit_python_logo.ico"
+features = [
+  "content.code.copy",
+  "content.code.select",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.instant",
+  "navigation.path",
+  "navigation.sections",
+  "navigation.tabs",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+
+[project.markdown_extensions]
+admonition = {}
+attr_list = {}
+md_in_html = {}
+tables = {}
+toc.permalink = true
+pymdownx.details = {}
+pymdownx.highlight.anchor_linenums = true
+pymdownx.highlight.line_spans = "__span"
+pymdownx.highlight.pygments_lang_class = true
+pymdownx.inlinehilite = {}
+pymdownx.keys = {}
+pymdownx.snippets.base_path = ["docs"]
+pymdownx.snippets.check_paths = true
+pymdownx.superfences = {}

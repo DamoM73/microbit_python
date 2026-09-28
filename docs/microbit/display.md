@@ -1,0 +1,270 @@
+# Display
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eRhlaXqT-0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+The micro:bit display is a 5 × 5 grid of red LEDs that can show text, numbers, images and individual pixels at 10 brightness levels. Use it to show messages, scores, sensor readings, icons and simple animations in your projects.
+
+## Connect it
+
+The display is built into the micro:bit, so there is nothing to connect.
+
+- Each example is a `main.py` file. See [Your First Program](../micropython/first-program.md) for how to create, upload and run it.
+- Pixels are located by `(x, y)` coordinates. `(0, 0)` is the top left and `(4, 4)` is the bottom right.
+- Brightness goes from `0` (off) to `9` (brightest).
+
+![display coordinates](../assets/display_coords.jpg)
+
+## Set it up
+
+The display is part of the `microbit` library. Import it at the top of every program:
+
+```python linenums="1"
+from microbit import *
+```
+
+## Methods
+
+| Method | Parameters | Returns | Description |
+| --- | --- | --- | --- |
+| `display.scroll(text, delay=150, wait=True, loop=False, monospace=False)` | `text`: string, int, float or Boolean<br>`delay`: ms per step | none | Scrolls text across the display |
+| `display.show(value, delay=400, wait=True, loop=False, clear=False)` | `value`: image, string, number or list of images<br>`delay`: ms per character or image | none | Shows an image, or shows characters one at a time |
+| `display.clear()` | none | none | Turns every pixel off |
+| `display.set_pixel(x, y, value)` | `x`, `y`: 0–4<br>`value`: 0–9 | none | Sets the brightness of one pixel |
+| `display.get_pixel(x, y)` | `x`, `y`: 0–4 | int (0–9) | Gets the brightness of one pixel |
+| `display.on()` | none | none | Turns the display on |
+| `display.off()` | none | none | Turns the display off |
+| `display.is_on()` | none | Boolean | `True` if the display is on |
+
+### `display.scroll()`
+
+Scrolls text across the display from right to left.
+
+```python linenums="1"
+--8<-- "examples/microbit/display/scroll/main.py"
+```
+
+??? note "Code explanation"
+    - line 1 → imports all the commands from the `microbit` library
+    - line 4 → starts an endless loop
+    - line 5 → scrolls `"Hello world!"` across the display
+    - line 6 → waits 1000 milliseconds (1 second) before the loop repeats
+
+### `display.show()` — text and numbers
+
+Shows characters one at a time instead of scrolling them.
+
+```python linenums="1"
+--8<-- "examples/microbit/display/show/main.py"
+```
+
+??? note "Code explanation"
+    - line 1 → imports all the commands from the `microbit` library
+    - line 4 → starts an endless loop
+    - line 5 → shows each character of `3.14159` one at a time
+        - `delay=500` → each character stays on the display for 500 milliseconds
+    - line 6 → waits 1 second before the loop repeats
+
+### `display.show()` — images
+
+The micro:bit has a range of [built-in images](https://microbit-micropython.readthedocs.io/en/v2-docs/image.html#attributes), such as `Image.HEART`, `Image.HAPPY` and `Image.ARROW_N`.
+
+```python linenums="1"
+--8<-- "examples/microbit/display/show_image/main.py"
+```
+
+![display image](../assets/display_image.gif)
+
+??? note "Code explanation"
+    - line 1 → imports all the commands from the `microbit` library
+    - line 4 → starts an endless loop
+    - line 5 → shows the built-in heart image
+    - line 6 → waits 1 second
+    - line 7 → shows the built-in small heart image
+    - line 8 → waits 1 second before the loop repeats
+
+### `Image()` — custom images
+
+Make your own image with a string of 25 brightness values: five rows of five digits, with each row ending in a colon (`:`).
+
+```python linenums="1"
+--8<-- "examples/microbit/display/custom_image/main.py"
+```
+
+??? note "Code explanation"
+    - line 1 → imports all the commands from the `microbit` library
+    - lines 4–8 → creates a custom image called `boat`
+        - each string is one row, from top to bottom
+        - each digit is the brightness of one pixel, from left to right
+    - line 11 → starts an endless loop
+    - line 12 → shows the `boat` image
+    - line 13 → waits 1 second before the loop repeats
+
+### `display.clear()`
+
+Turns every pixel off.
+
+```python linenums="1"
+--8<-- "examples/microbit/display/clear/main.py"
+```
+
+??? note "Code explanation"
+    - line 1 → imports all the commands from the `microbit` library
+    - line 4 → starts an endless loop
+    - line 5 → shows the built-in tick image
+    - line 6 → waits 1 second
+    - line 7 → clears the display
+    - line 8 → waits 1 second before the loop repeats
+
+### `display.set_pixel()`
+
+Sets the brightness of a single pixel.
+
+```python linenums="1"
+--8<-- "examples/microbit/display/set_pixel/main.py"
+```
+
+![display custom](../assets/display_custom.gif)
+
+??? note "Code explanation"
+    - line 1 → imports all the commands from the `microbit` library
+    - line 4 → clears the display before the loop starts
+    - line 7 → starts an endless loop
+    - line 8 → steps `x` through the columns `0` to `4`
+    - line 9 → for each column, steps `y` through the rows `0` to `4` (a **nested loop**)
+    - line 10 → turns the pixel at `(x, y)` on at full brightness
+    - line 11 → waits 50 milliseconds so the pixel can be seen
+    - line 12 → clears the display before moving to the next pixel
+
+### `display.get_pixel()`
+
+Reads the brightness of a single pixel.
+
+```python linenums="1"
+--8<-- "examples/microbit/display/get_pixel/main.py"
+```
+
+??? note "Code explanation"
+    - line 1 → imports all the commands from the `microbit` library
+    - line 4 → sets the centre pixel to brightness `5`
+    - line 7 → starts an endless loop
+    - line 8 → reads the brightness of the centre pixel and stores it in `brightness`
+    - line 9 → prints the brightness in the Thonny Shell
+    - line 10 → waits 1 second before the loop repeats
+
+### `display.off()` and `display.on()`
+
+Turns the whole display off and back on. The image is remembered while the display is off.
+
+```python linenums="1"
+--8<-- "examples/microbit/display/on_off/main.py"
+```
+
+??? note "Code explanation"
+    - line 1 → imports all the commands from the `microbit` library
+    - line 4 → shows the built-in happy face
+    - line 7 → starts an endless loop
+    - line 8 → turns the display off
+    - line 9 → waits 1 second
+    - line 10 → turns the display back on, showing the happy face again
+    - line 11 → waits 1 second before the loop repeats
+
+!!! tip
+    Turning the display off frees pins 3, 4, 6, 7, 9 and 10 for other uses.
+
+### `display.is_on()`
+
+Checks whether the display is on.
+
+```python linenums="1"
+--8<-- "examples/microbit/display/is_on/main.py"
+```
+
+??? note "Code explanation"
+    - line 1 → imports all the commands from the `microbit` library
+    - line 4 → shows the built-in happy face
+    - line 7 → starts an endless loop
+    - line 8 → turns the display off
+    - line 9 → prints `False` in the Thonny Shell, because the display is off
+    - line 10 → waits 1 second
+    - line 11 → turns the display on
+    - line 12 → prints `True` in the Thonny Shell, because the display is on
+    - line 13 → waits 1 second before the loop repeats
+
+## Documentation
+
+- [BBC micro:bit MicroPython — display](https://microbit-micropython.readthedocs.io/en/v2-docs/display.html)
+- [BBC micro:bit MicroPython — Image](https://microbit-micropython.readthedocs.io/en/v2-docs/image.html)
+
+## Exercises
+
+Starter files are in the `display` folder of your tutorial files. Solutions are on the [Exercise Solutions](../reference/solutions.md#display) page.
+
+### Exercise 1
+
+Starter: `display/ex1_show_message`
+
+Change the program to show a different message.
+
+![Display Text Exercise 1](../assets/display_text_ex1.gif)
+
+### Exercise 2
+
+Starter: `display/ex2_show_delay`
+
+Change the time between each character.
+
+![Display Text Exercise 2](../assets/display_text_ex2.gif)
+
+### Exercise 3
+
+Starter: `display/ex3_show_no_loop`
+
+Use the `display.show()` parameters in the methods table to show the same message repeatedly without a `while True` loop.
+
+![Display Text Exercise 3](../assets/display_text_ex3.gif)
+
+### Exercise 4
+
+Starter: `display/ex4_heartbeat`
+
+Change the animation so it looks more like an [actual heartbeat](https://www.youtube.com/watch?v=gJpT_wHZeF8).
+
+![display image ex1](../assets/display_image_ex1.gif)
+
+### Exercise 5
+
+Starter: `display/ex5_clock`
+
+Use the [built-in images](https://microbit-micropython.readthedocs.io/en/v2-docs/image.html#attributes) to show a clock face moving from 1 o'clock to 12 o'clock.
+
+![display image ex2](../assets/display_image_ex2.gif)
+
+### Exercise 6
+
+Starter: `display/ex6_spinning_square`
+
+Use the [built-in images](https://microbit-micropython.readthedocs.io/en/v2-docs/image.html#attributes) to show a spinning square.
+
+![display image ex3](../assets/display_image_ex3.gif)
+
+### Exercise 7
+
+Starter: `display/ex7_no_sleep`
+
+What happens if you remove `sleep(50)` from the `set_pixel()` example? Why do you think this happens?
+
+### Exercise 8
+
+Starter: `display/ex8_rows`
+
+Change the `set_pixel()` example so the pixel moves across the rows instead of down the columns.
+
+![display custom ex2](../assets/display_custom_ex2.gif)
+
+### Exercise 9
+
+Starter: `display/ex9_glasses`
+
+Create this smiley face with glasses. Custom images using `Image()` will help.
+
+![display custom ex3](../assets/display_custom_ex3.png)
