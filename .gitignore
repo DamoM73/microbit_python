@@ -12,6 +12,8 @@ build/
 develop-eggs/
 dist/
 downloads/
+!docs/downloads/
+docs/downloads/microbit_tutorials.zip
 eggs/
 .eggs/
 lib/
