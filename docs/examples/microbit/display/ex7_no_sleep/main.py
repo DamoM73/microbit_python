@@ -1,3 +1,7 @@
+# Exercise 7
+# The starter code lights each pixel in turn, down each column. What happens
+# if you remove sleep(50)? Why do you think this happens?
+
 from microbit import *
 
 # Setup

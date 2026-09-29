@@ -1,3 +1,6 @@
+# Exercise 4
+# Can you change the animation so it looks more like an actual heartbeat?
+
 from microbit import *
 
 # Main loop

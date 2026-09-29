@@ -1,3 +1,6 @@
+# Exercise 2
+# Can you make it show other shapes?
+
 from microbit import *
 
 # Main loop

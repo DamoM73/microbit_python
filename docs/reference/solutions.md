@@ -307,7 +307,7 @@ Press **A** on one micro:bit to give it the image to start.
 ### Exercise 2
 
 ```python linenums="1"
---8<-- "solutions/piicodev/rtc/ex2_stopwatch.py"
+--8<-- "solutions/piicodev/rtc/ex2_greeting.py"
 ```
 
 ## 3x RGB LED

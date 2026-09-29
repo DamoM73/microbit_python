@@ -50,6 +50,8 @@ These are no longer used by any page:
 - `docs/examples/piicodev/oled/show/`
 - `docs/examples/other/glowbit/random/`
 - `docs/examples/piicodev/rtc/weekday/`
+- `docs/examples/piicodev/rtc/ex2_stopwatch/`
+- `docs/solutions/piicodev/rtc/ex2_stopwatch.py`
 - `docs/assets/debugger.png`
 - `docs/assets/display_custom.gif`
 - `docs/assets/display_image.gif`

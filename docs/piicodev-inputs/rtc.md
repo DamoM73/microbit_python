@@ -164,6 +164,8 @@ Sets the clock from a Unix time.
 
 ## Documentation
 
+Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
 - [PiicoDev RV-3028 driver](https://github.com/CoreElectronics/CE-PiicoDev-RV3028-MicroPython-Module)
 
 ## Exercises
@@ -181,6 +183,6 @@ Can you make a clock that shows the time when button **A** is pressed and the da
 
 ### Exercise 2
 
-Starter: `rtc/ex2_stopwatch`
+Starter: `rtc/ex2_greeting`
 
-Can you make a stopwatch using Unix time? Press **A** to start, and press **B** to stop and show how many seconds have passed.
+Can you make the micro:bit greet you when button **A** is pressed? It should show `Good morning` before 12 pm, `Good afternoon` from 12 pm until 6 pm, and `Good evening` after 6 pm.

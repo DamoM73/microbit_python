@@ -1,3 +1,6 @@
+# Exercise 2
+# Can you change the time between each character?
+
 from microbit import *
 
 # Main loop

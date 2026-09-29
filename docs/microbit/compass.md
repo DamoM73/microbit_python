@@ -113,6 +113,8 @@ Returns the strength of the magnetic field around the micro:bit. It goes up when
 
 ## Documentation
 
+Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
 - [BBC micro:bit MicroPython — compass](https://microbit-micropython.readthedocs.io/en/v2-docs/compass.html)
 
 ## Exercises

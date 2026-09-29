@@ -1,3 +1,7 @@
+# Exercise 8
+# The starter code moves a pixel down each column. Can you change it so the
+# pixel moves across the rows instead?
+
 from microbit import *
 
 # Setup

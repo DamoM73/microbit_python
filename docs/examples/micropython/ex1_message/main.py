@@ -1,3 +1,6 @@
+# Exercise 1
+# Can you make it show a different message?
+
 from microbit import *
 
 # Main loop

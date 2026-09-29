@@ -134,4 +134,6 @@ Gives the number of presses since the last check, then resets the count to `0`.
 
 ## Documentation
 
+Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
 - [PiicoDev Switch driver](https://github.com/CoreElectronics/CE-PiicoDev-Switch-MicroPython-Module)

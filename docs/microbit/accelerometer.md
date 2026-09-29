@@ -212,6 +212,8 @@ Returns every gesture that has happened since the last check, oldest first.
 
 ## Documentation
 
+Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
 - [BBC micro:bit MicroPython — accelerometer](https://microbit-micropython.readthedocs.io/en/v2-docs/accelerometer.html)
 
 ## Exercises

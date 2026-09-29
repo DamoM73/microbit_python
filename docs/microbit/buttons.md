@@ -102,6 +102,8 @@ Checks whether the button has been pressed **since the last check**, even if it 
 
 ## Documentation
 
+Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
 - [BBC micro:bit MicroPython — buttons](https://microbit-micropython.readthedocs.io/en/v2-docs/button.html)
 
 ## Exercises

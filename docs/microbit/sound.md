@@ -251,6 +251,8 @@ Returns how loud the sound around the micro:bit is, from `0` (silent) to `255` (
 
 ## Documentation
 
+Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
 - [BBC micro:bit MicroPython — music](https://microbit-micropython.readthedocs.io/en/v2-docs/music.html)
 - [BBC micro:bit MicroPython — speech](https://microbit-micropython.readthedocs.io/en/v2-docs/speech.html)
 - [BBC micro:bit MicroPython — microphone](https://microbit-micropython.readthedocs.io/en/v2-docs/microphone.html)

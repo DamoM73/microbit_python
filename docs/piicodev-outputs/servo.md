@@ -141,4 +141,6 @@ If a continuous servo creeps when `speed` is `0`, its midpoint needs adjusting.
 
 ## Documentation
 
-- [PiicoDev Servo Driver driver](https://github.com/CoreElectronics/CE-PiicoDev-Servo-Driver-MicroPython-Module)
+Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
+- [PiicoDev Servo Driver](https://github.com/CoreElectronics/CE-PiicoDev-Servo-Driver-MicroPython-Module)

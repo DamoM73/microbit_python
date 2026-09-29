@@ -80,6 +80,8 @@ Air pressure drops as you go higher, so the sensor can work out changes in heigh
 
 ## Documentation
 
+Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
 - [Core Electronics — Atmospheric Sensor micro:bit guide](https://core-electronics.com.au/guides/piicodev-atmospheric-sensor-bme280-quickstart-guide-for-microbit/)
 - [PiicoDev BME280 driver](https://github.com/CoreElectronics/CE-PiicoDev-BME280-MicroPython-Module)
 

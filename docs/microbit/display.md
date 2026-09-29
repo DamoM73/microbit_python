@@ -222,6 +222,8 @@ Checks whether the display is on.
 
 ## Documentation
 
+Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
 - [BBC micro:bit MicroPython — display](https://microbit-micropython.readthedocs.io/en/v2-docs/display.html)
 - [BBC micro:bit MicroPython — Image](https://microbit-micropython.readthedocs.io/en/v2-docs/image.html)
 

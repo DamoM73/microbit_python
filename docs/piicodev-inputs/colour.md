@@ -121,6 +121,8 @@ By default, `classifyHue()` chooses from red, yellow, green, cyan, blue and mage
 
 ## Documentation
 
+Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
 - [Core Electronics — Colour Sensor micro:bit guide](https://core-electronics.com.au/guides/micro-bit/piicodev-colour-sensor-veml6040-micro-bit-guide/)
 - [PiicoDev VEML6040 driver](https://github.com/CoreElectronics/CE-PiicoDev-VEML6040-MicroPython-Module)
 

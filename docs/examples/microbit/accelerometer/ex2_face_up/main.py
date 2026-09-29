@@ -1,3 +1,7 @@
+# Exercise 2
+# Can you make the micro:bit show a happy face if it is face up, or an angry
+# face if it isn't?
+
 from microbit import *
 
 # Main loop

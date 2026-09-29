@@ -136,5 +136,7 @@ Connect a rotary pot with ID `0, 0, 0, 0` and a slide pot with ID `1, 0, 0, 0`.
 
 ## Documentation
 
+Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
 - [Core Electronics — Potentiometer guide](https://core-electronics.com.au/guides/piicodev-potentiometer-getting-started-guide/)
 - [PiicoDev Potentiometer driver](https://github.com/CoreElectronics/CE-PiicoDev-Potentiometer-MicroPython-Module)

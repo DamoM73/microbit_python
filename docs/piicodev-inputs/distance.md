@@ -59,6 +59,8 @@ Returns the distance to the nearest object in millimetres.
 
 ## Documentation
 
+Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
 - [Core Electronics — Distance Sensor micro:bit guide](https://core-electronics.com.au/guides/piicodev-distance-sensor-vl53l1x-micro-bit-guide/)
 - [PiicoDev VL53L1X driver](https://github.com/CoreElectronics/CE-PiicoDev-VL53L1X-MicroPython-Module)
 

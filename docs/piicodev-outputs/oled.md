@@ -413,5 +413,7 @@ Turns the screen off and back on. What was on the screen is remembered while it 
 
 ## Documentation
 
+Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
 - [Core Electronics — OLED micro:bit guide](https://core-electronics.com.au/guides/micro-bit/piicodev-oled-ssd1306-microbit-guide/)
 - [PiicoDev SSD1306 driver](https://github.com/CoreElectronics/CE-PiicoDev-SSD1306-MicroPython-Module)

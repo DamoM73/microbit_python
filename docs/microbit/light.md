@@ -52,6 +52,8 @@ Returns how much light is shining on the display, from `0` (dark) to `255` (brig
 
 ## Documentation
 
+Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
 - [BBC micro:bit MicroPython — display.read_light_level](https://microbit-micropython.readthedocs.io/en/v2-docs/display.html#microbit.display.read_light_level)
 
 ## Exercises
