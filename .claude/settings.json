@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(gh api repos/CoreElectronics/CE-PiicoDev-RV3028-MicroPython-Module/contents --jq '.[].path')",
+      "PowerShell(gh api repos/CoreElectronics/CE-PiicoDev-RGB-LED-MicroPython-Module/contents --jq '.[].path')",
+      "Bash(curl -sfo docs/drivers/PiicoDev_RV3028.py https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-RV3028-MicroPython-Module/main/min/PiicoDev_RV3028.py)",
+      "Bash(curl -sfo docs/drivers/PiicoDev_RGB.py https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-RGB-LED-MicroPython-Module/main/min/PiicoDev_RGB.py)",
+      "Bash(curl -sfo C:/Users/DamoM/AppData/Local/Temp/claude/d--GIT-microbit-python/96d97478-361e-43c8-a63d-9e7c9968240d/scratchpad/RV3028_full.py https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-RV3028-MicroPython-Module/main/PiicoDev_RV3028.py)",
+      "Bash(curl -sfo C:/Users/DamoM/AppData/Local/Temp/claude/d--GIT-microbit-python/96d97478-361e-43c8-a63d-9e7c9968240d/scratchpad/RGB_full.py https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-RGB-LED-MicroPython-Module/main/PiicoDev_RGB.py)",
+      "Bash(python scripts/make_zip.py)",
+      "Bash(curl -s https://raw.githubusercontent.com/CoreElectronics/CE-PiicoDev-RGB-LED-MicroPython-Module/main/Firmware-PiicoDev-RGB-LED-Module/Firmware-PiicoDev-RGB-LED-Module.ino)",
+      "Bash(python -c \"import datetime;print\\(datetime.date\\(2026,9,28\\).strftime\\('%A'\\)\\)\")",
+      "PowerShell(python scripts/make_zip.py)",
+      "PowerShell(python scripts/check_explanations.py)",
+      "PowerShell(zensical build --clean)",
+      "Bash(git rm *)",
+      "Bash(git check-ignore *)",
+      "Bash(rm -rf '%GIT%microbit_python' student_resources _static assets python_files)",
+      "Bash(pip install *)",
+      "Bash(PYTHONPATH=C:/Users/DamoM/AppData/Local/Temp/claude/d--GIT-microbit-python/96d97478-361e-43c8-a63d-9e7c9968240d/scratchpad/cs python -m codespell_lib --builtin clear,rare,informal,usage -S *.png,*.gif,*.jpg,*.zip,*.dat,*.pbm,*.ico,docs/drivers docs README.md)",
+      "Bash(echo \"exit $?\")",
+      "Bash(git add *)",
+      "Bash(git restore *)",
+      "Bash(python -c \"import zipfile;z=zipfile.ZipFile\\('docs/downloads/microbit_tutorials.zip'\\);print\\(z.read\\([n for n in z.namelist\\(\\) if n.endswith\\('setBrightness/main.py'\\)][0]\\).decode\\(\\)\\);print\\([n for n in z.namelist\\(\\) if 'stopwatch' in n or 'weekday' in n]\\)\")",
+      "Bash(git commit *)",
+      "Bash(git push *)"
+    ]
+  }
+}
