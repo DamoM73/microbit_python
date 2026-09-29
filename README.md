@@ -21,7 +21,7 @@ To check the full build, run `zensical build --clean`. It should report `No issu
 python scripts/make_zip.py
 ```
 
-This builds `docs/downloads/microbit_tutorials.zip` and copies the PiicoDev drivers each page needs into every example folder (see `PAGE_DRIVERS` in the script). It should print no `WARNING` lines.
+This builds `docs/downloads/microbit_tutorials.zip` and copies the PiicoDev drivers each page needs into every example folder (see `PAGE_DRIVERS` in the script). It should print no `WARNING` lines. The zip isn't committed; the deploy workflow builds it before building the site.
 
 ## Check code explanations
 

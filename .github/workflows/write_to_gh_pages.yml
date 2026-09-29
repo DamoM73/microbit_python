@@ -24,6 +24,7 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install -r requirements.txt
+      - run: python scripts/make_zip.py
       - run: zensical build --clean
       - uses: actions/upload-pages-artifact@v5
         with:
