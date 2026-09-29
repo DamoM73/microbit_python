@@ -9,5 +9,6 @@ rtc.day = 28
 rtc.hour = 14
 rtc.minute = 30
 rtc.second = 0
+rtc.weekdayName = "Monday"
 rtc.ampm = "24"
 rtc.setDateTime()

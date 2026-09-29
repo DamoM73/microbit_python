@@ -7,5 +7,5 @@ rtc.setUnixTime(1790000000)
 
 # Main loop
 while True:
-    print(rtc.timestamp())
+    print(rtc.getUnixTime())
     sleep(1000)

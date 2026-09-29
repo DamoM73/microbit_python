@@ -8,4 +8,3 @@ leds.fill([0, 0, 255])
 # Main loop
 while True:
     leds.setBrightness(10)
-    leds.show()

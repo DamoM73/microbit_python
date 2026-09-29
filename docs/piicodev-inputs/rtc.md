@@ -34,22 +34,23 @@ The date and time are stored in **properties**. Set them, then call `setDateTime
 
 | Property | Values |
 | --- | --- |
-| `rtc.year` | 2000–2099 |
+| `rtc.year` | 2000–2099 when setting; `getDateTime()` gives the last two digits, such as `26` |
 | `rtc.month` | 1–12 |
 | `rtc.day` | 1–31 |
 | `rtc.hour` | 0–23 in 24-hour mode |
 | `rtc.minute` | 0–59 |
 | `rtc.second` | 0–59 |
 | `rtc.ampm` | `"24"`, `"AM"` or `"PM"` |
-| `rtc.weekday` | the name of the day |
+| `rtc.weekday` | 0–6, where `0` is Monday |
+| `rtc.weekdayName` | the name of the day, such as `"Monday"` |
 
 | Method | Parameters | Returns | Description |
 | --- | --- | --- | --- |
 | `rtc.setDateTime()` | none | none | Writes the date and time properties to the clock |
 | `rtc.getDateTime()` | none | none | Reads the clock into the date and time properties |
 | `rtc.timestamp()` | none | string | Date and time as `YYYY-MM-DD HH:MM:SS` |
-| `rtc.getUnixTime()` | none | int | Seconds since 1 January 1970 (**Unix time**) |
-| `rtc.setUnixTime(time)` | `time`: Unix time | none | Sets the clock from a Unix time |
+| `rtc.getUnixTime()` | none | int | Reads the clock's **Unix time** counter |
+| `rtc.setUnixTime(time)` | `time`: Unix time | none | Sets the Unix time counter. It doesn't change the date and time. |
 
 ### `setDateTime()`
 
@@ -71,8 +72,9 @@ Run this once to set the clock. Change the values to the current date and time f
     - **line 2** → imports the Real Time Clock driver.
     - **line 5** → creates the clock and calls it `rtc`.
     - **lines 6–11** → sets the year, month, day, hour, minute and second properties.
-    - **line 12** → uses 24-hour time.
-    - **line 13** → writes the date and time to the clock.
+    - **line 12** → sets the day of the week. The clock doesn't work this out from the date, so we need to set it ourselves.
+    - **line 13** → uses 24-hour time.
+    - **line 14** → writes the date and time to the clock.
 
 ### `timestamp()`
 
@@ -97,7 +99,7 @@ Returns the date and time as one string, in the format `YYYY-MM-DD HH:MM:SS`.
 
 ### `getDateTime()`
 
-Reads the date and time from the clock into the `year`, `month`, `day`, `hour`, `minute`, `second` and `weekday` properties. `weekday` holds the name of the day, such as `"Monday"`.
+Reads the date and time from the clock into the `year`, `month`, `day`, `hour`, `minute`, `second` and `weekday` properties. `weekday` holds the day as a number from `0` (Monday) to `6` (Sunday), and `weekdayName` gives its name, such as `"Monday"`.
 
 ```python linenums="1"
 --8<-- "examples/piicodev/rtc/getDateTime/main.py"
@@ -119,9 +121,9 @@ Reads the date and time from the clock into the `year`, `month`, `day`, `hour`, 
 
 ### `getUnixTime()`
 
-Returns the date and time as **Unix time**: the number of seconds since 1 January 1970.
+Returns the clock's **Unix time**: the number of seconds since 1 January 1970.
 
-Unix time is one number that counts seconds. It makes working out the time between two events easy: subtract one from the other.
+Unix time is one number that counts seconds. It makes working out the time between two events easy: subtract one from the other. The clock keeps Unix time on a separate counter from the date and time, so it only matches the date and time once we set it with `setUnixTime()`.
 
 ```python linenums="1"
 --8<-- "examples/piicodev/rtc/getUnixTime/main.py"
@@ -142,7 +144,7 @@ Unix time is one number that counts seconds. It makes working out the time betwe
 
 ### `setUnixTime()`
 
-Sets the clock from a Unix time.
+Sets the clock's Unix time counter. It doesn't change the date and time that `timestamp()` and `getDateTime()` read.
 
 ```python linenums="1"
 --8<-- "examples/piicodev/rtc/setUnixTime/main.py"
@@ -159,7 +161,7 @@ Sets the clock from a Unix time.
     - **line 5** → creates the clock and calls it `rtc`.
     - **line 6** → sets the clock to Unix time `1790000000`.
     - **line 9** → starts an endless loop.
-    - **line 10** → prints the date and time that Unix time represents.
+    - **line 10** → prints the Unix time in the Shell. It starts at `1790000000` and goes up by 1 every second.
     - **line 11** → waits 1 second before the loop repeats.
 
 ## Documentation

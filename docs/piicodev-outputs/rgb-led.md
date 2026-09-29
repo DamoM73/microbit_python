@@ -37,7 +37,7 @@ leds = PiicoDev_RGB()
 | `leds.show()` | none | none | Sends the colours set with `setPixel()` to the LEDs |
 | `leds.fill(colour)` | `colour`: `[r, g, b]` | none | Sets all three LEDs to one colour straight away |
 | `leds.clear()` | none | none | Turns all the LEDs off |
-| `leds.setBrightness(level)` | `level`: 0–255 | none | Sets the brightness of all the LEDs (default `50`) |
+| `leds.setBrightness(level)` | `level`: 0–255 | none | Sets the brightness of all the LEDs straight away (default `50`) |
 | `leds.pwrLED(state)` | `state`: `True` or `False` | none | Turns the small power LED on or off |
 | `wheel(h)` | `h`: position on the colour wheel, 0–1 | list `[r, g, b]` | Converts a colour-wheel position into a colour |
 
@@ -124,8 +124,7 @@ Sets the brightness of all the LEDs, from `0` (off) to `255` (brightest).
     - **line 5** → creates the module and calls it `leds`.
     - **line 6** → sets all the LEDs to blue at the default brightness.
     - **line 9** → starts an endless loop.
-    - **line 10** → sets the brightness to `10`, much dimmer than the default `50`.
-    - **line 11** → sends the new brightness to the LEDs.
+    - **line 10** → sets the brightness to `10`, much dimmer than the default `50`. The LEDs change straight away, so we don't need `show()`.
 
 ### `pwrLED()`
 
