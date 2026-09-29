@@ -13,7 +13,8 @@ Work on the `zensical` branch. Do the tasks in order and check with Damien befor
 - **Drivers:** one copy of each PiicoDev driver in `docs/drivers/`. `scripts/make_zip.py` builds `docs/downloads/microbit_tutorials.zip` and copies the drivers each page needs into every example folder (see `PAGE_DRIVERS`).
 - **Colour scheme:** navy `#476088`, yellow `#ffc562`, coral `#ff6d74`, teal `#4fddc3`, blue `#61a8e8`, set in `docs/stylesheets/extra.css`. The bright colours are for callouts and dark-mode text only, because they are too light to read as text on white.
 - **Checks:** `python scripts/check_explanations.py` confirms every "Code explanation" line number matches its example.
-- **Page template:** video → one-sentence description → "Possible uses:" bullet list → Connect it → Set it up → Methods table → for each method: a short explanation, one example, then a collapsible `??? note "Code explanation"` box (`- line n → …`) → Documentation → Exercises.
+- **Page template:** video → one-sentence description → "Possible uses:" bullet list → Connect it → Set it up → Methods table → for each method: a short explanation, one example, then a collapsible `??? note "Code explanation"` box (`- line n → …`) → Documentation (opens with the standard sentence explaining what documentation is) → Exercises.
+- **Exercise starters:** each `exN_*/main.py` starts with a comment block (`# Exercise N`, then the instructions) copied from the page's Exercises section, without markdown formatting. If an exercise's wording changes, update its starter comment to match. Solution files have no instruction comment.
 - **Example rules:** each example uses its method once, with only the supporting code needed to see it work, and keeps the `# Setup` / `# Main loop` structure. Comments are structural only.
 - **Writing style:** Australian English, written for Year 7/8 students, in Damien's voice from the original site:
     - an inclusive "we" voice in instructions and explanations ("we need to", "our program", "Let's")
@@ -41,7 +42,7 @@ Read the two new drivers and confirm or fix these assumptions in `docs/piicodev-
 - `getDateTime()` fills in `rtc.weekday` with the day's name (the `getDateTime()` section says so).
 - `rtc.ampm = "24"` is valid, and `year` accepts `2026`.
 
-If anything differs, update the example, its code explanation, the methods table and any affected solution. Then run `python scripts/check_explanations.py` and `zensical build --clean`.
+If anything differs, update the example, its code explanation, the methods table, any affected solution, and any exercise wording and starter comment. Then run `python scripts/check_explanations.py` and `zensical build --clean`.
 
 ## 3. Delete leftover files in `docs/` — Confirm first
 
