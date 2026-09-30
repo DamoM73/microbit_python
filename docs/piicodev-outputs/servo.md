@@ -1,5 +1,11 @@
 # Servo Driver
 
+!!! learn "On this page we will learn"
+    - how to connect the Servo Driver
+    - how to turn a servo to an angle
+    - how to spin a continuous servo at a speed
+    - how to release and calibrate a servo
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7D_5JzoxYyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The PiicoDev Servo Driver controls up to four servo motors, turning them to an angle or spinning them at a speed.

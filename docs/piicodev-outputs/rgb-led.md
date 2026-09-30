@@ -1,5 +1,11 @@
 # 3x RGB LED
 
+!!! learn "On this page we will learn"
+    - how to connect the 3x RGB LED
+    - how to set each LED's colour
+    - how to fill, clear and change the brightness of the LEDs
+    - how to pick colours from a colour wheel
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7NIzQpjTXWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev 3x RGB LED Module has three full-colour LEDs that can each be set to any colour and brightness.

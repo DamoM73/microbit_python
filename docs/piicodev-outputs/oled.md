@@ -1,5 +1,12 @@
 # OLED Display
 
+!!! learn "On this page we will learn"
+    - how to connect the OLED Display
+    - how to draw pixels, lines, rectangles, circles and arcs
+    - how to show text and images
+    - how to draw graphs
+    - how to change the display's contrast, rotation and power
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xEcLUxhMMDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev OLED Display is a 128 × 64 pixel white-on-black screen that can show text, shapes, graphs and images.

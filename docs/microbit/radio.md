@@ -1,5 +1,10 @@
 # Radio
 
+!!! learn "On this page we will learn"
+    - how the micro:bit radio works
+    - how to turn the radio on and choose a group
+    - how to send and receive messages between micro:bits
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rvymAr6WqrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The radio sends and receives short wireless messages between micro:bits.

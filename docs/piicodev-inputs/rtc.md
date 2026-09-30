@@ -1,5 +1,11 @@
 # Real Time Clock
 
+!!! learn "On this page we will learn"
+    - how to connect the Real Time Clock
+    - how to set and read the date and time
+    - how to make a timestamp
+    - how Unix time works
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ewzzmh7HUJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev Real Time Clock (RV-3028) keeps track of the date and time, even while the micro:bit is turned off.

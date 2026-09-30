@@ -1,5 +1,11 @@
 # Display
 
+!!! learn "On this page we will learn"
+    - how to scroll and show text and numbers
+    - how to show built-in and custom images
+    - how to turn individual pixels on and off
+    - how to clear the display and turn it off and on
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eRhlaXqT-0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The micro:bit display is a 5 × 5 grid of red LEDs that can show text, numbers, images and individual pixels at 10 brightness levels.

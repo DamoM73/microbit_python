@@ -1,5 +1,11 @@
 # Sound
 
+!!! learn "On this page we will learn"
+    - how to write notes for tunes
+    - how to play built-in and custom tunes and tones
+    - how to make the micro:bit speak and sing
+    - how to measure sound with the microphone
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/r53PjFwyAhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The micro:bit v2 has a built-in speaker that plays tunes, tones and robotic speech, and a microphone that measures how loud it is.

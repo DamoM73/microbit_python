@@ -1,5 +1,11 @@
 # Using PiicoDev
 
+!!! learn "On this page we will learn"
+    - what PiicoDev modules are
+    - how to connect a module to the micro:bit
+    - which files a PiicoDev program needs
+    - how to upload the driver files
+
 PiicoDev is a range of plug-and-play sensors and output modules made by the Australian company [Core Electronics](https://core-electronics.com.au/). Every PiicoDev module uses the same cable, so we can connect modules to the micro:bit without soldering or breadboards.
 
 ## Connect a module

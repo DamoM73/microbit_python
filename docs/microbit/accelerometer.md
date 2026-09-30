@@ -1,5 +1,10 @@
 # Accelerometer
 
+!!! learn "On this page we will learn"
+    - how to measure movement and tilt in three directions
+    - how to read all three values at once
+    - how to recognise gestures such as shaking or turning face up
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UT35ODxvmS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The accelerometer measures movement and tilt in three directions and recognises gestures such as shaking or turning face up.

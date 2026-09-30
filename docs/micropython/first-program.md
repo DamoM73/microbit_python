@@ -1,5 +1,11 @@
 # Your First Program
 
+!!! learn "On this page we will learn"
+    - how MicroPython runs programs on the micro:bit
+    - how to open, create, run and stop a program
+    - what the PRIMM process is
+    - how to upload a program so it runs by itself
+
 Before we create our first program, we need to understand how MicroPython works. This page shows how we create, run and upload every program in this course. Come back here whenever you need a reminder.
 
 ## How MicroPython runs programs

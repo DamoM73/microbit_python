@@ -1,5 +1,10 @@
 # Button
 
+!!! learn "On this page we will learn"
+    - how to connect the PiicoDev Button
+    - how to check whether it is pressed or was pressed
+    - how to detect double presses and count presses
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oNsP-YnHCho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The PiicoDev Button is a large push button that detects presses, double presses and counts how many times it has been pressed.

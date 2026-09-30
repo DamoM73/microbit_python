@@ -1,5 +1,10 @@
 # Compass
 
+!!! learn "On this page we will learn"
+    - how to calibrate the compass
+    - how to find which direction the micro:bit is pointing
+    - how to measure magnetic field strength
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/a3P6LWwPBqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The compass (a **magnetometer**) measures magnetic fields, so it can find which direction the micro:bit is pointing and detect nearby magnets.

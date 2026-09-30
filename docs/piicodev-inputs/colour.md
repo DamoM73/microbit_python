@@ -1,5 +1,11 @@
 # Colour Sensor
 
+!!! learn "On this page we will learn"
+    - how to connect the Colour Sensor
+    - how to read red, green and blue values
+    - how to read hue, saturation and value
+    - how to identify a colour
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/d6Ot4NlOBfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev Colour Sensor (VEML6040) measures the red, green, blue and white light reflected from an object, and can identify its colour.

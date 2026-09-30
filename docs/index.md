@@ -22,6 +22,38 @@ Every component page follows the same layout:
 - **Code explanation** → click to open a line-by-line explanation of each example
 - **Exercises** → practice tasks, with solutions on the [Exercise Solutions](reference/solutions.md) page
 
+## Callouts
+
+Coloured boxes called **callouts** highlight different kinds of information. Each type of callout has its own colour and icon, so we can tell at a glance what it's for.
+
+!!! learn "Learning intentions"
+    This callout is at the top of every tutorial page. It lists what we will learn on that page.
+
+!!! primm "PRIMM"
+    This callout comes after each example program. It asks us to **predict** what the code will do, **run** it, and **investigate** how it works. Sometimes it asks us to **modify** the code.
+
+!!! note "Code explanation"
+    This callout comes after each PRIMM callout and gives a line-by-line explanation of the example program. On the tutorial pages it starts closed, so we can make our own prediction first. Click its title to open it.
+
+!!! tip "Tip"
+    This callout gives extra information, such as definitions, background facts, comparisons and hints.
+
+!!! warning "Warning"
+    This callout warns us about mistakes that are easy to make, or things that will stop our program or micro:bit working.
+
+## Code blocks
+
+Programs are shown in **code blocks** like this one:
+
+```python linenums="1"
+from microbit import *
+
+display.scroll("Hello")
+```
+
+- The **line numbers** on the left match the line numbers used in the Code explanation.
+- The **copy** button in the top-right corner of a code block copies the code, so we can paste it into Thonny.
+
 ## Tutorial files
 
 Download all the examples and exercise starter files: [microbit_tutorials.zip](downloads/microbit_tutorials.zip). See [Setting up Thonny](micropython/thonny.md#tutorial-files) for how to use them.

@@ -1,5 +1,11 @@
 # Debugging with Thonny
 
+!!! learn "On this page we will learn"
+    - the difference between syntax, run-time and logic errors
+    - how to use Thonny's debugger to step through code
+    - how to use breakpoints
+    - how to find and fix a logic error
+
 !!! tip "Use Python 3, not the micro:bit"
     Thonny's debugger works with regular Python on your computer, not with MicroPython on the micro:bit. Before you start this page, choose **Tools** → **Options** → **Interpreter** and select **Local Python 3**. Change it back to **MicroPython (BBC micro:bit)** when you are finished.
 

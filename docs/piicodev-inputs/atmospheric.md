@@ -1,5 +1,10 @@
 # Atmospheric Sensor
 
+!!! learn "On this page we will learn"
+    - how to connect the Atmospheric Sensor
+    - how to read temperature, air pressure and humidity
+    - how to estimate altitude from air pressure
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gOmtS4pFegE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev Atmospheric Sensor (BME280) measures temperature, air pressure and humidity.

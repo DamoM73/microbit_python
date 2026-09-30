@@ -1,5 +1,11 @@
 # Setting up Thonny
 
+!!! learn "On this page we will learn"
+    - what MicroPython, the micro:bit and Thonny are
+    - how to connect the micro:bit and set up Thonny
+    - what each part of the Thonny window does
+    - how to get the tutorial files
+
 During this course we will use **Thonny** to write **MicroPython** programs for the **micro:bit**. This page shows how to set everything up.
 
 ## What is MicroPython?

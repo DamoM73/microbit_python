@@ -1,5 +1,10 @@
 # Touch
 
+!!! learn "On this page we will learn"
+    - how capacitive touch works
+    - how to detect when the logo is touched
+    - how to use pins 0, 1 and 2 as touch inputs
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/spFD3SxxxHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The gold logo and pins 0, 1 and 2 can sense touch using **capacitive touch**, the same idea used by phone screens.

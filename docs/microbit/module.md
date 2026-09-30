@@ -1,5 +1,10 @@
 # microbit Module
 
+!!! learn "On this page we will learn"
+    - how to pause a program with `sleep()`
+    - how to measure how long a program has been running
+    - how to run code on a schedule with `run_every()`
+
 The `microbit` module contains general functions for pausing a program, measuring time and running code on a schedule.
 
 Possible uses:

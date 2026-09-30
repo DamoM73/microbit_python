@@ -1,5 +1,9 @@
 # Light Sensor
 
+!!! learn "On this page we will learn"
+    - how the micro:bit measures light with its display
+    - how to read the light level
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ii0U_FMr-Z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The micro:bit uses the LEDs on its display to measure how much light is shining on it.

@@ -1,5 +1,10 @@
 # Creating Your Program
 
+!!! learn "On this page we will learn"
+    - the structure every program in this course uses: imports, setup and main loop
+    - how to organise a program into input, process and output
+    - how to plan, build and test a program step by step
+
 Every example in this course uses the same structure. We will use it for our own programs too, because it keeps our code organised and makes problems easier to find and fix.
 
 ## The structure

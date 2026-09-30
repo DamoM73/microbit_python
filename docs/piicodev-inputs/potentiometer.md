@@ -1,5 +1,11 @@
 # Potentiometers
 
+!!! learn "On this page we will learn"
+    - how to connect a potentiometer
+    - how to read its value
+    - how to change the range of values it gives
+    - how to use more than one potentiometer
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eD8h_VAoV90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev Rotary and Slide Potentiometers ("pots") give a value that changes smoothly as you turn the knob or move the slider.
