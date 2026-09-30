@@ -44,14 +44,18 @@
   color: var(--heading-colour);
 }
 
-/* Callout colours: each type gets a border, a light tint and a coloured icon */
+/* Callouts: every type uses the same style, a light tint of its colour
+   with a darker border of the same colour */
+.md-typeset :is(.admonition, details) { --callout: #448aff; }
 .md-typeset .admonition.primm, .md-typeset details.primm { --callout: var(--coral); }
 .md-typeset .admonition.note,  .md-typeset details.note  { --callout: var(--teal); }
 .md-typeset .admonition.tip,   .md-typeset details.tip   { --callout: var(--blue); }
 .md-typeset .admonition.warning, .md-typeset details.warning { --callout: var(--yellow); }
 
+.md-typeset :is(.admonition, details),
 .md-typeset :is(.admonition, details):is(.primm, .note, .tip, .warning) {
-  border-color: var(--callout);
+  --callout-border: color-mix(in srgb, var(--callout) 70%, black);
+  border: 0.075rem solid var(--callout-border);
   background-color: color-mix(in srgb, var(--callout) 12%, transparent);
 }
 
@@ -59,16 +63,19 @@
   box-shadow: 0 0 0 .2rem color-mix(in srgb, var(--callout) 12%, transparent);
 }
 
+.md-typeset :is(.admonition, details) > :is(.admonition-title, summary),
 .md-typeset :is(.primm, .note, .tip, .warning) > :is(.admonition-title, summary) {
   background-color: transparent;
 }
 
+.md-typeset :is(.admonition, details) > :is(.admonition-title, summary)::before,
 .md-typeset :is(.primm, .note, .tip, .warning) > :is(.admonition-title, summary)::before {
-  background-color: var(--callout);
+  background-color: var(--callout-border);
 }
 
+.md-typeset :is(.admonition, details) > :is(.admonition-title, summary)::after,
 .md-typeset :is(.primm, .note, .tip, .warning) > :is(.admonition-title, summary)::after {
-  color: var(--callout);
+  color: var(--callout-border);
 }
 
 /* PRIMM uses the question-mark icon */
