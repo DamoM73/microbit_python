@@ -9,7 +9,7 @@ PiicoDev is a range of plug-and-play sensors and output modules made by the Aust
 3. To use more than one module, connect them in a chain: adapter → module → module.
 4. Connect the micro:bit to your computer with the USB cable.
 
-!!! note "Address switches (ASW)"
+!!! tip "Address switches (ASW)"
     Some modules have small **ASW** switches. These let you connect two of the same module at once. Unless a page tells you otherwise, keep all ASW switches **off**.
 
 ## Files a PiicoDev program needs

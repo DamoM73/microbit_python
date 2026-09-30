@@ -31,7 +31,7 @@ Use this when you want to write your own program.
 
     ![name file](../assets/first_program_name_file.png)
 
-!!! note "Directories vs folders"
+!!! tip "Directories vs folders"
     Directories and folders are the same thing. "Directory" comes from older text-based operating systems; "folder" became common with graphical interfaces that use folder icons.
 
 ## Run and stop a program
@@ -47,16 +47,20 @@ We are going to run our program for the first time. Open `micropython/first_prog
 --8<-- "examples/micropython/first_program/main.py"
 ```
 
-!!! note "PRIMM"
-    Throughout this course, we will use the **PRIMM** process to help us learn:
+Throughout this course, we will use the **PRIMM** process to help us learn:
 
-    - **Predict** → before running the code, write down what you think will happen
-    - **Run** → run the program and check your prediction
-    - **Investigate** → work out what each line does
-    - **Modify** → change the code and see what happens
-    - **Make** → use what you have learnt to make your own program
+- **Predict** → before running the code, write down what you think will happen
+- **Run** → run the program and check your prediction
+- **Investigate** → work out what each line does
+- **Modify** → change the code and see what happens
+- **Make** → use what you have learnt to make your own program
 
-**Predict** what the program will do. Be specific. Then **run** it.
+Let's try it now.
+
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
 
 ![first_program displayed](../assets/first_program.gif)
 

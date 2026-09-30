@@ -125,7 +125,7 @@ Gets all three readings at once as a **tuple**.
     - **line 6** → prints the three readings in the Shell.
     - **line 7** → waits 100 milliseconds before the loop repeats.
 
-!!! note "Tuples"
+!!! tip "Tuples"
     A tuple is like a list, but its values can't be changed after it is created. It is written with round brackets, for example `(1, 2, 3)`.
 
 ### `current_gesture()`

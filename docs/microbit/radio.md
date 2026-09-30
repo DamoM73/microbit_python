@@ -19,7 +19,7 @@ The radio is built into the micro:bit, so we don't need to connect anything. We 
 - Micro:bits only hear messages from micro:bits in the same **group** (`0`–`255`). Pick a group that other students aren't using.
 - Received messages wait in a **queue**, like people in a line: the oldest message is read first. If the queue is full, new messages are lost.
 
-!!! note "How radio works"
+!!! tip "How radio works"
     Imagine you and a friend on opposite sides of the classroom, each with a torch. By flashing the torch in an agreed code you can send "HELLO" without any wires. Radio works the same way, but uses invisible radio waves instead of light.
 
 ## Set it up

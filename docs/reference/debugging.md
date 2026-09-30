@@ -1,6 +1,6 @@
 # Debugging with Thonny
 
-!!! note "Use Python 3, not the micro:bit"
+!!! tip "Use Python 3, not the micro:bit"
     Thonny's debugger works with regular Python on your computer, not with MicroPython on the micro:bit. Before you start this page, choose **Tools** → **Options** → **Interpreter** and select **Local Python 3**. Change it back to **MicroPython (BBC micro:bit)** when you are finished.
 
 ## Programming mistakes
@@ -187,7 +187,7 @@ Click the **Step over** button and you will see the results below. Notice the va
 
 Clicking **Step over** again executes `line 5`. The highlight then returns to the `line 3` for statement.
 
-!!! note "When to use Step over"
+!!! tip "When to use Step over"
     Use **Step over** when you know that the highlighted code is bug free. Executing working code helps find the bug location quicker.
 
 Click **Step over** and then **Step into** to move your code to the position below, so we can now look at the **Step out**.
@@ -302,7 +302,7 @@ Click the **Debug** button to launch Thonny's debugger. Thonny will run the code
     - `line 8` in the main program
     - `line 3` of the add_underscores function section.
 
-!!! note "Stack timeline"
+!!! tip "Stack timeline"
     1. `line 8` in the main module called the `add_underscores` function
     2. Python pauses the main section at `line 8` at wait for the `add_underscores` function to finish
     3. When the function finishes, the main section will continue from `line 8` onwards. 

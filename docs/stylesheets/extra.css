@@ -1,10 +1,11 @@
 /* ------------------------------------------------------------------
    Site colour scheme
    navy   #476088  top bar, links, headings, current page (light mode)
-   yellow #ffc562  warnings, headings (dark mode)
-   coral  #ff6d74  PRIMM callouts
-   teal   #4fddc3  Code explanation (note) callouts
-   blue   #61a8e8  tips, links (dark mode)
+   yellow #ffc562  active tab, headings (dark mode)
+   coral  #ff6d74  (spare)
+   teal   #4fddc3  (spare)
+   blue   #61a8e8  links (dark mode)
+   Callouts use the shared tutorial-site colours (see Callouts below).
    ------------------------------------------------------------------ */
 :root {
   --navy: #476088;
@@ -45,12 +46,20 @@
 }
 
 /* Callouts: every type uses the same style, a light tint of its colour
-   with a darker border of the same colour */
+   with a darker border of the same colour. Callout colours are shared
+   across all the tutorial sites: PRIMM green, note purple, tip light blue,
+   warning pink. */
 .md-typeset :is(.admonition, details) { --callout: #448aff; }
-.md-typeset .admonition.primm, .md-typeset details.primm { --callout: var(--coral); }
-.md-typeset .admonition.note,  .md-typeset details.note  { --callout: var(--teal); }
-.md-typeset .admonition.tip,   .md-typeset details.tip   { --callout: var(--blue); }
-.md-typeset .admonition.warning, .md-typeset details.warning { --callout: var(--yellow); }
+.md-typeset .admonition.primm, .md-typeset details.primm { --callout: #4d8a00; }
+.md-typeset .admonition.note,  .md-typeset details.note  { --callout: #8400ff; }
+.md-typeset .admonition.tip,   .md-typeset details.tip   { --callout: #4fc3f7; }
+.md-typeset .admonition.warning, .md-typeset details.warning { --callout: #ff00a1; }
+
+/* Lighter PRIMM and note colours in dark mode */
+[data-md-color-scheme="slate"] .md-typeset .admonition.primm,
+[data-md-color-scheme="slate"] .md-typeset details.primm { --callout: #7bc41a; }
+[data-md-color-scheme="slate"] .md-typeset .admonition.note,
+[data-md-color-scheme="slate"] .md-typeset details.note { --callout: #b77bff; }
 
 .md-typeset :is(.admonition, details),
 .md-typeset :is(.admonition, details):is(.primm, .note, .tip, .warning) {
@@ -125,4 +134,16 @@
 .md-header .md-search__button::after {
   color: #333333;
   background-color: #eeeeee;
+}
+
+/* Code blocks: a thin border around every code block */
+.md-typeset div.highlight {
+  margin: 1em 0;
+  border: 0.075rem solid var(--md-default-fg-color--lighter);
+  border-radius: 0.4rem;
+}
+
+.md-typeset div.highlight .highlighttable,
+.md-typeset div.highlight pre {
+  margin: 0;
 }

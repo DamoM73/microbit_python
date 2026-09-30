@@ -23,7 +23,7 @@ Possible uses:
     - `PiicoDev_Unified.py`
     - `PiicoDev_Servo.py`
 
-!!! note "Two kinds of servo"
+!!! tip "Two kinds of servo"
     - A **micro servo** turns to an **angle**, from 0° to 180°, and holds it.
     - A **continuous rotation servo** spins like a wheel at a **speed**, from `-1` (full speed backwards) to `1` (full speed forwards).
 

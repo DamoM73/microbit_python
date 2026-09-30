@@ -18,7 +18,7 @@ Possible uses:
     - `PiicoDev_Unified.py`
     - `PiicoDev_VEML6040.py`
 
-!!! note "Two ways to describe colour"
+!!! tip "Two ways to describe colour"
     **RGB** describes a colour by how much **red**, **green** and **blue** light it contains. Screens mix these three colours to make every other colour.
 
     **HSV** describes a colour by:
@@ -70,7 +70,7 @@ Returns the amount of red, green and blue light the sensor sees, plus the ambien
     - **line 10** → prints the `red`, `green` and `blue` values from the dictionary.
     - **line 11** → waits 500 milliseconds before the loop repeats.
 
-!!! note "Dictionaries"
+!!! tip "Dictionaries"
     A dictionary stores values with names (called **keys**). `data["red"]` gets the value stored under the key `"red"`.
 
 ### `readHSV()`
