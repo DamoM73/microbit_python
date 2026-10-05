@@ -6,6 +6,9 @@
     - how to fill, clear and change the brightness of the LEDs
     - how to pick colours from a colour wheel
 
+!!! terms "Terminology"
+    - **RGB LED** – an LED that mixes red, green and blue light so it can show any colour.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7NIzQpjTXWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev 3x RGB LED Module has three full-colour LEDs that can each be set to any colour and brightness.

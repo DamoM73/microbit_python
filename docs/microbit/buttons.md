@@ -5,6 +5,9 @@
     - how to check whether a button was pressed earlier
     - how to count how many times a button was pressed
 
+!!! terms "Terminology"
+    - **push button** – a button that detects when it is pressed and held down, such as buttons A and B on the micro:bit.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hnT0qHM3_hQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The micro:bit has two push buttons, **A** and **B**, that detect when they are pressed.

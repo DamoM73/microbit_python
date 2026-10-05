@@ -6,6 +6,13 @@
     - how to change the range of values it gives
     - how to use more than one potentiometer
 
+!!! terms "Terminology"
+    - **potentiometer** – an input, also called a pot, that gives a value which changes smoothly as we turn a knob or move a slider.
+    - **ID switch** – a small switch on the back of a PiicoDev module that gives it a different ID so we can use more than one at once.
+    - **property** – a value that belongs to an object, such as `pot.value`, that we read or set without brackets.
+    - **range** – the lowest and highest values a reading can give.
+    - **raw value** – a sensor reading before it has been scaled into a more useful range.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eD8h_VAoV90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev Rotary and Slide Potentiometers ("pots") give a value that changes smoothly as you turn the knob or move the slider.

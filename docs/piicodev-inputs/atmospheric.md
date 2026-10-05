@@ -5,6 +5,12 @@
     - how to read temperature, air pressure and humidity
     - how to estimate altitude from air pressure
 
+!!! terms "Terminology"
+    - **air pressure** – the weight of the air pushing down on us, which drops as we go higher.
+    - **humidity** – the amount of water vapour in the air, measured as a percentage.
+    - **altitude** – the height above sea level, which the Atmospheric Sensor works out from air pressure.
+    - **pascal** – the unit for measuring pressure (Pa); 100 pascals make 1 hectopascal (hPa).
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gOmtS4pFegE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev Atmospheric Sensor (BME280) measures temperature, air pressure and humidity.

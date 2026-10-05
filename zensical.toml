@@ -49,6 +49,7 @@ nav = [
     { "Components" = "reference/components.md" },
     { "Debugging with Thonny" = "reference/debugging.md" },
     { "Exercise Solutions" = "reference/solutions.md" },
+    { "Glossary" = "reference/glossary.md" },
     { "Licence" = "reference/licence.md" },
   ] },
 ]

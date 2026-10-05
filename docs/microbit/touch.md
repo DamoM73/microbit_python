@@ -5,6 +5,10 @@
     - how to detect when the logo is touched
     - how to use pins 0, 1 and 2 as touch inputs
 
+!!! terms "Terminology"
+    - **capacitive touch** – a way of sensing touch by detecting the tiny electrical charge in our finger, the same idea used by phone screens.
+    - **pin** – a metal connection point on the micro:bit, such as pins 0, 1 and 2, that can be used for inputs and outputs.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/spFD3SxxxHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The gold logo and pins 0, 1 and 2 can sense touch using **capacitive touch**, the same idea used by phone screens.

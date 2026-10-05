@@ -6,6 +6,20 @@
     - how to use breakpoints
     - how to find and fix a logic error
 
+!!! terms "Terminology"
+    - **syntax error** – a mistake in how the code is written, such as a missing bracket, that stops Python from running it.
+    - **run-time error** – a mistake that makes the program crash while it is running.
+    - **logic error** – a mistake where a valid program runs but doesn't do what the programmer intended.
+    - **bug** – an unexpected behaviour in a program caused by a mistake in the code.
+    - **debugging** – the process of finding and removing bugs from a program.
+    - **debugger** – a tool that helps us hunt down bugs by running code one step at a time and showing variable values.
+    - **for loop** – a loop that repeats its code once for each item in a list or other collection.
+    - **breakpoint** – a marker on a line of code where the debugger pauses the program so we can check the variables.
+    - **stack** – the list of functions and modules that are currently running, showing which one called which.
+    - **scope** – the part of a program where a variable can be seen and used.
+    - **local variable** – a variable that only the current function can see.
+    - **concatenation** – joining strings together end to end with `+`.
+
 !!! tip "Use Python 3, not the micro:bit"
     Thonny's debugger works with regular Python on your computer, not with MicroPython on the micro:bit. Before you start this page, choose **Tools** → **Options** → **Interpreter** and select **Local Python 3**. Change it back to **MicroPython (BBC micro:bit)** when you are finished.
 

@@ -6,6 +6,18 @@
     - how to read hue, saturation and value
     - how to identify a colour
 
+!!! terms "Terminology"
+    - **RGB** – a way of describing a colour by how much red, green and blue light it contains.
+    - **HSV** – a way of describing a colour by its hue, saturation and value.
+    - **hue** – which colour something is, given as an angle on the colour wheel, such as red `0`, green `120` and blue `240`.
+    - **saturation** – how intense a colour is, from bright and strong to greyish.
+    - **value (colour)** – how light or dark a colour is.
+    - **colour wheel** – a circle of colours that lets us describe each colour by its position or angle around it.
+    - **dictionary** – a collection that stores values with names, called keys, so we can look each value up by its name.
+    - **key** – the name used to store and look up a value in a dictionary, such as `"red"` in `data["red"]`.
+    - **ambient light** – the general light in the surroundings.
+    - **colour temperature** – a measure, in kelvin, of how warm (yellowish) or cool (bluish) white light looks.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/d6Ot4NlOBfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev Colour Sensor (VEML6040) measures the red, green, blue and white light reflected from an object, and can identify its colour.

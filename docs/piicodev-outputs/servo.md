@@ -6,6 +6,14 @@
     - how to spin a continuous servo at a speed
     - how to release and calibrate a servo
 
+!!! terms "Terminology"
+    - **servo motor** – a motor that can be controlled to turn to an exact angle or spin at a set speed.
+    - **servo driver** – a module that sends the signals to control up to four servo motors.
+    - **horn** – the plastic arm that fits onto a servo's hub.
+    - **channel** – one of the numbered connection points on the Servo Driver where a servo plugs in.
+    - **continuous rotation servo** – a servo that spins like a wheel at a speed from -1 (full speed backwards) to 1 (full speed forwards).
+    - **micro servo** – a small servo that turns to an angle from 0° to 180° and holds it there.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7D_5JzoxYyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The PiicoDev Servo Driver controls up to four servo motors, turning them to an angle or spinning them at a speed.

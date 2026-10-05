@@ -6,6 +6,18 @@
     - how to make the micro:bit speak and sing
     - how to measure sound with the microphone
 
+!!! terms "Terminology"
+    - **speaker** – an output device that turns electrical signals into sound.
+    - **microphone** – an input device that detects sound and measures how loud it is.
+    - **list** – a collection of values, written in square brackets, that is stored in order under one name.
+    - **octave** – a range of musical notes, numbered from 0 (very low) to 8 (very high), where octave 4 contains middle C.
+    - **duration** – how long a note or tone lasts.
+    - **frequency** – how many times a sound wave vibrates each second, which sets how high or low a tone sounds.
+    - **hertz** – the unit of frequency (Hz), meaning one vibration per second.
+    - **speech synthesiser** – software that creates spoken words from text, which makes the micro:bit's voice sound robotic.
+    - **phoneme** – a single sound that makes up part of a spoken word, used to tell the micro:bit exactly how to say it.
+    - **pitch** – how high or low a sound or voice is.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/r53PjFwyAhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The micro:bit v2 has a built-in speaker that plays tunes, tones and robotic speech, and a microphone that measures how loud it is.

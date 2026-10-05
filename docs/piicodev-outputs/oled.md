@@ -7,6 +7,11 @@
     - how to draw graphs
     - how to change the display's contrast, rotation and power
 
+!!! terms "Terminology"
+    - **OLED** – an organic light-emitting diode screen, which is a display made of tiny pixels that each give off their own light.
+    - **PBM** – a portable bitmap, which is a simple image file made only of black and white pixels.
+    - **contrast** – how bright the screen is compared to its dark parts, which sets how easy it is to see.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xEcLUxhMMDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev OLED Display is a 128 × 64 pixel white-on-black screen that can show text, shapes, graphs and images.

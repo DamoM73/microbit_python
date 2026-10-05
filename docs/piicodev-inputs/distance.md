@@ -4,6 +4,10 @@
     - how to connect the Distance Sensor
     - how to measure the distance to an object
 
+!!! terms "Terminology"
+    - **distance sensor** – a sensor that measures how far away an object is.
+    - **laser** – a narrow, focused beam of light; the Distance Sensor uses an invisible one to measure distance.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CjbOWeBz35s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev Distance Sensor (VL53L1X) uses a laser to measure the distance to an object, up to 4 metres away.

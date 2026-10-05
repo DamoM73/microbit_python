@@ -5,6 +5,12 @@
     - how to set one LED's colour
     - how to fill and clear all the LEDs
 
+!!! terms "Terminology"
+    - **alligator clip** – a spring-loaded metal clip on a wire used to make quick connections without soldering.
+    - **GND** – ground, the connection that completes an electrical circuit back to the negative side of the power.
+    - **data pin** – the pin that carries signals from the micro:bit to tell a device what to do.
+    - **NeoPixel** – a type of full-colour LED that can be joined in strips and controlled one at a time from a single data pin.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VFJ50tXNEbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The Glowbit Rainbow is an arc of 13 full-colour LEDs, each of which can be set to any colour.

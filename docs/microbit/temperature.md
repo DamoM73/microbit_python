@@ -4,6 +4,10 @@
     - how to read the temperature
     - why the reading is only approximate
 
+!!! terms "Terminology"
+    - **processor** – the main chip that runs programs on the micro:bit; its temperature sensor is built inside it.
+    - **temperature sensor** – a sensor that measures how hot or cold it is, in degrees Celsius.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mrHn8eZ9eqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The temperature sensor inside the micro:bit's processor gives an approximate reading of the air temperature in degrees Celsius.

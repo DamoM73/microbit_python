@@ -6,6 +6,12 @@
     - how to make a timestamp
     - how Unix time works
 
+!!! terms "Terminology"
+    - **real time clock** – a module that keeps track of the date and time, even while the micro:bit is turned off.
+    - **timestamp** – the date and time written as one string, such as `YYYY-MM-DD HH:MM:SS`.
+    - **24-hour time** – a way of telling the time where hours go from 0 to 23 instead of using am and pm.
+    - **Unix time** – the number of seconds that have passed since 1 January 1970.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ewzzmh7HUJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev Real Time Clock (RV-3028) keeps track of the date and time, even while the micro:bit is turned off.

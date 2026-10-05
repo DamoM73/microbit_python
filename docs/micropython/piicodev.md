@@ -6,6 +6,12 @@
     - which files a PiicoDev program needs
     - how to upload the driver files
 
+!!! terms "Terminology"
+    - **PiicoDev** – a range of plug-and-play sensors and output modules made by Core Electronics that connect with the same cable, with no soldering needed.
+    - **adapter** – a board that the micro:bit plugs into so PiicoDev modules can be connected to it.
+    - **address switch** – a small switch (marked ASW) on some PiicoDev modules that lets us connect two of the same module at once.
+    - **device driver** – a file of code that gives our program the commands to control one type of module.
+
 PiicoDev is a range of plug-and-play sensors and output modules made by the Australian company [Core Electronics](https://core-electronics.com.au/). Every PiicoDev module uses the same cable, so we can connect modules to the micro:bit without soldering or breadboards.
 
 ## Connect a module
