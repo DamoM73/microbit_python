@@ -9,8 +9,8 @@
     - **radio** – a way of sending and receiving messages without wires, using invisible radio waves.
     - **wireless** – communicating between devices without any cables or wires.
     - **group** – a number from 0 to 255 that sets which micro:bits can hear each other's radio messages.
-    - **queue** – a line of waiting items where the oldest one is dealt with first, like received radio messages.
-    - **None** – a special Python value meaning nothing, such as when no radio message has arrived.
+    - **queue** – a collection where the first item put in is the first item taken out, like a line of people waiting.
+    - **None** – a special Python value that means nothing, used when there is no value yet.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rvymAr6WqrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

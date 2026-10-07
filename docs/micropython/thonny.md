@@ -11,10 +11,8 @@
     - **microcontroller** – a tiny computer chip used to control devices such as robots, sensors and household appliances.
     - **embedded programming** – writing programs that run on microcontrollers built into devices.
     - **micro:bit** – a small, pocket-sized educational computer with buttons, a display and sensors that we can program.
-    - **Thonny** – a beginner-friendly IDE for writing and running Python and MicroPython programs.
     - **IDE** – an Integrated Development Environment, which is an app for writing, running and fixing code.
     - **interpreter** – the program that reads our code and runs it, such as MicroPython on the micro:bit or Python 3 on the computer.
-    - **Shell** – the part of the Thonny window that shows messages and printed output from our program.
 
 During this course we will use **Thonny** to write **MicroPython** programs for the **micro:bit**. This page shows how to set everything up.
 

@@ -8,15 +8,7 @@
 
 !!! terms "Terminology"
     - **LED** – a light-emitting diode, which is a small electronic light; the micro:bit display is a 5 × 5 grid of them.
-    - **pixel** – a single dot of light on a display that can be turned on, off or set to a brightness.
-    - **coordinates** – a pair of numbers `(x, y)` that give the position of a pixel, with `x` across and `y` down.
-    - **method** – a command that belongs to an object, such as the display, and is written after a dot.
-    - **parameter** – a value we give to a method inside its brackets to control what it does.
-    - **return value** – the information a method gives back to our program after it runs.
-    - **string** – a piece of text made of characters, written inside quotation marks.
-    - **integer** – a whole number with no decimal point, written `int` in Python.
-    - **float** – a number with a decimal point, such as `3.14`.
-    - **Boolean** – a value that can only be `True` or `False`.
+    - **return value** – the value a function or method sends back to the code that called it.
     - **documentation** – the official guide written by the people who made a code library, explaining every method and its parameters.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eRhlaXqT-0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

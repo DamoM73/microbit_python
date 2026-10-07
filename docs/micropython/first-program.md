@@ -9,8 +9,7 @@
 !!! terms "Terminology"
     - **directory** – another name for a folder that holds files on a computer or micro:bit.
     - **PRIMM** – a five-step way of learning to code: Predict, Run, Investigate, Modify and Make.
-    - **library** – a collection of ready-made code, such as the `microbit` library, that we import to use in our programs.
-    - **endless loop** – a loop, started with `while True:`, that repeats its code forever until the program is stopped.
+    - **library** – a collection of ready-made code that we import to use in our programs.
     - **millisecond** – one thousandth of a second, so 1000 milliseconds make 1 second.
     - **upload** – to copy a file from the computer onto the micro:bit so the program can run without the computer.
 

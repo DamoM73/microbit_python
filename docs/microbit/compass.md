@@ -8,8 +8,8 @@
 !!! terms "Terminology"
     - **magnetometer** – a sensor that measures magnetic fields, used by the micro:bit as a compass.
     - **magnetic field** – the invisible area of magnetic force around a magnet or the Earth.
-    - **calibration** – adjusting a sensor so its readings are accurate, such as tilting the micro:bit until every LED is lit.
-    - **heading** – the direction the top of the micro:bit is pointing, measured in degrees from 0 to 359.
+    - **calibration** – testing and adjusting a sensor or device so its readings or movements are accurate.
+    - **heading** – the direction something is facing, measured in degrees.
     - **nanotesla** – a very small unit for measuring the strength of a magnetic field.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/a3P6LWwPBqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

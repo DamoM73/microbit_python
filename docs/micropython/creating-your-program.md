@@ -6,16 +6,9 @@
     - how to plan, build and test a program step by step
 
 !!! terms "Terminology"
-    - **import** – a line that brings code someone else has already written into our program so we can use it.
     - **setup** – the part of a program that runs once when it starts, for creating devices and giving variables their starting values.
     - **main loop** – the part of a program, inside `while True:`, that repeats forever to read inputs, make decisions and control outputs.
-    - **variable** – a named place in memory that stores a value our program can use and change.
-    - **indentation** – spaces at the start of a line that show which code belongs inside a loop or `if` statement.
-    - **input** – information our program reads, such as a button press, a sensor reading or a radio message.
     - **process** – the step where our program works out what to do with its inputs, using calculations and decisions.
-    - **output** – the result our program shows or does, such as using the display, sounds, LEDs or motors.
-    - **if statement** – code that makes a decision by running some lines only when a condition is `True`.
-    - **comment** – a note in our code, starting with `#`, that explains the code and is ignored when the program runs.
 
 Every example in this course uses the same structure. We will use it for our own programs too, because it keeps our code organised and makes problems easier to find and fix.
 

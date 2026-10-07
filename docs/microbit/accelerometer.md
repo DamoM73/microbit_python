@@ -7,10 +7,9 @@
 
 !!! terms "Terminology"
     - **accelerometer** – a sensor that measures movement and tilt in three directions and can recognise gestures such as shaking.
-    - **axis** – an imaginary line, called x, y or z, along which movement is measured.
+    - **axis** – an imaginary line, called x, y or z, along which something moves or around which it turns.
     - **milli-g** – the unit for accelerometer readings, where about 1024 milli-g equals the pull of gravity.
     - **gesture** – a movement the accelerometer can recognise, such as shaking, tilting or turning face up.
-    - **tuple** – a collection of values written in round brackets, like a list, but whose values can't be changed after it is created.
     - **unpacking** – storing each value from a tuple or list into its own variable in one line, such as `x, y, z = accelerometer.get_values()`.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UT35ODxvmS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

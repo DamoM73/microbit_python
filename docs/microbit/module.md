@@ -6,9 +6,6 @@
     - how to run code on a schedule with `run_every()`
 
 !!! terms "Terminology"
-    - **module** – a collection of code, such as `microbit`, `music` or `radio`, that we can import into our program.
-    - **function** – a named block of code that does a job and can be run whenever we call its name.
-    - **define** – to create a new function by giving it a name and the code it runs, using `def`.
     - **background** – running code on a schedule while the main loop keeps doing something else.
 
 The `microbit` module contains general functions for pausing a program, measuring time and running code on a schedule.

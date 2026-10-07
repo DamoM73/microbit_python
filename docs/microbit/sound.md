@@ -9,7 +9,6 @@
 !!! terms "Terminology"
     - **speaker** – an output device that turns electrical signals into sound.
     - **microphone** – an input device that detects sound and measures how loud it is.
-    - **list** – a collection of values, written in square brackets, that is stored in order under one name.
     - **octave** – a range of musical notes, numbered from 0 (very low) to 8 (very high), where octave 4 contains middle C.
     - **duration** – how long a note or tone lasts.
     - **frequency** – how many times a sound wave vibrates each second, which sets how high or low a tone sounds.
