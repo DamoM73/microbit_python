@@ -5,6 +5,14 @@
     - how to check whether it is pressed or was pressed
     - how to detect double presses and count presses
 
+!!! tip "Files we need"
+    Every program that uses the Button needs these files in its folder, next to `main.py`. Click a file name to download it.
+
+    - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
+    - [PiicoDev_Switch.py](../drivers/PiicoDev_Switch.py){ download="PiicoDev_Switch.py" } → the Button driver
+
+    The example folders in your tutorial files already have these files. See [Upload the files](../micropython/piicodev.md#upload-the-files) for how to put them on the micro:bit.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oNsP-YnHCho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The PiicoDev Button is a large push button that detects presses, double presses and counts how many times it has been pressed.

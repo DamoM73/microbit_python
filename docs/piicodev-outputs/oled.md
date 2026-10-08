@@ -12,6 +12,16 @@
     - **PBM** – a portable bitmap, which is a simple image file made only of black and white pixels.
     - **contrast** – how bright the screen is compared to its dark parts, which sets how easy it is to see.
 
+!!! tip "Files we need"
+    Every program that uses the OLED Display needs these files in its folder, next to `main.py`. Click a file name to download it.
+
+    - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
+    - [PiicoDev_SSD1306.py](../drivers/PiicoDev_SSD1306.py){ download="PiicoDev_SSD1306.py" } → the OLED Display driver
+    - [font-pet-me-128.dat](../drivers/font-pet-me-128.dat){ download="font-pet-me-128.dat" } → the font, needed to show text with `text()`
+    - [piicodev-logo.pbm](../drivers/piicodev-logo.pbm){ download="piicodev-logo.pbm" } → the example image, only needed for the `load_pbm()` example
+
+    The example folders in your tutorial files already have these files. See [Upload the files](../micropython/piicodev.md#upload-the-files) for how to put them on the micro:bit.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xEcLUxhMMDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev OLED Display is a 128 × 64 pixel white-on-black screen that can show text, shapes, graphs and images.

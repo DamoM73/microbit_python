@@ -9,6 +9,14 @@
 !!! terms "Terminology"
     - **RGB LED** – an LED that mixes red, green and blue light so it can show any colour.
 
+!!! tip "Files we need"
+    Every program that uses the 3x RGB LED needs these files in its folder, next to `main.py`. Click a file name to download it.
+
+    - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
+    - [PiicoDev_RGB.py](../drivers/PiicoDev_RGB.py){ download="PiicoDev_RGB.py" } → the 3x RGB LED driver
+
+    The example folders in your tutorial files already have these files. See [Upload the files](../micropython/piicodev.md#upload-the-files) for how to put them on the micro:bit.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7NIzQpjTXWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev 3x RGB LED Module has three full-colour LEDs that can each be set to any colour and brightness.

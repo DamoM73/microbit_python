@@ -12,6 +12,14 @@
     - **24-hour time** – a way of telling the time where hours go from 0 to 23 instead of using am and pm.
     - **Unix time** – the number of seconds that have passed since 1 January 1970.
 
+!!! tip "Files we need"
+    Every program that uses the Real Time Clock needs these files in its folder, next to `main.py`. Click a file name to download it.
+
+    - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
+    - [PiicoDev_RV3028.py](../drivers/PiicoDev_RV3028.py){ download="PiicoDev_RV3028.py" } → the Real Time Clock driver
+
+    The example folders in your tutorial files already have these files. See [Upload the files](../micropython/piicodev.md#upload-the-files) for how to put them on the micro:bit.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ewzzmh7HUJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev Real Time Clock (RV-3028) keeps track of the date and time, even while the micro:bit is turned off.

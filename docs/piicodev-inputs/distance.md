@@ -8,6 +8,14 @@
     - **distance sensor** – a sensor that measures how far away an object is.
     - **laser** – a narrow, focused beam of light; the Distance Sensor uses an invisible one to measure distance.
 
+!!! tip "Files we need"
+    Every program that uses the Distance Sensor needs these files in its folder, next to `main.py`. Click a file name to download it.
+
+    - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
+    - [PiicoDev_VL53L1X.py](../drivers/PiicoDev_VL53L1X.py){ download="PiicoDev_VL53L1X.py" } → the Distance Sensor driver
+
+    The example folders in your tutorial files already have these files. See [Upload the files](../micropython/piicodev.md#upload-the-files) for how to put them on the micro:bit.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CjbOWeBz35s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev Distance Sensor (VL53L1X) uses a laser to measure the distance to an object, up to 4 metres away.

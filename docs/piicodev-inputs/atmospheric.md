@@ -11,6 +11,14 @@
     - **altitude** – the height above sea level, which the Atmospheric Sensor works out from air pressure.
     - **pascal** – the unit for measuring pressure (Pa); 100 pascals make 1 hectopascal (hPa).
 
+!!! tip "Files we need"
+    Every program that uses the Atmospheric Sensor needs these files in its folder, next to `main.py`. Click a file name to download it.
+
+    - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
+    - [PiicoDev_BME280.py](../drivers/PiicoDev_BME280.py){ download="PiicoDev_BME280.py" } → the Atmospheric Sensor driver
+
+    The example folders in your tutorial files already have these files. See [Upload the files](../micropython/piicodev.md#upload-the-files) for how to put them on the micro:bit.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gOmtS4pFegE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev Atmospheric Sensor (BME280) measures temperature, air pressure and humidity.

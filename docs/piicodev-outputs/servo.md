@@ -14,6 +14,14 @@
     - **continuous rotation servo** – a servo that spins like a wheel at a speed from -1 (full speed backwards) to 1 (full speed forwards).
     - **micro servo** – a small servo that turns to an angle from 0° to 180° and holds it there.
 
+!!! tip "Files we need"
+    Every program that uses the Servo Driver needs these files in its folder, next to `main.py`. Click a file name to download it.
+
+    - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
+    - [PiicoDev_Servo.py](../drivers/PiicoDev_Servo.py){ download="PiicoDev_Servo.py" } → the Servo Driver's driver
+
+    The example folders in your tutorial files already have these files. See [Upload the files](../micropython/piicodev.md#upload-the-files) for how to put them on the micro:bit.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7D_5JzoxYyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The PiicoDev Servo Driver controls up to four servo motors, turning them to an angle or spinning them at a speed.

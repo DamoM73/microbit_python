@@ -18,6 +18,14 @@
     - **ambient light** – the general light in the surroundings.
     - **colour temperature** – a measure, in kelvin, of how warm (yellowish) or cool (bluish) white light looks.
 
+!!! tip "Files we need"
+    Every program that uses the Colour Sensor needs these files in its folder, next to `main.py`. Click a file name to download it.
+
+    - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
+    - [PiicoDev_VEML6040.py](../drivers/PiicoDev_VEML6040.py){ download="PiicoDev_VEML6040.py" } → the Colour Sensor driver
+
+    The example folders in your tutorial files already have these files. See [Upload the files](../micropython/piicodev.md#upload-the-files) for how to put them on the micro:bit.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/d6Ot4NlOBfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev Colour Sensor (VEML6040) measures the red, green, blue and white light reflected from an object, and can identify its colour.

@@ -13,6 +13,14 @@
     - **range** – the lowest and highest values a reading can give.
     - **raw value** – a sensor reading before it has been scaled into a more useful range.
 
+!!! tip "Files we need"
+    Every program that uses a Potentiometer needs these files in its folder, next to `main.py`. Click a file name to download it.
+
+    - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
+    - [PiicoDev_Potentiometer.py](../drivers/PiicoDev_Potentiometer.py){ download="PiicoDev_Potentiometer.py" } → the Potentiometer driver, for both the rotary and slide potentiometers
+
+    The example folders in your tutorial files already have these files. See [Upload the files](../micropython/piicodev.md#upload-the-files) for how to put them on the micro:bit.
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eD8h_VAoV90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The PiicoDev Rotary and Slide Potentiometers ("pots") give a value that changes smoothly as you turn the knob or move the slider.
