@@ -14,7 +14,7 @@ When we make our own project, we work through three stages, in this order:
 
 Doing it in this order saves us time. If something doesn't work later, we already know each component works on its own, so the problem must be in our code.
 
-We'll follow these stages to build a **Too Hot Alarm**. It shows green lights and a happy face when the room is comfortable, and red lights, a sad face and a beep when it gets too hot.
+At the end of this page, we follow all three stages to build a **Too Hot Alarm**. It shows green lights and a happy face when the room is comfortable, and red lights, a sad face and a beep when it gets too hot.
 
 ## 1. Choose the components
 
@@ -23,34 +23,13 @@ Every project takes information in, works out what to do with it, and does somet
 1. Write one sentence that says what the project does.
 2. List the information it needs → these are the **inputs**.
 3. List what it needs to do or show → these are the **outputs**.
-4. For each input and output, find a component that can do the job on the [Components](components.md) page.
+4. For each input and output, find a component that can do the job on the [Components](components.md) page. When a built-in component can do the job well, we use it, because there is less to wire up.
 
 Then put the components in a planning table. The last column tells us which page to read for the code we need.
 
 | Component | Input or output | What it does in our project | Page |
 | --- | --- | --- | --- |
 | | | | |
-
-### Too Hot Alarm components
-
-Our sentence: *the alarm shows whether the room is comfortable or too hot*.
-
-- the room's temperature → input
-- a colour we can see from across the room → output
-- a face on the display → output
-- a beep → output
-
-| Component | Input or output | What it does in our project | Page |
-| --- | --- | --- | --- |
-| Atmospheric Sensor | Input | measures the air temperature | [Atmospheric Sensor](../piicodev-inputs/atmospheric.md) |
-| 3x RGB LED | Output | shows green or red | [3x RGB LED](../piicodev-outputs/rgb-led.md) |
-| Display | Output | shows a happy or sad face | [Display](../microbit/display.md) |
-| Speaker | Output | beeps when it is too hot | [Sound](../microbit/sound.md) |
-
-!!! tip "Built-in or PiicoDev?"
-    The micro:bit has its own [temperature sensor](../microbit/temperature.md), so why use the Atmospheric Sensor? The built-in sensor is inside the processor, which warms up as it runs. That means it reads a few degrees above the room temperature. The Atmospheric Sensor measures the air, so it gives us a more accurate reading.
-
-    When a built-in component can do the job, use it, because there is less to wire up. When it can't do the job well enough, choose a PiicoDev module.
 
 ## 2. Wire them up
 
@@ -83,24 +62,6 @@ Before we combine the components, we run each one's own example from the tutoria
 | Component | Example to run | Expected result |
 | --- | --- | --- |
 | | | |
-
-### Too Hot Alarm wiring
-
-1. Unplug the micro:bit.
-2. Plug it into the adapter.
-3. Chain the modules: adapter → Atmospheric Sensor → 3x RGB LED.
-4. Check that both modules' ASW switches are off.
-5. Plug the micro:bit back in.
-
-Our program folder, `too_hot`, needs four files: `main.py`, `PiicoDev_Unified.py`, `PiicoDev_BME280.py` and `PiicoDev_RGB.py`.
-
-Then we test each part:
-
-| Component | Example to run | Expected result |
-| --- | --- | --- |
-| Atmospheric Sensor | `atmospheric/values` | the Shell shows the temperature, pressure and humidity every second |
-| 3x RGB LED | `rgb_led/fill` | all three LEDs turn purple |
-| Display | `micropython/first_program` | the display scrolls "Hello world!" and shows a heart |
 
 ## 3. Create the program
 
@@ -162,7 +123,48 @@ Copy this into a new `main.py` to start a program. It is also in the `micropytho
 --8<-- "examples/micropython/template/main.py"
 ```
 
-### Too Hot Alarm program
+## Worked example: Too Hot Alarm
+
+Let's put the three stages together to build the Too Hot Alarm.
+
+### 1. Choose the components
+
+Our sentence: *the alarm shows whether the room is comfortable or too hot*.
+
+- the room's temperature → input
+- a colour we can see from across the room → output
+- a face on the display → output
+- a beep → output
+
+| Component | Input or output | What it does in our project | Page |
+| --- | --- | --- | --- |
+| Atmospheric Sensor | Input | measures the air temperature | [Atmospheric Sensor](../piicodev-inputs/atmospheric.md) |
+| 3x RGB LED | Output | shows green or red | [3x RGB LED](../piicodev-outputs/rgb-led.md) |
+| Display | Output | shows a happy or sad face | [Display](../microbit/display.md) |
+| Speaker | Output | beeps when it is too hot | [Sound](../microbit/sound.md) |
+
+!!! tip "Built-in or PiicoDev?"
+    The micro:bit has its own [temperature sensor](../microbit/temperature.md), so why use the Atmospheric Sensor? The built-in sensor is inside the processor, which warms up as it runs. That means it reads a few degrees above the room temperature. The Atmospheric Sensor measures the air, so it gives us a more accurate reading.
+
+### 2. Wire them up
+
+1. Unplug the micro:bit.
+2. Plug it into the adapter.
+3. Chain the modules: adapter → Atmospheric Sensor → 3x RGB LED.
+4. Check that both modules' ASW switches are off.
+5. Plug the micro:bit back in.
+
+Our program folder, `too_hot`, needs four files: `main.py`, `PiicoDev_Unified.py`, `PiicoDev_BME280.py` and `PiicoDev_RGB.py`.
+
+Then we test each part:
+
+| Component | Example to run | Expected result |
+| --- | --- | --- |
+| Atmospheric Sensor | `atmospheric/values` | the Shell shows the temperature, pressure and humidity every second |
+| 3x RGB LED | `rgb_led/fill` | all three LEDs turn purple |
+| Display | `micropython/first_program` | the display scrolls "Hello world!" and shows a heart |
+
+### 3. Create the program
 
 #### Step 1: Plan
 
