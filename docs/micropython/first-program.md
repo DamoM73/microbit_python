@@ -4,6 +4,7 @@
     - how MicroPython runs programs on the micro:bit
     - how to open, create, run and stop a program
     - what the PRIMM process is
+    - how our programs are organised
     - how to upload a program so it runs by itself
 
 !!! terms "Terminology"
@@ -11,6 +12,9 @@
     - **PRIMM** – a five-step way of learning to code: Predict, Run, Investigate, Modify and Make.
     - **library** – a collection of ready-made code that we import to use in our programs.
     - **millisecond** – one thousandth of a second, so 1000 milliseconds make 1 second.
+    - **setup** – the part of a program that runs once when it starts, for creating devices and giving variables their starting values.
+    - **main loop** – the part of a program, inside `while True:`, that repeats forever to read inputs, make decisions and control outputs.
+    - **process** – the step where our program works out what to do with its inputs, using calculations and decisions.
     - **upload** – to copy a file from the computer onto the micro:bit so the program can run without the computer.
 
 Before we create our first program, we need to understand how MicroPython works. This page shows how we create, run and upload every program in this course. Come back here whenever you need a reminder.
@@ -83,6 +87,16 @@ Let's try it now.
     - **line 5** → scrolls `"Hello world!"` across the display.
     - **line 6** → shows the built-in heart image.
     - **line 7** → waits 1000 milliseconds (1 second) before the loop repeats.
+
+## How our programs are organised
+
+Our first program only has two parts: an import and a loop. Most programs in this course have three parts, always in this order:
+
+- **imports** → bring in the libraries our program uses
+- **setup** → runs once when the program starts, to create devices and give variables their starting values
+- **main loop** → the `while True:` loop that repeats forever
+
+Inside the main loop, our code reads its **input**, works out what to do with it (the **process** step), then produces its **output**. We'll see this structure on every page. [Creating Your Program](../reference/creating-your-program.md) explains it in more detail, and shows how to plan, wire up and build our own projects.
 
 ## Upload a program
 

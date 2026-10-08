@@ -15,7 +15,6 @@ nav = [
     { "Setting up Thonny" = "micropython/thonny.md" },
     { "Your First Program" = "micropython/first-program.md" },
     { "Using PiicoDev" = "micropython/piicodev.md" },
-    { "Creating Your Program" = "micropython/creating-your-program.md" },
   ] },
   { "micro:bit" = [
     { "Display" = "microbit/display.md" },
@@ -46,6 +45,7 @@ nav = [
     { "Glowbit Rainbow" = "other/glowbit.md" },
   ] },
   { "Reference" = [
+    { "Creating Your Program" = "reference/creating-your-program.md" },
     { "Components" = "reference/components.md" },
     { "Debugging with Thonny" = "reference/debugging.md" },
     { "Exercise Solutions" = "reference/solutions.md" },

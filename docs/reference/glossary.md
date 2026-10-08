@@ -33,7 +33,7 @@ This glossary lists every technical term used on this site, in alphabetical orde
 - **channel** – one of the numbered connection points on the Servo Driver where a servo plugs in. ([Servo Driver](../piicodev-outputs/servo.md))
 - **colour temperature** – a measure, in kelvin, of how warm (yellowish) or cool (bluish) white light looks. ([Colour Sensor](../piicodev-inputs/colour.md))
 - **colour wheel** – a circle of colours that lets us describe each colour by its position or angle around it. ([Colour Sensor](../piicodev-inputs/colour.md))
-- **comment** – a line starting with `#` that Python ignores, written to help humans understand the code. ([Creating Your Program](../micropython/creating-your-program.md))
+- **comment** – a line starting with `#` that Python ignores, written to help humans understand the code. ([Creating Your Program](../reference/creating-your-program.md))
 - **concatenation** – joining strings together end to end with `+`. ([Debugging with Thonny](../reference/debugging.md))
 - **continuous rotation servo** – a servo that spins like a wheel at a speed from -1 (full speed backwards) to 1 (full speed forwards). ([Servo Driver](../piicodev-outputs/servo.md))
 - **contrast** – how bright the screen is compared to its dark parts, which sets how easy it is to see. ([OLED Display](../piicodev-outputs/oled.md))
@@ -83,10 +83,10 @@ This glossary lists every technical term used on this site, in alphabetical orde
 
 - **ID switch** – a small switch on the back of a PiicoDev module that gives it a different ID so we can use more than one at once. ([Potentiometers](../piicodev-inputs/potentiometer.md))
 - **IDE** – an Integrated Development Environment, which is an app for writing, running and fixing code. ([Setting up Thonny](../micropython/thonny.md))
-- **if statement** – code that makes a decision by running its indented block only when its condition is `True`. ([Creating Your Program](../micropython/creating-your-program.md))
-- **import** – the command that tells Python to load a module so our program can use its commands. ([Creating Your Program](../micropython/creating-your-program.md))
-- **indentation** – spaces at the start of a line (four in Python) that show which code belongs to a loop or other block. ([Creating Your Program](../micropython/creating-your-program.md))
-- **input** – information that goes into a program, such as a key press, a mouse click or a sensor reading. ([Creating Your Program](../micropython/creating-your-program.md))
+- **if statement** – code that makes a decision by running its indented block only when its condition is `True`. ([Creating Your Program](../reference/creating-your-program.md))
+- **import** – the command that tells Python to load a module so our program can use its commands. ([Creating Your Program](../reference/creating-your-program.md))
+- **indentation** – spaces at the start of a line (four in Python) that show which code belongs to a loop or other block. ([Creating Your Program](../reference/creating-your-program.md))
+- **input** – information that goes into a program, such as a key press, a mouse click or a sensor reading. ([Creating Your Program](../reference/creating-your-program.md))
 - **integer** – a whole number written without a decimal point, like `1` or `25`, called `int` in Python. ([Display](../microbit/display.md))
 - **interpreter** – the program that reads our code and runs it, such as MicroPython on the micro:bit or Python 3 on the computer. ([Setting up Thonny](../micropython/thonny.md))
 
@@ -108,7 +108,7 @@ This glossary lists every technical term used on this site, in alphabetical orde
 
 - **magnetic field** – the invisible area of magnetic force around a magnet or the Earth. ([Compass](../microbit/compass.md))
 - **magnetometer** – a sensor that measures magnetic fields, used by the micro:bit as a compass. ([Compass](../microbit/compass.md))
-- **main loop** – the part of a program, inside `while True:`, that repeats forever to read inputs, make decisions and control outputs. ([Creating Your Program](../micropython/creating-your-program.md))
+- **main loop** – the part of a program, inside `while True:`, that repeats forever to read inputs, make decisions and control outputs. ([Your First Program](../micropython/first-program.md))
 - **method** – a function that belongs to an object or value, written after a dot, such as `name.upper()`. ([Display](../microbit/display.md))
 - **micro servo** – a small servo that turns to an angle from 0° to 180° and holds it there. ([Servo Driver](../piicodev-outputs/servo.md))
 - **micro:bit** – a small, pocket-sized educational computer with buttons, a display and sensors that we can program. ([Setting up Thonny](../micropython/thonny.md))
@@ -129,7 +129,7 @@ This glossary lists every technical term used on this site, in alphabetical orde
 
 - **octave** – a range of musical notes, numbered from 0 (very low) to 8 (very high), where octave 4 contains middle C. ([Sound](../microbit/sound.md))
 - **OLED** – an organic light-emitting diode screen, which is a display made of tiny pixels that each give off their own light. ([OLED Display](../piicodev-outputs/oled.md))
-- **output** – information or actions that a program sends out, such as text on the screen, a sound or a motor moving. ([Creating Your Program](../micropython/creating-your-program.md))
+- **output** – information or actions that a program sends out, such as text on the screen, a sound or a motor moving. ([Creating Your Program](../reference/creating-your-program.md))
 
 ## P
 
@@ -143,7 +143,7 @@ This glossary lists every technical term used on this site, in alphabetical orde
 - **pixel** – one of the tiny dots of light that make up a screen or display. ([Display](../microbit/display.md))
 - **potentiometer** – an input, also called a pot, that gives a value which changes smoothly as we turn a knob or move a slider. ([Potentiometers](../piicodev-inputs/potentiometer.md))
 - **PRIMM** – a five-step way of learning to code: Predict, Run, Investigate, Modify and Make. ([Your First Program](../micropython/first-program.md))
-- **process** – the step where our program works out what to do with its inputs, using calculations and decisions. ([Creating Your Program](../micropython/creating-your-program.md))
+- **process** – the step where our program works out what to do with its inputs, using calculations and decisions. ([Your First Program](../micropython/first-program.md))
 - **processor** – the main chip that runs programs on the micro:bit; its temperature sensor is built inside it. ([Temperature](../microbit/temperature.md))
 - **property** – a value that belongs to an object, such as `pot.value`, that we read or set without brackets. ([Potentiometers](../piicodev-inputs/potentiometer.md))
 - **push button** – a button that detects when it is pressed and held down, such as buttons A and B on the micro:bit. ([Buttons](../microbit/buttons.md))
@@ -169,7 +169,7 @@ This glossary lists every technical term used on this site, in alphabetical orde
 - **scope** – the part of a program where a variable can be seen and used. ([Debugging with Thonny](../reference/debugging.md))
 - **servo driver** – a module that sends the signals to control up to four servo motors. ([Servo Driver](../piicodev-outputs/servo.md))
 - **servo motor** – a motor that can be controlled to turn to an exact angle or spin at a set speed. ([Servo Driver](../piicodev-outputs/servo.md))
-- **setup** – the part of a program that runs once when it starts, for creating devices and giving variables their starting values. ([Creating Your Program](../micropython/creating-your-program.md))
+- **setup** – the part of a program that runs once when it starts, for creating devices and giving variables their starting values. ([Your First Program](../micropython/first-program.md))
 - **Shell** – the panel in Thonny that shows what our program prints and any error messages. ([Setting up Thonny](../micropython/thonny.md))
 - **speaker** – an output device that turns electrical signals into sound. ([Sound](../microbit/sound.md))
 - **speech synthesiser** – software that creates spoken words from text, which makes the micro:bit's voice sound robotic. ([Sound](../microbit/sound.md))
@@ -193,7 +193,7 @@ This glossary lists every technical term used on this site, in alphabetical orde
 ## V
 
 - **value (colour)** – how light or dark a colour is. ([Colour Sensor](../piicodev-inputs/colour.md))
-- **variable** – a named place, like a labelled box, that stores a value our program can use and change. ([Creating Your Program](../micropython/creating-your-program.md))
+- **variable** – a named place, like a labelled box, that stores a value our program can use and change. ([Creating Your Program](../reference/creating-your-program.md))
 
 ## W
 

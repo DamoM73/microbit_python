@@ -26,6 +26,10 @@ PAGE_DRIVERS = {
     "oled": [UNIFIED, "PiicoDev_SSD1306.py", "font-pet-me-128.dat", "piicodev-logo.pbm"],
     "servo": [UNIFIED, "PiicoDev_Servo.py"],
 }
+# Driver files needed by single example folders, as (page, example)
+EXAMPLE_DRIVERS = {
+    ("micropython", "too_hot"): [UNIFIED, "PiicoDev_BME280.py", "PiicoDev_RGB.py"],
+}
 
 
 def main():
@@ -37,7 +41,7 @@ def main():
             page, example = main_py.parent.relative_to(EXAMPLES).parts[-2:]
             folder = Path("microbit_tutorials", page, example)
             zf.write(main_py, folder / "main.py")
-            for name in PAGE_DRIVERS.get(page, []):
+            for name in PAGE_DRIVERS.get(page, []) + EXAMPLE_DRIVERS.get((page, example), []):
                 driver = DRIVERS / name
                 if driver.exists():
                     zf.write(driver, folder / name)
