@@ -4,6 +4,7 @@
     - how to connect the PiicoDev Button
     - how to check whether it is pressed or was pressed
     - how to detect double presses and count presses
+    - how to use more than one button
 
 !!! tip "Files we need"
     Every program that uses the Button needs these files in its folder, next to `main.py`. Click a file name to download it.
@@ -30,7 +31,7 @@ Possible uses:
 2. Upload these files to the micro:bit with `main.py`:
     - `PiicoDev_Unified.py`
     - `PiicoDev_Switch.py`
-3. To use more than one button, give each one a different setting on its **ID switches**, then create each one with `PiicoDev_Switch(id=[1, 0, 0, 0])` and so on.
+3. To use more than one button, give each one a different setting on the **ID switches** on its back. See [Using more than one button](#using-more-than-one-button).
 
 ## Set it up
 
@@ -144,6 +145,38 @@ Gives the number of presses since the last check, then resets the count to `0`.
     - **line 8** → starts an endless loop.
     - **line 9** → prints the number of presses since the last check, then the count resets.
     - **line 10** → waits 2 seconds, giving you time to press the button.
+
+### Using more than one button
+
+We can connect up to 16 buttons at once. Each button needs a different setting on its four **ID switches**, so our program can tell them apart. When we create each button, we give it an `id` that matches its switches: `1` for a switch that is on and `0` for a switch that is off.
+
+Connect one button with all its ID switches off (`0, 0, 0, 0`), and a second button with only the first switch on (`1, 0, 0, 0`).
+
+```python linenums="1"
+--8<-- "examples/piicodev/button/multiple/main.py"
+```
+
+!!! primm "PRIMM"
+    1. **Predict** what you think will happen. Be specific.
+    2. **Run** the program.
+    3. Time to **investigate** the code. What does each line do?
+
+??? note "Code explanation"
+    - **line 1** → imports all the commands from the `microbit` library.
+    - **line 2** → imports the Button driver.
+    - **line 5** → creates the button with ID `0, 0, 0, 0` and calls it `left`.
+    - **line 6** → creates the button with ID `1, 0, 0, 0` and calls it `right`.
+    - **line 9** → starts an endless loop.
+    - **line 10** → checks if the `left` button is being held down.
+    - **line 11** → if it is, shows `L`.
+    - **line 12** → if it isn't, checks if the `right` button is being held down.
+    - **line 13** → if it is, shows `R`.
+    - **line 14** → if neither button is held down…
+    - **line 15** → …clears the display.
+    - **line 16** → waits 100 milliseconds before the loop repeats.
+
+!!! tip "Naming our buttons"
+    Give each button a name that says what it does in our program, such as `left` and `right`, or `start` and `stop`. This makes our code much easier to read than `button1` and `button2`.
 
 ## Documentation
 
