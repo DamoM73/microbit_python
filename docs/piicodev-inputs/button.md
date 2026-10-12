@@ -152,6 +152,8 @@ We can connect up to 16 buttons at once. Each button needs a different setting o
 
 Connect one button with all its ID switches off (`0, 0, 0, 0`), and a second button with only the first switch on (`1, 0, 0, 0`).
 
+![two PiicoDev buttons with different ID switch settings](../assets/piicodev-button-multiple-buttons.jpg)
+
 ```python linenums="1"
 --8<-- "examples/piicodev/button/multiple/main.py"
 ```
@@ -164,19 +166,19 @@ Connect one button with all its ID switches off (`0, 0, 0, 0`), and a second but
 ??? note "Code explanation"
     - **line 1** → imports all the commands from the `microbit` library.
     - **line 2** → imports the Button driver.
-    - **line 5** → creates the button with ID `0, 0, 0, 0` and calls it `left`.
-    - **line 6** → creates the button with ID `1, 0, 0, 0` and calls it `right`.
+    - **line 5** → creates the button with ID `0, 0, 0, 0` and calls it `buttonA`.
+    - **line 6** → creates the button with ID `1, 0, 0, 0` and calls it `buttonB`.
     - **line 9** → starts an endless loop.
-    - **line 10** → checks if the `left` button is being held down.
-    - **line 11** → if it is, shows `L`.
-    - **line 12** → if it isn't, checks if the `right` button is being held down.
-    - **line 13** → if it is, shows `R`.
+    - **line 10** → checks if `buttonA` is being held down.
+    - **line 11** → if it is, shows `A`.
+    - **line 12** → if it isn't, checks if `buttonB` is being held down.
+    - **line 13** → if it is, shows `B`.
     - **line 14** → if neither button is held down…
     - **line 15** → …clears the display.
     - **line 16** → waits 100 milliseconds before the loop repeats.
 
 !!! tip "Naming our buttons"
-    Give each button a name that says what it does in our program, such as `left` and `right`, or `start` and `stop`. This makes our code much easier to read than `button1` and `button2`.
+    The micro:bit already has `button_a` and `button_b`, so we call our PiicoDev buttons `buttonA` and `buttonB` to keep them separate. In a bigger program, we give each button a name that says what it does, such as `start` and `stop`, so our code is easier to read.
 
 ## Documentation
 
