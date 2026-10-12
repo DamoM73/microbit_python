@@ -14,7 +14,11 @@
     - **continuous rotation servo** – a servo that spins like a wheel at a speed from -1 (full speed backwards) to 1 (full speed forwards).
     - **micro servo** – a small servo that turns to an angle from 0° to 180° and holds it there.
 
-!!! tip "Files we need"
+!!! tip "Documentation"
+    Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
+    - [Core Electronics — Servo Driver guide](https://core-electronics.com.au/guides/piicodev-servo-driver-pca9685-getting-started-guide/){ target="_blank" rel="noopener" }
+
     Every program that uses the Servo Driver needs these files in its folder, next to `main.py`. Click a file name to download it.
 
     - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
@@ -160,9 +164,3 @@ If a continuous servo creeps when `speed` is `0`, its midpoint needs adjusting.
     - **line 5** → creates the Servo Driver and calls it `controller`.
     - **line 6** → creates the continuous servo with a midpoint of `1500`.
     - **line 7** → sets the speed to `0`. If the servo still turns, change `midpoint_us` on line 6 by about 25 at a time and run again until it stops. Use the same value in your other programs.
-
-## Documentation
-
-Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
-
-- [PiicoDev Servo Driver](https://github.com/CoreElectronics/CE-PiicoDev-Servo-Driver-MicroPython-Module)

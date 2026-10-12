@@ -13,7 +13,11 @@
     - **range** – the lowest and highest values a reading can give.
     - **raw value** – a sensor reading before it has been scaled into a more useful range.
 
-!!! tip "Files we need"
+!!! tip "Documentation"
+    Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
+    - [Core Electronics — Potentiometer guide](https://core-electronics.com.au/guides/piicodev-potentiometer-getting-started-guide/){ target="_blank" rel="noopener" }
+
     Every program that uses a Potentiometer needs these files in its folder, next to `main.py`. Click a file name to download it.
 
     - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
@@ -154,10 +158,3 @@ Connect a rotary pot with ID `0, 0, 0, 0` and a slide pot with ID `1, 0, 0, 0`.
     - **line 9** → starts an endless loop.
     - **line 10** → prints both values in the Shell.
     - **line 11** → waits 100 milliseconds before the loop repeats.
-
-## Documentation
-
-Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
-
-- [Core Electronics — Potentiometer guide](https://core-electronics.com.au/guides/piicodev-potentiometer-getting-started-guide/)
-- [PiicoDev Potentiometer driver](https://github.com/CoreElectronics/CE-PiicoDev-Potentiometer-MicroPython-Module)

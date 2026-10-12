@@ -12,7 +12,11 @@
     - **PBM** – a portable bitmap, which is a simple image file made only of black and white pixels.
     - **contrast** – how bright the screen is compared to its dark parts, which sets how easy it is to see.
 
-!!! tip "Files we need"
+!!! tip "Documentation"
+    Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
+    - [Core Electronics — OLED micro:bit guide](https://core-electronics.com.au/guides/micro-bit/piicodev-oled-ssd1306-microbit-guide/){ target="_blank" rel="noopener" }
+
     Every program that uses the OLED Display needs these files in its folder, next to `main.py`. Click a file name to download it.
 
     - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
@@ -432,10 +436,3 @@ Turns the screen off and back on. What was on the screen is remembered while it 
     - **line 12** → waits 1 second.
     - **line 13** → turns the screen back on.
     - **line 14** → waits 1 second before the loop repeats.
-
-## Documentation
-
-Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
-
-- [Core Electronics — OLED micro:bit guide](https://core-electronics.com.au/guides/micro-bit/piicodev-oled-ssd1306-microbit-guide/)
-- [PiicoDev SSD1306 driver](https://github.com/CoreElectronics/CE-PiicoDev-SSD1306-MicroPython-Module)

@@ -12,7 +12,11 @@
     - **24-hour time** – a way of telling the time where hours go from 0 to 23 instead of using am and pm.
     - **Unix time** – the number of seconds that have passed since 1 January 1970.
 
-!!! tip "Files we need"
+!!! tip "Documentation"
+    Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
+    - [Core Electronics — Real Time Clock guide](https://core-electronics.com.au/guides/piicodev-real-time-clock-rtc-rv3028-getting-started-guide/){ target="_blank" rel="noopener" }
+
     Every program that uses the Real Time Clock needs these files in its folder, next to `main.py`. Click a file name to download it.
 
     - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
@@ -183,12 +187,6 @@ Sets the clock's Unix time counter. It doesn't change the date and time that `ti
     - **line 9** → starts an endless loop.
     - **line 10** → prints the Unix time in the Shell. It starts at `1790000000` and goes up by 1 every second.
     - **line 11** → waits 1 second before the loop repeats.
-
-## Documentation
-
-Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
-
-- [PiicoDev RV-3028 driver](https://github.com/CoreElectronics/CE-PiicoDev-RV3028-MicroPython-Module)
 
 ## Exercises
 

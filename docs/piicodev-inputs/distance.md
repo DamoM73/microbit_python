@@ -8,7 +8,11 @@
     - **distance sensor** – a sensor that measures how far away an object is.
     - **laser** – a narrow, focused beam of light; the Distance Sensor uses an invisible one to measure distance.
 
-!!! tip "Files we need"
+!!! tip "Documentation"
+    Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
+    - [Core Electronics — Distance Sensor micro:bit guide](https://core-electronics.com.au/guides/piicodev-distance-sensor-vl53l1x-micro-bit-guide/){ target="_blank" rel="noopener" }
+
     Every program that uses the Distance Sensor needs these files in its folder, next to `main.py`. Click a file name to download it.
 
     - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
@@ -72,13 +76,6 @@ Returns the distance to the nearest object in millimetres.
     - **line 8** → starts an endless loop.
     - **line 9** → measures the distance in millimetres and prints it in the Shell.
     - **line 10** → waits 100 milliseconds before the loop repeats.
-
-## Documentation
-
-Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
-
-- [Core Electronics — Distance Sensor micro:bit guide](https://core-electronics.com.au/guides/piicodev-distance-sensor-vl53l1x-micro-bit-guide/)
-- [PiicoDev VL53L1X driver](https://github.com/CoreElectronics/CE-PiicoDev-VL53L1X-MicroPython-Module)
 
 ## Exercises
 

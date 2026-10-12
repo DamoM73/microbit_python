@@ -6,7 +6,11 @@
     - how to detect double presses and count presses
     - how to use more than one button
 
-!!! tip "Files we need"
+!!! tip "Documentation"
+    Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
+    - [Core Electronics — Button guide](https://core-electronics.com.au/guides/piicodev-button-getting-started-guide/){ target="_blank" rel="noopener" }
+
     Every program that uses the Button needs these files in its folder, next to `main.py`. Click a file name to download it.
 
     - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
@@ -179,9 +183,3 @@ Connect one button with all its ID switches off (`0, 0, 0, 0`), and a second but
 
 !!! tip "Naming our buttons"
     The micro:bit already has `button_a` and `button_b`, so we call our PiicoDev buttons `buttonA` and `buttonB` to keep them separate. In a bigger program, we give each button a name that says what it does, such as `start` and `stop`, so our code is easier to read.
-
-## Documentation
-
-Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
-
-- [PiicoDev Switch driver](https://github.com/CoreElectronics/CE-PiicoDev-Switch-MicroPython-Module)

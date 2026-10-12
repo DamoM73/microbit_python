@@ -9,7 +9,11 @@
 !!! terms "Terminology"
     - **RGB LED** – an LED that mixes red, green and blue light so it can show any colour.
 
-!!! tip "Files we need"
+!!! tip "Documentation"
+    Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
+    - [Core Electronics — 3x RGB LED micro:bit guide](https://core-electronics.com.au/guides/piicodev-rgb-led-module-microbit-guide/){ target="_blank" rel="noopener" }
+
     Every program that uses the 3x RGB LED needs these files in its folder, next to `main.py`. Click a file name to download it.
 
     - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
@@ -184,12 +188,6 @@ Converts a position on the colour wheel, from `0` to `1`, into an `[r, g, b]` co
     - **line 5** → creates the module and calls it `leds`.
     - **line 8** → starts an endless loop.
     - **line 9** → gets the colour halfway around the wheel (cyan) and fills the LEDs with it.
-
-## Documentation
-
-Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
-
-- [PiicoDev RGB LED driver](https://github.com/CoreElectronics/CE-PiicoDev-RGB-LED-MicroPython-Module)
 
 ## Exercises
 

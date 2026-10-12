@@ -18,7 +18,11 @@
     - **ambient light** – the general light in the surroundings.
     - **colour temperature** – a measure, in kelvin, of how warm (yellowish) or cool (bluish) white light looks.
 
-!!! tip "Files we need"
+!!! tip "Documentation"
+    Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
+    - [Core Electronics — Colour Sensor micro:bit guide](https://core-electronics.com.au/guides/micro-bit/piicodev-colour-sensor-veml6040-micro-bit-guide/){ target="_blank" rel="noopener" }
+
     Every program that uses the Colour Sensor needs these files in its folder, next to `main.py`. Click a file name to download it.
 
     - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
@@ -144,13 +148,6 @@ By default, `classifyHue()` chooses from red, yellow, green, cyan, blue and mage
     - **line 9** → finds the closest colour name and stores it in `colour`.
     - **line 10** → prints the colour name.
     - **line 11** → waits 500 milliseconds before the loop repeats.
-
-## Documentation
-
-Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
-
-- [Core Electronics — Colour Sensor micro:bit guide](https://core-electronics.com.au/guides/micro-bit/piicodev-colour-sensor-veml6040-micro-bit-guide/)
-- [PiicoDev VEML6040 driver](https://github.com/CoreElectronics/CE-PiicoDev-VEML6040-MicroPython-Module)
 
 ## Exercises
 

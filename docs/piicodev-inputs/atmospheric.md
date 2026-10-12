@@ -11,7 +11,11 @@
     - **altitude** – the height above sea level, which the Atmospheric Sensor works out from air pressure.
     - **pascal** – the unit for measuring pressure (Pa); 100 pascals make 1 hectopascal (hPa).
 
-!!! tip "Files we need"
+!!! tip "Documentation"
+    Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
+
+    - [Core Electronics — Atmospheric Sensor micro:bit guide](https://core-electronics.com.au/guides/piicodev-atmospheric-sensor-bme280-quickstart-guide-for-microbit/){ target="_blank" rel="noopener" }
+
     Every program that uses the Atmospheric Sensor needs these files in its folder, next to `main.py`. Click a file name to download it.
 
     - [PiicoDev_Unified.py](../drivers/PiicoDev_Unified.py){ download="PiicoDev_Unified.py" } → handles communication with all PiicoDev modules
@@ -96,13 +100,6 @@ Air pressure drops as you go higher, so the sensor can work out changes in heigh
     - **line 8** → starts an endless loop.
     - **line 9** → prints the altitude in metres in the Shell.
     - **line 10** → waits 1 second before the loop repeats.
-
-## Documentation
-
-Documentation is the official guide written by the people who made the code library, and we can use it to look up every method and its parameters, including ones that aren't covered on this page.
-
-- [Core Electronics — Atmospheric Sensor micro:bit guide](https://core-electronics.com.au/guides/piicodev-atmospheric-sensor-bme280-quickstart-guide-for-microbit/)
-- [PiicoDev BME280 driver](https://github.com/CoreElectronics/CE-PiicoDev-BME280-MicroPython-Module)
 
 ## Exercises
 
